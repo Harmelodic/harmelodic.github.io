@@ -40,6 +40,8 @@ A link is not an endorsement or indication that I recommend the thing.
 - [DevOps](https://en.wikipedia.org/wiki/DevOps)
 - [Site Reliability Engineering - Google](https://landing.google.com/sre/book/index.html)
 - [The One Minute Manager](https://en.wikipedia.org/wiki/The_One_Minute_Manager)
+- [Agile Manifesto](https://agilemanifesto.org/)
+- [Modern Agile](https://modernagile.org/)
 
 ## Browser Extension Development
 
