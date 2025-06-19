@@ -64,7 +64,7 @@ SLAs are usually made up one or multiple SLOs (that could be more lenient than o
 tailored to that a specific consumers needs) and detail the consequences when SLOs are not achieved. These consequences
 are often financial.
 
-## Example implementations
+## Examples
 
 ### Availability
 
