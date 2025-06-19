@@ -111,7 +111,7 @@ Our SLI for latency can be defined as:
 
 > Latency: Measured by the 99th percentile of response latencies of the last minute, evaluated every 1 minute.
 
-This means that all response latencies during a single minute are gathered and form a distribution, from shortest to 
+This means that all response latencies during a single minute are gathered and form a distribution, from shortest to
 longest latency, and we measure the slowest latency of the fastest 99% (i.e. excluding the slowest 1%).
 
 Our SLO for latency is then the threshold for what we deem as acceptable latency for example:
@@ -157,6 +157,40 @@ An SLA with a consumer
 > 475 of 480 performant periods, during the hours of 09:00 and 17:00 UTC, weekdays.
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
+
+## Advanced
+
+### Error Budgets
+
+Error budgets as a concept is effectively "how much of a budget do I have to cause errors" or... "how much can we break
+things, and everything still OK according to our SLI/SLO/SLAs".
+
+Error budgets can appear in SLIs and SLOs - and so cannot be tied specifically to any _one_ of these concepts.
+
+**In an SLI**, an error budget can appear when our SLI measures a subset of a dataset. For example, if we measure
+latency by using the 99th percentile of response latencies over a single minute, we've effectively created an error
+budget to allow 1% of response latencies in a single minute to take any amount of time (up to infinity). Not all SLIs
+will have error budgets though, since it all depends on how you define your SLI.
+
+**In an SLO**, an error budget appears as soon as we set our objective. For example, if we target 99.9% availability,
+we've effectively created a 0.1% error budget for ourselves.  
+Another example, if we target 99.999% availability but only between the hours 09:00 and 10:00, then we have two error
+budgets: One of 0.001% unavailability between the hours 09:00 to 10:00 (3.6 seconds), and one of 100% unavailability
+outside of those hours (assuming no other SLOs are set).
+
+We can even set **an SLO for our SLOs** and create error budgets there, where we might have:
+
+- An SLI: Availability: Measured by the percentage of well-formed requests that succeed, evaluated every minute.
+- An SLO: 99.9% at all times.
+- An SLO for our SLO: Meeting our Availability SLO 99% of the year.
+
+This effectively means we can breach our SLO 1% of time (per year) which creates an additional error budget.
+
+As you can see, this can get quite complicated, but if you end up defining SLIs and SLOs that contain error budgets,
+it's a good idea to _use those error budgets_. This is because sometimes it is much easier to perform a dangerous canary
+deployment that could break or incur a short period of downtime to do maintenance than it is to do all the work to
+achieve 100% operational or performance targets. Essentially: Be practical, and use your error budgets to make your life
+easier.
 
 ## Further reading
 
