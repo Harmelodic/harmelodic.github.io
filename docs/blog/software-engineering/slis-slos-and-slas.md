@@ -104,15 +104,15 @@ variability in a query parameters). This means that we typically want to exclude
 from being included in our measurements, whilst still capturing most of the consumers latency needs.
 
 This is typically done by measuring the [percentile](https://en.wikipedia.org/wiki/Percentile) in a distribution. For
-example: the 99th percentile (or P99) - which could be the latency that the bottom 99% of requests achieve (effectively
-excluding the top 1% of requests that have the longest latencies).
+example: the 99th percentile (or P99) - which could be the latency that the bottom 99% of requests achieved
+(effectively excluding the top 1% of requests that have the longest latencies) over a specific time period.
 
 Our SLI for latency can be defined as:
 
-> Latency: Measured by the 99th percentile of requests, evaluated every 1 minute.
+> Latency: Measured by the 99th percentile of response latencies of the last minute, evaluated every 1 minute.
 
-This means that all requests during a single minute are gathered and each requests latency forms a distribution, from
-shortest to longest latency, and we measure the slowest latency of the fastest 99% (excluding the slowest 1%).
+This means that all response latencies during a single minute are gathered and form a distribution, from shortest to 
+longest latency, and we measure the slowest latency of the fastest 99% (i.e. excluding the slowest 1%).
 
 Our SLO for latency is then the threshold for what we deem as acceptable latency for example:
 
@@ -143,14 +143,14 @@ An SLI for performant periods could be:
 
 > Performant minutes: Measured by the fraction of minutes where P99 latency is under 100ms, evaluated every day.
 
-This means all requests during a single minute are gathered and each requests latency forms a distribution, from
-shortest to longest latency, and we measure the slowest latency of the fastest 99% (excluding the slowest 1%). If that
-latency is less than 100ms, we state that this minute was "performant". The fraction of performant minutes every day is
-how "performant" our service has been during that day.
+This means all response latencies during a single minute are gathered and form a distribution, from shortest to longest
+latency, and we measure the slowest latency of the fastest 99% (excluding the slowest 1%). If that latency is less than
+100ms, we state that this minute was "performant". The fraction of performant minutes every day is how "performant" our
+service has been during that day.
 
 An SLO for this SLI could then be:
 
-> 1400 of 1440 performant minutes.
+> 1400 of 1440 performant minutes
 
 An SLA with a consumer
 
