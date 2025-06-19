@@ -302,6 +302,7 @@ A link is not an endorsement or indication that I recommend the thing.
 - [Multithreading in Java](https://www.tutorialspoint.com/java/java_multithreading.htm)
 - [OpenJDK JEPs](https://openjdk.org/jeps)
 - [Phil's Data Structure Zoo](https://g1thubhub.github.io/data-structure-zoo.html)
+- [Practical Money in Java](https://jdriven.com/blog/2020/05/Practical-Money-InJava)
 - [SDKMAN!](https://sdkman.io/)
 - [Spring - Framework](https://spring.io/)
 - [javadoc.io - Free Javadoc Hosting](https://javadoc.io/)
