@@ -1,0 +1,13 @@
+/* Only when screen is 1220px or wider (when not in mobile view) */
+@media only screen and (min-width: 1220px) {
+
+	/* Use more horizontal space in general */
+	.md-grid {
+		max-width: 90%; /* default: 61rem */
+	}
+
+	/* Increase sidebar width for readability */
+	.md-sidebar {
+		width: 15rem; /* default: 12.1rem */
+	}
+}
