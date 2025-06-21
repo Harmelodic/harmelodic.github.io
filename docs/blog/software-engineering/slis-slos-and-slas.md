@@ -35,14 +35,14 @@ the actual needs of your consumer and grant you opportunities to potentially dis
 
 ### SLOs
 
-SLOs are _Service Level Objectives_. These are the minimum expectations that we set for ourselves based using the SLIs
-we've already defined. In practice, it is simply a value on the SLI gauge.
+SLOs are _Service Level Objectives_. These are the expectations that we set for ourselves based using the SLIs we've
+already defined. When implemented, it is basically a specific value on the SLI gauge.
 
 SLOs can also contain *qualifiers* which can give further scope or context about when the SLO is applicable, such as
 only being applicable during a specific time window (the duration of which must be greater than or equal to the
 evaluation interval used by the SLI).
 
-SLOs are not targets or goals for us to achieve _eventually_, but the expectations of _right now_. As such, not
+SLOs are not "targets" or "goals" for us to achieve _eventually_, but the expectations of _right now_. As such, not
 achieving an SLO should be treated as a serious incident and prioritised accordingly.
 
 **Tip**: When introducing an SLO for the first time, start by setting the SLO to something that is already being
@@ -162,9 +162,9 @@ latency by using the 99th percentile of response latencies over a single minute,
 budget to allow 1% of response latencies in a single minute to take any amount of time (up to infinity). Not all SLIs
 will have error budgets though, since it all depends on how you define your SLI.
 
-**In an SLO**, an error budget appears as soon as we set our objective. For example, if we target 99.9% availability,
+**In an SLO**, an error budget appears as soon as we set our objective. For example, if we expect 99.9% availability,
 we've effectively created a 0.1% error budget for ourselves.  
-Another example, if we target 99.999% availability but only between the hours 09:00 and 10:00, then we have two error
+Another example, if we expect 99.999% availability but only between the hours 09:00 and 10:00, then we have two error
 budgets: One of 0.001% unavailability between the hours 09:00 to 10:00 (3.6 seconds), and one of 100% unavailability
 outside of those hours (assuming no other SLOs are set).
 
@@ -179,8 +179,7 @@ This effectively means we can breach our SLO 1% of time (per year) which creates
 As you can see, this can get quite complicated, but if you end up defining SLIs and SLOs that contain error budgets,
 it's a good idea to _use those error budgets_. This is because sometimes it is much easier to perform a dangerous canary
 deployment that could break or incur a short period of downtime to do maintenance than it is to do all the work to
-achieve 100% operational or performance targets. Essentially: Be practical, and use your error budgets to make your life
-easier.
+achieve 100% availability. Essentially: Be practical, and use your error budgets to make your life easier.
 
 ## Further reading
 
