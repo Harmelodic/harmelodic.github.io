@@ -14,21 +14,19 @@ agreement with someone on what "level of service" you will offer.
 ### SLIs
 
 SLIs are _Service Level Indicators_. These are the actual metrics that you measure to define your level of service.
-Typically, an SLI will measure your Availability for you service, but you can also consider performance-based metrics
-that measure "Responsiveness" or "Throughput" depending on the service. The SLI that you select should reflect aspect of
-the level of service desired, and not what metrics you happen to have available. How you measure these metrics, and how
-often should be part of the definition of the SLI.
 
-Typically, I like to define SLIs as:
+The SLI that you select should reflect aspect of the level of service desired, and not what metrics you happen to have
+available.
+
+An SLI should have a name reflecting the semantic meaning of the SLI, a
+defined [gauge](https://prometheus.io/docs/concepts/metric_types/#gauge), and how often that gauge is evaluated/updated.
+This clarity in definition makes it easier to implement the indicator and set associated [SLOs](#slos):
 
 > "Thing": Measured by "timeseries metric", evaluated over a "time period".
 
 For example, an SLI for an HTTP-based web service could be:
 
-> Availability: Measured by the number of well-formed requests that succeed, evaluated every minute.
-
-This way, we capture: (a) the semantic meaning of the SLI, (b) how we measure it, and (c) how often it is evaluated.
-This clarity makes it easier to implement the indicator and set associated SLOs.
+> Availability: Measured by the percentage of well-formed requests that succeed, evaluated every minute.
 
 **Tip**: Try to be smart with your SLIs. The consumers of your service likely only care about the level of service _when
 they are actively using your service_. By taking advantage of this, you can design good SLIs that tailor themselves to
@@ -36,17 +34,12 @@ the actual needs of your consumer and grant you opportunities to potentially dis
 
 ### SLOs
 
-SLOs are _Service Level Objectives_. These are the expectations that we set for ourselves based using the SLIs we've
-already defined. SLOs can also contain *qualifiers* which can give further scope or context about when the SLO
-is applicable, such as only being applicable during a specific time window.
+SLOs are _Service Level Objectives_. These are the minimum expectations that we set for ourselves based using the SLIs
+we've already defined. In practice, it is simply a value on the SLI gauge.
 
-For Availability SLOs, this is typically defined in "nines", where "3 nines" is the same as 99.9% availability (because
-there are 3 nines in the percentage).
-
-For performance-based SLOs, this is typically a threshold that is acceptable for the given SLO. For example, for a
-responsiveness (latency) SLI, the threshold could be 300ms.
-
-Since the SLI defines how often
+SLOs can also contain *qualifiers* which can give further scope or context about when the SLO is applicable, such as
+only being applicable during a specific time window (the duration of which must be greater than or equal to the
+evaluation interval used by the SLI).
 
 SLOs are not targets or goals for us to achieve _eventually_, but the expectations of _right now_. As such, not
 achieving an SLO should be treated as a serious incident and prioritised accordingly.
@@ -86,11 +79,11 @@ Evaluating every minute also means that if we have variable usage patterns of ou
 
 We can define two SLOs could be:
 
-> 99.99% availability at all times.
+> 99.99% (aka 4 nines) availability at all times.
 
 An SLA with a consumer of our service could contain a separate SLO that is more targeted to a specific consumer's needs:
 
-> 99.9% availability between the hours of 09:00 and 17:00 UTC, on weekdays.  
+> 99.9% (aka 3 nines) availability between the hours of 09:00 and 17:00 UTC, on weekdays.  
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
@@ -156,9 +149,7 @@ An SLA with a consumer could be:
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
-## Advanced
-
-### Error Budgets
+## Error Budgets
 
 Error budgets as a concept is effectively "how much of a budget do I have to cause errors" or... "how much can we break
 things, and everything still OK according to our SLI/SLO/SLAs".
