@@ -125,34 +125,34 @@ An SLA with a consumer of our service could then contain:
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
-### Responsive Enough (performant periods)
+### Responsiveness Achievability (performant periods)
 
-Sometimes we might not want to measure minute-by-minute responsiveness, but just know if the service was responsive
-_enough_ across a longer period of time.
+Sometimes we might not care too much about minute-by-minute responsiveness, but just know how well we achieved that
+responsiveness over a longer period of time. It's effectively an SLI tracking an SLO for responsiveness (though you
+might not officially/publicly/contractually have that SLO).
 
 This is achieved through measuring "performant periods", where we assess the fraction of periods (e.g. minutes, hours)
 in a larger time window (e.g. days, weeks), where service was deemed "performant" - where performance could be assessed
 if latency (or a percentile of latency) is under a specific threshold (e.g. 100ms).
 
-An SLI for _Responsive Enough_ using performant periods could be:
+An SLI for _Responsiveness Achievability_ using performant periods could be:
 
-> Responsive Enough: Measured by the fraction of performant minutes (where P99 latency is under 100ms), evaluated
-> every day.
+> Responsiveness Achievability: Measured by the fraction of performant minutes (where P99 latency is under 100ms),
+> evaluated every day (every 1440 minutes).
 
 This means all response latencies during a single minute are gathered and form a distribution, from shortest to longest
 latency, and we measure the slowest latency of the fastest 99% (excluding the slowest 1%). If that latency is less than
 100ms, we state that this minute was "performant". The fraction of performant minutes every day is how "performant" our
 service has been during that day.
 
-SLOs for this SLI are set on the fraction of performant periods required to be deemed "responsive enough".
+SLOs for this SLI are set to the fraction of performant periods required for a service to be deemed "responsive enough"
+across the evaluation period. Therefore, an SLO for this SLI could then be:
 
-An SLO for this SLI could then be:
-
-> 1400 of 1440 performant minutes.
+> 1400 (of 1440) performant minutes.
 
 An SLA with a consumer could be:
 
-> 1300 of 1440 performant periods, on weekdays.  
+> 1300 (of 1440) performant periods, on weekdays.  
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
