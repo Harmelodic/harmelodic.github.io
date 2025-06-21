@@ -19,10 +19,11 @@ The SLI that you select should reflect aspect of the level of service desired, a
 available.
 
 An SLI should have a name reflecting the semantic meaning of the SLI, a
-defined [gauge](https://prometheus.io/docs/concepts/metric_types/#gauge), and how often that gauge is evaluated/updated.
-This clarity in definition makes it easier to implement the indicator and set associated [SLOs](#slos):
+defined [gauge](https://prometheus.io/docs/concepts/metric_types/#gauge) to state how the SLI is measured, and how often
+that gauge is evaluated. This clarity in definition makes it easier to implement the indicator and set
+associated [SLOs](#slos):
 
-> "Thing": Measured by "timeseries metric", evaluated over a "time period".
+> `Thing`: Measured by `gauge`, evaluated every `time_interval`.
 
 For example, an SLI for an HTTP-based web service could be:
 

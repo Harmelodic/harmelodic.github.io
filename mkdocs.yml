@@ -30,7 +30,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: indigo
+      accent: light green # If changing, remember to change custom CSS!
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -39,7 +39,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: light green # If changing, remember to change custom CSS!
       toggle:
         icon: material/brightness-4
         name: Switch to system preference

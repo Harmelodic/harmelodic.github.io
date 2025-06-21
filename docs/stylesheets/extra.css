@@ -10,4 +10,9 @@
 	.md-sidebar {
 		width: 15rem; /* default: 12.1rem */
 	}
+
+	/* Brighter colour for active nav links for visibility */
+	:root > * {
+		--md-typeset-a-color: #00c753;
+	}
 }
