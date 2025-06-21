@@ -15,8 +15,8 @@ agreement with someone on what "level of service" you will offer.
 
 SLIs are _Service Level Indicators_. These are the actual metrics that you measure to define your level of service.
 Typically, an SLI will measure your Availability for you service, but you can also consider performance-based metrics
-that measure "Latency" or "Throughput" depending on the service. The SLI that you select should reflect aspect of the
-level of service desired, and not what metrics you happen to have available. How you measure these metrics, and how
+that measure "Responsiveness" or "Throughput" depending on the service. The SLI that you select should reflect aspect of
+the level of service desired, and not what metrics you happen to have available. How you measure these metrics, and how
 often should be part of the definition of the SLI.
 
 Typically, I like to define SLIs as:
@@ -44,7 +44,7 @@ For Availability SLOs, this is typically defined in "nines", where "3 nines" is 
 there are 3 nines in the percentage).
 
 For performance-based SLOs, this is typically a threshold that is acceptable for the given SLO. For example, for a
-latency SLI, the threshold could be 300ms.
+responsiveness (latency) SLI, the threshold could be 300ms.
 
 Since the SLI defines how often
 
@@ -90,13 +90,13 @@ We can define two SLOs could be:
 
 An SLA with a consumer of our service could contain a separate SLO that is more targeted to a specific consumer's needs:
 
-> 99.9% availability between the hours of 09:00 and 17:00 UTC, on weekdays.
+> 99.9% availability between the hours of 09:00 and 17:00 UTC, on weekdays.  
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
-### Latency
+### Responsiveness (latency)
 
-Latency is a performance factor in assessing levels of service.
+Responsiveness is a performance factor in assessing levels of service, usually measured using latency.
 
 We could measure average (mean or median) latency, but latency is difficult to broadly measure, as different service
 offerings are subject to different factors that can affect latency (e.g. amount of work that needs to be completed, or
@@ -109,52 +109,50 @@ example: the 99th percentile (or P99) - which could be the latency that the bott
 
 Our SLI for latency can be defined as:
 
-> Latency: Measured by the 99th percentile of response latencies of the last minute, evaluated every 1 minute.
+> Responsiveness: Measured by the 99th percentile latency of response latencies in the last minute, evaluated every 1
+> minute.
 
 This means that all response latencies during a single minute are gathered and form a distribution, from shortest to
 longest latency, and we measure the slowest latency of the fastest 99% (i.e. excluding the slowest 1%).
 
-Our SLO for latency is then the threshold for what we deem as acceptable latency for example:
+Our SLO for responsiveness is then the threshold for what we deem as acceptable latency for example:
 
 > 100ms of latency.
 
 An SLA with a consumer of our service could then contain:
 
-> 200ms of latency, during the hours of 09:00 and 17:00 UTC, weekdays.
+> 200ms of latency, during the hours of 09:00 and 17:00 UTC, weekdays.  
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
-### Performant periods
+### Responsive Enough (performant periods)
 
-Performant periods is a performance factor in assessing levels of service. It could be seen as an alternative (or
-supplement) in measuring service performance to measuring Latency.
+Sometimes we might not want to measure minute-by-minute responsiveness, but just know if the service was responsive
+_enough_ across a longer period of time.
 
-Sometimes you might want to capture latency as part of metric, but not make it the metric itself. This is the case
-with "performant periods", where we want to count the number of periods (e.g. minutes, hours) during a larger time
-window (e.g. days, weeks), where service was deemed "performant" - where performance is measured by latency (or a
-percentile of latency) is under a specific threshold (e.g. 100ms).
+This is achieved through measuring "performant periods", where we assess the fraction of periods (e.g. minutes, hours)
+in a larger time window (e.g. days, weeks), where service was deemed "performant" - where performance could be assessed
+if latency (or a percentile of latency) is under a specific threshold (e.g. 100ms).
 
-This can give a more "time-based" view of performance rather than a "request-based" view, which can be useful if we want
-to expect a more consistent performance across _time_, rather than a consistent performance across all requests -
-effectively discounting or minimising any fluctuations in request _rate_ caused by heavy or light load on the system
-from affecting our view of "service performance".
+An SLI for _Responsive Enough_ using performant periods could be:
 
-An SLI for performant periods could be:
-
-> Performant minutes: Measured by the fraction of minutes where P99 latency is under 100ms, evaluated every day.
+> Responsive Enough: Measured by the fraction of performant minutes (where P99 latency is under 100ms), evaluated
+> every day.
 
 This means all response latencies during a single minute are gathered and form a distribution, from shortest to longest
 latency, and we measure the slowest latency of the fastest 99% (excluding the slowest 1%). If that latency is less than
 100ms, we state that this minute was "performant". The fraction of performant minutes every day is how "performant" our
 service has been during that day.
 
+SLOs for this SLI are set on the fraction of performant periods required to be deemed "responsive enough".
+
 An SLO for this SLI could then be:
 
-> 1400 of 1440 performant minutes
+> 1400 of 1440 performant minutes.
 
-An SLA with a consumer
+An SLA with a consumer could be:
 
-> 475 of 480 performant periods, during the hours of 09:00 and 17:00 UTC, weekdays.
+> 1300 of 1440 performant periods, on weekdays.  
 > When this SLO is not met, the service provider will be required to refund 1 month's subscription cost of the offered
 > service.
 
