@@ -61,7 +61,7 @@ Metrics are **stored** in a time-series metrics storage, such as Prometheus.
 
 Metrics are **used** in graphing/visualisation tools like Grafana, and in alerting tools like Alert Manager.
 
-## Tracing
+## Traces
 
 Traces are paths taken through systems. A trace is made up of multiple "Spans", which is data about how long a
 particular process took. Traces are useful for analysing performance (seeing which spans take the longest in a trace)
