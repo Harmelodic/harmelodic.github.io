@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # macOS Device Support Tracker
 
 [Android Update Tracker](https://www.androidupdatetracker.com/) is very useful.
