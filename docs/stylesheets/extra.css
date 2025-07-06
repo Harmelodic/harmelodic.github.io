@@ -13,6 +13,6 @@
 
 	/* Brighter colour for active nav links for visibility */
 	:root > * {
-		--md-typeset-a-color: #00c753;
+		--md-typeset-a-color: #4aa611;
 	}
 }
