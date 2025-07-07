@@ -19,9 +19,9 @@ theme:
   logo: assets/logo.svg
   favicon: assets/favicon.png
   features:
+    - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.instant
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
