@@ -49,6 +49,9 @@ extra_css:
 
 extra:
   social:
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/harmelodic.com
+      name: Harmelodic on Bluesky
     - icon: fontawesome/brands/github
       link: https://github.com/Harmelodic
       name: Harmelodic on GitHub
