@@ -20,6 +20,7 @@ theme:
   favicon: assets/favicon.png
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.instant
   palette:
     # Palette toggle for automatic mode
