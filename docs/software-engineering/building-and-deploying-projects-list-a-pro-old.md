@@ -13,7 +13,7 @@ know, if you want to hear about it: let me know.
 
 ## Original post
 
-A while ago, I wrote [a blog about my ideal CI/CD pipeline](./an-ideal-ci-cd-pipeline-old.md).
+A while ago, I wrote [a blog about my ideal CI/CD pipeline](an-ideal-ci-cd-pipeline-old.md).
 
 This post builds on that CI/CD pipeline post by going through the overarching Build and Deployment process of an ideal
 project.  
