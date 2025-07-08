@@ -1,18 +1,21 @@
 # Software Engineering Overview
 
-Currently just a bunch of various articles on Software Engineering-related topics.
+## ⚠️⚠️⚠️ WARNING!
 
-Will reorganise this at some point.
+**This is a new section of my site that is still under-construction.**
 
-## Thinking about re-organising
+**You can instead view my [current posts on Software Engineering](../blog/software-engineering/index.md), or come back
+later.**
 
-Basically make a little engineering handbook for myself.
+---
+
+## Idea
 
 Have a section for general software engineering philosophies and topics:
 
-- **Software practices** (Agile, Waterfall, DDD, Facilitating Software Architecture, Mob programming, XP)
+- **Ways of Working** (Agile, Waterfall, DDD, Facilitating Software Architecture, Mob programming, XP)
 - **Organising Code** (Monorepo vs Multirepo, Application repos, Deployment repos)
-- **Contracts / Specifications** (interfaces, abstractions, APIs, testing)
+- **Contracts and APIs** (interfaces, abstractions, APIs, libraries, semantic versioning, loop in tests)
 - **Architecture** (System design, modelling, patterns trade-offs)
 - **Testing strategy** (Unit/Integration/Integrated, Mocks & Stubs, Running locally, TDD, environments (ironically),
   shift-left, the test data problem)
@@ -23,40 +26,12 @@ Have a section for general software engineering philosophies and topics:
 Then organise based on different ecosystems of software development, with different featured stacks:
 
 - **Platform**
-	- General (Infra as code, zero trust, IAM access, environments, observability, DNS, networking)
-	- Compute platform (compute options (serverless, kubernetes, VMs, hardware), service-mesh, ingress/egress, LBs,
-	  certificates)
-	- CI/CD / Supply-chain platform (git, build system, contracts, artifact storage, security analysis, deployment
-	  systems)
-	- Internal Development Tools platform (sourcegraph, developer portal, templating, documentation)
-	- Big Data (storage, normalisation, access)
 - **Backend**
-	- APIs
-	- Java
-	- Go
-	- Rust?
-    - Databases / Storage (SQL/Relational, In-memory key-value, Document, Blob / File Storage)
-    - Messaging (Queues, PubSub)
 - **Web Frontend**
-	- JS/TS, React, etc.
-	- Other web frontend considerations
 - **Data Science**
-	- Python, SQL and R
-	- Moving & Processing data (data pipelines, ETL)
-	- Data Analysis & Viewing (in-place data-crunching, dashboards, jupyter notebooks)
-	- Machine Learning / Artificial Intelligence
 - **Mobile**
-	- React Native
-	- Swift / Kotlin
 - **Desktop**
-	- Linux: Qt, GTK
-	- macOS: Swift / Universal Apps
-	- Windows: Windows SDK
-	- Electron
-	- JavaFX
 - **Embedded**
-	- C/C++
-	- Rust
 
 Each development ecosystem should cover:
 
