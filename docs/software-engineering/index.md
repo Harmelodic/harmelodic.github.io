@@ -9,7 +9,7 @@ later.**
 
 ---
 
-## Idea
+## The Idea
 
 Have a section for general software engineering philosophies and topics:
 
