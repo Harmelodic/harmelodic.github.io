@@ -1,4 +1,4 @@
-/* Only when screen is 1220px or wider (when not in mobile view) */
+/* Only when screen is 1220px or wider (when in desktop view / not in mobile view) */
 @media only screen and (min-width: 1220px) {
 
 	/* Use more horizontal space in general */
@@ -9,6 +9,9 @@
 	/* Increase sidebar width for readability */
 	.md-sidebar {
 		width: 15rem; /* default: 12.1rem */
+	}
+	.md-sidebar__inner {
+		padding-right: 0 !important;
 	}
 
 	/* Brighter colour for active nav links for visibility */
