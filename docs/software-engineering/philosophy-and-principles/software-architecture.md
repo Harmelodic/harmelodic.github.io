@@ -133,6 +133,7 @@ event-driven.
 - Entity domains
 - Presentational domains
 - Relationships between these domains
+- Core/Supporting/Generic - what should you build and buy.
 
 ### Naming things
 
