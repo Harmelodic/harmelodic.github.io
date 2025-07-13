@@ -56,7 +56,12 @@ Applying this thinking to architecture, we can see that:
 To successfully architect systems that fulfil their purpose, we can use architectural design patterns and work closely
 with domain experts.
 
-## Who does Architecture?
+The output of architecture often becomes a series of decisions made to improve the appropriateness of the design of a
+system. In order to maintain alignment, promote transparency and aid inclusivity, it is extremely valuable to document
+architectural decisions (as ADRs), and have a simple but well-defined set of requirements for making an architectural
+decision. Read more below in [Making Architectural Decisions](#making-architectural-decisions).
+
+## Who does architecture?
 
 Historically, the software industry (especially in the "enterprise" space) had dedicated architects who tackled these
 problems by drawing UML class models, sequence diagrams, etc. and communicating down to software developers who would
@@ -75,18 +80,18 @@ for building systems handle the system architecture of those systems, and the hi
 collaborative alignment effort between all stakeholders, facilitated by experienced software engineers (though often
 this is still handled by some central architect or architectural team).
 
-The output of architecture often becomes a series of decisions made to improve the appropriateness of the design of a
-system. In order to maintain alignment, promote transparency and aid inclusivity, it is extremely valuable to document
-architectural decisions (as ADRs), and have a simple but well-defined set of requirements for making an architectural
-decision. Read more below in [Making Architectural Decisions](#making-architectural-decisions)
+## What influences architecture?
 
-### Useful architecture knowledge
-
-Purpose of the system creates functional requirements, which are fulfilled by the systems "features".
+Purpose of the system creates functional requirements, which are fulfilled by the systems "features". These features
+satisfied by systems working within a specific business model, which can influence architectural designs (e.g. systems
+that offer functions that require storing historical, timestamped, event-based data will likely lead to an event-sourced
+architecture being used).
 
 Targeted user-base, system usage (current & predicted), system criticality, laws and more create non-functional
 requirements, which influence a variety of architectural decisions that need to be made (and re-made).
 See [below](#satisfying-non-functional-requirements) for more on this.
+
+## Common architectures and patterns
 
 Commonly though, having a small-user base tends to mean building a small, low-criticality system that will receive low
 usage. These requirements lead to synchronous monolithic systems as these are quick to make and extend, as long as
@@ -111,6 +116,15 @@ event-driven.
 - TODO
 - List different kinds of non-functional requirements, and how to solve them with software patterns or decisions...
 
+### Domain structure
+
+- Business domains
+- Technical domains
+- Entity domains
+- Presentational domains
+- Relationships between these domains
+- Core/Supporting/Generic - what should you build and buy.
+
 ### Making Architectural Decisions
 
 - Decisions, and the requirements for making a decision
@@ -125,15 +139,6 @@ event-driven.
 	- It accurately documents the discussion and any possible alternatives that were considered in the decision.
 	- It is timestamped.
 - Example ADR and Decision-making process
-
-### Domain structure
-
-- Business domains
-- Technical domains
-- Entity domains
-- Presentational domains
-- Relationships between these domains
-- Core/Supporting/Generic - what should you build and buy.
 
 ### Naming things
 
