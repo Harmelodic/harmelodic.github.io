@@ -2,7 +2,8 @@
 
 ## What is Architecture?
 
-> _It's the stuff that we wish we could get right at the start of a project._
+> _It's the stuff that we wish we could get right at the start of a project._  
+> ...   
 > _It’s the shared understanding that the expert developers have of the system._
 >
 > ~ Ralph Johnson, Author of Design Patterns: Elements of Reusable Object-Oriented Software (1994)
