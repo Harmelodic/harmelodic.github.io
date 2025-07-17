@@ -17,7 +17,9 @@ Ensure idempotency is evaluated correctly:
 
 - Idempotency-Key values should be stored (up to the API to determine how long to store for - probably not forever, but
   should be longer than a reasonable retry/duplication should occur... 7 days, maybe?)
-- Idempotency-Keys signify a duplicated operation, but they are not the ONLY signifier. The operation itself must also
-  be duplicate - e.g. for the `POST` call, the operation is the same if the URL and the HTTP body is the same.
-	- If the URL or HTTP body is different but the idempotency-key value is the same, this should not be treated as a
-	  duplicate message.
+- An Idempotency-Key helps signify a duplicated attempt at an operation, but it is NOT the only signifier. An attempt at
+  an operation is only a duplicate if ALL the following are true:
+	- The operation is the same - For a `POST` request, this is if the URL and HTTP body is the same.
+	- The caller is the same - For a `POST` request, check Authentication information. All unidentified callers should
+	  be treated as the same caller.
+	- The idempotency key is the same.
