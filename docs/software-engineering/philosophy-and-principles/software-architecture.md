@@ -116,6 +116,8 @@ event-driven.
 
 - TODO
 - List different kinds of non-functional requirements, and how to solve them with software patterns or decisions...
+- Source list from knowledge and [this list](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples).
+- Other mechanisms that help solve problems: Pagination, Idempotency, etc.
 
 ### Domain structure
 
