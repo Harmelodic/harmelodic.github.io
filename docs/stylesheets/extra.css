@@ -1,4 +1,4 @@
-/* Only when screen is 1220px or wider (when in desktop view / not in mobile view) */
+/* CSS for Desktop view (not mobile view) - only when screen is 1220px or wider */
 @media only screen and (min-width: 1220px) {
 
 	/* Use more horizontal space in general */
@@ -18,4 +18,9 @@
 	:root > * {
 		--md-typeset-a-color: #4aa611;
 	}
+}
+
+/* CSS for all screens */
+.md-content {
+	padding-bottom: 20vh;
 }
