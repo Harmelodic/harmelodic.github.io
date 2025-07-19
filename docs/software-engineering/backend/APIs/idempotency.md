@@ -87,8 +87,8 @@ require consumers to acknowledge or not (ACK or NACK) whether a message has been
 response is received, the message bus assumes a NACK and will try delivering again.
 
 Message buses are often implemented in different ways. The "operation" could be a topic or a message type, the "caller"
-may or may not be identifiable, and messages may or may not have IDs. If the message bus uses
-the [CloudEvents spec](https://github.com/cloudevents/spec):
+(the producer of the message) may or may not be identifiable, and messages in the message bus may or may not have IDs.
+If the message bus uses the [CloudEvents spec](https://github.com/cloudevents/spec) (I recommend this):
 
 When evaluating whether a message is a duplicate:
 
@@ -102,10 +102,11 @@ duplicate messages consumed in parallel must have some protection in place to en
 do not occur. The Inbox pattern and Dead Letter Queues are two ways to handle this.
 
 > The Inbox pattern is where consumed messages are persisted to an "inbox" (typically a database) and then ACKed (no
-> real operational processing yet done). Constraints in the Inbox will ensure message uniqueness, so if a unique message
-> is already in the Inbox, a duplicate will not be allowed and the message can then simply be ACKed. The consumer is
-> then free to process a non-duplicate Inbox in its own time.
+> real operational processing yet done). Constraints in the Inbox should ensure message uniqueness, so if a unique
+> message is already in the Inbox, a duplicate will not be allowed and the message can then simply be ACKed. The
+> consumer is then free to process a clean Inbox with no duplicates in its own time.
 
 > I tend to prefer Inboxes over DLQs, as the consumer tends to have a database anyway, and even if it didn't, I'd rather
-> set up and deal with the permanent persistence of a database and the decoupling advantages of an Inbox, than risk
-> losing data in DLQ message retention and solely rely on message bus infrastructure for processing.
+> set up and deal with database infrastructure and gain indefinite persistence and the decoupling advantages of an
+> Inbox, than risk losing data due to DLQ message retention but solely rely on message bus infrastructure for
+> processing.
