@@ -1,4 +1,4 @@
-# Desktop Development
+# Desktop Overview
 
 - Linux: Qt, GTK
 - macOS: Swift / Universal Apps

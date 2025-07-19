@@ -1,4 +1,4 @@
-# Bags & Luggage
+# Bags and Luggage
 
 Bags are useful to put things in when travelling.
 

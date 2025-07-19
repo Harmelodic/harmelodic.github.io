@@ -1,7 +1,8 @@
-# Mobile Development Overview
+# Mobile Overview
 
-- React Native
-- Swift / Kotlin
+- React Native ()
+- Kotlin (Android)
+- Swift (iOS / iPadOS / Universal Apps)
 
 With:
 

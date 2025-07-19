@@ -1,4 +1,4 @@
-# Cast-iron cookware
+# Cast-iron Cookware
 
 Cast-iron pots and pans are great for cooking. It's durable, retains heat for a long time, and versatile (pots and pans
 can be used on grills, in the oven or on a campfire - provided that any handles or other features can withstand the

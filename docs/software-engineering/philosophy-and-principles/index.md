@@ -1,4 +1,4 @@
-# Philosophy and principles overview
+# Philosophy and Principles Overview
 
 - **Architecture**
 	- System design, modelling, patterns trade-offs, facilitating Software Architecture

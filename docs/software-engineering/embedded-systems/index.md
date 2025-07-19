@@ -1,4 +1,4 @@
-# Embedded systems overview
+# Embedded Systems Overview
 
 - C/C++
 - Rust

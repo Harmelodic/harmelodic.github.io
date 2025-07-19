@@ -43,6 +43,11 @@ docs/
 This project also uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for theming and additional
 rendering options.
 
+## Awesome Nav for MkDocs
+
+This project also uses [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) for navigation
+tweaks, mainly to do with how directory titles appear.
+
 ## Deploy as GitHub Pages
 
 In `Settings > Pages`, this repo has been configured to deploy the `gh-pages` branch, using the `/` (root) directory.
