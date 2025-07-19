@@ -32,9 +32,9 @@ operation is only a duplicate if ALL the following are true:
 If the operation or caller is different for two or more calls with the same idempotency key, then this must be treated
 as a coincidence and not as a duplicate call.
 
-If the API operation produces a result, the result should be stored and linked to the Idempotency Key, so that the
-API can easily fetch and return the same result when subsequent duplicated calls are made with the same Idempotency
-Key. This is typically done by storing the result alongside the Idempotency Key.
+When the API operation produces a result, the result should be stored and linked to the Idempotency Key, so that the
+API provider can easily fetch and return the same result when subsequent duplicated calls are made. This is typically
+done by storing the result alongside the Idempotency Key.
 
 When errors occur during execution, an error result is produced. Duplicated calls should receive the same error result.
 Idempotency is a solution for when clients are unaware of an APIs response (and subsequently time out), not for when an
@@ -47,8 +47,8 @@ first received call has finished. To guarantee idempotency, the following must b
   operation execution begins. This "check and store" operation must be a blocking action, to prevent concurrent
   processes checking and storing at the same time (e.g. achieved by locking a database table whilst performing the check
   and store).
-- If the API operation is supposed to produce a result, duplicate received calls must wait until the first received call
-  is finished and a result is produced before receiving the result.
+- When the API operation produces a result, duplicate received calls must wait until the first received call is finished
+  and a result is produced before receiving the result.
 
 ## HTTP API
 
