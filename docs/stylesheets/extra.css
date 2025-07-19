@@ -10,6 +10,7 @@
 	.md-sidebar {
 		width: 15rem; /* default: 12.1rem */
 	}
+
 	.md-sidebar__inner {
 		padding-right: 0 !important;
 	}
@@ -22,5 +23,7 @@
 
 /* CSS for all screens */
 .md-content {
+	/* Add some blank space at the bottom of the page, to make scrolling/reading a little easier.
+	   Using view-height rather than a fixed amount to make it work appropriately on all screen sizes */
 	padding-bottom: 20vh;
 }
