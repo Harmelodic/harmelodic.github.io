@@ -30,6 +30,7 @@ In a build process you tend to want to do:
 	- Contract Tests
 - **Packaging**
 	- Bundling to create an artifact.
+    - Signing the artifact.
 	- Storage of the artifact.
 
 Note: Producing new versions of artifacts for users to access (if the artifact itself is what the users use), is NOT
