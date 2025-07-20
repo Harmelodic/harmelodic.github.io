@@ -30,7 +30,7 @@ In a build process you tend to want to do:
 	- Contract Tests
 - **Packaging**
 	- Bundling to create an artifact.
-    - Signing the artifact.
+	- Signing the artifact.
 	- Storage of the artifact.
 
 Note: Producing new versions of artifacts for users to access (if the artifact itself is what the users use), is NOT
@@ -163,11 +163,13 @@ how compiler errors and warnings show up in IDEs). These checks should be run in
 prevent code from being built or released that doesn't adhere to the requirements or pass tests, just in case the
 software engineer didn't run the tests / security analysis locally.
 
-Personally, I do NOT encourage any of the _Release_ process to be shifted left into the Build process. Decoupling the
+Personally, I do NOT encourage any of the Release process to be shifted left into the Build process. Decoupling the
 Build and Release process is a valuable boundary for semantics, security and to allow the two processes to be refined
 individually for their unique purposes. By shifting Release activities into the Build process, we blur the line between
 Build and Release, couple the two processes together and run the risk of opening security issues into the shipping
-process (e.g. allowing unapproved artifacts be deployed to production).
+process (e.g. allowing unapproved artifacts be deployed to production). That being said, as the software engineering
+sector matures we may identify aspects of the Release process that could actually be made as part of the Build process -
+whilst I think this unlikely, we should be open to this possibility and change as needed.
 
 ## Non-production environments
 
