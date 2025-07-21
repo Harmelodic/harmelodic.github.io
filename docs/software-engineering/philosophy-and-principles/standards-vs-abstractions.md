@@ -22,7 +22,8 @@ software. However, like with all things, there are trade-offs, and you might be 
 
 ## The Trade-offs
 
-- TODO: Unpack.
+TODO: Unpack this more.
+
 - We value the _means_ of creation, not just _output_.
 - Education / Learning / Knowledge trade-offs
 - Maintenance trade-offs
