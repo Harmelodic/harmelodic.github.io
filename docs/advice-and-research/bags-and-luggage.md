@@ -5,7 +5,7 @@ Bags are useful to put things in when travelling.
 ## General criteria
 
 - **Sustainable materials > Plastic or Synthetics.** All things are ultimately disposable, so buy &
-  use [sustainable materials](./sustainable-materials.md). Extra water-proofing can be achieved with applying
+  use [sustainable materials](sustainable-materials.md). Extra water-proofing can be achieved with applying
   a water-repelling finish (e.g. wax or non-PFAS coating).
 
 - **Durable > Disposable.** Keep your bags lasting a long time! If you pick low-durable bags, you end up using weak,

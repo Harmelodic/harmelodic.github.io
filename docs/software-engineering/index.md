@@ -4,7 +4,7 @@
 
 **This is a new section of my site that is still under-construction/not "finished".**
 
-**You can instead view my [current posts on Software Engineering](../blog/software-engineering/index.md), or come back
+**You can instead view my [current posts on Software Engineering](../blog/index.md), or come back
 later.**
 
 ---
