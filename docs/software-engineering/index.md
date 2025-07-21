@@ -1,11 +1,10 @@
 # Software Engineering Overview
 
-## ⚠️⚠️⚠️ WARNING!
+## 🚧 This is a work in progress!
 
-**This is a new section of my site that is still under-construction/not "finished".**
-
-**You can instead view my [current posts on Software Engineering](../blog/index.md), or come back
-later.**
+This is a new section of my site that is still under-construction / not "finished".  
+You can explore my work in progress, or instead view my [current posts on Software Engineering](../blog/index.md), or
+come back later.
 
 ---
 
