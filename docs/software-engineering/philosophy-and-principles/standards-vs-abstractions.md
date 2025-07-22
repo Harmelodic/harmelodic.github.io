@@ -4,48 +4,60 @@ Let's assume you help lead or manage a financially-stable organisation where you
 of product or service, and in doing so engage in a decent amount of software engineering.
 
 You probably want to have all your engineers work more efficiently, and produce higher quality code. You could do a
-variety of things such as investing in the education of engineers, or just hire better engineers, but there are two
-methods that provide a direct impact on the code produced:
+variety of things such as investing in the education of engineers, or just hire better engineers, but there is something
+you can do that provide a direct impact on the code produced and the sort of work done by the engineers:
+
+Reduce technical complexity & unpredictability and increase ease of development by creating uniformity and
+reproducibility in the code.
+
+This means engineers need to think a little less about _how_ to implement systems and focus more on _what_ needs to be
+implemented. Code becomes easier to produce and replicate. Interfaces / APIs become more homogenous and predictable
+(even intuitive) and thus easier to integrate with. Moving between codebases or on different codebases also becomes
+easier, as the code is similar in structure, style and implementation and thus feels familiar.
+
+In practice, this can be achieved in two ways:
 
 - Define **Standards** which are specifications, contracts and rules that can be enforced, primarily though mechanisms
-  like Schema Validation and Code Analysis / Linting.
+  like Schema Validation and Code Analysis / Linting. Violations of the standards results in errors or warnings that
+  prevent engineers from building non-standard systems.
 - Create custom **Abstractions** which provide an interface for engineers to use in their code, and the implementation
   is taken care of elsewhere (e.g. in a library), where that implementation is subject to more scrutiny and maintained
   by experienced engineers.
 
-The immediate desire from a lot of engineers, managers, and product people is to create abstractions. The feel reusable,
-powerful and seemingly turn complex systems and software engineering "toil" into simple systems that you can build
-together with pre-defined LEGO bricks. The ultimate form of this would be to build a **framework** where a huge amount
-of work is abstracted away and engineers don't have to do any thinking or work in order to quickly create quality
-software. However, like with all things, there are trade-offs, and you might be surprised to find that defining *
-*Standards** is actually much more powerful than it sounds.
+So, the question becomes: which should we adopt? Maybe, both?
+
+The immediate desire from a lot of engineers, managers, and product people is to create abstractions. Standards feel
+like limitations whereas abstractions feels like simple tools. However, like with all things, there are trade-offs, and
+you might be surprised to find that defining standards is actually much more powerful than it sounds, and abstractions
+are more costly than they seem.
 
 ## The Trade-offs
 
 TODO: Unpack this more.
 
-- We value the _means_ of creation, not just _output_.
-- Education / Learning / Knowledge trade-offs
-- Maintenance trade-offs
-- Blast-radius trade-offs
-- Culture trade-offs
-- Speed trade-offs
-- Quality trade-offs
-- Difference between actual toil and "work I don't like to do" -
-  reference the [Google SRE book on this](https://sre.google/sre-book/eliminating-toil/).
+- What trade-offs exist for each
+	- Education / Learning / Knowledge trade-offs
+	- Maintenance trade-offs
+	- Complexity trade-offs
+	- Repetition trade-offs
+		- Difference between actual toil and "work I don't like to do" -
+		  reference the [Google SRE book on this](https://sre.google/sre-book/eliminating-toil/).
+	- Blast-radius trade-offs
+	- Culture trade-offs
+	- Speed trade-offs
+	- Quality trade-offs
+- What do we value
+	- We value the _means_ of creation, not just _output_.
+	- Short-term vs Long-term vs Iterative
+	- Non-functional requirements / Architecture
+		- Microservices > acceptance of code replication
+		- Some systems are
 
-## The resulting philosophy
+TODO: Consider the following when writing the above:
 
-For things where:
-
-- they are complex and doing it "right" only has 1 or 2 options
-- doing it wrong is very unsafe / too risky
-- they are deliberately custom to a specific component or use case, yet are highly repeatable.
-
-Then create libraries/abstractions to increase safety and hide unnecessary customisations and/or complexity.
-
-For everything else:
-
+- Tempting to build LEGO-brick abstractions, and engineers like the idea of building the next suite of composable
+  systems, but the reality is quite different, especially in the long-term - especially as we see Fleet Management / PR
+  Campaigns becoming easier with standardised codebases, scripts and tools like OpenRewrite.
 - Devs directly uses industry-standard interfaces that they are familiar with, can learn more about and take skills with
   them when they leave.
 - Devs use these interfaces in the simplest industry-standard way - We lint a bunch to ensure this - so we don't
@@ -55,6 +67,26 @@ For everything else:
   everywhere and having to change a lot when upgrading on breaking changes for things we don't actually care about.
 - We define extra standards where multiple industry standards exist to simplify our life, aid PR campaigns and increase
   the quality of our solutions.
+
+## The resulting methodology
+
+For some things abstractions work better, and for some standards work better.
+
+For components or systems that composable/reproducible and fit into one or more of the following:
+
+- high complexity exists and doing it "right" only has 1 or 2 options,
+- doing it wrong is very unsafe / too risky,
+- they are deliberately custom to a specific component or use case or system architecture, which is unlikely to change,
+
+then it is very useful to create libraries/abstractions to increase safety and hide unnecessary customisations and/or
+complexity.
+
+For everything else: it is more useful to standardise and provide reference implementations / samples of what "correct"
+looks like, and build these standards on top of existing industry standards and open source/purchasable abstractions.  
+I recommend creating these standards _with_ engineers, to create buy-in and a more inclusive and collaborative
+engineering culture - and avoid "top-down decision-making" of these standards.
+
+By doing this, we create the largest amount of engineering ease whilst minimising the biggest costs.
 
 ## What should you pick
 
@@ -87,7 +119,7 @@ Abstractions are useful for complex, unsafe or deliberately custom components, o
 to users to improve your "unique selling point" (USP).
 
 Creating custom abstractions / libraries to make things easier, or more reusable/less repeated, is a low priority, as
-covered by the above [trade-offs](#the-trade-offs) and [resulting philosophy](#the-resulting-philosophy). Only when we
+covered by the above [trade-offs](#the-trade-offs) and [resulting methodology](#the-resulting-methodology). Only when we
 have a high capacity to tackle these things and other higher priority work is done can we create these libraries and
 abstractions. Even then, we might not want to do it because we don't want to manage our own custom stuff, and so we
 should contribute them to existing frameworks, libraries or at least create our own open source stuff, so that they can
@@ -96,7 +128,7 @@ partly).
 
 ## Real-world examples
 
-Here are some real world examples of the above [philosophy](#the-resulting-philosophy) put into practice:
+Here are some real world examples of the above [philosophy](#the-resulting-methodology) put into practice:
 
 - Good Abstractions:
 	- Complex networking configuration for Ingress/Egress
