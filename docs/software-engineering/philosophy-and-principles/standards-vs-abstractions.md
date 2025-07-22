@@ -15,7 +15,7 @@ implemented. Code becomes easier to produce and replicate. Interfaces / APIs bec
 (even intuitive) and thus easier to integrate with. Moving between codebases or on different codebases also becomes
 easier, as the code is similar in structure, style and implementation and thus feels familiar.
 
-In practice, this can be achieved in two ways:
+In practice, this can be achieved through two methods:
 
 - Define **Standards** which are specifications, contracts and rules that can be enforced, primarily though mechanisms
   like Schema Validation and Code Analysis / Linting. Violations of the standards results in errors or warnings that
@@ -37,14 +37,13 @@ TODO: Unpack this more.
 
 - What trade-offs exist for each
 	- Education / Learning / Knowledge trade-offs
-	- Maintenance trade-offs
-	- Complexity trade-offs
+	- Maintenance Cost trade-offs
+	- Speed / Complexity / Implementation Cost trade-offs
 	- Repetition trade-offs
 		- Difference between actual toil and "work I don't like to do" -
 		  reference the [Google SRE book on this](https://sre.google/sre-book/eliminating-toil/).
 	- Blast-radius trade-offs
 	- Culture trade-offs
-	- Speed trade-offs
 	- Quality trade-offs
 - What do we value
 	- We value the _means_ of creation, not just _output_.
@@ -68,11 +67,24 @@ TODO: Consider the following when writing the above:
 - We define extra standards where multiple industry standards exist to simplify our life, aid PR campaigns and increase
   the quality of our solutions.
 
+## Analysis of trade-offs
+
+As the above shows, abstractions really shine at having a very low implementation cost, at the cost of a higher
+maintenance cost. Meaning in a situation where implementation cost is high, abstractions are especially useful. For
+standards, they increase the quality of implementations, slightly reduce the implementation cost, but do not have as
+high of a maintenance cost when compared with abstractions that achieve the same result.
+
+As of 2025, in the age of cloud computing and a rich engineering ecosystem (lots of mature languages and tooling), the
+implementation cost of building software is extremely low - granted some systems still have a high implementation cost.
+However, having consistent _quality_ in those implementations is difficult to achieve without opinionated standards
+(e.g. code analysis checks / linting rules).
+
+Since for some cases, abstractions work better, and for others, standards work better; we can construct a methodology
+that gives guidance on when to use abstractions and standards.
+
 ## The resulting methodology
 
-For some things abstractions work better, and for some standards work better.
-
-For components or systems that composable/reproducible and fit into one or more of the following:
+For components or systems that are composable/reproducible and fit into one or more of the following:
 
 - high complexity exists and doing it "right" only has 1 or 2 options,
 - doing it wrong is very unsafe / too risky,
@@ -94,20 +106,20 @@ Back to the analogy of "a financially-stable organisation where you are producin
 or service, and in doing so engage in a decent amount of software engineering", you are probably in one of two kinds of
 organisations:
 
-- A Software organisation: where your offering is software itself, that engineers or other organisations can use to make
+- A Software Organisation: where your offering is software itself, that engineers or other organisations can use to make
   better software or their lives easier.
-- A Product organisation: where your offering uses software, or comes in the form of software, but in reality it's
+- A Product Organisation: where your offering uses software, or comes in the form of software, but in reality it's
   something else, like banking services, or a point-of-sale system, or a newspaper website, etc.
 
-Before we go into each, I want to make it very clear that _**most**_ organisations in the world that engage in software
-engineering are NOT Software organisations (even if they want to be) but are actually Product organisations. For those
+Before we go into each, I want to make it very clear that _**most**_ Organisations in the world that engage in software
+engineering are NOT Software Organisations (even if they want to be) but are actually Product Organisations. For those
 working in management, leadership, platform- or staff-engineering roles, it can be very tempting to compartmentalise and
-silo oneself into thinking that "my department/team is effectively a Software organisation inside a Product
-organisation" but that perspective has a major issue: In the big picture, you're still a Product organisation and so
+silo oneself into thinking that "my department/team is effectively a Software Organisation inside a Product
+Organisation" but that perspective has a major issue: In the big picture, you're still a Product Organisation and so
 compartmentalising / siloing yourself is distracting and distancing yourselves from the core
-purpose / [core domains](https://github.com/ddd-crew/core-domain-charts) of your organisation.
+purpose / [core domains](https://github.com/ddd-crew/core-domain-charts) of your Organisation.
 
-### For Software organisations
+### For Software Organisations
 
 Congratulations, you're a pretty special case, and your literal offering is an **abstraction**. Any further abstractions
 that are highly-related to your offering, or could also be reasonably offered and maintained are probably worthwhile
@@ -116,7 +128,7 @@ investments.
 However, nearly everything _behind_ that abstraction should be simply **standardised** and abstractions avoided, with
 the exception being things that are complex, unsafe or very deliberately custom.
 
-### For Product organisations
+### For Product Organisations
 
 Nearly everything you build would benefit from being **standards** rather than **abstractions**.
 
@@ -128,7 +140,7 @@ covered by the above [trade-offs](#the-trade-offs) and [resulting methodology](#
 have a high capacity to tackle these things and other higher priority work is done can we create these libraries and
 abstractions. Even then, we might not want to do it because we don't want to manage our own custom stuff, and so we
 should contribute them to existing frameworks, libraries or at least create our own open source stuff, so that they can
-BE industry-standard components - at which point the Product organisation is becoming a Software organisation (at least
+BE industry-standard components - at which point the Product Organisation is becoming a Software Organisation (at least
 partly).
 
 ## Real-world examples
