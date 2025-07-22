@@ -100,7 +100,12 @@ organisations:
   something else, like banking services, or a point-of-sale system, or a newspaper website, etc.
 
 Before we go into each, I want to make it very clear that _**most**_ organisations in the world that engage in software
-engineering are NOT Software organisations (even if they want to be) and actually work in Product organisations.
+engineering are NOT Software organisations (even if they want to be) but are actually Product organisations. For those
+working in management, leadership, platform- or staff-engineering roles, it can be very tempting to compartmentalise and
+silo oneself into thinking that "my department/team is effectively a Software organisation inside a Product
+organisation" but that perspective has a major issue: In the big picture, you're still a Product organisation and so
+compartmentalising / siloing yourself is distracting and distancing yourselves from the core
+purpose / [core domains](https://github.com/ddd-crew/core-domain-charts) of your organisation.
 
 ### For Software organisations
 
