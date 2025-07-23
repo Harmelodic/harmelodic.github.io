@@ -45,6 +45,7 @@ TODO: Unpack this more.
 	- Blast-radius trade-offs
 	- Culture trade-offs
 	- Quality trade-offs
+	- Extensibility trade-offs (standards can be more than implementations, but lint code style, etc.)
 - What do we value
 	- We value the _means_ of creation, not just _output_.
 	- Short-term vs Long-term vs Iterative
