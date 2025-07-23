@@ -6,7 +6,7 @@ hide:
 
 # Welcome
 
-![Matt Smith](./assets/matt.webp){ width="150" }
+![Matt Smith](./assets/matt.webp){ width="360" }
 /// caption
 Matt Smith / Harmelodic
 ///
