@@ -1,5 +1,15 @@
 # Philosophy and Principles Overview
 
+I find much of software engineering is not just about making software, but about creating [alignment](./alignment.md)
+amongst software engineers so that we can make good software in a good way. To create that alignment requires principles
+and the various patterns, designs, thinking and ways of working that are derived from those principles. When all put
+together, this creates a software engineering _philosophy_.
+
+This section of my site explores the various topics that make up my software engineering philosophy, which I of course
+encourage you to adopt.
+
+TODO:
+
 - **Architecture**
 	- System design, modelling, patterns trade-offs, facilitating Software Architecture
 
