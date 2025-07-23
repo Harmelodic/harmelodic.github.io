@@ -10,10 +10,11 @@
 		padding-right: 0 !important;
 	}
 
+	/* Increase vertical space between sidebar nav items, but add padding to be forgiving for inaccurate clicks */
 	.md-nav__link {
-		margin-top: 0.3rem;
-		padding-top: 0.1rem;
-		padding-bottom: 0.1rem;
+		margin-top: 0.2rem;
+		padding-top: 0.15rem;
+		padding-bottom: 0.15rem;
 	}
 
 	/* Brighter colour for active nav links for visibility */
