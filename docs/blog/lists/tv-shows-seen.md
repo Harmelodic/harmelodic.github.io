@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+
 # TV shows seen
 
 In order of most to least favourite:

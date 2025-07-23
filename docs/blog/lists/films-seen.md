@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+
 # Films seen
 
 In order of most to least favourite:
