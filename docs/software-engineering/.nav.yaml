@@ -1,1 +1,12 @@
 title: "{🚧}"
+
+nav:
+  - index.md
+  - philosophy-and-practices
+  - platform
+  - backend
+  - frontend-web
+  - mobile
+  - desktop
+  - embedded-systems
+  - data-science
