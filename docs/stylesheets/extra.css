@@ -1,18 +1,19 @@
 /* CSS for Desktop view (not mobile view) - only when screen is 1220px or wider */
 @media only screen and (min-width: 1220px) {
 
-	/* Use more horizontal space in general */
-	.md-grid {
-		max-width: 75%; /* default: 61rem */
-	}
-
 	/* Increase sidebar width for readability */
-	.md-sidebar {
+	.md-sidebar--primary {
 		width: 15rem; /* default: 12.1rem */
 	}
 
 	.md-sidebar__inner {
 		padding-right: 0 !important;
+	}
+
+	.md-nav__link {
+		margin-top: 0.3rem;
+		padding-top: 0.1rem;
+		padding-bottom: 0.1rem;
 	}
 
 	/* Brighter colour for active nav links for visibility */
