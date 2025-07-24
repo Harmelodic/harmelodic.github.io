@@ -2,8 +2,8 @@
 
 Fairphone released a new version of *Fairphone OS* on January 27th 2025:
 
-- Fairphone 5: https://support.fairphone.com/hc/en-us/articles/18682800465169-Fairphone-5-OS-Release-Notes
-- Fairphone 4: https://support.fairphone.com/hc/en-us/articles/4405858220945-Fairphone-4-OS-Release-Notes
+- Fairphone 5 [release notes](https://support.fairphone.com/hc/en-us/articles/18682800465169-Fairphone-5-OS-Release-Notes)
+- Fairphone 4 [release notes](https://support.fairphone.com/hc/en-us/articles/4405858220945-Fairphone-4-OS-Release-Notes)
 
 The new version is: `B.098`
 
