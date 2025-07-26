@@ -87,7 +87,7 @@ Bottom sheets are the term for the little mini pop-ups that occasionally appear 
 you to do some action (e.g. biometric / fingerprint verification). These have been slightly restyled to have bigger
 icons and much more severely rounded corners.
 
-It's difficult to get an uncensored screenshot of these bottom sheets so... no picture of this and you'll just have to
+It's difficult to get an uncensored screenshot of these bottom sheets so... no picture of this, and you'll just have to
 trust me in saying that: It looks a bit naff, when compared in my head to how Android 14 bottom sheets looked.
 
 ### Lock Screen Time
@@ -141,6 +141,23 @@ Oh, and notice that little icon in the Clipboard Quick Menu, that looks like a l
 
 That's the new Quick Share menu icon - allowing you to "quickly share" things with other devices - changed from the
 old "two-arrows point at each other in a circle" one from before.
+
+### Volume slider restyling
+
+On Android, there is a volume slider that appears on the right when you change the volume.
+
+Before, it just showed a slider that went up and down, but had no frame of reference (other than intuition / guesswork)
+as to what the volume, or the percentage of volume was. This has been helped somewhat in Android 16, as the volume
+slider now "fills up" a space, instead of just growing and shrinking bar. It's a tiny change, but I appreciate it, since
+I was never sure whether I was at full volume or not when the bar was near the top.
+
+I do wish the bar was the same width as the space it fills though. It's just a _little_ bit wider, and looks odd rather
+that intentional.
+
+![Volume slider](assets/volume-slider.png){ width="300" }
+/// caption
+Volume slider
+///
 
 ---
 
