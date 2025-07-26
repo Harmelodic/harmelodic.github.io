@@ -54,4 +54,4 @@ solution.
 Just because using non-production environments for testing introduces the Shared Test Data Problem, doesn't mean that
 non-production environments themselves are bad.
 
-This is discussed more in Shipping Software: 
+This is discussed more in [Shipping Software](shipping-software.md)

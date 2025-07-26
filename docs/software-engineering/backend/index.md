@@ -1,6 +1,5 @@
 # Backend Overview
 
-- APIs
 - Java
 	- Setup Java on a machine (sdkman, maven, maven wagons?)
 	- Maven setup (Single repo per artifact, BOMs, parents, libraries, GAV naming)

@@ -155,7 +155,7 @@ working on is releasable (i.e. passes all tests, security audits, etc.).
 
 From a manual, multi-stage shipping processes, that involves one or multiple test environments, this typically means
 automating much of the testing and security auditing and being able to run all of it in build pipelines (this has the
-added effect of helping alleviate [The Test Data Problem](../testing/the-shared-test-data-problem.md)).
+added effect of helping alleviate [The Test Data Problem](the-shared-test-data-problem.md)).
 
 In an ideal shift-left process: All testing and security analysis (etc.) should be possible to run from a software
 engineer's local IDE. Going further, it should warn the software engineer whilst they're writing the code (just like
@@ -182,7 +182,7 @@ environment.
 I am careful to use the term "non-production environment" as the term "test environment" is often used and I find using
 it leads software engineers to drift down the path of producing permanent "test environments" used for post-build,
 pre-release testing. This should be avoided, as it will
-introduce [The Shared Test Data Problem](../testing/the-shared-test-data-problem.md). However, there are still use cases for
+introduce [The Shared Test Data Problem](the-shared-test-data-problem.md). However, there are still use cases for
 non-production environments:
 
 - Ad hoc performance testing
