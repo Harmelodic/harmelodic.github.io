@@ -1,13 +1,13 @@
 # Alignment
 
-Alignment is a term to describe how aligned people are in organisations with regard to their _principles_, whatever
-those principles may be.
+Alignment is a term to describe how aligned people are in organisations with regard to their [values](values.md) and
+_principles_, whatever those may be.
 
 ## Importance of alignment
 
 When people have the same information, but their opinions differ on what is the right way forward, it is usually
-because their principles differ, and thus they are _misaligned_ (it can also just be because they don't like each other,
-and are spitefully disagreeing).
+because their underlying principles or values differ, and thus they are _misaligned_ (it can also just be because they
+don't like each other, and are spitefully disagreeing).
 
 Continuous misalignment causes conflicts to go unresolved or continually reappear. This results in:
 
@@ -20,11 +20,12 @@ strongly aligned.
 
 ## Achieving strong alignment
 
-Where alignment does not naturally occur, alignment can be achieved through defining common principles (and
-methodologies, patterns, designs derived from those principles). The defining of common principles should be a
-collaborative process, to ensure that the principles are actually common and alignment is achieved.
+Where alignment does not naturally occur, alignment can be achieved through defining common values & principles (and
+methodologies, patterns, designs derived from those principles). The defining of this commonality should be a
+collaborative and democratic process, to ensure that the resulting values & principles are actually common and alignment
+is achieved.
 
-In an organisation, common principles can apply to everything from the style of the code, to how the organisation
+In an organisation, commonality can apply to and affect everything from the style of the code, to how the organisation
 is organised and operates. It can be a large undertaking to try to create alignment, and is usually led by leaders and
 managers, in collaboration with workers.
 
@@ -32,6 +33,6 @@ Complete alignment is unlikely, as people will nearly always disagree on some th
 where people tolerate differences and "disagree but commit" is perfectly achievable given the right people, work
 environment and culture.
 
-Principles are also not set once and locked-in forever. We hope that they don't change often, as changing them can be
-disruptive, but we should expect them to change. Different people provide different perspectives, and that's a good
-thing. Principles must be openly reconsidered when stark misalignment is identified.
+Values & Principles are also not set once and locked-in forever. We hope that they don't change often, as changing them
+can be disruptive, but we should expect them to change. Different people provide different perspectives, and that's a
+good thing. When stark misalignment is identified, we should openly reconsider our values & principles. 

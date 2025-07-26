@@ -3,11 +3,20 @@
 I find much of software engineering is not just about making software, but about creating [alignment](./alignment.md)
 amongst software engineers so that we can make good software in a good way.
 
-To create that alignment requires principles that form a general software engineering philosophy, which then influences
-various practices (patterns, designs, and ways of working) that we might use day-to-day.
+To create that alignment requires values & principles that form a general software engineering philosophy, which then
+influences various practices (patterns, designs, and ways of working) that we might use day-to-day.
 
 This section of the site explores my software engineering philosophy and the practices that I use and encourage, which I
 of course encourage you to adopt too.
+
+## Values, Principles and Practices
+
+[Values](values.md) are the foundational things that we care about.
+
+Principles are the simple but high-level rules / customs that achieve and abide by our values.
+
+Practices are the more concrete approaches, methodologies and processes that help us in our every day software
+engineering.
 
 TODO:
 

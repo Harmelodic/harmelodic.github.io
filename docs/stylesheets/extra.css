@@ -17,10 +17,11 @@
 		padding-bottom: 0.15rem;
 	}
 
-	/* Brighter colour for active nav links for visibility */
-	:root > * {
-		--md-typeset-a-color: #4aa611;
-	}
+}
+
+/* Brighter colour for active nav links for visibility */
+:root > * {
+	--md-typeset-a-color: #4aa611;
 }
 
 /* CSS for all screens */
