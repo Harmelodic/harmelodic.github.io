@@ -72,7 +72,7 @@ The difference now? I also have two small system icons next to each mobile signa
 for those SIMs, and it is using 4G to do that, and sure enough, if I disable VoLTE for one of those SIMs, the icons
 disappear.
 
-![Phone 4G System Icons](./assets/phone-4g-system-icons.png){ width="300" }
+![Phone 4G System Icons](assets/android-15/phone-4g-system-icons.png){ width="300" }
 /// caption
 Phone 4G System Icons
 ///
@@ -94,7 +94,7 @@ trust me in saying that: It looks a bit naff, when compared in my head to how An
 
 The time on the lock screen is now a little less bold than it was before. Wow. Innovation.
 
-![Time on Lock Screen](./assets/lock-screen-time.png){ width="300" }
+![Time on Lock Screen](assets/android-15/lock-screen-time.png){ width="300" }
 /// caption
 The Time on the Lock Screen
 ///
@@ -110,7 +110,7 @@ there's a little pause before it actually opens that menu (I noticed this as wel
 their macOS Settings app (in 2024? 2023?) - which makes me think either the big tech giants are both really stupidly
 rebuilding their Settings apps to be worse, or this is an intentional design choice, ... or it's just coincidence).
 
-![Setting Menu](assets/settings-restyled.png){ width="300" }
+![Setting Menu](assets/android-15/settings-restyled.png){ width="300" }
 /// caption
 New Settings Menu
 ///
@@ -125,12 +125,12 @@ this [How-To Geek article](https://www.howtogeek.com/741319/how-to-take-a-scroll
 The difference now? The buttons in those menus aren't rounded squares, but are either (a) text buttons with completely
 rounded corners, or (b) icon buttons and circular. Even more innovation.
 
-![Screenshot Quick Menu](assets/screenshot-quick-menu.png){ width="300" }
+![Screenshot Quick Menu](assets/android-15/screenshot-quick-menu.png){ width="300" }
 /// caption
 Screenshot Quick Menu
 ///
 
-![Clipboard Quick Menu](assets/clipboard-quick-menu.png){ width="300" }
+![Clipboard Quick Menu](assets/android-15/clipboard-quick-menu.png){ width="300" }
 /// caption
 Clipboard Quick Menu
 ///
@@ -154,7 +154,7 @@ I was never sure whether I was at full volume or not when the bar was near the t
 I do wish the bar was the same width as the space it fills though. It's just a _little_ bit wider, and looks odd rather
 that intentional.
 
-![Volume slider](assets/volume-slider.png){ width="300" }
+![Volume slider](assets/android-15/volume-slider.png){ width="300" }
 /// caption
 Volume slider
 ///
