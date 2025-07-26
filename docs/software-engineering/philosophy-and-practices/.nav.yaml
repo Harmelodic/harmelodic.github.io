@@ -1,1 +1,7 @@
 title: Philosophy and Principles
+
+nav:
+  - index.md
+  - alignment.md
+  - values.md
+  - "*"

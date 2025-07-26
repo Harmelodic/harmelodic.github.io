@@ -54,7 +54,7 @@ Since we haven't _released_ anything yet, the artifacts should be stored in an a
 development/pre-release/release-candidate artifacts, and not available in an artifact repository for releases.
 
 Implementation specifics to the building different projects can be found in the specific sections
-under [Software Engineering](../index.md).
+under [Software Engineering](../../index.md).
 
 ## Release
 
@@ -132,15 +132,15 @@ artifacts, Kubernetes as your container-execution system, Argo CD (or other simi
 Argo Rollouts as a canary-release system. Feature toggling can be implemented in a variety of ways, but I tend to
 encourage GitOps-feature toggling, by updating service configuration to enable features.
 
-Implementation specifics to the releasing of [Backend](../backend/index.md), [Frontend Web](../frontend-web/index.md)
-or [Data Science](../data-science/index.md) services can be found in their individual sections.
+Implementation specifics to the releasing of [Backend](../../backend/index.md), [Frontend Web](../../frontend-web/index.md)
+or [Data Science](../../data-science/index.md) services can be found in their individual sections.
 
 ### Releasing artifacts
 
 ...?
 
 Implementation specifics to the building any projects can be found in the specific sections
-under [Software Engineering](../index.md).
+under [Software Engineering](../../index.md).
 
 ## Shift Left
 
@@ -155,7 +155,7 @@ working on is releasable (i.e. passes all tests, security audits, etc.).
 
 From a manual, multi-stage shipping processes, that involves one or multiple test environments, this typically means
 automating much of the testing and security auditing and being able to run all of it in build pipelines (this has the
-added effect of helping alleviate [The Test Data Problem](./the-shared-test-data-problem.md)).
+added effect of helping alleviate [The Test Data Problem](../testing/the-shared-test-data-problem.md)).
 
 In an ideal shift-left process: All testing and security analysis (etc.) should be possible to run from a software
 engineer's local IDE. Going further, it should warn the software engineer whilst they're writing the code (just like
@@ -182,7 +182,7 @@ environment.
 I am careful to use the term "non-production environment" as the term "test environment" is often used and I find using
 it leads software engineers to drift down the path of producing permanent "test environments" used for post-build,
 pre-release testing. This should be avoided, as it will
-introduce [The Shared Test Data Problem](./the-shared-test-data-problem.md). However, there are still use cases for
+introduce [The Shared Test Data Problem](../testing/the-shared-test-data-problem.md). However, there are still use cases for
 non-production environments:
 
 - Ad hoc performance testing

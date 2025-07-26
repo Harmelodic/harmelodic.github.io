@@ -16,7 +16,9 @@ of course encourage you to adopt too.
 Principles are the simple but high-level rules / customs that achieve and abide by our values.
 
 Practices are the more concrete approaches, methodologies and processes that help us in our every day software
-engineering.
+engineering, founded on principles & values.
+
+---
 
 TODO:
 
