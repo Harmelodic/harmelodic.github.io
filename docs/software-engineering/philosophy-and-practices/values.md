@@ -45,6 +45,11 @@ Below are some examples of values that I think we (as a software engineering ind
 - We enjoy collaborating.
 - We enjoy working solo.
 - We like to know we're doing a good job.
+- We like transparency (knowing what's going on)
+- We like inclusivity (especially for things we are interested in being involved in)
+- We like delegation and trust (especially for things we aren't interested in being involved in)
+- We like evidence and reasoning to back decisions
+- We like empathy and logic/rationality where evidence is lacking.
 - We enjoy debate.
 - We don't like arguing.
 - We like to be challenged.
