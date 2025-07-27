@@ -8,21 +8,16 @@ come back later.
 
 ---
 
-## The Idea
+## Contents
 
-Have a section for general software engineering philosophies and topics:
+- **Philosophy and Practices** - A section for general software engineering values, principles and practices, covering:
+	- Architecture
+	- Contracts & APIs
+	- Development
+	- Management / ways of working practices.
+	- Operations
 
-- **Ways of Working** (Agile, Waterfall, DDD, Facilitating Software Architecture, Mob programming, XP)
-- **Organising Code** (Monorepo vs Multirepo, Application repos, Deployment repos)
-- **Contracts and APIs** (interfaces, abstractions, APIs, libraries, semantic versioning, loop in tests)
-- **Architecture** (System design, modelling, patterns trade-offs)
-- **Testing strategy** (Unit/Integration/Integrated, Mocks & Stubs, Running locally, TDD, environments (ironically),
-  shift-left, the test data problem)
-- **Development practices** (Version Control, Package management (+SemVer), IDEs, error handling, onboarding checklist,
-  automate it, documentation (handbook, system docs), code style, Standardisation)
-- **Operational work** (Monitoring & Alerting, SLIs/SLOs/SLAs, Troubleshooting)
-
-Then organise based on different ecosystems of software development, with different featured stacks:
+Documentation & guidance for different engineering ecosystems:
 
 - **Platform**
 - **Backend**
@@ -32,13 +27,13 @@ Then organise based on different ecosystems of software development, with differ
 - **Desktop**
 - **Embedded**
 
-Each development ecosystem should cover:
+Each ecosystem covers:
 
-- Specific principles, architectural practices
-- Operational work (Ops)
-- Development lifecycle
-- Language/Stack specifics (per language/stack)
-	- Local machine setup
-	- CI (validate, test, build)
-	- CD (deploy, release)
-	- Doing specific things in that language
+- Specific principles & practices (inc. architecture)
+- Per language covered:
+	- Development specifics
+		- Overview of the language ecosystem
+		- Local machine setup
+		- Shipping (Build & Release)
+		- Doing specific things in that language
+	- Operational specifics
