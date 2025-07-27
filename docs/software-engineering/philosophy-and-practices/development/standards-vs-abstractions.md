@@ -45,7 +45,8 @@ are more costly than they seem.
 
 ## The Trade-offs
 
-Trade-offs are based on what we value. As covered in [Values](../values.md), we care about aspects of both the Software and
+Trade-offs are based on what we value. As covered in [Values](../values.md), we care about aspects of both the Software
+and
 Software Engineering. Standards vs Abstractions ultimate goal is to make _Software_ cheaper and _Software Engineering_
 easier, but most of other trade-offs are ones that touch upon Software Engineering values (some of which are often
 highly valued by software engineers but under-considered by managers).
@@ -53,19 +54,19 @@ highly valued by software engineers but under-considered by managers).
 The following table shows different aspects where trade-offs exist between Standards and Abstractions approaches, and to
 what degree the approach that aspect:
 
-| Aspect                                                                                    | Standards                                                                                                          | Abstractions                                                                                                                                  |
-|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Change in Implementation cost / complexity for end-user engineers                         | Moderately decreased, as standards enforce/guide implementation design.                                            | Largely decreased, as implementation is handled centrally.                                                                                    |
-| Change in Maintenance cost / complexity for end-user engineers                            | Moderately decreased, as code design becomes uniform across codebase.                                              | Largely decreased, as maintenance just becomes bumping versions and fixing interface changes.                                                 |
-| Implementation cost / complexity of approach                                              | Slightly costly, as rules / standards need to be defined and applied, but it's only rules.                         | Moderately or Largely costly, as implementation code is centralised, and could still be complex.                                              |
-| Maintenance cost / complexity of approach                                                 | Slightly costly, as rules / standards need to be updated to match modern software practices.                       | Moderately costly, as implementation needs to be update to match modern software practices and fulfil new implementation requirements.        |
-| Aids engineering learning / knowledge                                                     | Actively spreads knowledge and informs engineers what good quality. Engineers use industry-standard abstractions.  | Actively hides knowledge and good quality behind an abstraction. Engineers use and learn the org-specific abstractions and "way".             |
-| Increases quality of code                                                                 | Increases implementation quality by enforcing good practices and discouraging over-engineering.                    | Can increase implementation quality (if implementation actually follows good practices), though over-abstraction results in over-engineering. |
-| Applicability of the approach                                                             | Applied to anything (specs, implementations, formatting, etc.)                                                     | Applied to only implementations                                                                                                               |
-| (Culture) Removes tiring work from end-user engineers                                     | Ensures quality if engineers write lazily implementations.                                                         | Actively removes work.                                                                                                                        |
-| (Culture) Removes fun work from end-user engineers                                        | Little difference, though can feel meddlesome if very opinionated.                                                 | Actively removes work.                                                                                                                        |
-| Affects security / bug risk (likelihood, blast-radius, time-to-fix)                       | Decreases likelihood. No change to blast-radius. Decreases time-to-fix, if paired with automated code refactoring. | Can decrease likelihood. Increases blast-radius. Decreases time-to-fix, if consumers can automatically bump versions.                         |
-| Amount of code duplication                                                                | Little difference - can be viewed as increased as code becomes more uniform.                                       | Decreases as it actively centralises code.                                                                                                    |
+| Aspect                                                              | Standards                                                                                                          | Abstractions                                                                                                                                  |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Change in Implementation cost / complexity for end-user engineers   | Moderately decreased, as standards enforce/guide implementation design.                                            | Largely decreased, as implementation is handled centrally.                                                                                    |
+| Change in Maintenance cost / complexity for end-user engineers      | Moderately decreased, as code design becomes uniform across codebase.                                              | Largely decreased, as maintenance just becomes bumping versions and fixing interface changes.                                                 |
+| Implementation cost / complexity of approach                        | Slightly costly, as rules / standards need to be defined and applied, but it's only rules.                         | Moderately or Largely costly, as implementation code is centralised, and could still be complex.                                              |
+| Maintenance cost / complexity of approach                           | Slightly costly, as rules / standards need to be updated to match modern software practices.                       | Moderately costly, as implementation needs to be update to match modern software practices and fulfil new implementation requirements.        |
+| Aids engineering learning / knowledge                               | Actively spreads knowledge and informs engineers what good quality. Engineers use industry-standard abstractions.  | Actively hides knowledge and good quality behind an abstraction. Engineers use and learn the org-specific abstractions and "way".             |
+| Increases quality of code                                           | Increases implementation quality by enforcing good practices and discouraging over-engineering.                    | Can increase implementation quality (if implementation actually follows good practices), though over-abstraction results in over-engineering. |
+| Applicability of the approach                                       | Applied to anything (specs, implementations, formatting, etc.)                                                     | Applied to only implementations                                                                                                               |
+| (Culture) Removes tiring work from end-user engineers               | Ensures quality if engineers write lazily implementations.                                                         | Actively removes work.                                                                                                                        |
+| (Culture) Removes fun work from end-user engineers                  | Little difference, though can feel meddlesome if very opinionated.                                                 | Actively removes work.                                                                                                                        |
+| Affects security / bug risk (likelihood, blast-radius, time-to-fix) | Decreases likelihood. No change to blast-radius. Decreases time-to-fix, if paired with automated code refactoring. | Can decrease likelihood. Increases blast-radius. Decreases time-to-fix, if consumers can automatically bump versions.                         |
+| Amount of code duplication                                          | Little difference - can be viewed as increased as code becomes more uniform.                                       | Decreases as it actively centralises code.                                                                                                    |
 | Aids in [automated code refactoring](automated-code-refactoring.md) | Actively aids as code is more uniform and uses standard tooling familiar to automated code refactoring tools.      | Helps and hinders, as there is less code to refactor, but custom abstractions need custom automated code refactoring recipes.                 |
 
 Some may also consider the _lifetime_ of the implementation affects the choice between standards and abstractions. A
@@ -85,11 +86,16 @@ As of 2025, in the age of cloud computing and a rich engineering ecosystem (lots
   checks / linting rules).
 - Many large systems that would benefit from standards or abstractions are now build as microservices, which is an
   architectural pattern which involves accepting the trade-off of increased code duplication due to decentralisation.
+- Lot of existing organisations (Apache, CNCF, Google, VMWare (Spring), Microsoft, Other open source communities, etc.)
+  dedicate their time and resources building abstractions and industry standards to make it easier for everyone to build
+  software. If features or the development experience is lacking, the ecosystem is either abandoned and you need to
+  switch or the features / development experience will be improved, you simply need to wait.
 
 Taking this context into account, along with the above trade-off we can see that the areas where abstractions really
 shine (decreasing implementation cost and code duplication) are valued much less than they might have once been valued.
 Instead, the collective value of the benefits of standards outweigh the value of the benefits of abstractions, in most
-situations.
+situations - especially in the modern software engineering industry where abstraction improvements are just around the
+corner.
 
 In situations where implementation cost is high or code duplication is undesirable, abstractions are especially useful
 and are more beneficial than standards (though adopting standards in these abstractions will aid code quality).
@@ -106,7 +112,8 @@ For components or systems that are composable/reproducible and fit into one or m
 - they are deliberately custom to a specific component or use case or system architecture, which is unlikely to change,
 
 then it is very useful to create libraries/abstractions to increase safety and hide unnecessary customisations and/or
-complexity.
+complexity. To manage these abstractions, create a small software [commons](https://en.wikipedia.org/wiki/Commons) for
+the organisation and be vigilant with what is part of it.
 
 For everything else: it is more useful to standardise and provide reference implementations / samples of what "correct"
 looks like, and build these standards on top of existing industry standards and open source/purchasable abstractions.  
@@ -150,7 +157,10 @@ many other open-source and proprietary Software Organisations - you might even b
 
 Nearly everything you build would benefit from being **standards** rather than **abstractions**. Abstractions are useful
 for complex, unsafe or deliberately custom components, or if there is something directly offered to users to improve
-your "unique selling point" (USP).
+your "unique selling point" (USP), and can be made part of a limited organisational commons.
+
+> "We're not Google or the CNCF, so we shouldn't try to be unless we can invest in people, time and tooling. Instead, we
+> should _use_ abstractions - and if they're lacking in the functionality we want, then we can contribute them."
 
 Take advantage of build upon the existing abstractions offered the likes of Apache, the CNCF, Google, Microsoft, VMWare,
 and many other open-source and proprietary Software Organisations.
