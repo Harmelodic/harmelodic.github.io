@@ -14,7 +14,7 @@ unique call to the operation - where the API will treat multiple identical calls
 duplicated calls, and thus only execute the operation once.
 
 It is important that the API handles idempotency safely and correctly, so that the API consumer
-can [attempt retries safely](#consumer-retries).
+can [attempt retries safely](#safe-consumer-retries).
 
 ## Evaluating Idempotency
 
