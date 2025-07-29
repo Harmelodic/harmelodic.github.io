@@ -2,8 +2,8 @@
 
 Scenario: We have an API operation that can be "called" (actioned / requested / triggered) and each execution of the
 operation produces a different result, even when the same basic inputs are provided. Calling this API may not result in
-a response (e.g. due to network outage). Without the response, we are unaware as clients whether the call reached the
-API and whether it was successful or not.
+a response (e.g. due to network outage). Without the response, we are unaware (as consumers) whether the call reached
+the API and whether it was successful or not.
 
 Desired behaviour: We want to make multiple identical calls to the API operation, but have the API perform a single
 execution of the operation. When a result (success or error) is produced by the execution, all duplicated calls should
@@ -13,7 +13,8 @@ Solution: Implement idempotency! When calling the API operation, we provide an "
 unique call to the operation - where the API will treat multiple identical calls made with the same Idempotency Key as
 duplicated calls, and thus only execute the operation once.
 
-It is important that the API handles idempotency safely and correctly.
+It is important that the API handles idempotency safely and correctly, so that the API consumer
+can [attempt retries safely](#consumer-retries).
 
 ## Evaluating Idempotency
 
@@ -110,3 +111,29 @@ do not occur. The Inbox pattern and Dead Letter Queues are two ways to handle th
 > set up and deal with database infrastructure and gain indefinite persistence and the decoupling advantages of an
 > Inbox, than risk losing data due to DLQ message retention but solely rely on message bus infrastructure for
 > processing.
+
+## Safe consumer retries
+
+Once an API has safely implemented idempotency (see above), a consumer can integrate with the API sending idempotency
+tokens and retrying according to the logic of idempotency.
+
+A consumer can integrate with the API in the following manner:
+
+- Perform the operation, including an idempotency key (ABC).
+- If a response was received, and it was a success, then the consumer can continue and no retries are necessary.
+- If a response was received, and it was a failure, then the consumer knows that retrying the request with the same
+  idempotency key (ABC) as before will result in the same error response, as it will have been cached. If the consumer
+  wishes to retry, it must do so with a new idempotency key (XYZ).
+- If no response was heard, the consumer has no idea whether the request was received and processed by the API provider.
+  If the consumer wishes to retry, it must do so with the same idempotency key as before (ABC).
+
+This makes retrying quite a delicate / precarious action.
+
+If you want to build a resilient system (e.g. eventual consistency with automatic retrying), then you should attempt
+automatic retries, and follow the consumer idempotency logic above.
+
+If you are thinking that retrying is too precarious, then you should simply never retry and always require manual
+intervention. Retrying with the same idempotency key in every scenario for safety will always garner the same response,
+and thus in the case of failures, result in your maximum retry count being exhausted, and manual intervention is then
+required anyway (which incidentally renders idempotency effectively useless, as the original purpose is to facilitate
+safe retries in the event of no API response).
