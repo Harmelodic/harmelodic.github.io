@@ -18,6 +18,10 @@ Idempotency Key as duplicated calls, and thus only execute the operation once. I
 a response, it can retry the API call with the same idempotency key as much as it likes, safe in the knowledge that the
 API operation will only be executed once.
 
+> Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied
+> multiple times without changing the result beyond the initial application.    
+> ~ Wikipedia, 2025
+
 It is important that the API handles idempotency safely and correctly, so that the API caller
 can [attempt retries safely](#safe-retries).
 
@@ -58,7 +62,8 @@ When errors occur during execution, an error result is produced. Duplicated call
 Idempotency is a solution for when callers are unaware of an APIs response (and subsequently time out), not for when an
 API provides an error response. Not storing and returning the same error response means that subsequent duplicated
 calls will result in multiple executions of the API operation, thus voiding the safety of idempotency and creating
-unnecessary and unsafe variability in the API's behaviour.
+unnecessary and unsafe variability in the API's behaviour, and ultimately: breaking the actual property that is
+"idempotence"!
 
 ### Handling concurrency
 
