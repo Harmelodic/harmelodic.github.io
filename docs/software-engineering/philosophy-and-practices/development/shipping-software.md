@@ -21,13 +21,16 @@ In a build process you tend to want to do:
 	- Linting to ensure adherence to a code formatting / style guide / code structure rules.
 	- Make suggestions for modernising code.
 	- Detecting bugs and code smells
-	- Detecting leaked secrets
+	- Security scanning (e.g. detecting leaked secrets, vulnerability detection)
+	- SBOM analysis (e.g. licensing rule-violation detection, dependency usage-violation detection, more vulnerability
+	  detection).
 - **Compiling** - Turning the code into binaries, or other kinds of executable/loadable code.
 - **Testing** - Running tests to give us confident the code is fit for purpose and bug-free. Can include:
 	- Unit tests
 	- Integration Tests
 	- Integrated Tests
 	- Contract Tests
+	- Performance Tests / Benchmarks
 - **Packaging**
 	- Bundling to create an artifact.
 	- Signing the artifact.
@@ -132,7 +135,8 @@ artifacts, Kubernetes as your container-execution system, Argo CD (or other simi
 Argo Rollouts as a canary-release system. Feature toggling can be implemented in a variety of ways, but I tend to
 encourage GitOps-feature toggling, by updating service configuration to enable features.
 
-Implementation specifics to the releasing of [Backend](../../backend/index.md), [Frontend Web](../../frontend-web/index.md)
+Implementation specifics to the releasing
+of [Backend](../../backend/index.md), [Frontend Web](../../frontend-web/index.md)
 or [Data Science](../../data-science/index.md) services can be found in their individual sections.
 
 ### Releasing artifacts
@@ -171,21 +175,40 @@ process (e.g. allowing unapproved artifacts be deployed to production). That bei
 sector matures we may identify aspects of the Release process that could actually be made as part of the Build process -
 whilst I think this unlikely, we should be open to this possibility and change as needed.
 
+## Security Testing
+
+Further security testing, beyond the security scanning done in the [Build](#build) process, such
+as [penetration testing](https://en.wikipedia.org/wiki/Penetration_test) can be extremely useful to detect security
+problems with our systems built into our software, or in the infrastructure / platform that our software is built on.
+
+If possible, some of this testing should be moved to run in the Code Analysis or Testing stage of the Build process, so
+that it can be done earlier (see [shift-left](#shift-left)).
+
+However, a lot of this testing requires the software to be running / live. Therefore, this testing must be performed on
+the live production environment, if not on _all_ environments (production and non-production) - given the unfortunate
+prevalence of production data ending up in non-production environments and those non-production environments not being
+as secure as the production environment.
+
 ## Non-production environments
 
 So far we've discussed the two main processes involved in the shipping of software, with each process almost entirely
 automatable.
 
-However, there are times when extra testing or work is required that involves deploying artifacts to a non-production
-environment.
+However, there are times when extra work is required that involves deploying artifacts to a non-production environment.
 
 I am careful to use the term "non-production environment" as the term "test environment" is often used and I find using
 it leads software engineers to drift down the path of producing permanent "test environments" used for post-build,
 pre-release testing. This should be avoided, as it will
-introduce [The Shared Test Data Problem](the-shared-test-data-problem.md). However, there are still use cases for
-non-production environments:
+introduce [The Shared Test Data Problem](the-shared-test-data-problem.md).
 
-- Ad hoc performance testing
+I highly recommend _never_ putting production data into a non-production environment. This is not only a security /
+privacy risk, but also often a sign that you may be treating a non-production environment as a test environment and are
+attempting to incorrectly solve [The Shared Test Data Problem](the-shared-test-data-problem.md). Instead, seed data in
+non-production environments, using specifications or seed functions.
+
+However, there are still use cases for non-production environments:
+
+- Ad hoc system-wide performance testing
 	- Use production versions first to set a baseline (and identify bottlenecks). Then fix those bottlenecks and deploy
 	  development versions to test performance boost. Once happy that performance has improved for a single component,
 	  release it to production and set up a new baseline before moving on to the next bottleneck - this encourages
@@ -198,8 +221,14 @@ non-production environments:
 - Demonstrations
 	- If you're producing a service, you often want to showcase that service. Demonstration environments are production
 	  environments that contain only test data. These are subject to the test data problem if long-lived and used by
-	  multiple demonstrators, but since demonstrations have no impact on the ability to release software, it is an
-	  acceptable problem to deal with and easily mitigated by making fresh demonstration environments easy to recreate.
+	  multiple demonstrators, but since demonstrations usually (and ideally) have no impact on the ability to release
+	  software, it is an acceptable problem to deal with and easily mitigated by making fresh demonstration environments
+	  easy to recreate.
+	- If demonstrations _do_ affect the ability to release due to some requirement of doing non-production User
+	  Acceptance Testing (UAT), then efforts should be made to remove this requirement, so that we can deploy to
+	  production as quickly as possible and get _real_ user feedback on new releases. If the requirement is unremovable,
+	  then time a release spends in the UAT / Demonstration environment, before it is promoted to Production, should be
+	  minimised as much as possible.
 - 3rd party usage for their own testing/verification.
 	- 3rd parties might not be as advanced in their testing as you and believe they can solve or work around the test
 	  data problem (they can't, but they believe they can), and so want a test environment to use to verify their

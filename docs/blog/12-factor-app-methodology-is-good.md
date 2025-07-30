@@ -1,6 +1,8 @@
 # 12 Factor App Methodology is good
 
 > Originally published: 17 October 2020
+> 
+> Moved to [new section](../software-engineering/philosophy-and-practices/operations/12-factor-app-methodology.md).
 
 Back in 2011, [Heroku](https://en.wikipedia.org/wiki/Heroku) published a methodology called [*12 Factor
 App*](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology), which denotes a methodology for building systems

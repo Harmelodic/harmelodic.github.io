@@ -1,6 +1,8 @@
 # An ideal CI/CD pipeline (Old)
 
 > Originally published: 27 November 2018
+> 
+> Now moved / rewritten [here](../software-engineering/philosophy-and-practices/development/shipping-software.md).
 
 ## Not applicable anymore
 
@@ -11,6 +13,8 @@ Nowadays, I shift tests left a lot and have a strong recommendation *against* cr
 environments for testing.
 
 I'll leave this post here, and maybe I'll write a new one on testing.
+
+Update: I [wrote a new one](../software-engineering/philosophy-and-practices/development/shipping-software.md).
 
 ## Original Post
 
