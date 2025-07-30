@@ -1,6 +1,9 @@
 # Are you in governance/management? Answer this.
 
 > Originally published: 12 September 2020
+>
+> This has been moved to / expanded
+> on [here](../software-engineering/philosophy-and-practices/management/resolving-problems.md).
 
 When a person speaks out about a problem, do you:
 
