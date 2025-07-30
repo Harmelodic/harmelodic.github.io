@@ -134,6 +134,8 @@ do not occur. The Inbox pattern and Dead Letter Queues are two ways to handle th
 
 ## Safe retries
 
+### Simple retry logic
+
 Once an API has [safely implemented idempotency](#idempotency-in-the-api), a caller can integrate with the API and
 retrying according to the logic of idempotency:
 
@@ -145,11 +147,40 @@ retrying according to the logic of idempotency:
 - If no response was heard, the caller has no idea whether the request was received and processed by the API provider.
   If the caller wishes to retry, it must do so with the same idempotency key as before (`ABC`).
 
-This makes retrying quite a precarious action, but... that's the way that idempotency works, to give us the ability to
-perform automatic retries / multiple identical calls.
+### Multiple layers of retries
 
-If you are thinking that retrying is too precarious, then you should simply never retry, never interact with idempotency
-and always require manual intervention. If you are thinking of retrying with the same idempotency key in every scenario
-"for safety", this will always garner the same response, and thus in the case of failures, will result in your maximum
-retry count being exhausted, and manual intervention will be required anyway - which renders idempotency effectively
-useless, as the original purpose is to facilitate safe retries in the event of no API response.
+In some systems you may have multiple "layers" of retries, for example: an HTTP client can retry, and the code
+triggering the HTTP client can retry as well. This can be quite dangerous to implement if dealing with idempotency.
+Let's name the caller the "Caller", and the code triggering the caller the "Trigger".
+
+When the Caller receives no API response, it can retry with the same idempotency key. Eventually, it might never receive
+an API response, and have exhausted all its retries. The Trigger might then choose to retry again, but if the
+idempotency key is not saved between these retries, then the Caller could make a fresh call to the API with a new
+idempotency key, even though it never received an API response. This is bad.
+
+There are two ways to solve this problem:
+
+- Return the Idempotency Key to the Trigger
+	- When the Caller exhausts the retries due to error API responses, it fails but does not return the idempotency key
+	  to the Trigger. The Trigger can then retry and a new idempotency key is used (as normal).
+	- When the Caller exhausts the retries due to no API responses, it fails and returned the idempotency key to the
+	  Trigger. The Trigger can then try, but must pass the idempotency key back to the Caller for the Caller to use, to
+	  ensure calls continue to be idempotent.
+- The Caller communicate to the Trigger that the call is non-retryable, and manual intervention is needed.
+
+> In this case, I prefer option two, as it's much less complex, and I'm already happy that retrying has been attempted
+> before manual intervention was necessary.
+
+### Retrying is precarious
+
+This makes retrying quite a precarious action, but... that's the way that idempotency works, to give us the ability to
+perform automatic retries / multiple identical calls when no API response is given.
+
+Retrying when an error response is returned was already possible without idempotency.
+
+If you are thinking that retrying is now too precarious, then you should simply never retry if you don't receive a
+response, never interact with idempotency and always require manual intervention.  
+If you are thinking of retrying with the same idempotency key when receiving an error "for safety", this will always
+garner the error same response as the original attempt, and will result in your maximum retry count being exhausted, and
+manual intervention will be required anyway - which renders idempotency effectively useless, as the purpose is to
+facilitate safe retries in the event of no API response.
