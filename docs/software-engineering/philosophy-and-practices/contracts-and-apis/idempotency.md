@@ -162,14 +162,22 @@ There are two ways to solve this problem:
 
 - Return the Idempotency Key to the Trigger
 	- When the Caller exhausts the retries due to error API responses, it fails but does not return the idempotency key
-	  to the Trigger. The Trigger can then retry and a new idempotency key is used (as normal).
+	  to the Trigger. The Trigger can then retry and a new idempotency key is used in the Caller (as normal).
 	- When the Caller exhausts the retries due to no API responses, it fails and returned the idempotency key to the
 	  Trigger. The Trigger can then try, but must pass the idempotency key back to the Caller for the Caller to use, to
 	  ensure calls continue to be idempotent.
-- The Caller communicate to the Trigger that the call is non-retryable, and manual intervention is needed.
+- The Caller communicates to the Trigger that the call is non-retryable, and manual intervention is needed.
+	- When the Caller exhausts all retries due to error API responses, it fails with an error type that allows for
+	  retries. The Trigger can then retry and a new idempotency key is used in the Caller (as normal).
+	- When the Caller exhausts all retries due to no API responses, it fails with an error type that tells the Trigger
+	  to not attempt a retry as it is unsafe. The Trigger must then not attempt a retry.
+	- This effectively the same behaviour that should be in place when no API response was given, from before
+	  idempotency was used, but retries have at least been attempted.
 
-> In this case, I prefer option two, as it's much less complex, and I'm already happy that retrying has been attempted
-> before manual intervention was necessary.
+> In this case, I prefer option two, as it's much less complex to implement, and I'm simply happy that retrying has
+> been attempted before manual intervention was necessary.  
+> If non-retryable errors are consistently being produced however, then I will consider implementing option one, though
+> I will also consider using a different API, assuming that is possible.
 
 ### Retrying is precarious
 
