@@ -7,8 +7,8 @@ This website uses MkDocs and MkDocs plugins, which are configured using Python p
 Configure a Python Virtual Environment in the following way:
 
 ```shell
-python -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 

@@ -1,4 +1,6 @@
-# Values
+# Values and Principles
+
+## Values
 
 Values are the things we care about.
 
@@ -21,11 +23,11 @@ In software engineering, this translates to:
 
 Below are some examples of values that I think we (as a software engineering industry) have in these two areas.
 
-## Values in Software
+### Example Values in Software
 
 - We like usefulness.
 - We like accessibility / it be used by anyone no matter their ability.
-- We want security.
+- We want security and privacy.
 - We want reliability (this is the fundamental value behind all testing, resiliency and scaling efforts).
 - We like efficiency.
 - We like high performance / speed / responsiveness.
@@ -37,7 +39,7 @@ Below are some examples of values that I think we (as a software engineering ind
 - We want it to be cheap.
 - We like longevity (maintained software).
 
-## Values in Software Engineering
+### Example Values in Software Engineering
 
 - We enjoy learning.
 - We enjoy problem-solving.
@@ -62,11 +64,32 @@ Below are some examples of values that I think we (as a software engineering ind
 - We feel comfortable in structure.
 - We like quick wins.
 - We like long-term investments.
+- We appreciate feedback.
+
+## Principles
+
+Principles are the rules and statements that we try to live by.
+
+They are usually linked in someway back to the [values](#values) that we have, but they're a little less abstract than
+pure values, and a little more practical. As such, they are often by software engineers defined and used as the
+foundations for "how things should be done".
+
+They're often not entirely practical though, and we end up devising more detailed "practices" (e.g. ways of working
+approaches, design patterns, development "best practices") to define "how things should be done" - though be careful not
+to adhere so much to these practices that you lose sight of all the values that we have.
+
+Some examples of classic principles:
+
+- The Principle of Least Privilege (We want security and privacy)
+- etc.
+- etc.
+- TODO more
 
 ## Finding balance
 
-Many values clash with one another, even the values across the two areas of Software and Software Engineering can be in
-conflict - e.g. wanting to make software cheaper may involve in disregarding values we hold in Software Engineering.
+Many values and principles clash with one another and require us to make a trade-off. Even the values across the two
+areas of Software and Software Engineering can be in conflict - e.g. wanting to make software cheaper may involve in
+disregarding values we hold in Software Engineering.
 
 > Good, fast, cheap - choose two.
 
@@ -74,6 +97,6 @@ This classic [project management triangle](https://en.wikipedia.org/wiki/Project
 of the quandaries we face when assessing our values and applying them, and balancing considerations is important and
 choices need to be made.
 
-However, it is important to not associate "balance" with "equality". Some values are more valued than others, both
-objectively and depending on context, and treating some values more than they are actually valued is a recipe for shit
-software and unpleasant software engineering.
+However, it is important to not associate "balance" with "equality". Some values and principles are more valued than
+others, both objectively and depending on context, and treating some values and principles more than they are actually
+valued is a recipe for shit software and unpleasant software engineering.

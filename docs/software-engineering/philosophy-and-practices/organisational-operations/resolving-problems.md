@@ -117,10 +117,11 @@ In disease prevention, it is better to prevent the spread of diseases, than it i
 In management, it is better to prevent problems from happening, than it is to resolve them. Ironically, management are
 often the _cause_ of problems, through practices like "micromanagement".
 
-To prevent problems, managers should focus more on improving things workers [value](../values.md), especially
-transparency, inclusivity and trust, and offloading hindering organisational administrative work from workers. Provided
-these are functioning well, managers should work with workers to experiment with different ways of working to improve
-organisational [alignment](../index.md), worker happiness, and productivity.
+To prevent problems, managers should focus more on improving things
+workers [value](../values-and-principles.md#values), especially transparency, inclusivity and trust, and offloading
+hindering organisational administrative work from workers. Provided these are functioning well, managers should work
+with workers to experiment with different ways of working to improve organisational [alignment](../alignment.md),
+worker happiness, and productivity.
 
 ## Final remarks
 
