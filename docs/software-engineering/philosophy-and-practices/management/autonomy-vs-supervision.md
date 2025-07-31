@@ -1,4 +1,6 @@
-# Autonomy vs Alignment
+# Autonomy vs Supervision
+
+Some basic notes:
 
 - A person is smart, people are dumb.
 - We think ourselves rational, but we are often irrational and biased
@@ -15,12 +17,16 @@
   social contracts
 - Beyond that, we can be independent.
 
-Social contracts =
-Different [power structures](https://www.linkedin.com/pulse/org-physics-how-triad-structures-allows-companies-absorb-pflaeging/):
+Social contracts, link in with
+different [power structures](https://nielspflaeging.medium.com/org-physics-the-3-faces-of-every-company-df16025f65f8):
 
 - Formal structure, power is hierarchy
 - Informal structure, power is influence
 - Value Creation structure, power is reputation
+
+---
+
+Some more in-depth notes:
 
 > "I hire people brighter than me, and then I get out of their way" ~ Lee Iaccoca (apparently)
 >
@@ -29,16 +35,34 @@ Different [power structures](https://www.linkedin.com/pulse/org-physics-how-tria
 
 Sure, but not everyone is smart and rational. [Brigitta Böckeler](https://www.youtube.com/watch?v=GKgE4qfAppI) covers
 different forms of bias and irrationality. We clearly need some guidance and "checks" to ensure we're operating in a way
-that is fair and appropriate - hence the need for alignment and guidance, and the facilitation of that by Management and
+that is fair and appropriate - hence the need for supervision, and the facilitation of that by Management and
 Leadership.
+
+We also have issues where if we over-decentralise to the point of structurelessness, we would be subject to
+the [Tyranny of Structurelessness](https://www.jofreeman.com/joreen/tyranny.htm), as described by feminist Jo Freeman,
+where behind an illusion of structurelessness, and unaccountable formal structure actually exists.
+This aligns with [org physics](https://nielspflaeging.medium.com/org-physics-the-3-faces-of-every-company-df16025f65f8)
+as described by Niels Pflaeging, where formal, informal and value-creations structures all exist no matter what.
+Combining these theories would imply we need to formalise structure in order to subject them to democratic control /
+scrutiny, whilst also refining these structures to maximise democracy and value-creation, and further aid balancing
+autonomy and supervision.
 
 However, there is some truth to the those statements. Ask any engineer, and they will confirm some management figures
 have tried to "interfere" and tell them what to do or how to do their jobs, and they don't know what they're talking
-about - or at least they're well intended, but the act of interference is not appreciated. Because, as we covered
-in [valued](../values.md), we value **both** the software _and_ the means of creating software - and interference from
-management is usually not an enjoyable contribution to the means of creating software.
+about - or at least they're well intended, but the act of interference is not appreciated, or it's a hindrance. Because,
+as we covered in [valued](../values.md), we value **both** the software _and_ the means of creating software - and
+interference from management is usually not an enjoyable contribution to the means of creating software.
 
-So we need both.
+So we need both. We achieve this through _alignment_.
+
+We decentralise the act of doing work and making decisions, but being aligned through centrally-defined decision-making
+processes that ensure we're making good decisions. Certain things can be more centralised than others for efficiency
+improvements, certain things can be more decentralised than others for decoupling improvements.
+
+This aids prevention of problems, without impeding the same hindrances (or level of hindrances) as we have in with more
+supervision. Though we may need more reactive corrections, if those processes fail us. Too many reactive corrections and
+our processes aren't good enough. Not enough decisions being made as quickly as they should be, and our processes are
+too restrictive. Continuous refinement is needed.
 
 We need structures in place that empower us and keep us in check, but we also little structure that gets in our way.
 
