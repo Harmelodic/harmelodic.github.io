@@ -156,6 +156,7 @@ A link is not an endorsement or indication that I recommend the thing.
 - [PostgreSQL](https://www.postgresql.org/docs/)
 - [SQL Server by Microsoft](https://learn.microsoft.com/en-gb/sql/sql-server)
 - [SQLite](https://www.sqlite.org/)
+- [Pool Sizing advice - HikariCP](https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing)
 
 ## Desktop Linux Development
 
