@@ -1,4 +1,4 @@
-# Alignment
+# Alignment Overview
 
 Alignment is a term to describe how aligned people are in organisations with regard to their [values](values.md) and
 _principles_, whatever those may be.

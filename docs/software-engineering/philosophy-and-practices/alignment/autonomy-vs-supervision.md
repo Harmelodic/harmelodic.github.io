@@ -50,8 +50,8 @@ autonomy and supervision.
 However, there is some truth to the those statements. Ask any engineer, and they will confirm some management figures
 have tried to "interfere" and tell them what to do or how to do their jobs, and they don't know what they're talking
 about - or at least they're well intended, but the act of interference is not appreciated, or it's a hindrance. Because,
-as we covered in [valued](../values.md), we value **both** the software _and_ the means of creating software - and
-interference from management is usually not an enjoyable contribution to the means of creating software.
+as we covered in [valued](../alignment/values.md), we value **both** the software _and_ the means of creating software -
+and interference from management is usually not an enjoyable contribution to the means of creating software.
 
 So we need both. We achieve this through _alignment_.
 

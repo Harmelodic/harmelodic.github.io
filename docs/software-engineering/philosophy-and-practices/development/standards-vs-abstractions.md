@@ -45,11 +45,10 @@ are more costly than they seem.
 
 ## The Trade-offs
 
-Trade-offs are based on what we value. As covered in [Values](../values.md), we care about aspects of both the Software
-and
-Software Engineering. Standards vs Abstractions ultimate goal is to make _Software_ cheaper and _Software Engineering_
-easier, but most of other trade-offs are ones that touch upon Software Engineering values (some of which are often
-highly valued by software engineers but under-considered by managers).
+Trade-offs are based on what we value. As covered in [Values](../alignment/values.md), we care about aspects of both the
+Software and Software Engineering. Standards vs Abstractions ultimate goal is to make _Software_ cheaper and _Software
+Engineering_ easier, but most of other trade-offs are ones that touch upon Software Engineering values (some of which
+are often highly valued by software engineers but under-considered by managers).
 
 The following table shows different aspects where trade-offs exist between Standards and Abstractions approaches, and to
 what degree the approach that aspect:

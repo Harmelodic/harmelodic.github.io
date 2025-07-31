@@ -1,9 +1,9 @@
 # Philosophy and Practices Overview
 
-I find much of software engineering is not just about making software, but about creating [alignment](./alignment.md)
+I find much of software engineering is not just about making software, but about creating [alignment](./alignment/index.md)
 amongst software engineers so that we can make good software in a good way.
 
-To create that alignment requires [values](values.md) & principles that form a general software engineering philosophy,
+To create that alignment requires [values](./alignment/values.md) & principles that form a general software engineering philosophy,
 which then influences various practices (patterns, designs, and ways of working) that we might use day-to-day.
 
 This section of the site explores my software engineering philosophy and the practices that I use and encourage, which I
