@@ -30,3 +30,15 @@
   the people management side of engineering.
 - Essentially, the more senior/experienced facilitators who guide other engineers on how to do good engineering, and be
   an example of a good engineer.
+
+Software Engineering is more than just a technical effort, it's a social effort as well, where a collection of people
+come together to do achieve... something, that involves making software. An organisation engaging in the making of
+software could be referred to as a [sociotechnical system](https://en.wikipedia.org/wiki/Sociotechnical_system).
+
+Management has primarily social and organisationally-supportive responsibilities, and technical leadership has its
+technical responsibilities but there are a collection of sociotechnical responsibilities that both technical leadership
+and management must collaborate on. It's basically a venn diagram:
+
+- A = Technical Leadership responsibilities
+- B = Management responsibilities
+- A intersects B on: Social software engineering operations

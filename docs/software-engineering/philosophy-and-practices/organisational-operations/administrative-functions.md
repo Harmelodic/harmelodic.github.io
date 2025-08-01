@@ -1,4 +1,4 @@
-# Management Functions
+# Administrative Functions
 
 - We tend to think of management / governance / administration in different "roles"
 - Those roles have multiple functions
