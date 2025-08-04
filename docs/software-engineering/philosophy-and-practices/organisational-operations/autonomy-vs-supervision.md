@@ -47,6 +47,14 @@ Combining these theories would imply we need to formalise structure in order to 
 scrutiny, whilst also refining these structures to maximise democracy and value-creation, and further aid balancing
 autonomy and supervision.
 
+We also can see issues where without supervision / good management & leadership, we have a lot of failures - e.g. boeing
+airplanes, being built by clowns supervised by monkeys. So we need good smart people, with good management / leadership.
+
+We also need to ensure diversity and fairness in the workplace, otherwise we'll again just be a sea of white men patting
+each other on the back at the great job we did. We must tackle our biases, and that can't be achieved through
+structureless autonomy - it requires processes with checks to ensure we're acting fairly - and we to prevent systemic
+errors, we need to continuously improve those processes.
+
 However, there is some truth to the those statements. Ask any engineer, and they will confirm some management figures
 have tried to "interfere" and tell them what to do or how to do their jobs, and they don't know what they're talking
 about - or at least they're well intended, but the act of interference is not appreciated, or it's a hindrance. Because,
@@ -81,7 +89,9 @@ Practically this means:
 - Architectural Advice
 - Make decisions transparently (ADRs and an ADR process)
 - Architectural principles
-- Alignment / Standardisation
+- Alignment & Standardisation
+- When decisions / desires appear that clash with alignment, re-evaluate alignment to ensure it is fair / just.
+- Fitness functions for existing structure and processes to measure/assess success and fairness.
 
 e.g. architectural advice from Andrew Harmel-Law:
 
