@@ -23,7 +23,7 @@ of course encourage you to adopt too.
 ### **Development**
 
 - Version Control, Using package management (+SemVer), IDEs, error handling, onboarding checklist, documentation
-  (handbook, system docs), code style, Standardisation
+  (handbook, system docs), code style, Standardisation, Version managing SDKs / installations
 - Monorepo vs Multirepo, Application repos, Deployment repos
 - Testing: Unit/Integration/Integrated, Mocks & Stubs, Running locally, TDD, environments (ironically),
   shift-left, the test data problem.
