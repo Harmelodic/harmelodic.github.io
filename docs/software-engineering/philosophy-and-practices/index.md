@@ -38,12 +38,14 @@ of course encourage you to adopt too.
 - but also: business operations? (loop in DDD and ways of
   working)
 
-### **Management**
+### **Organisational Operations**
 
+- Social side of Technical Leadership.
 - People / Administrative management side of engineering.
 - Ways of working (Agile, Waterfall, DDD, Mob programming, XP)
 - Hiring, career development, conflict resolution, etc.
 - Internal organisational policy (compliance, auditing, code-of-conduct)
 - Organisational structure
 - Nudging, empowering, social efficiency & effectiveness
-- Differences from Technical Leadership
+- Management Differences from Technical Leadership
+- "Write a book together" as a form of alignment - an Engineering Handbook? (like this one!)
