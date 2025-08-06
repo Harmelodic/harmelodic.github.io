@@ -45,13 +45,18 @@ A good order would be:
 
 TODO: A note on buffers.
 
-## Amp Loop Option
+## Amp effects loop option
 
 An amp may provide boost option as well as modulation and delay effects.
 
 Based on the order described above, it would be beneficial to insert these effects into the correct points of the signal
 chain. For this reason, some amps offer the ability to send the signal through an "effects loop" before it returns to
 the amp for amplification. Amp that do this provide two jack sockets to "send" and "return" the signal.
+
+![Amp effects loop](assets/amp-effects-loop.jpg){ width="400" }
+/// caption
+A send/return effects loop on a "Marshall Valvestate 80V" amp
+///
 
 This results in an order:
 
