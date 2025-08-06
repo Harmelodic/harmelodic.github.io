@@ -52,6 +52,11 @@ This table visualises behaviour expected when receiving calls that have some kin
 | Any (including same) | Identified, Different | Any (including same) | No, any same operations or idempotency keys are coincidental.                                                                                               |
 | Any (including same) | Any (including same)  | Different            | No, any same operations or callers are coincidental. If both caller and operation are the same, then it's simply a fresh attempt, not a duplicated attempt. |
 
+> As documented, unidentified callers should be treated as the same caller. However, if you actually allow for
+> unidentified callers to call normally non-idempotent operations (creating and patching) this can be quite a critical
+> security issue. I would recommend re-considering your architecture and instead use a zero-trust architecture and
+> require identifiable callers.
+
 ### Responding correctly
 
 When the API operation produces a result, the result should be stored and linked to the Idempotency Key, so that the
@@ -96,7 +101,10 @@ are given (see [above](#responding-correctly)).
 
 An HTTP API typically allows operations to be performed concurrently - e.g. individual requests are handled by separate
 threads. As described [above](#handling-concurrency), this means duplicate HTTP requests made in parallel must be
-held/paused whilst execution of the first receive request completes before an HTTP response can be given.
+held/paused whilst execution of the first receive request completes before an HTTP response can be given. Some may make
+a case for responding with HTTP 425 (Too Early) for concurrent requests whilst the original request is being processed,
+however I recommend not doing this and simply responding with the same response to maintain pure and predictable
+idempotency.
 
 If an HTTP API responds with an error response, the HTTP client may want to retry the call, this should be done with a
 new Idempotency Key.
