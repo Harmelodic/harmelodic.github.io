@@ -8,14 +8,16 @@ come back later.
 
 ---
 
+A (sort of) Software Engineering handbook.
+
 ## Contents
 
 - **Philosophy and Practices** - A section for general software engineering values, principles and practices, covering:
 	- Architecture
 	- Contracts & APIs
 	- Development
-	- Management / ways of working practices.
 	- Operations
+	- Organisational Operations (Management, Ways of working, etc.)
 
 Documentation & guidance for different engineering ecosystems:
 

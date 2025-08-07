@@ -13,7 +13,10 @@ Matt Smith / Harmelodic
 
 ---
 
+Hi, I'm Matt, and I'm a big nerd. I have too many hobbies & interests. This is my website.
+
 If you're looking to hire me, or communicate professionally, please
 use [LinkedIn](https://www.linkedin.com/in/harmelodic/).
 
-If you're looking for some of my software engineering work, you can view my [GitHub](https://github.com/Harmelodic).
+If you're looking for some of my software engineering work, you can view my [GitHub](https://github.com/Harmelodic) or
+read my [writing on Software Engineering](software-engineering/index.md).
