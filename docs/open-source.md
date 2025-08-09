@@ -5,11 +5,53 @@ hide:
 
 # Open Source
 
-My personal projects are found on [my GitHub](https://github.com/Harmelodic?tab=repositories).
+## Contributions
+
+As well as having [personal open source projects](#personal-open-source-projects), I've also given some minor
+contributions to non-personal open source projects.
+
+These usually take the form of reporting bugs or raising other issues, documentation fixes, the occasional bug fix, or
+updating a project to support the latest version of a language / framework / other library.
+
+Projects I've contributed to:
+
+- [actions/setup-java](https://github.com/actions/setup-java)
+- [bepaald/signalbackup-tools](https://github.com/bepaald/signalbackup-tools)
+- [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov)
+- [Cog-Creators/Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot)
+- [corretto/corretto-docker](https://github.com/corretto/corretto-docker)
+- [DaftLimmy-zz/Swearing-Xylophone](https://github.com/DaftLimmy-zz/Swearing-Xylophone)
+- [gaul/modernizer-maven-plugin](https://github.com/gaul/modernizer-maven-plugin)
+- [googleapis/java-bigquery](https://github.com/googleapis/java-bigquery)
+- [hashicorp/terraform-provider-google](https://github.com/hashicorp/terraform-provider-google)
+- [hassansin/node-dnsbl-lookup](https://github.com/hassansin/node-dnsbl-lookup)
+- [homerchen19/github-file-icons](https://github.com/homerchen19/github-file-icons)
+- [googleapis/java-pubsub](https://github.com/googleapis/java-pubsub)
+- [GoogleCloudPlatform/prometheus-engine](https://github.com/GoogleCloudPlatform/prometheus-engine)
+- [jaegertracing/jaeger-operator](https://github.com/jaegertracing/jaeger-operator)
+- [jigna-shah/quest-fullstack-dev-JS-apprentice](https://github.com/jigna-shah/quest-fullstack-dev-JS-apprentice)
+- [jigna-shah/quest-fullstack-dev-JS-Journeyman](https://github.com/jigna-shah/quest-fullstack-dev-JS-Journeyman)
+- [kubernetes-sigs/kustomize](https://github.com/kubernetes-sigs/kustomize)
+- [leereilly/games](https://github.com/leereilly/games)
+- [MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-](https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-)
+- [mega-manipulator/mega-manipulator.github.io](https://github.com/mega-manipulator/mega-manipulator.github.io)
+- [microsoft/mssql-jdbc](https://github.com/microsoft/mssql-jdbc)
+- [nadimkobeissi/appleprivacyletter](https://github.com/nadimkobeissi/appleprivacyletter)
+- [opentracing-contrib/java-spring-jaeger](https://github.com/opentracing-contrib/java-spring-jaeger)
+- [pact-foundation/pact-jvm](https://github.com/pact-foundation/pact-jvm)
+- [projectlombok/lombok](https://github.com/projectlombok/lombok)
+- [rust-lang/book](https://github.com/rust-lang/book)
+- [spring-projects/spring-framework](https://github.com/spring-projects/spring-framework)
+- [testcontainers/testcontainers-java](https://github.com/testcontainers/testcontainers-java)
+- [togglz/togglz](https://github.com/togglz/togglz)
+
+## Personal open source projects
+
+My personal open source projects are found on [my GitHub](https://github.com/Harmelodic?tab=repositories).
 
 There are a variety of different projects that have - some of which are highlighted and explained below.
 
-## Init projects
+### Init projects
 
 It's helpful to have a starting point to get going. It's also useful to have that starting point be based on industry
 standards. It's also useful to have those starting points showcase one's software engineering abilities.
@@ -20,7 +62,7 @@ To solve all that, I made my init projects.
 - `init-microservice`: For a template on building microservices in Java (my go-to "backend" language).
 - `init-microservice-go`: For a template on building microservices in Go.
 
-## Config projects
+### Config projects
 
 When switching between machines (work, home, laptops, etc.) it's helpful to carry over configuration of things between
 machines. It's also nice to share that with other people, if they're interested in it.
@@ -31,7 +73,7 @@ My config projects cover this:
 - `dots`: For common scripts and POSIX config.
 - `renovate-config`: For a common configuration for keeping other repositories up to date.
 
-## Personal platform
+### Personal platform
 
 Developing platforms involves multiple different components that are (hopefully) well-structured and fit together. I
 have showcased how I tend to think about and structure platforms in the various repositories that form my "personal
@@ -74,23 +116,7 @@ Need more platforms? Just add them! I like to _prefix_ repositories with their "
 "host" things, so it's useful to organise your platforms on the purpose of what your hosting: Business services, CI/CD,
 Data Analysis, Development Tools, Corporate systems.
 
-## Et Cetera
+### Et Cetera
 
 There's other stuff that I work on or try to build (and sometimes fail at building). Take a look
 at [my GitHub](https://github.com/Harmelodic?tab=repositories) for more of that.
-
-## Contributions
-
-As well having as my own open source stuff, I've also given some minor contributions to other open source projects.
-
-These usually take the form of reporting bugs or other issues, documentation fixes, and the occasional bug fix.
-
-Projects I've contributed to:
-
-- [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov)
-- [hashicorp/terraform-provider-google](https://github.com/hashicorp/terraform-provider-google)
-- [googleapis/java-pubsub](https://github.com/googleapis/java-pubsub)
-- [pact-foundation/pact-jvm](https://github.com/pact-foundation/pact-jvm)
-- [projectlombok/lombok](https://github.com/projectlombok/lombok)
-- [spring-projects/spring-framework](https://github.com/spring-projects/spring-framework)
-- [testcontainers/testcontainers-java](https://github.com/testcontainers/testcontainers-java)
