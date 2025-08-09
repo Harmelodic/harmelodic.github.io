@@ -78,3 +78,19 @@ Data Analysis, Development Tools, Corporate systems.
 
 There's other stuff that I work on or try to build (and sometimes fail at building). Take a look
 at [my GitHub](https://github.com/Harmelodic?tab=repositories) for more of that.
+
+## Contributions
+
+As well having as my own open source stuff, I've also given some minor contributions to other open source projects.
+
+These usually take the form of reporting bugs or other issues, documentation fixes, and the occasional bug fix.
+
+Projects I've contributed to:
+
+- [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov)
+- [hashicorp/terraform-provider-google](https://github.com/hashicorp/terraform-provider-google)
+- [googleapis/java-pubsub](https://github.com/googleapis/java-pubsub)
+- [pact-foundation/pact-jvm](https://github.com/pact-foundation/pact-jvm)
+- [projectlombok/lombok](https://github.com/projectlombok/lombok)
+- [spring-projects/spring-framework](https://github.com/spring-projects/spring-framework)
+- [testcontainers/testcontainers-java](https://github.com/testcontainers/testcontainers-java)
