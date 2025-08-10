@@ -20,7 +20,7 @@ includes bus/train transport to and from the relevant airports and is a direct f
 | Cost (Euros)     | €100               | €145     |
 | Carbon Emissions | 197.17kg           | 16.444kg |
 
-So whilst it _takes 4 times longer_ by train, and _costs ~1.5 times more_, it results in over **10 times LESS carbon
+So by train, it _takes 4 times longer_ and _costs ~1.5 times more_, but it results in over **10 times less carbon
 emissions**, and about 75% of that is a single national rail train (diesel / electric) from Hamburg to Cologne,
 because (high-speed) electric trains have such low emissions.
 
