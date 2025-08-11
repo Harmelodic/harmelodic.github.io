@@ -10,6 +10,8 @@ as well as various articles on other organisational operations topics
 TODO:
 
 - Ways of working (Agile, Waterfall, DDD, Mob programming, XP)
+	- "Now vs Later?" = Agile, thinking ahead, premature optimisation, architecture, optionality, planning, reactive,
+	  think now yes/no, possibly think later easy/hard
 - Management vs Technical Leadership
 - Management lessons learned
 - Include a "Software Organisation Management Lifecycle" page that tells the story of how an organisation goes from
