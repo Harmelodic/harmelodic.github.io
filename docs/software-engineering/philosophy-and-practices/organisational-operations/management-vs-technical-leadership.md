@@ -42,3 +42,7 @@ and management must collaborate on. It's basically a venn diagram:
 - A = Technical Leadership responsibilities
 - B = Management responsibilities
 - A intersects B on: Social software engineering operations
+
+Managers often drift into being in roles likes conductors or band leaders (think music). This is a sign management is
+interjecting too much into technical work, and a sign of weak or non-existent technical leadership (or over-eager
+technical managers). Technical Leadership are the band leaders / conductors, managers are the roadies & band managers.
