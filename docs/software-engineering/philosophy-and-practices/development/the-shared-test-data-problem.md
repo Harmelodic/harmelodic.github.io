@@ -55,3 +55,27 @@ Just because using non-production environments for testing introduces the Shared
 non-production environments themselves are bad.
 
 This is discussed more in [Shipping Software](shipping-software.md)
+
+## Working with 3rd parties
+
+> Contract testing / trusting specifications with 3rd parties? You're joking right?
+
+Nope. Trust the specs / documentation.
+
+If the documentation is wrong, then work with your 3rd party to fix the specification / documentation.
+
+If they can't do that, dump them or write your own specification that is _very_ flexible (to allow for the 3rd parties
+odd behaviour or data).
+
+Whatever you do, limit the 3rd party integration's data model and expectations to the integration point where you
+interact with them. Then convert into your data model, where you can then trust specifications and do contract testing.
+
+Any further odd behaviour or odd data that breaks the specification can be caught in the integration point and flagged
+to the developers owning that integration.
+
+If the 3rd party provides a test environment, try writing your own test suite to test against the 3rd party, and run
+that test suite against the 3rd party's test environment. Don't run real code against the test environment though, just
+take the specification and write a test suite for your expectations based on the specification, or use the specification
+as the basis for the test suite. Sometimes the test environment behaves differently than production because the test
+data is different and doesn't account for weird quirks of the production data. That's where specifications and
+documentation should give the clarity for what to expect. If that's wrong... well that's covered above.
