@@ -43,7 +43,7 @@ documentation of my findings and frustrations.
 
 Short answer: Nope!
 
-Long answer: `Settings > System > Backup` provides options for backing up Android things. The options are:
+Looking in `Settings > System > Backup` provides options for backing up Android things. The options are:
 
 - Apps (no sub-options)
 - Photos and videos (selecting opens Google Photos)
@@ -62,9 +62,9 @@ So, no ability to back up or sync device folders anywhere (not even to Google Dr
 
 ### Files app feature?
 
-Short answer: Nope, but there is a useful `Back up to Google Drive` feature for backing up individual files manually.
-
 I'm using the `Files by Google` app.
+
+Short answer: Nope, but there is a useful `Back up to Google Drive` feature for backing up individual files manually.
 
 There's no backup options in Settings.
 
@@ -123,3 +123,5 @@ Or what about automation software, where I could automate
 On the Signal subreddit I also saw mentions of the `Syncthing`, but after searching it on the web, I
 found [this article](https://forum.syncthing.net/t/discontinuing-syncthing-android/23002) detailing that the developer
 is retiring Android support, so I'm not even going to dig into that as an option.
+
+... still need to dig into this more and figure it out. Will report back.
