@@ -39,3 +39,12 @@ Each ecosystem covers:
 		- Shipping (Build & Release)
 		- Doing specific things in that language
 	- Operational specifics
+
+Use to use:
+
+- Java = SDKMAN
+- Python = pyenv
+- Terraform = tfenv
+- Node.js = nvm
+
+Now I use [mise-en-place](https://mise.jdx.dev).
