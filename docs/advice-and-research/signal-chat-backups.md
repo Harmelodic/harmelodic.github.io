@@ -31,8 +31,8 @@ Before digging into the solutions, it's helpful to understand the solution requi
 	  night after the Chat backup is run).
 	- Notification when the backup is done or failed (definitely if it failed).
 	- Only asks for the permissions it needs (folder access on device, folder access in Google Drive) and nothing more.
-	- No gathering personal data or sharing it with 3rd parties (it's just a backup sync, I don't want to hand over my
-	  personal data for that, especially if they're going to then share that data with 3rd parties).
+	- Minimal or No gathering of data, and no sharing with 3rd parties (it's just a backup sync, I don't want to hand
+	  over my personal data for that, especially if they're going to then share that data with 3rd parties).
 
 ## Backing up the backups
 
@@ -41,7 +41,7 @@ documentation of my findings and frustrations.
 
 ### Native Android feature?
 
-Short answer: Nope!
+Short answer: No.
 
 Looking in `Settings > System > Backup` provides options for backing up Android things. The options are:
 
@@ -64,7 +64,7 @@ So, no ability to back up or sync device folders anywhere (not even to Google Dr
 
 I'm using the `Files by Google` app.
 
-Short answer: Nope, but there is a useful `Back up to Google Drive` feature for backing up individual files manually.
+Short answer: No, but there is a useful `Back up to Google Drive` feature for backing up individual files manually.
 
 There's no backup options in Settings.
 
@@ -97,13 +97,11 @@ not helpful. There's no other relevant options in `Settings`.
 Pressing the big <kbd>+</kbd> button allows us to create an Upload, but not a automatic regular upload for doing
 automatic backups.
 
-### A dedicated app?
+### A dedicated app for backups?
 
 > Unix philosophy #1: Make each program do one thing well.
 
-What if we had an app that just did backups really well.
-
-Looking at the Google Play Store, lets have a look at what is available:
+What if we had an app that just did backups really well. Looking at the Google Play Store, this is what's available:
 
 - _Swift Backup_ by _SwiftApps.org_
 - _Autosync_ (or other related apps) by _MetaCtrl_
@@ -113,7 +111,28 @@ Looking at the Google Play Store, lets have a look at what is available:
 other backup apps seemed to either want to (a) backup to _their_ cloud storage and not Google Drive, or (b) backup
 specific things like SMS messages or APKs (Apps).
 
-Or what about automation software, where I could automate
+#### Swift Backup
+
+Short answer: No.
+
+- ❌ Only allows for backing up apps, messages and call logs
+- ℹ️ Free manual backups (of the above), requires payment for automatic backups - though it has a Lifetime plan for
+  159kr.
+- ⚠️ Requires "All files access" - bit much, could be using
+  the [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) to only give
+  access to specific files or directories.
+	- (Incidentally, check which apps have this access: `Settings > Apps > Special app access > All files access`. It's
+	  a bit annoying it's not available in the Permissions list for each App in Settings.)
+- ✅ No account needed with Swift Backup, which is nice.
+- ✅ Good simple Android design.
+- ✅ No sharing of data with 3rd parties.
+- ⚠️ Some data collected (Personal Info, App info, and performance)
+- ℹ️ Support for more advanced features, for phones that are rooted (which mine isn't).
+
+### A dedicated app for automations?
+
+Automation software allows the automation of lots of tasks, which could include backups. Looking at the Google Play
+Store, this is what's available:
 
 - _Automate_ by _LlamaLab_
 - _IFTTT_ by _IFTTT, Inc_
