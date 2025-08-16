@@ -48,3 +48,12 @@ Use to use:
 - Node.js = nvm
 
 Now I use [mise-en-place](https://mise.jdx.dev).
+
+## Purpose of these docs
+
+- Mostly for myself as a reference, but if it's useful for others then that's good!
+- A place to write software engineering thoughts, that isn't a chronologically linear "blog", but something more
+  structured, and focused on different spaces.
+- A place to write down my [software engineering philosophy](./philosophy-and-practices/index.md) and exercise my brain
+  in envisioning "how things should be".
+- Showcase my skillset / experience / philosophy for future work opportunities.
