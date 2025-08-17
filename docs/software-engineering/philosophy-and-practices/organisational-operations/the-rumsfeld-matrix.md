@@ -16,27 +16,30 @@ Known and unknown here refers to two different things:
 
 This led to the creation of the following matrix, coined of the "Rumsfeld Matrix":
 
-| _The Rumsfeld Matrix_ | Known (risks)  | Unknown (risks)  |
+| _The Rumsfeld Matrix_ | Known (facts)  | Unknown (facts)  |
 |-----------------------|----------------|------------------|
 | Known (conscious)     | Known knowns   | Known unknowns   |
 | Unknown (unconscious) | Unknown knowns | Unknown unknowns |
 
 ## Known knowns
 
-The facts that we know and are conscious of knowing them.
+The facts that we know and are conscious of knowing them. Knowing the facts means we are aware what are risks and what
+is OK.
 
 The job to do with these is: act appropriately (plan and prioritise).
 
 ## Known unknowns
 
-The facts that we don't know, but we are consciously aware of not knowing about them.
+The facts that we don't know, but we are consciously aware of not knowing about them. Not knowing the facts introduces
+an increased risk, but be aware that we don't know them means we can work to reduce this risk.
 
 The job to do with these is: Investigate and try to uncover the facts.
 
 ## Unknown knowns
 
 The facts that we know, but we aren't consciously aware of knowing them. They're more intuitive things that are so
-"obvious" or "common sense" that we don't even think about them any more.
+"obvious" or "common sense" that we don't even think about them any more. This unconsciousness of the facts can be a
+risk.
 
 The job to do with these is: Try to be aware of them, as they can be subject to (or sourced from) bias. Some will be
 fine, but some could be creating injustices or unfairness that it would be good to mitigate.
