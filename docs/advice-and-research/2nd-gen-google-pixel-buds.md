@@ -1,6 +1,8 @@
 # 2nd-Gen Google Pixel Buds Review
 
 > Originally published: 15 June 2020
+> 
+> I no longer use _2nd-Gen Google Pixel Buds_, instead I moved to using a *Shokz OpenRun Pro 2 Mini*.
 
 Before I bought the *Pixel Buds*, I was using the *OnePlus Bullets Wireless* - a pair of wireless (though not "
 True-Wireless") earphones.
