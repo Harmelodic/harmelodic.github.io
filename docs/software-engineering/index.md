@@ -57,3 +57,18 @@ Now I use [mise-en-place](https://mise.jdx.dev).
 - A place to write down my [software engineering philosophy](./philosophy-and-practices/index.md) and exercise my brain
   in envisioning "how things should be".
 - Showcase my skillset / experience / philosophy for future work opportunities.
+
+## Developing your own handbook
+
+- A useful way to document how engineering works in your organisation.
+- Ecosystems: Documents how you expect ecosystems to be working (can help codify standards and conventions that you
+  have in your organisation). Encourages sharing and discourages team-scoped docs describe their learnings.
+- Philosophy: Treat it as an exercise for codifying what your engineering culture is (or what it should be). Talk
+  about practices you like, to discover values and principles you adhere to (or want to adhere to), and write them
+  down. Figure out the processes for decision-making and document them, to make them transparent and work for your
+  organisation.
+- Team practices (meeting cadences, on-call schedules, team-specific development practices) should be in the
+  handbook, so that teams and see how other teams function, and can learn from one another via the handbook.
+- Experiments trying things (new development practices, new library) should be documented in the relevant section.
+- Documentation for systems should be with the system code (e.g. in the `docs` directory in a repo) and not in the
+  handbook.
