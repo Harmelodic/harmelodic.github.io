@@ -56,7 +56,7 @@ Now I use [mise-en-place](https://mise.jdx.dev).
   structured, and focused on different spaces.
 - A place to write down my [software engineering philosophy](./philosophy-and-practices/index.md) and exercise my brain
   in envisioning "how things should be".
-- Showcase my skillset / experience / philosophy for future work opportunities.
+- Showcase my skill-set / experience / philosophy for future work opportunities.
 
 ## Developing your own handbook
 
