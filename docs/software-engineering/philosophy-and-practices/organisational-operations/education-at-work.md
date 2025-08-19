@@ -42,8 +42,8 @@ First, I think some realities need to be checked, with some clear statements:
 
 We must get better at engineering education, _in the workplace_.
 
-This reminds me of models like apprenticeships
-and [teaching hospitals](https://en.wikipedia.org/wiki/Teaching_hospital) - where not
+This reminds me of apprenticeships but more
+of [teaching hospitals](https://en.wikipedia.org/wiki/Teaching_hospital) - where not
 only is work carried out, but education is given to future and current professionals in a real setting where they are
 supervised and supported.
 
