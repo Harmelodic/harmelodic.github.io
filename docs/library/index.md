@@ -425,6 +425,8 @@ A link is not an endorsement or indication that I recommend the thing.
 - [Crontab Guru](https://crontab.guru/)
 - [CyberChef](https://gchq.github.io/CyberChef/)
 - [Devhints](https://devhints.io/)
+- [ffmpeg](https://ffmpeg.org/) - Everything Audio/Visual stream processing tool
+- [ghostscript](https://ghostscript.readthedocs.io/en/latest/) - Everything PDF tool
 - [IETF Author Resources](https://authors.ietf.org/)
 - [osquery - SQL-like OS querying](https://osquery.io/)
 
@@ -560,3 +562,4 @@ A link is not an endorsement or indication that I recommend the thing.
 - [GitLab](https://gitlab.com/)
 - [Mercurial](https://www.mercurial-scm.org/)
 - [SVN - Apache Subversion](https://subversion.apache.org/)
+
