@@ -16,6 +16,7 @@ updating a project to support the latest version of a language / framework / oth
 Projects I've contributed to:
 
 - [actions/setup-java](https://github.com/actions/setup-java)
+- [apache/maven-enforcer](https://github.com/apache/maven-enforcer)
 - [bepaald/signalbackup-tools](https://github.com/bepaald/signalbackup-tools)
 - [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov)
 - [Cog-Creators/Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot)
