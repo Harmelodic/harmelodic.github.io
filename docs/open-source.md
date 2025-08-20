@@ -38,6 +38,7 @@ Projects I've contributed to:
 - [mega-manipulator/mega-manipulator.github.io](https://github.com/mega-manipulator/mega-manipulator.github.io)
 - [microsoft/mssql-jdbc](https://github.com/microsoft/mssql-jdbc)
 - [nadimkobeissi/appleprivacyletter](https://github.com/nadimkobeissi/appleprivacyletter)
+- [open-telemetry/opentelemetry-java-contrib](https://github.com/open-telemetry/opentelemetry-java-contrib)
 - [opentracing-contrib/java-spring-jaeger](https://github.com/opentracing-contrib/java-spring-jaeger)
 - [pact-foundation/pact-jvm](https://github.com/pact-foundation/pact-jvm)
 - [projectlombok/lombok](https://github.com/projectlombok/lombok)
