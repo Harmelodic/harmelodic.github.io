@@ -70,8 +70,9 @@ Imagine if an organisation (or every organisation) making software did that for 
 Personally, I think there are two blockers to this happening in many organisations:
 
 - Education is a lower priority and ends up almost never being prioritised.
-- Senior engineers / technical leadership have egos that enjoy being experience & knowledgeable and fear sharing that
-  experience & knowledge because then others could do their job, and they'd be less important.
+- Senior engineers / technical leadership enjoy being smart, and often enjoy showing other people that they're smart,
+  but they don't seem to enjoy (or as much) actively teaching and sharing their experience & knowledge. Maybe it's an
+  ego thing, or a confidence thing, or a job (in)security thing, but the result is voluntary teaching is rare.
 
 The former is a choice, and one I simply must ask people to reconsider. The latter is achievable by either not hiring
 these overly-egotistical people or making it part of their job responsibility to educate and share knowledge.
