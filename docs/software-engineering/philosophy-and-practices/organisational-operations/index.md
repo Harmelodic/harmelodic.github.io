@@ -12,6 +12,9 @@ TODO:
 - Ways of working (Agile, Waterfall, DDD, Mob programming, XP)
 	- "Now vs Later?" = Agile, thinking ahead, premature optimisation, architecture, optionality, planning, reactive,
 	  think now yes/no, possibly think later easy/hard
+- Decision-making
+	- Design by committee vs Design by dictator - no, design with proof, decide by consensus
+    - Trade-offs, balance, who gets involved, etc.
 - Management vs Technical Leadership
 - Management lessons learned
 - Include a "Software Organisation Management Lifecycle" page that tells the story of how an organisation goes from
@@ -30,3 +33,4 @@ TODO:
 	  same for large organisations)
 	- Admin departments tend to scale better than product departments.
 	- Top-down/bottom-up decision-making/power, and the preferences from each perspective (mgmt, workers)
+
