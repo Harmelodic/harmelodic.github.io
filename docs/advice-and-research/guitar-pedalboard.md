@@ -22,28 +22,24 @@ A good order would be:
 
 - Guitar
 - [Tuning](#tuning)
-	- Before everything to get the raw guitar tone to maximise tuning accuracy.
+    - Before everything to get the raw guitar tone to maximise tuning accuracy.
 - [Dynamics](#dynamics)
-	- Before all effects to level out the sound ready for further signal processing.
+    - Before all effects to level out the sound ready for further signal processing.
 - [Pitch](#pitch-effects) (change the pitch of the signal).
-	- After Dynamics, because we want to cleanly pitch shift a levelled signal, not the raw signal.
-	- Before all other effects, so pitch shifting can be cleanly achieved.
+    - After Dynamics, because we want to cleanly pitch shift a levelled signal, not the raw signal.
+    - Before all other effects, so pitch shifting can be cleanly achieved.
 - [Gain](#gain-effects) (to adjust gain and/or dirty the signal).
-	- After Dynamics + Pitch, because Dynamics + Pitch pedals need a clean signal to work best.
-	- Before Modulations, because Gain pedals aren't just about distortion but about increasing loudness in the
-	  desired way _before_ modulation effects, since we'll also get loudness after modulations from the amp.
+    - After Dynamics + Pitch, because Dynamics + Pitch pedals need a clean signal to work best.
+    - Before Modulations, because Gain pedals aren't just about distortion but about increasing loudness in the
+      desired way _before_ modulation effects, since we'll also get loudness after modulations from the amp.
 - [Modulations](#modulation-effects) (actual "effects" that make the signal sound cool / weird).
-	- After Gain, to receive the signal with the amount of gain desired before modulation effects.
-	- Before Time-based, so that time-based effects don't screw with the modulation effects or signal quality.
+    - After Gain, to receive the signal with the amount of gain desired before modulation effects.
+    - Before Time-based, so that time-based effects don't screw with the modulation effects or signal quality.
 - [Time-based Modulations](#time-based-modulation-effects) (effects that mess with signal timing).
-	- After other Modulations, since time-effects can do weird things to signals that make other modulations sound weird
-	  if done before.
+    - After other Modulations, since time-effects can do weird things to signals that make other modulations sound weird
+      if done before.
 - Amp input
 - Amp speaker sound
-
-## Buffers
-
-TODO: A note on buffers.
 
 ## Amp effects loop option
 
@@ -139,6 +135,65 @@ Pedals that modulate (change the frequency of the signal) in ways that use time 
 - Chorus
 - Phaser
 
+## Buffers & Impedance
+
+TL;DR: Buffers are useful. Putting a buffer at least at the _start_ and _end_ of your pedalboard ensures your signal
+strength is maintained between your guitar and your amp, and the clarity of the signal (the notes and tone) are
+minimally affected by the added impedance of the pedals.
+
+### Quick science lesson on impedance
+
+Electromagnets produce a magnetic field from an electric current. Changes to the current changes the magnetic field.
+Variable reluctance sensors (VR sensors) are the opposite: Creating an electric current from a changes in a magnetic
+field.
+
+Guitar pickups are VR sensors. The magnet in the pickup magnetises the string. Plucking the string changes the magnetic
+field which produces an electric current. Since the plucking of a string is a _wave_ it produces an alternating
+current (and therefore also an alternating voltage). The frequency of this alternating electric signal corresponds to
+the frequency of the note (The "A" above middle C = 440 Hz).
+
+Impedance is a measurement of "opposition to alternating current flow" and can be calculated as:
+
+> Impedance = Voltage / Current  
+> where we measure the values of an alternating Voltage and Current at the "peaks" of the signal wave.
+
+Therefore, you can perceive impedance in two ways when it comes to electric guitar audio signals:
+
+1. The measurable impedance of any electric audio signal coming as an _**output**_ from a source (e.g. a guitar or pedal
+   output).
+2. The measurable impedance of any component that receives an electric audio signal as an _**input**_, like a pedal
+   input or amp input.
+
+In order for an input to receive and handle a signal from an output, the impedance needs to match. We as guitarists /
+sound engineers don't need to do this, as "physics" does this for us by having the input reduce the Voltage or Current
+amplitude of the signal, to ensure the impedance matches. This is important for handling audio for two reasons:
+
+1. Different signal frequencies have different measurable impedances (because the ratio between Voltage and Current is
+   different at different frequencies, because "physics").
+2. Audio processing gear produce sound based on the _Voltage_ frequency & amplitude of the signal, not the Current.
+
+In order to retain signal quality, we want to always reduce Current amplitude rather than Voltage, so the audio gear can
+receive the full amplitude signal. In order to ensure this for all frequencies, we need to ensure that output signals
+have a much lower impedance than the component input will receive.
+
+If we don't do this, the physics of this "impedance-matching" results in the Voltage being changed which affects signal
+quality and tone. Typically feeding a higher impedance output signal into a lower impedance component results in the
+signal becoming weaker and the higher pitches of our guitar sound being diminished and a "warmer" but less "clear" tone
+produced - as you find with a guitar with passive pickups which produce a high impedance output.
+
+### Buffers reduce output impedance
+
+Buffers take a signal with high impedance and convert it to a signal with low impedance, by boosting the Current
+amplitude (and usually leaving the Voltage amplitude untouched).
+
+A pedal with a buffer means that the pedal can have a high impedance input, but a low impedance output, which results in
+the quality of the signal to be retained as it passes through more pedals.
+
+You could have buffers on every pedal, but this is a bit overkill. Typically, having a buffer at the start of the signal
+chain ensures the signal has a low output impedance at the start and reduce the affect subsequent pedals will have on
+the signal as they add impedance. It is also common to have a buffer at the end of the pedalboard to ensure that the
+signal again has a low impedance before it is sent to the amp.
+
 ## Sources
 
 As well as just my own experience / knowledge, I also used a bunch of sources to put this page together:
@@ -149,4 +204,11 @@ As well as just my own experience / knowledge, I also used a bunch of sources to
 - [Types of Guitar Pedals (guitarlobby.com)](https://www.guitarlobby.com/types-of-guitar-pedals/)
 - [Time-Based pedal (effects-pedals.info)](https://www.effects-pedals.info/c/time-based/)
 - [A Crash Course on Buffers (premierguitar.com)](https://www.premierguitar.com/pro-advice/tone-tips/guitar-pedal-buffer)
-
+- [Champion Legacy: Understanding Guitar Signals](https://championleccy.com/2017/02/02/clever-stuff-1-guitar-signals/)
+- [Champion Legacy: Understanding Impedance](https://championleccy.com/2017/02/02/clever-stuff-2-get-outta-my-way-impedance/)
+- [Wikipedia: Pickup](https://en.wikipedia.org/wiki/Pickup_(music_technology))
+- [Wikipedia: Impedance](https://en.wikipedia.org/wiki/Electrical_impedance)
+- [Sweetwater YouTube: What is High Impedance](https://www.youtube.com/watch?v=5Ruc4SoGgNw)
+- [Understanding buffers (jhspedals.info)](https://jhspedals.info/pages/understanding-buffers)
+- [High vs Low impedance - How it affects guitar tone (pedalplayers.com)](https://pedalplayers.com/high-vs-low-impedance-how-it-affects-guitar-tone/)
+- [A better explanation of impedance for Audio signals](https://www.youtube.com/watch?v=TjC1Zbm4xpc)
