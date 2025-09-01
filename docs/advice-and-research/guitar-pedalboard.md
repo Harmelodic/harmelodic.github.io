@@ -98,7 +98,17 @@ Dynamics == Pedals that "dynamically" affect the volume (amplitude) of the signa
 So: compression pedals. Makes the loud bits quieter and the quiet bits louder to "even out" the volume of the different
 parts of the signal, before we go mess with it later in the signal chain.
 
-TODO: Compression ratios? milliseconds of attack?
+Compression pedals can have a couple of different controls:
+
+- Threshold (or Sustain, Sensitivity, or just "compression"): Measured in decibels (dB) and it's the amount of volume
+  that is required before the compressor starts to compress the audio.
+- Attack: Measured in milliseconds, this is how quickly the compressor will start doing compression after it receives a
+  burst of signal.
+- Release: Measured in milliseconds, this is how quickly the compressor will stop compressing the audio after
+  compression is no longer needed.
+- Compression Ratio: A ratio of how much compression to perform (1:1 = no compression, 2:1 = some, 4:1 = more, etc.)
+- Volume / Makeup Gain: A extra boost in volume, in case the compressor is compressing as intended but the signal is now
+  a little too quiet.
 
 ### Pitch effects
 
@@ -200,7 +210,8 @@ As well as just my own experience / knowledge, I also used a bunch of sources to
 - [Champion Legacy: Understanding Impedance](https://championleccy.com/2017/02/02/clever-stuff-2-get-outta-my-way-impedance/)
 - [Wikipedia: Pickup](https://en.wikipedia.org/wiki/Pickup_(music_technology))
 - [Wikipedia: Impedance](https://en.wikipedia.org/wiki/Electrical_impedance)
-- [Sweetwater YouTube: What is High Impedance](https://www.youtube.com/watch?v=5Ruc4SoGgNw)
 - [Understanding buffers (jhspedals.info)](https://jhspedals.info/pages/understanding-buffers)
 - [High vs Low impedance - How it affects guitar tone (pedalplayers.com)](https://pedalplayers.com/high-vs-low-impedance-how-it-affects-guitar-tone/)
 - [A better explanation of impedance for Audio signals](https://www.youtube.com/watch?v=TjC1Zbm4xpc)
+- [A guitarists guide to compression](https://www.premierguitar.com/pro-advice/state-of-the-stomp/a-guitarists-guide-to-compression)
+- [How Do Compressor Pedals Work?](https://www.youtube.com/watch?v=LUXR8UnYhzc)
