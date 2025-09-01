@@ -135,15 +135,18 @@ Pedals that modulate (change the frequency of the signal) in ways that use time 
 - Chorus
 - Phaser
 
-## Buffers & Impedance
+## Buffers
 
-TL;DR: Buffers are useful. Putting a buffer at least at the _start_ and _end_ of your pedalboard ensures your signal
+Buffers are features of pedals that ensures the pedal takes in a high impedance signal and outputs a low impedance
+signal. This is done in an effort to retain signal quality.
+
+It is generally recommended to put a buffer at least at the _start_ and _end_ of your pedalboard ensures your signal
 strength is maintained between your guitar and your amp, and the clarity of the signal (the notes and tone) are
 minimally affected by the added impedance of the pedals.
 
 ### Quick science lesson on impedance
 
-Electromagnets produce a magnetic field from an electric current. Changes to the current changes the magnetic field.
+Electromagnets produce a magnetic field from an electric current, and changes to the current changes the magnetic field.
 Variable reluctance sensors (VR sensors) are the opposite: Creating an electric current from a changes in a magnetic
 field.
 
@@ -159,40 +162,29 @@ Impedance is a measurement of "opposition to alternating current flow" and can b
 
 Therefore, you can perceive impedance in two ways when it comes to electric guitar audio signals:
 
-1. The measurable impedance of any electric audio signal coming as an _**output**_ from a source (e.g. a guitar or pedal
+1. The measurable _**output**_ impedance of any device that produces an electric audio signal (e.g. a guitar or pedal
    output).
-2. The measurable impedance of any component that receives an electric audio signal as an _**input**_, like a pedal
-   input or amp input.
+2. The measurable _**input**_ impedance of any device that receives an electric audio signal (e.g. a pedal input or amp
+   input).
 
-In order for an input to receive and handle a signal from an output, the impedance needs to match. We as guitarists /
-sound engineers don't need to do this, as "physics" does this for us by having the input reduce the Voltage or Current
-amplitude of the signal, to ensure the impedance matches. This is important for handling audio for two reasons:
+In order for an input device to receive and handle a signal from an output, the impedance needs to match. We as
+guitarists / sound engineers don't need to do this, as "physics" does this for us by having the input of a device reduce
+the Voltage or Current amplitude of the signal, to ensure the impedance matches. This is important for handling audio
+for two reasons:
 
 1. Different signal frequencies have different measurable impedances (because the ratio between Voltage and Current is
    different at different frequencies, because "physics").
 2. Audio processing gear produce sound based on the _Voltage_ frequency & amplitude of the signal, not the Current.
 
+This has the nasty effect that if a high impedance signal is fed into a low impedance signal, then for some frequencies
+the Voltage amplitude will be reduced, which affects the quality of the signal.
+
 In order to retain signal quality, we want to always reduce Current amplitude rather than Voltage, so the audio gear can
 receive the full amplitude signal. In order to ensure this for all frequencies, we need to ensure that output signals
-have a much lower impedance than the component input will receive.
+have a much lower impedance than the input of the device that will receive the signal.
 
-If we don't do this, the physics of this "impedance-matching" results in the Voltage being changed which affects signal
-quality and tone. Typically feeding a higher impedance output signal into a lower impedance component results in the
-signal becoming weaker and the higher pitches of our guitar sound being diminished and a "warmer" but less "clear" tone
-produced - as you find with a guitar with passive pickups which produce a high impedance output.
-
-### Buffers reduce output impedance
-
-Buffers take a signal with high impedance and convert it to a signal with low impedance, by boosting the Current
-amplitude (and usually leaving the Voltage amplitude untouched).
-
-A pedal with a buffer means that the pedal can have a high impedance input, but a low impedance output, which results in
-the quality of the signal to be retained as it passes through more pedals.
-
-You could have buffers on every pedal, but this is a bit overkill. Typically, having a buffer at the start of the signal
-chain ensures the signal has a low output impedance at the start and reduce the affect subsequent pedals will have on
-the signal as they add impedance. It is also common to have a buffer at the end of the pedalboard to ensure that the
-signal again has a low impedance before it is sent to the amp.
+A buffer is a feature of a pedal that ensures that the input has a high impedance but the signal is boosted to have a
+low impedance when it is output of the pedal.
 
 ## Sources
 
