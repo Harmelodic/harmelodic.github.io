@@ -89,7 +89,7 @@ Pedals that help you tune your instrument by reading the signal.
 - Strobe
 - Accuracy (+/- cent)
 - Mute on switch / pass through
-- Buffer?
+- Useful to have a [buffer](#buffers) here on this
 
 ### Dynamics
 
