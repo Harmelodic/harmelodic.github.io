@@ -49,12 +49,14 @@ through [standardisation](./standards-vs-abstractions.md).
 
 Basically the stuff in the [build process](./shipping-software.md#build). Things like:
 
-- Format checks
-- Linting checks
-- Spotting bugs
-- Modernisation checks
-- Code rules
+- Code Compliance
+    - Format checks
+    - Linting checks
+    - Spotting bugs
+    - Modernisation checks
+    - Code rules
 - Tests
+- Actually compiles
 
 Of carrots and stick, this is quite "stick"-focused, as breaches / errors / infractions block the software from being
 built.

@@ -17,7 +17,7 @@ Build processes take code and produce artifacts. What the code is intended for, 
 
 In a build process you tend to want to do:
 
-- **Code Analysis Checks**
+- **Code Compliance**
 	- Linting to ensure adherence to a code formatting / style guide / code structure rules.
 	- Make suggestions for modernising code.
 	- Detecting bugs and code smells
