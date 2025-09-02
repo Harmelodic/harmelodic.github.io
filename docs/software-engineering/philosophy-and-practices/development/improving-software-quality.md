@@ -9,6 +9,10 @@ There are two sides to improving software:
 1. Building better or more features.
 2. Improve all the rest of the qualities of the software (often dubbed "non-functional" qualities)
 
+It's worth noting that it's not only the _actual_ software that can be improved using the following principles &
+practices, but everything "around" the software too (documentation, specifications, infrastructure code, automation
+pipelines, metadata code, build files, etc.).
+
 ## When to improve
 
 Improve the software when you need to improve the software.
@@ -38,6 +42,9 @@ accessibility, etc.) it helps to have any and/or all the following:
 - Automated build validation & verification that blocks bad software from being built.
 - Automated maintenance systems that passively & continuously updates (or suggests updates) the software.
 
+The automated detection, code analysis checks, fixing and updating can be made substantially easier to perform
+through [standardisation](./standards-vs-abstractions.md).
+
 ### Automated build validation & verification
 
 Basically the stuff in the [build process](./shipping-software.md#build). Things like:
@@ -54,9 +61,9 @@ built.
 
 ### Automated maintenance systems
 
-Continuous code analysis tools.
+Passively continuous code analysis tools.
 
-This can be as simple as giving engineers information for them to manually improve their software.
+This can be as simple as giving engineers information for them to manually improve their software (SonarQube, etc.).
 
 However, the better ones continuously improve the software automatically (or suggest to do so). This is stuff like:
 
