@@ -1,13 +1,13 @@
 # Fairphone 5 Review - after 2 months
 
 > Originally published: 27 June 2024
-
-I bought a Fairphone 5 on the 6th of May 2024. That's about 2 months before I wrote this... ish.
-
-> Note: On July 15th 2024, Fairphone released a new version of Fairphone OS, based on Android 14. Some of the minor
+>
+> Note: On 15th July 2024, Fairphone released a new version of Fairphone OS, based on Android 14. Some of the minor
 > issues that I mention in this post have now been fixed.
 >
 > Read more in [my post on the update](./fairphone-5-review-update-android-14.md).
+
+I bought a Fairphone 5 on the 6th of May 2024. That's about 2 months before I wrote this... ish.
 
 ## Why a new phone?
 

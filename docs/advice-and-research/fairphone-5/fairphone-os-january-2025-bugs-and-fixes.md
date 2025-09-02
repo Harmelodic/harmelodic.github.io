@@ -1,6 +1,10 @@
 # Fairphone OS - January 2025 - Bugs and Fixes
 
-Fairphone released a new version of *Fairphone OS* on January 27th 2025:
+> Note: On 9th September 2025, Fairphone released a new version of Fairphone OS, based on Android 15.
+>
+> Read more in [my post on the update](./fairphone-5-review-update-android-15.md).
+
+Fairphone released a new version of *Fairphone OS* on 27th January 2025:
 
 - Fairphone 5 [release notes](https://support.fairphone.com/hc/en-us/articles/18682800465169-Fairphone-5-OS-Release-Notes)
 - Fairphone 4 [release notes](https://support.fairphone.com/hc/en-us/articles/4405858220945-Fairphone-4-OS-Release-Notes)

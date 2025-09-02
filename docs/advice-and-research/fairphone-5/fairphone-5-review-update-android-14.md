@@ -1,6 +1,10 @@
 # Fairphone 5 Review Update - Android 14
 
 > Originally published: 16 June 2024
+>
+> Note: On 27th January 2025, Fairphone released a new version of Fairphone OS, with security patches.
+>
+> Read more in [my post on the update](./fairphone-os-january-2025-bugs-and-fixes.md).
 
 A short while ago, I made
 a [review of the Fairphone 5, after using it for ~2 months](./fairphone-5-review-after-2-months.md).

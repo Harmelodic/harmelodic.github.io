@@ -1,7 +1,8 @@
 # Fairphone 5 Review Update - Android 15
 
-After the [Android 14 upgrade](./fairphone-5-review-update-android-14.md), and a bunch of security patches, another
-update for Fairphone OS update has come to the Fairphone 5 (my phone): Android 15.
+After the [Android 14 upgrade](./fairphone-5-review-update-android-14.md), and a bunch
+of [security patches](./fairphone-os-january-2025-bugs-and-fixes.md), another update for Fairphone OS update has come to
+the Fairphone 5 (my phone): Android 15.
 
 As far as I can tell, it's extremely similar to Android 14, with a few added features and UI tweaks.
 
