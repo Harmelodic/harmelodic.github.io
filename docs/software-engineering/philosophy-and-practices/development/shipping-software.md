@@ -39,6 +39,11 @@ In a build process you tend to want to do:
     - Bundling to create an artifact.
     - Signing the artifact.
     - Storage of the artifact.
+- **Reporting**
+    - Produces a report for each of the above areas for tracking quality, ideally in a standard format (SARIF, JUnit,
+      etc.)
+    - Produces an alert / notification of build completion
+    - Produces a report about build times (with each process) for insights into the build process
 
 Note: Producing new versions of artifacts for users to access (if the artifact itself is what the users use), is NOT
 part of the build process. That is part of the [release](#release) process.
