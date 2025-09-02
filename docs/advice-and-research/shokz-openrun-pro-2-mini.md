@@ -56,6 +56,8 @@ Mini_. Here's how I got there and my review so far.
 	  other models).
 	- Intuitive controls (volume buttons and an action button for play/pause/skip-track/back-track)
 
+So, I went for the _OpenRun Pro 2 Mini_ by _Shokz_!
+
 ## Findings
 
 It's pretty good!
