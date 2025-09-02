@@ -3,7 +3,7 @@
 > Originally published: 16 June 2024
 
 A short while ago, I made
-a [review of the Fairphone 5, after using it for ~2 months](https://harmelodic.com/blog/fairphone-5-review-after-2-months).
+a [review of the Fairphone 5, after using it for ~2 months](./fairphone-5-review-after-2-months.md).
 
 In this review, I recommend the Fairphone 5, though I had a bunch of minor issues with the Fairphone 5. Many of them
 were issues that I figured were likely issues with Stock Android (though as I made clear in the previous post, I believe

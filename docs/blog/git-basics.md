@@ -106,7 +106,7 @@ git remote add origin https://github.com/Harmelodic/my-cool-site.git
 ```
 
 If you want to learn about connecting to remote repos via SSH, I also
-have [a guide on how to do this](https://harmelodic.com/blog/git-with-ssh).
+have [a guide on how to do this](./git-with-ssh.md).
 
 Later, when you've "committed" your code & code changes into Git, you'll be able to "push" them from your local
 repository to your remote repository. Then, if there are new changes in your remote repository but not locally, you

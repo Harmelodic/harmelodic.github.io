@@ -7,7 +7,7 @@ I bought a Fairphone 5 on the 6th of May 2024. That's about 2 months before I wr
 > Note: On July 15th 2024, Fairphone released a new version of Fairphone OS, based on Android 14. Some of the minor
 > issues that I mention in this post have now been fixed.
 >
-> Read more in [my post on the update](https://harmelodic.com/blog/fairphone-5-review-update-android-14).
+> Read more in [my post on the update](./fairphone-5-review-update-android-14.md).
 
 ## Why a new phone?
 

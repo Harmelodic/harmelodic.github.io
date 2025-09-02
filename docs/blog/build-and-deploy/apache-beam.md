@@ -8,7 +8,7 @@ workloads, and Apache Beam's programming model (and compatible runners) can take
 exceptional performance of data processing.
 
 Unlike other server software where build and deployment is done via containerization of applications (
-see: [Build & Deploy: Containers](https://harmelodic.com/blog/build-deploy-containers)), Apache Beam projects are
+see: [Build & Deploy: Containers](./containers.md)), Apache Beam projects are
 handled a little differently... although not as different as you might think, when deploying to Dataflow.
 
 This blog post covers a high-level view of how Apache Beam *__Java__* projects are built, and then deployed to run on an
@@ -30,7 +30,7 @@ If we're using Java then that means we're most likely using Maven or Gradle to h
 Maven and have found Maven to be much more widely used, so I'll be putting more focus on that).
 
 To learn about generically building Maven projects,
-see [Build & Deploy: Maven projects](https://harmelodic.com/blog/build-deploy-maven-projects).
+see [Build & Deploy: Maven projects](./maven.md).
 
 Tests are run in the normal way for Java / Maven projects (JUnit and Surefire/Failsafe). There are some useful documents
 from both [Apache](https://beam.apache.org/documentation/pipelines/test-your-pipeline/)
@@ -95,7 +95,7 @@ Cloud's [Dataflow Pipeline lifecycle document](https://cloud.google.com/dataflow
 their [Dataflow pipeline best practices document](https://cloud.google.com/dataflow/docs/guides/pipeline-best-practices).
 
 In a professional setup, I recommend having 2 central container image registries (as I explain in
-my [Build & Deploy: Containers](https://harmelodic.com/blog/build-deploy-containers) post).  
+my [Build & Deploy: Containers](./containers.md) post).  
 Similarly, I recommend having 2 template specification buckets for the same reason: One for production template
 specifications, one for non-production template specifications. Only production template specifications should be
 allowed to be used in production. This improves the security of not allowing anything not built for production to be put

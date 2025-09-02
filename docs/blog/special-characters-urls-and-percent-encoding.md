@@ -15,7 +15,7 @@ implemented badly.
 
 If you wanted to provide an interface/service/adapter/bit-of-code for the rest of your application to perform HTTP
 requests, for example:    
-`http://harmelodic.com/api/services/testing.html?username=nedflanders&password=howdy+neighbour`  
+`http://example.com/api/services/testing.html?username=nedflanders&password=howdy+neighbour`  
 What do you do with your special characters?
 
 Well, the natural thing to do would be to %-encode them, but that puts you in a tricky situation with lovely (
