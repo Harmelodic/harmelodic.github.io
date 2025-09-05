@@ -13,11 +13,11 @@ A (sort of) Software Engineering handbook.
 ## Contents
 
 - **Philosophy and Practices** - A section for general software engineering values, principles and practices, covering:
-	- Architecture
-	- Contracts & APIs
-	- Development
-	- Operations
-	- Organisational Operations (Management, Ways of working, etc.)
+    - Architecture
+    - Contracts & APIs
+    - Development
+    - Operations
+    - Organisational Operations (Management, Ways of working, etc.)
 
 Documentation & guidance for different engineering ecosystems:
 
@@ -33,12 +33,12 @@ Each ecosystem covers:
 
 - Specific principles & practices (inc. architecture)
 - Per language covered:
-	- Development specifics
-		- Overview of the language ecosystem
-		- Local machine setup
-		- Shipping (Build & Release)
-		- Doing specific things in that language
-	- Operational specifics
+    - Development specifics
+        - Overview of the language ecosystem
+        - Local machine setup
+        - Shipping (Build & Release)
+        - Doing specific things in that language
+    - Operational specifics
 
 Use to use:
 
@@ -66,7 +66,8 @@ Now I use [mise-en-place](https://mise.jdx.dev).
 - Philosophy: Treat it as an exercise for codifying what your engineering culture is (or what it should be). Talk
   about practices you like, to discover values and principles you adhere to (or want to adhere to), and write them
   down. Figure out the processes for decision-making and document them, to make them transparent and work for your
-  organisation.
+  organisation. This philosophy essentially forms a social contract that engineers (or even the whole organisation) have
+  between themselves and align on.
 - Team practices (meeting cadences, on-call schedules, team-specific development practices) should be in the
   handbook, so that teams and see how other teams function, and can learn from one another via the handbook.
 - Experiments trying things (new development practices, new library) should be documented in the relevant section.
