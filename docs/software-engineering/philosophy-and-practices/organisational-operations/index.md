@@ -15,6 +15,10 @@ TODO:
 - Decision-making
 	- Design by committee vs Design by dictator - no, design with proof, decide by consensus
     - Trade-offs, balance, who gets involved, etc.
+    - ADRs
+    - Advice and Guidance
+    - Facilitating Software Architecture
+    - Decision-making processes e.g. ADR processes, Double-diamond design-thinking (problem, solution)
 - Management vs Technical Leadership
 - Management lessons learned
 - Include a "Software Organisation Management Lifecycle" page that tells the story of how an organisation goes from
