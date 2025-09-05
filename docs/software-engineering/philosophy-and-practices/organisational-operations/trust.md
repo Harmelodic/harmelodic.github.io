@@ -1,5 +1,7 @@
 # Trust
 
+## Establishing trust
+
 Trust is not earned. Trust is given.
 
 - Truster = The person / team / organisation who trusts the trustee.
@@ -18,6 +20,8 @@ Everything is easier when the ego is put aside, trust is placed, and acceptance 
 If acceptance of failure is too risky, then place trust but provide plenty of support and good leadership & management
 to increase the likelihood of success.
 
+## Breaches of trust
+
 Trust is given, but irresponsible actions can breach trust. When this occurs, acknowledgement of this breach of trust
 must be given followed by honest conversation as to how to rectify the situation. The ideal outcome is that the truster
 sets fair expectations, the trustee commits to those expectations, trust is given once more and we move on.
@@ -27,5 +31,7 @@ leads to further issues, and nothing gets better and no one feels better.
 
 Repeated or significate breaches of trust should have significant consequences (e.g. contract termination).
 
-Note: This is all related to the social-related parts of engineering. For security purposes, zero-trust is needed, but
-that is more on the technical (IT, platform, architecture) side of things.
+## Note
+
+This is all related to the social-related parts of engineering. For security purposes, zero-trust is needed, but that is
+more on the technical (IT, platform, architecture) side of things.
