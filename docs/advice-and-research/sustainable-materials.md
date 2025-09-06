@@ -29,7 +29,7 @@ Don't encourage this behaviour buying or using plastic / synthetic fabrics.
 
 I'm not going to go too much into material engineering, but here's some especially useful things to know:
 
-## Wool and Merino wool is excellent
+## Wool and merino wool is excellent
 
 - Wool aids [thermoregulation](https://en.wikipedia.org/wiki/Thermoregulation) by the wool fibres forming pockets for
   air which is insulating and keeps your warm, and helps wicks away sweat effectively which prevents overheating.
@@ -41,6 +41,20 @@ I'm not going to go too much into material engineering, but here's some especial
 - Wool fibres from the inner layer of the wool-producing animal are softer and typically more expensive. This is good
   for base layers and clothing that touches your skin.
 - Merino wool is fine (thin), soft, lightweight and slightly stretchy which hugely improves comfort.
+
+### Sustainable wool
+
+Many manufacturers put the wool fibers through environmentally **unfriendly** processes before making the wool into
+clothing to try to make them [shrink resistant](https://www.sciencedirect.com/science/article/pii/S209012321930013X).
+
+For example the chlorine-Hercosett (aka "superwash") process, the PMS process, the Ozone/Hercosett process or even the
+oddly-named "Life Fiber Eco-Friendly Treatment". These processes result in the wool fibers being coated in a
+plastic resin (polymerization) which is not only not sustainable but also somewhat negates the positive effects of
+using wool (natural, biodegradable fabric and natural antibacterial quality). Other components (like chlorine and ozone)
+in these processes aren't particularly good for the environment either (harmful to the skin or other organisms).
+
+Some clothing manufacturers, like _Dilling_ or _Icebreaker_, make decent efforts to use sustainably-sourced,
+plastic-free or even entirely organic wool.
 
 ## Other useful knowledge
 
