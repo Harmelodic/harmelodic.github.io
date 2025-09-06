@@ -34,7 +34,9 @@ In a build process you tend to want to do:
     - Integration Tests
     - Contract Tests
     - Necessary or Simple Performance Tests and/or Benchmarks
-    - _Zero_ Integrated Tests - not worth [The Shared Test Data Problem](the-shared-test-data-problem.md)
+    - _Zero_ Integrated Tests - not worth [The Shared Test Data Problem](the-shared-test-data-problem.md), also
+      see [Integrated Tests are a Scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
+
 - **Packaging**
     - Bundling to create an artifact.
     - Signing the artifact.
@@ -67,6 +69,16 @@ development/pre-release/release-candidate artifacts, and not available in an art
 
 Implementation specifics to the building different projects can be found in the specific sections
 under [Software Engineering](../../index.md).
+
+### Static Analysis tools
+
+- [GitHub Code Security](https://docs.github.com/en/code-security/getting-started/github-security-features)
+- [GitLab Security Configuration](https://docs.gitlab.com/ee/user/application_security/configuration/)
+- [Renovate by Mend](https://docs.renovatebot.com/)
+- [Snyk](https://snyk.io/plans)
+- [SonarQube by SonarSource](https://www.sonarsource.com/products/sonarqube/)
+- [Sourcegraph](https://about.sourcegraph.com/)
+- [Synopsys (BlackDuck) Application Security Testing](https://www.synopsys.com/software-integrity/solutions/application-security-testing.html)
 
 ## Release
 

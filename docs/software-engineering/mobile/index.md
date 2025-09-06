@@ -3,3 +3,20 @@
 - React Native
 - Kotlin (Android)
 - Swift (iOS / iPadOS / Universal Apps)
+- Dart / Flutter
+
+## Mobile Development
+
+- [Android Dev Guides](https://developer.android.com/guide/)
+- [Firebase - Platform](https://firebase.google.com/)
+- [React Native](https://reactnative.dev/)
+- [Swift Docs](https://swift.org/documentation/)
+- [adb - Android Debug Bridge](https://developer.android.com/tools/adb)
+- [scrcpy - Screen Copy (Android)](https://github.com/Genymobile/scrcpy)
+
+## Dart
+
+- [Dart programming language](https://dart.dev/)
+- [Flutter - Framework for Dart](https://flutter.dev/)
+- [Flutter Course - App Brewery](https://www.appbrewery.co/p/flutter-development-bootcamp-with-dart)
+- [Flutter LiveCoding](https://www.youtube.com/watch?v=w2TcYP8qiRI)

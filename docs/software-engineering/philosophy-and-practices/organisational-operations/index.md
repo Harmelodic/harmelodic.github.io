@@ -38,3 +38,36 @@ TODO:
 	- Admin departments tend to scale better than product departments.
 	- Top-down/bottom-up decision-making/power, and the preferences from each perspective (mgmt, workers)
 
+## Business & Management useful links
+
+- [Tom Peters (Extreme Humanism)](https://tompeters.com/)
+- [DevOps](https://en.wikipedia.org/wiki/DevOps)
+- [Site Reliability Engineering - Google](https://landing.google.com/sre/book/index.html)
+- [The One Minute Manager](https://en.wikipedia.org/wiki/The_One_Minute_Manager)
+- [Agile Manifesto](https://agilemanifesto.org/)
+- [Modern Agile](https://modernagile.org/)
+
+## Project Management
+
+- [Asana](https://asana.com/)
+- [Jira - Atlassian](https://www.atlassian.com/software/jira)
+- [Trello](https://trello.com/)
+- [YouTrack - Jetbrains](https://www.jetbrains.com/youtrack/)
+
+## Handling Email
+
+- [Apache James](https://james.apache.org/)
+- [Mailchimp](https://mailchimp.com/)
+- [Postfix](https://www.postfix.org/)
+- [roundcube](https://roundcube.net/)
+- [Sendgrid](https://sendgrid.com/)
+
+## Regulations
+
+- [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679)
+- [PCI Payment Security Standards](https://www.pcisecuritystandards.org/)
+
+## Scheduling
+
+- [Doodle](https://doodle.com/)
+- [YouCanBookMe](https://youcanbook.me/)

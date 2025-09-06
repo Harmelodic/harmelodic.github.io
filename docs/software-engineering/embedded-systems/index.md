@@ -19,12 +19,27 @@ C/C++ tooling:
 - Building is done with Makefiles and/or CMake, with compilation and linking.
 - Dependency / Package Management can be done with Conan, or with a carefully constructed build environment that
   contains the dependencies needed.
+- [CMake](https://cmake.org/)
+- [Conan - Package Manager](https://conan.io/)
+- [GNU make](https://www.gnu.org/software/make/manual/html_node/index.html)
+- [GTK Docs](https://docs.gtk.org/)
+- [learn-cpp.org](https://www.learn-cpp.org/)
+- [learncpp.com](https://www.learncpp.com/)
+- [Qt Framework Reference](https://doc.qt.io/qt-6.2/reference-overview.html)
 
 Rust tooling:
 
 - Development using a text editor, VS Code or RustRover.
 - Building is done with Cargo.
 - Dependency / Package Management is done with Cargo.
+- [Cargo - Reference](https://doc.rust-lang.org/cargo/reference/index.html)
+- [Rust Playground](https://play.rust-lang.org/)
+- [The Rust Book](https://doc.rust-lang.org/book/title-page.html)
+- [crates.io](https://crates.io/)
+- [gtk - crate](https://crates.io/crates/gtk)
+- [imgui - crate](https://crates.io/crates/imgui)
+- [qt_core - crate](https://crates.io/crates/qt_core)
+
 
 Python / [MicroPython](https://docs.micropython.org) tooling:
 

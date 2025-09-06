@@ -73,3 +73,65 @@ Now I use [mise-en-place](https://mise.jdx.dev).
 - Experiments trying things (new development practices, new library) should be documented in the relevant section.
 - Documentation for systems should be with the system code (e.g. in the `docs` directory in a repo) and not in the
   handbook.
+
+## Random Useful Dev Tools
+
+- [Crontab Guru](https://crontab.guru/)
+- [CyberChef](https://gchq.github.io/CyberChef/)
+- [Devhints](https://devhints.io/)
+- [ffmpeg](https://ffmpeg.org/) - Everything Audio/Visual stream processing tool
+- [ghostscript](https://ghostscript.readthedocs.io/en/latest/) - Everything PDF tool
+- [IETF Author Resources](https://authors.ietf.org/)
+- [osquery - SQL-like OS querying](https://osquery.io/)
+
+## Software Blogs
+
+- [Andrew Harmel-Law](https://andrewharmellaw.github.io/)
+- [Contempt Culture - Aurynn Shaw](https://blog.aurynn.com/2015/12/16-contempt-culture)
+- [Geoff Does Stuff - Geoff Lawrence](https://geoffdoesstuff.com/)
+- [GitHub Blog](https://github.blog/)
+- [Jetbrains Blog](https://blog.jetbrains.com/)
+- [Julia Evans](https://jvns.ca/)
+- [Mozilla Hacks](https://hacks.mozilla.org/)
+- [Red Route - Malcolm Young](https://red-route.org/)
+- [Software disenchantment - Tonsky](https://tonsky.me/blog/disenchantment/)
+- [The Google Chrome Book](https://www.google.com/googlebooks/chrome/med_00.html)
+
+## Troubleshooting
+
+- [command-not-found.com](https://command-not-found.com/)
+- [scrcpy - Screen Copy (Android)](https://github.com/Genymobile/scrcpy)
+
+## Security
+
+- [Darktrace](https://www.darktrace.com)
+- [GNU Privacy Handbook](https://www.gnupg.org/gph/en/manual/book1.html)
+- [GPG (GnuPG)](https://www.gnupg.org/)
+- [GPG Cheat Sheet](https://gock.net/blog/2020/gpg-cheat-sheet)
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
+- [Open Source Insights](https://deps.dev/)
+- [Phil's PGP Docs](https://www.phildev.net/pgp/)
+- [eicar Anti-Malware Testfile](https://www.eicar.org/?page_id=3950)
+- [security.txt](https://securitytxt.org/)
+
+## Security Analysis (Hacking)
+
+- [AbuseIPDB](https://www.abuseipdb.com/)
+- [Binary Ninja](https://binary.ninja/)
+- [BuiltWith](https://builtwith.com/)
+- [CPU.fail](https://cpu.fail/)
+- [CVE - Common Vulnerabilities & Exposures](https://cve.mitre.org/)
+- [Hex Rays IDA - Disassembler](https://www.hex-rays.com/)
+- [Hopper - Disassembler](https://www.hopperapp.com/)
+- [IDA - Interactive Disassembler](https://en.wikipedia.org/wiki/Interactive_Disassembler)
+- [Kali Linux - Penetration Testing Linux Distro](https://www.kali.org/)
+- [Keysweeper - Wireless Keystroke Logger](https://samy.pl/keysweeper/)
+- [Play by Play - Internet of Vulnerabilties](https://www.pluralsight.com/courses/play-by-play-exploring-internet-of-vulnerabilities)
+- [Protect against Cryptojacking](https://scotthelme.co.uk/protect-site-from-cryptojacking-csp-sri/)
+- [Public GitHub User information (harmelodic)](https://api.github.com/users/harmelodic/events/public)
+- [Radare - Reverse Engineering Framework](https://www.radare.org/r/)
+- [Shodan - Network Fisher](https://www.shodan.io/)
+- [Wappalyzer](https://www.wappalyzer.com/)
+- [Xen - Security Advisories](https://xenbits.xen.org/xsa/)
+- [ZMap - Scanners & Tools](https://zmap.io/)
+- [factordb - Find Factors of Big Numbers](http://factordb.com)

@@ -159,3 +159,15 @@ Here's some tips though:
 - Name services after their business or system "role".
 - Consult native-language speakers when working in an international work environment.
 - If in doubt of a name/term, consult a domain expert.
+
+## Software Design
+
+- [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [Domain-driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)
+- [Eight fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+- [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html)
+- [GraphQL in 30 minutes](https://www.youtube.com/watch?v=UBGzsb2UkeY)
+- [Interface control document](https://en.wikipedia.org/wiki/Interface_control_document)
+- [Protocol Buffers Docs](https://protobuf.dev/)
+- [Seven Layers of a System - OSI model](https://en.wikipedia.org/wiki/OSI_model)
+- [Twelve-Factor App methodology](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology)
