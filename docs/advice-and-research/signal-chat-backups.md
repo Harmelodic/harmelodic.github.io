@@ -123,7 +123,7 @@ Short answer: No.
   access to specific files or directories.
 	- (Incidentally, check which apps have this access: `Settings > Apps > Special app access > All files access`. It's
 	  a bit annoying it's not available in the Permissions list for each App in Settings.)
-- ✅ No account needed with Swift Backup, which is nice.
+- ✅ No account needed with Swift Backup service, which is nice.
 - ✅ Good simple Android design.
 - ✅ No sharing of data with 3rd parties.
 - ⚠️ Some data collected (Personal Info, App info, and performance)
@@ -131,7 +131,30 @@ Short answer: No.
 
 #### Autosync
 
-TODO
+Short answer: Mostly yes, but requires payment for long-term use and requires some sacrifices on non-functional
+requirements (security, data-sharing and battery usage).
+
+I tried both _Autosync_ and _DriveSync_ (AutoSync for Google Drive):
+
+- ℹ️ Trial-ware. Only get 14 days to test the app before requiring payment. Payment can either by a subscription (yuck)
+  or a single-purchase lifetime license for a single storage provider (Google Drive, OneDrive, Dropbox) (better).
+- ℹ️ Sync's folders between device and storage provider with different methods (two way, upload only, upload then
+  delete, download only, etc.).
+- ⚠️ Need to accept a EULA (license agreement) and privacy policy. It's fine, but a bit weird.
+- ⚠️ Requires "All files access" - bit much, could be using
+  the [Storage Access Framework](https://developer.android.com/guide/topics/providers/document-provider) to only give
+  access to specific files or directories.
+- ✅ No account needed with MetaCtrl or Autosync, which is nice.
+- ✅ Simple app design.
+- ✅ Provides good configuration options in Settings for autosync.
+- ⚠️ Some data collected (Personal Info, App info, and performance)
+- ❌ "Device or other IDs" are shared with third parties.
+- ⚠️ Requires turning off battery optimization for the app to ensure it runs "reliably" (or... the developer could put
+  the effort it to ensure reliability even under battery optimization conditions?)
+- ❌ The "DriveSync" version brought up a large "Data preferences" screen after launch to select data gathering
+  preferences for advertising purposes, etc. Many of the toggle options marked "Legitimate interest" (fuck off) were
+  toggled on and required manually going through and toggling them all off, including diving into a "Vendor preferences"
+  submenu (fuck off even more). The regular "Autosync" app did not ask for this, thankfully.
 
 #### My Backup Pro
 
