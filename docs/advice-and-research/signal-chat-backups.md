@@ -129,6 +129,18 @@ Short answer: No.
 - ⚠️ Some data collected (Personal Info, App info, and performance)
 - ℹ️ Support for more advanced features, for phones that are rooted (which mine isn't).
 
+#### Autosync
+
+TODO
+
+#### My Backup Pro
+
+TODO
+
+#### All Backup & Restore
+
+TODO
+
 ### A dedicated app for automations?
 
 Automation software allows the automation of lots of tasks, which could include backups. Looking at the Google Play

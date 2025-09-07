@@ -1,4 +1,4 @@
-# coding-guidelines
+# Coding Guidelines
 
 A set of language-agnostic coding guidelines.
 
