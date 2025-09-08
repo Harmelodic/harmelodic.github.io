@@ -21,7 +21,7 @@
 
 /* Brighter colour for active nav links for visibility */
 :root > * {
-	--md-typeset-a-color: #4aa611;
+	--md-typeset-a-color: #4aa611 !important;
 }
 
 /* CSS for all screens */
