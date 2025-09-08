@@ -1,4 +1,4 @@
-# Learning languages
+# Learning Languages
 
 Mostly focused on learning grammar and Swedish.
 
