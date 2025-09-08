@@ -17,6 +17,18 @@ user experience, this kinda sucks.
 If we want to save them, then we need to back up those backup files to a remote location such as a file server or cloud
 storage solution - like Google Drive, Microsoft OneDrive or Dropbox.
 
+> Signal recently [announced](https://signal.org/blog/introducing-secure-backups/) a new feature (still in beta)
+> called "Signal Secure Backups".
+>
+> It looks like it is Signal's own solution for remotely storing backups:
+>
+> - Backups are free for all text messages and the last 45 days of media.
+> - A paid option is available for storing everything (up to 100 GB), at $1.99 / month.
+>
+> It doesn't seem to provide an option for backing up any other storage provider other that Signal's own servers - I'm
+> guessing they're doing that for security reasons, but it's not great for consumer choice (smells like vendor lock-in).
+> It might be that this is just the best option in the end.
+
 ## Requirements
 
 Before digging into the solutions, it's helpful to understand the solution requirements:
