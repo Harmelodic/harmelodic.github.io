@@ -1,14 +1,17 @@
 # Alignment
 
-Alignment is a term to describe how aligned people are in organisations with regard to
-their [values and principles](values-and-principles.md), whatever those may be.
+Alignment is a term to describe how aligned people are in organisations with regard to:
 
-Alignment can be:
+- The shared [values and principles](values-and-principles.md), whatever those may be.
+- The way of working in the team, department & organisation.
+- The understanding of how systems are designed and implemented.
 
-- Used as the balance point between [autonomy and supervision](./organisational-operations/autonomy-vs-supervision.md)
-- Created and maintained via leadership, management, good decision-making processes and onboarding.
-- Analysed by viewing level of consensus / harmony on "what do we value", "what are the problems" and "what are the
-  agreed solutions to those problems".
+Alignment can be therefore:
+
+- _Used_, conceptually, as the balance point between [autonomy and supervision](./organisational-operations/autonomy-vs-supervision.md)
+- _Created_ and _maintained_ via leadership, management, good decision-making processes and onboarding.
+- _Analysed_ by viewing level of consensus / harmony on "what do we value", "what are the problems" and "what are the
+  agreed solutions to those problems" and "how are we working".
 
 ## Importance of alignment
 
