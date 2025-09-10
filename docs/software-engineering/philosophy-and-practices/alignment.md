@@ -6,7 +6,7 @@ Alignment is a term to describe how aligned people are in organisations with reg
 - The way of working in the team, department & organisation.
 - The understanding of how systems are designed and implemented.
 
-Alignment can be therefore:
+Alignment can be therefore be engaged / interacted with in the following ways:
 
 - _Used_, conceptually, as the balance point between [autonomy and supervision](./organisational-operations/autonomy-vs-supervision.md)
 - _Created_ and _maintained_ via leadership, management, good decision-making processes and onboarding.
