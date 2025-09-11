@@ -13,6 +13,7 @@
 - [Swift Docs](https://swift.org/documentation/)
 - [adb - Android Debug Bridge](https://developer.android.com/tools/adb)
 - [scrcpy - Screen Copy (Android)](https://github.com/Genymobile/scrcpy)
+- [Android API Levels](https://apilevels.com/)
 
 ## Dart
 
