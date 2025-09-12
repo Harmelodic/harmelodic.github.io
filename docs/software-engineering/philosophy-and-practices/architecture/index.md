@@ -171,3 +171,4 @@ Here's some tips though:
 - [Protocol Buffers Docs](https://protobuf.dev/)
 - [Seven Layers of a System - OSI model](https://en.wikipedia.org/wiki/OSI_model)
 - [Twelve-Factor App methodology](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology)
+- [Microservices.io - Useful guidance when architecting with microservices](https://microservices.io/)
