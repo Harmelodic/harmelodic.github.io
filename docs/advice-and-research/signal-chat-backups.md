@@ -178,7 +178,18 @@ set the automatic synchronisation to occur an hour or so after my Signal backups
 
 #### My Backup Pro
 
-TODO
+Short answer: No - though I didn't even need to download the app to know.
+
+- ⚠️ Requires payment of 69,00 kr before downloading - didn't want to immediately pay for this, so going to look at the
+  description and available screenshots to evaluate it.
+- ⚠️ Quite an old looking design / interface.
+- ❌ Seems to back up lots of settings, messages, calendars, but not actual _folders_ on the device. Can seem to back up
+  single files, but file-matching configuration is not seem pictured.
+- ❌ Scheduling options are very limited.
+- ✅ Supports backing up to Google Drive (and Rerware servers and Dropbox).
+- ✅ No data shared with third parties.
+- ⚠️ No update since 11 September 2023 (2 years!). On one hand, if it ain't broke don't fix it, but also: security
+  patches and general improvements are important.
 
 #### All Backup & Restore
 
