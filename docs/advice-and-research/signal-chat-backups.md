@@ -170,6 +170,12 @@ I tried both _Autosync_ and _DriveSync_ (AutoSync for Google Drive):
   toggled on and required manually going through and toggling them all off, including diving into a "Vendor preferences"
   submenu (fuck off even more). The regular "Autosync" app did not ask for this, thankfully.
 
+When setting this up, I set it up as a "Synced folder" - syncing my on-Android folder where the Signal backups are made
+and the Google Drive folder where I want them to be stored. I used sync method "Upload Mirror", to ensure that the
+folders are kept the same but the uploads occur before any backups are deleted from Google Drive. In the app settings, I
+set the automatic synchronisation to occur an hour or so after my Signal backups are scheduled. MetaCtrl has a good
+[user guide](https://metactrl.com/autosync/userguide/) available for explaining the different "sync methods".
+
 #### My Backup Pro
 
 TODO
