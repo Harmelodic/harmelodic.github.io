@@ -50,8 +50,15 @@ Before digging into the solutions, it's helpful to understand the solution requi
 
 ## Backing up the backups
 
-⚠️ At time of writing this is unsolved for me, in a way that is acceptable. The rest of this blog will instead be a
-documentation of my findings and frustrations.
+From my digging, there are two options available to do this:
+
+- [Autosync](#autosync) by _MetaCtrl_
+- [Tasker](#tasker) by _joaomgcd_ - though I didn't actually try this option, only read the Google Play app description.
+
+Though BOTH options require one-time payment for long term use. Having tried Autosync, it also requires a lot of
+permissions and bypassing battery optimization settings, which I wouldn't be surprised if Tasker also required these.
+
+You can find my full investigation below:
 
 ### Native Android feature?
 
@@ -117,17 +124,17 @@ automatic backups.
 
 What if we had an app that just did backups really well. Looking at the Google Play Store, this is what's available:
 
-- _Swift Backup_ by _SwiftApps.org_
-- _Autosync_ (or other related apps) by _MetaCtrl_
-- _My Backup Pro_ by _Rerware, LLC_
-- _All Backup & Restore_ by _SuriDevs_
+- _Swift Backup_ by _SwiftApps.org_.
+- _Autosync_ (or other related apps) by _MetaCtrl_.
+- _My Backup Pro_ by _Rerware, LLC_.
+- _All Backup & Restore_ by _SuriDevs_.
 
 other backup apps seemed to either want to (a) backup to _their_ cloud storage and not Google Drive, or (b) backup
 specific things like SMS messages or APKs (Apps).
 
 #### Swift Backup
 
-Short answer: No.
+By _SwiftApps.org_. Short answer: No.
 
 - ❌ Only allows for backing up apps, messages and call logs
 - ℹ️ Free manual backups (of the above), requires payment for automatic backups - though it has a Lifetime plan for
@@ -145,8 +152,8 @@ Short answer: No.
 
 #### Autosync
 
-Short answer: Mostly yes, but requires payment for long-term use and requires some sacrifices on non-functional
-requirements (security, data-sharing and battery usage).
+By _MetaCtrl_. Short answer: Mostly yes, but requires payment for long-term use and requires some sacrifices on
+non-functional requirements (security, data-sharing and battery usage).
 
 I tried both _Autosync_ and _DriveSync_ (AutoSync for Google Drive):
 
@@ -178,7 +185,7 @@ set the automatic synchronisation to occur an hour or so after my Signal backups
 
 #### My Backup Pro
 
-Short answer: No - though I didn't even need to download the app to know.
+By _Rerware, LLC_. Short answer: No - though I didn't even need to download the app to know.
 
 - ⚠️ Requires payment of 69,00 kr before downloading - didn't want to immediately pay for this, so going to look at the
   description and available screenshots to evaluate it.
@@ -187,13 +194,19 @@ Short answer: No - though I didn't even need to download the app to know.
   single files, but file-matching configuration is not seem pictured.
 - ❌ Scheduling options are very limited.
 - ✅ Supports backing up to Google Drive (and Rerware servers and Dropbox).
+- ⚠️ Some personal data collected.
 - ✅ No data shared with third parties.
 - ⚠️ No update since 11 September 2023 (2 years!). On one hand, if it ain't broke don't fix it, but also: security
   patches and general improvements are important.
 
 #### All Backup & Restore
 
-TODO
+By _SuriDevs_. Short answer: No.
+
+- ❌ Doesn't support backing up folders or files. Only: Apps, Contacts, Messages, Call logs and Calendars.
+- ⚠️ Contains ads.
+- ✅ No data collected.
+- ✅ No data shared with third parties.
 
 ### A dedicated app for automations?
 
@@ -209,4 +222,51 @@ On the Signal subreddit I also saw mentions of the `Syncthing`, but after search
 found [this article](https://forum.syncthing.net/t/discontinuing-syncthing-android/23002) detailing that the developer
 is retiring Android support, so I'm not even going to dig into that as an option.
 
-... still need to dig into this more and figure it out. Will report back.
+#### Automate
+
+By _LlamaLab_. Short answer: Maybe, but no.
+
+- ❌ Very complicated and doesn't have a good UX - even with the flow charts. No easy way to validate, test or just
+  receive feedback that text matching and functions are correct, which doesn't inspire confidence in my written
+  automations. If I wanted to write code to do this, I'd just write my own app. This is not something I could recommend
+  to my family or friends for them to set up their own backups.
+- ❌ When running a continuous backup process, a notification always persists - which is quite annoying.
+- ✅ Seems to support a lot of powerful features and options.
+- ✅ Seems to have a community of people writing and sharing their automations.
+- ⚠️ Personal data collected.
+- ⚠️ Data shared with third parties.
+
+#### IFTTT
+
+By _IFTTT, Inc_. Short answer: No.
+
+- ⚠️ Requires an account to use.
+- ⚠️ Doesn't provide a trigger option for "new file created in a folder" - so definitely need to use scheduling.
+- ❌ Doesn't provide an action option to upload/sync matching files or folder from the device to Google Drive.
+- ⚠️ Personal data collected.
+- ✅ No data shared with third parties.
+
+#### Tasker
+
+By _joaomgcd_. Short answer: Probably, but didn't try and requires payment for use and at least requires some sacrifices
+on non-functional requirements (data-sharing).
+
+- ⚠️ Requires payment of 38,00 kr before downloading - didn't want to immediately pay for this, so going to look at the
+  description and available screenshots to evaluate it.
+- ⚠️ Quite an old looking design / interface.
+- ✅ App description on Google Play describes being able to do "Automatic File Backups":
+	- _"If you set it up to do so, Tasker can automatically back up your files to a specific folder on the device, SD
+	  card, USB key or even Google Drive! ..."_
+- ⚠️ Personal data collected.
+- ❌ Data shared with third parties.
+
+#### MacroDroid
+
+By _ArloSoft_. Short answer: No.
+
+- ⚠️ Contains ads.
+- ⚠️ Doesn't provide a trigger option for "new file created in a folder" - so definitely need to use scheduling.
+- ❌ Doesn't provide an action option to upload/sync matching files or folder from the device to Google Drive.
+- ⚠️ "Pro" as a one time payment (85,00 kr) for unlimited macros and no adverts, backing up macros.
+- ⚠️ Personal data collected.
+- ❌ Data shared with third parties.
