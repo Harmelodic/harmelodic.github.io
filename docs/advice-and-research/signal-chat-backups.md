@@ -36,7 +36,9 @@ Before digging into the solutions, it's helpful to understand the solution requi
 - Work on Android
 - Store chat backups in Google Drive (Android leads to Google products leads to Google Drive)
 - Simple to set up the backup
-- Ideally free, but I'd pay a small amount for an app to backups / syncs for me (not paying for a subscription though).
+- Ideally free, but I'd pay a small amount for an app to backups / syncs for me.
+	- I'm not paying for a subscription though, as I already pay for Google Drive for storage, I don't want to also pay
+	  a subscription just for syncing some files.
 - Minimal or no advertisements (definitely no adverts if I pay for the app)
 - Acceptable intrusions
 	- Minimal or zero impact my battery life (don't need it always running, I just need a backup to be uploaded in the
