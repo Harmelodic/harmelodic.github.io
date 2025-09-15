@@ -53,8 +53,12 @@ plastic resin (polymerization) which is not only not sustainable but also somewh
 using wool (natural, biodegradable fabric and natural antibacterial quality). Other components (like chlorine and ozone)
 in these processes aren't particularly good for the environment either (harmful to the skin or other organisms).
 
-Some clothing manufacturers, like _Dilling_ or _Icebreaker_, make decent efforts to use sustainably-sourced,
-plastic-free or even entirely organic wool.
+Some clothing manufacturers, like _Dilling_ or _Icebreaker_, seem to make decent efforts to use sustainably-sourced,
+plastic-free or even entirely organic wool. Dilling especially are organic and confirmed
+(via [their Instagram](https://www.instagram.com/p/DGVS9lOMbSR/)) that they don't use any chlorine or plastic in their
+production. I contacted Icebreaker and whilst they do highlight
+their [sustainability / transparency](https://www.icebreaker.com/en-se/transparency.html) efforts, they were unable to
+confirm what treatments are actually in use - which is, ironically, not very transparent.
 
 ## Other useful knowledge
 
