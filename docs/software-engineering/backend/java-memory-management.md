@@ -5,7 +5,7 @@ don't have to.
 
 ## Memory allocation
 
-3 main memory "areas" from a Java perspective: Stack, Heap, Metaspace
+3 main memory "areas" from a Java perspective: Stack, Heap, Metaspace.
 
 Stack is for storing classes that are needed for the application, methods that have been called, primitive types and
 references to objects in the heap, ...and probably some other things I'm not aware of.
@@ -36,11 +36,15 @@ Java has garbage collection on objects in Heap memory, meaning deallocation of m
 or automatically by the JVM as code is dereferenced. Instead, objects in Heap memory that are no longer referenced in
 Stack memory are periodically cleaned up by a garbage collector.
 
+A generational garbage collector is one that organises objects into different spaces or "generations" depending on the
+objects age, size and other factors.
+
 Different garbage collectors are available:
 
 - G1 or "G1GC" or [Garbage First](https://en.wikipedia.org/wiki/Garbage-first_collector)
 	- Introduced as experimental in JVM 6 Update 14, supported from JVM 7, defaulted in Java 9.
 	- Designed to be a compacting and more predicatable garbage collector than the previous CMS collector.
+	- Is a generational garbage collector.
 - ZGC or [The Z Garbage Collector](https://openjdk.org/projects/zgc/)
 	- Introduced in experimental in JDK 11 and production ready in JDK 15.
 	- Reimplemented to support "generations" in JDK 21, which defaulted in JDK 23, and the non-generational mode was
@@ -97,20 +101,29 @@ Different "spaces" are mentioned in these metrics:
 
 ## Configuring the JVM for memory
 
-Different flags are available to configure memory usage for the JVM.
+Different flags are available to configure memory usage for the JVMs. Different JVMs (Hotspot, JRockit, etc.) might have
+different flags:
+
+- [Hotspot JVM options](https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html)
+- [JRockit JVM -X options](https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/jrdocs/refman/optionX.html)
+- [JRockit JVM -XX options](https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/jrdocs/refman/optionXX.html)
 
 Use the `JAVA_TOOL_OPTIONS` environment variable to set these. Set these at deployment time (e.g. in deployment
 manifests / patches) according to the needs of the environment you're deploying to (prod, test, dev, local).
 
 - `-Xss`
-	- Sets Stack size
+	- Sets thread Stack size
 	- e.g. `-Xss1m` sets it to 1 MB.
 - `-Xms`
-	- Set _initial_ Heap memory size
+	- Set _initial_ and _minimum_ Heap memory size
 	- e.g. `-Xms512m` sets it to 512 MB.
 - `-Xmx`
 	- Set _max_ Heap memory size
 	- e.g. `-Xms512m` sets it to 512 MB.
+	- At least according to Spring JVM metrics, when setting this when G1 is in use, it only sets the max Heap size for
+	  the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited).I
+	  assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
+	  objects are usually garbage-collected or find themselves quickly in `Old Gen`.
 - `-XX:InitialRAMPercentage`
 	- Sets _initial_ Heap memory size to be a percentage of the total machine (or
 	  container) memory.
@@ -123,6 +136,10 @@ manifests / patches) according to the needs of the environment you're deploying 
 	- Sets _max_ Heap memory size to be a percentage of the total machine (or
 	  container) memory.
 	- e.g. `-XX:MaxRAMPercentage=50.0` sets it to 50%.
+	- At least according to Spring JVM metrics, when setting this when G1 is in use, it only sets the max Heap size for
+	  the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited). I
+	  assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
+	  objects are usually garbage-collected or find themselves quickly in `Old Gen`.
 - `-XX:+UseG1GC`
 	- Enables using G1 Garbage Collector.
 - `-XX:+UseZGC`
