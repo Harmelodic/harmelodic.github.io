@@ -145,10 +145,6 @@ manifests / patches) according to the needs of the environment you're deploying 
 - `-XX:+UseZGC`
 	- Enabled using the Z Garbage Collector.
 
-BE WARY when using the `InitialRAMPercentage`, `MinRAMPercentage` and `MaxRAMPercentage` flags as the JVM will do some
-internal calculations based on the values you put in, the memory of the server (and some other things) and can result in
-quite unpredictable memory configurations.
-
 Find out all the flags you can set doing:
 
 ```bash
