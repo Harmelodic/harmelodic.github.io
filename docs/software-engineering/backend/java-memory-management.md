@@ -95,6 +95,8 @@ Different "spaces" are mentioned in these metrics:
 	- Space is in Metaspace ("Non-Heap") memory.
 	- Technically, it is a space _inside_ the `Metaspace` and so will always be smaller than `Metaspace`.
 	- It stores specifically class-part metadata using 32-bit references.
+	- It's size (`CompressedClassSpaceSize`) is 1 Gi by default (at least, in Hotspot it is), and is not affected by
+	  flags configure max heap size, since it's not part of the Heap.
 - `CodeCache`
 	- Space is in "Non-Heap" memory.
 	- Used for compilation and storage of native code.
