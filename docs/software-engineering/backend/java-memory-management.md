@@ -146,6 +146,15 @@ manifests / patches) according to the needs of the environment you're deploying 
 	- Enables using G1 Garbage Collector.
 - `-XX:+UseZGC`
 	- Enabled using the Z Garbage Collector.
+- `-XX:MaxMetaspaceSize`
+	- Sets the max size for the Metaspace.
+	- e.g. `-XX:MaxMetaspaceSize=512m` sets it to 512 MiB.
+	- You might see that `MaxMetaspaceSize` is `18446744073709551615`, but metrics says `-1` - this is because those two
+	  numbers are effectively the same (think unsigned and signed numbers and overflows).
+- `-XX:CompressedClassSpaceSize`
+	- Sets the max size for the Compressed Class Space.
+	- e.g. `-XX:CompressedClassSpaceSize=512m` sets it to 512 MiB.
+    - In Hotspot (at least) this is defaulted to 1 Gi.
 
 Find out all the flags you can set doing:
 
