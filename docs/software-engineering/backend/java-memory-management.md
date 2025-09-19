@@ -1,0 +1,139 @@
+# Java Memory Management
+
+Java code runs in a Java Virtual Machine (JVM). The JVM takes care of the memory management in Java so we developers
+don't have to.
+
+## Memory allocation
+
+3 main memory "areas" from a Java perspective: Stack, Heap, Metaspace
+
+Stack is for storing classes that are needed for the application, methods that have been called, primitive types and
+references to objects in the heap, ...and probably some other things I'm not aware of.
+
+Heap is for storing object values, ...and probably some other things I'm not aware of.
+
+Metaspace is for storing metadata - which are JVM structures created whilst parsing Java `.class` files - like: Internal
+representation of Java classes, Methods with their bytecode, Field descriptors, Constant pools, Symbols, and
+Annotations.
+
+## Types in memory
+
+Primitive types are the types with lower case letters: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean`,
+`char`. They value of these are stored directly in the Stack.
+
+Reference types are the types with upper case letters: `String`, `Double`, `HashMap`, etc. The value of these are store
+in the Heap, and a "reference" is created in the Stack which points to the location in the Heap where the value is
+stored.
+
+Reference types are kind of like [pointers](https://en.wikipedia.org/wiki/Pointer_(computer_programming)) in that way,
+but unlike pointers like you might see in C or C++, these references are more just handlers for the object rather than
+actual pointers that you can manipulate. After garbage collection, the Heap memory location can change, and the
+references in the Stack are updated.
+
+## Garbage collection
+
+Java has garbage collection on objects in Heap memory, meaning deallocation of memory is not done manually by developers
+or automatically by the JVM as code is dereferenced. Instead, objects in Heap memory that are no longer referenced in
+Stack memory are periodically cleaned up by a garbage collector.
+
+Different garbage collectors are available:
+
+- G1 or "G1GC" or [Garbage First](https://en.wikipedia.org/wiki/Garbage-first_collector)
+	- Introduced as experimental in JVM 6 Update 14, supported from JVM 7, defaulted in Java 9.
+	- Designed to be a compacting and more predicatable garbage collector than the previous CMS collector.
+- ZGC or [The Z Garbage Collector](https://openjdk.org/projects/zgc/)
+	- Introduced in experimental in JDK 11 and production ready in JDK 15.
+	- Reimplemented to support "generations" in JDK 21, which defaulted in JDK 23, and the non-generational mode was
+	  removed in JDK 24.
+	- Designed to be a scalable low latency garbage collector by being concurrent.
+- and a bunch of others.
+
+## Memory according to metrics
+
+If you're running a Java Spring application and gathering metrics about the JVM, you'll probably see metrics about
+memory.
+
+There are 3 main kinds of JVM memory metric:
+
+- `jvm_memory_used_bytes`
+	- The number of bytes in memory in _actual_ use, according to the JVM.
+	- It will go up and down as memory is allocated, deallocated and garbage collected.
+- `jvm_memory_committed_bytes`
+	- The number of bytes that the JVM has actually allocated for itself (from the Operating System) for memory.
+	- Committed will go up and down as the memory is allocated and the JVM realises it needs to allocate more memory for
+	  use by the processes running in the JVM.
+- `jvm_memory_max_bytes`
+	- The number of bytes that the JVM is allowed to use (by the Operating System) for memory.
+	- This should be probably be fixed when the JVM boots up and won't change whilst the JVM is running.
+
+Used < Committed < Max.
+
+Different "spaces" are mentioned in these metrics:
+
+- `G1 Eden Space`
+	- Seen if using the G1 Garbage Collector.
+	- Space is in "Heap" memory.
+	- This memory space is for objects when they are initially created.
+- `G1 Survivor Space`
+	- Seen if using the G1 Garbage Collector.
+	- Space is in "Heap" memory.
+	- This memory space is for objects that have "survived" garbage collection of the Eden Space.
+- `G1 Old Gen`
+	- Seen if using the G1 Garbage Collector.
+	- Space is in "Heap" memory.
+	- This memory space is for objects that have existed for a long time in the Survivor Space.
+- `Metaspace`
+	- Space is in Metaspace ("Non-Heap") memory.
+	- Used for storing metaspace data (see above).
+	- Used to be called "PermGen" or "Permanent Generation".
+	- Not garbage-collected.
+- `Compressed Class Space`
+	- Space is in Metaspace ("Non-Heap") memory.
+	- Technically, it is a space _inside_ the `Metaspace` and so will always be smaller than `Metaspace`.
+	- It stores specifically class-part metadata using 32-bit references.
+- `CodeCache`
+	- Space is in "Non-Heap" memory.
+	- Used for compilation and storage of native code.
+
+## Configuring the JVM for memory
+
+Different flags are available to configure memory usage for the JVM.
+
+Use the `JAVA_TOOL_OPTIONS` environment variable to set these. Set these at deployment time (e.g. in deployment
+manifests / patches) according to the needs of the environment you're deploying to (prod, test, dev, local).
+
+- `-Xss`
+	- Sets Stack size
+	- e.g. `-Xss1m` sets it to 1 MB.
+- `-Xms`
+	- Set _initial_ Heap memory size
+	- e.g. `-Xms512m` sets it to 512 MB.
+- `-Xmx`
+	- Set _max_ Heap memory size
+	- e.g. `-Xms512m` sets it to 512 MB.
+- `-XX:InitialRAMPercentage`
+	- Sets _initial_ Heap memory size to be a percentage of the total machine (or
+	  container) memory.
+	- e.g. `-XX:InitialRAMPercentage=50.0` sets it to 50%.
+- `-XX:MinRAMPercentage`
+	- Sets _minimum_ Heap memory size to be a percentage of the total machine (or
+	  container) memory.
+	- e.g. `-XX:MinRAMPercentage=10.0` sets it to 10%.
+- `-XX:MaxRAMPercentage`
+	- Sets _max_ Heap memory size to be a percentage of the total machine (or
+	  container) memory.
+	- e.g. `-XX:MaxRAMPercentage=50.0` sets it to 50%.
+- `-XX:+UseG1GC`
+	- Enables using G1 Garbage Collector.
+- `-XX:+UseZGC`
+	- Enabled using the Z Garbage Collector.
+
+BE WARY when using the `InitialRAMPercentage`, `MinRAMPercentage` and `MaxRAMPercentage` flags as the JVM will do some
+internal calculations based on the values you put in, the memory of the server (and some other things) and can result in
+quite unpredictable memory configurations.
+
+Find out all the flags you can set doing:
+
+```bash
+java -XX:+PrintFlagsFinal --version
+```
