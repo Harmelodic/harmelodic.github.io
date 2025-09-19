@@ -57,6 +57,9 @@ Different garbage collectors are available:
 If you're running a Java Spring application and gathering metrics about the JVM, you'll probably see metrics about
 memory.
 
+If you run other things on the JVM as well as your application, like Java Agents, the memory those processes use will be
+included in these metrics, as these metrics are for the _entire_ JVM.
+
 There are 3 main kinds of JVM memory metric:
 
 - `jvm_memory_used_bytes`
@@ -154,7 +157,7 @@ manifests / patches) according to the needs of the environment you're deploying 
 - `-XX:CompressedClassSpaceSize`
 	- Sets the max size for the Compressed Class Space.
 	- e.g. `-XX:CompressedClassSpaceSize=512m` sets it to 512 MiB.
-    - In Hotspot (at least) this is defaulted to 1 Gi.
+	- In Hotspot (at least) this is defaulted to 1 Gi.
 
 Find out all the flags you can set doing:
 
