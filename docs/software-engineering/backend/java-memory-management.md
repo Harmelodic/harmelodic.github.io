@@ -44,16 +44,25 @@ Different garbage collectors are available:
 - G1 or "G1GC" or [Garbage First](https://en.wikipedia.org/wiki/Garbage-first_collector)
 	- Introduced as experimental in JVM 6 Update 14, supported from JVM 7, defaulted in Java 9.
 	- Designed to be a compacting and more predicatable garbage collector than the previous CMS collector.
-	- Is a generational garbage collector.
+	- Is a concurrent generational garbage collector.
+    - Typically used 
 - ZGC or [The Z Garbage Collector](https://openjdk.org/projects/zgc/)
 	- Introduced in experimental in JDK 11 and production ready in JDK 15.
 	- Reimplemented to support "generations" in JDK 21, which defaulted in JDK 23, and the non-generational mode was
 	  removed in JDK 24.
-	- Designed to be a scalable low latency garbage collector by being concurrent.
+	- Designed to be a concurrent, scalable _low latency_ garbage collector.
 	- From some very brief and simple tests, I have observed the ZGC uses more memory than the G1 collector when
 	  operating, but may save on application response time performance by being concurrent and allowing Java threads to
 	  continue to execute whilst garbage collection is in progress.
-- and a bunch of others.
+    - Apparently works well for heap sizes of a "few hundred megabytes to 16TB".
+- Serial or "SerialGC"
+	- Useful for small applications (ones that use under 100 MB memory).
+- Parallel or "ParallelGC" or "the throughput collector"
+	- Uses multiple threads and is generational, but can lead to long pause/response times. 
+- and a bunch of others, probably.
+
+Oracle's Hotspot JVM (24) docs provide decent guidance
+on [the available collectors](https://docs.oracle.com/en/java/javase/24/gctuning/available-collectors.html).
 
 ## Memory according to metrics
 
