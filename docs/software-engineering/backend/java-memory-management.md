@@ -89,6 +89,14 @@ Different "spaces" are mentioned in these metrics:
 	- Seen if using the G1 Garbage Collector.
 	- Space is in "Heap" memory.
 	- This memory space is for objects that have existed for a long time in the Survivor Space.
+- `ZGC Young Generation`
+	- Seen if using the Z Garbage Collector.
+	- Space is in "Heap" memory.
+	- This memory space is for newly created objects and ones that have survived 1 or some garbage collection cycles.
+- `ZGC Old Generation`
+	- Seen if using the Z Garbage Collector.
+	- Space is in "Heap" memory.
+	- This memory space is for objects that have survived multiple garbage collection cycles.
 - `Metaspace`
 	- Space is in Metaspace ("Non-Heap") memory.
 	- Used for storing metaspace data (see above).
@@ -103,12 +111,14 @@ Different "spaces" are mentioned in these metrics:
 - `CodeCache`
 	- Space is in "Non-Heap" memory.
 	- Used for compilation and storage of native code.
+	- Existed until Java 9, when it was replaced with [segmented Code Heaps](https://openjdk.org/jeps/197) (see below).
 - `CodeHeap`
-  - `non-nmethods`
-  - `profiled-nmethods`
-  - `non-profiled-nmethods`
-- `ZGC Young Generation`
-- `ZGC Old Generation`
+	- Space is in "Non-Heap" memory.
+	- Used for compilation and storage of native code.
+	- Introduced in Java 9 as [segmented code heaps](https://openjdk.org/jeps/197), in the following segments:
+		- `non-nmethods`
+		- `profiled-nmethods`
+		- `non-profiled-nmethods`
 
 ## Configuring the JVM for memory
 
