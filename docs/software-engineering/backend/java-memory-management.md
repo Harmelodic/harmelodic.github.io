@@ -103,6 +103,12 @@ Different "spaces" are mentioned in these metrics:
 - `CodeCache`
 	- Space is in "Non-Heap" memory.
 	- Used for compilation and storage of native code.
+- `CodeHeap`
+  - `non-nmethods`
+  - `profiled-nmethods`
+  - `non-profiled-nmethods`
+- `ZGC Young Generation`
+- `ZGC Old Generation`
 
 ## Configuring the JVM for memory
 
