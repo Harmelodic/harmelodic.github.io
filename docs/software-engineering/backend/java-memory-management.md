@@ -50,6 +50,9 @@ Different garbage collectors are available:
 	- Reimplemented to support "generations" in JDK 21, which defaulted in JDK 23, and the non-generational mode was
 	  removed in JDK 24.
 	- Designed to be a scalable low latency garbage collector by being concurrent.
+	- From some very brief and simple tests, I have observed the ZGC uses more memory than the G1 collector when
+	  operating, but may save on application response time performance by being concurrent and allowing Java threads to
+	  continue to execute whilst garbage collection is in progress.
 - and a bunch of others.
 
 ## Memory according to metrics
