@@ -73,7 +73,7 @@ There are 3 main kinds of JVM memory metric:
 	- The number of bytes that the JVM is allowed to use (by the Operating System) for memory.
 	- This should be probably be fixed when the JVM boots up and won't change whilst the JVM is running.
 
-Used < Committed < Max.
+Used <= Committed <= Max.
 
 Different "spaces" are mentioned in these metrics:
 
