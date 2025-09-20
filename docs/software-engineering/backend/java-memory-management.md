@@ -141,9 +141,9 @@ manifests / patches) according to the needs of the environment you're deploying 
 - `-Xmx`
 	- Set _max_ Heap memory size
 	- e.g. `-Xms512m` sets it to 512 MB.
-	- At least according to Spring JVM metrics, when setting this when G1 is in use, it only sets the max Heap size for
-	  the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited).I
-	  assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
+	- When Spring JVM metrics are observed, and when setting this when `G1GC` is in use, it only sets the max Heap size
+	  for the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited).
+	  I assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
 	  objects are usually garbage-collected or find themselves quickly in `Old Gen`.
 - `-XX:InitialRAMPercentage`
 	- Sets _initial_ Heap memory size to be a percentage of the total machine (or
@@ -157,10 +157,16 @@ manifests / patches) according to the needs of the environment you're deploying 
 	- Sets _max_ Heap memory size to be a percentage of the total machine (or
 	  container) memory.
 	- e.g. `-XX:MaxRAMPercentage=50.0` sets it to 50%.
-	- At least according to Spring JVM metrics, when setting this when G1 is in use, it only sets the max Heap size for
-	  the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited). I
-	  assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
+	- When Spring JVM metrics are observed, and when setting this when `G1GC` is in use, it only sets the max Heap size
+	  for the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited).
+	  I assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
 	  objects are usually garbage-collected or find themselves quickly in `Old Gen`.
+	- When Spring JVM metrics are observed, and when setting this when `ZGC` is in use, it only sets the max Heap size
+	  for the `Old Generation` Heap space **and** the `Young Generation` heap space. No other metrics seem affected.
+	  I assume this is because in ZGC, there it seems to be only 2 generations (in G1GC there seems to be 3) and new
+	  objects in the `Young Generation` that survive first garbage collection are left there until multiple garbage
+	  collection cycles have passed before moving into the `Old Generation` Heap space - and so both heap spaces could
+	  grow to a significant size.
 - `-XX:+UseG1GC`
 	- Enables using G1 Garbage Collector.
 - `-XX:+UseZGC`
