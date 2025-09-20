@@ -120,6 +120,11 @@ Different "spaces" are mentioned in these metrics:
 		- `profiled-nmethods`
 		- `non-profiled-nmethods`
 
+For the most part, I would generally focus on the Heap spaces (G1 or ZGC Generation spaces) since these tend to be
+configurable and make up for the vast majority of memory used by JVM applications. I tend to ignore non-Heap / Metaspace
+spaces, since they tend to not take up much space in memory (though I primarily work with microservices, so there's not
+much code to deal with).
+
 ## Configuring the JVM for memory
 
 Different flags are available to configure memory usage for the JVMs. Different JVMs (Hotspot, JRockit, etc.) might have
