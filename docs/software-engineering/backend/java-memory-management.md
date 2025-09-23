@@ -249,7 +249,8 @@ visualvm_jdkhome=/path_to_java_installation/Contents/Home /Applications/VisualVM
 
 You can even connect via a [JMX](https://en.wikipedia.org/wiki/Java_Management_Extensions) connection, if you're running
 a remote JVM application (e.g. a service running on a server or in a container). You can enable JMX on your application
-by setting the following JVM flags:
+by setting the following JVM flags (values set as if you're connecting to a Java application running in a container in a
+Kubernetes Pod, you might need different values for a different environment setup):
 
 - `-Dcom.sun.management.jmxremote` - To enable JMX
 - `-Dcom.sun.management.jmxremote.port=9010` - To expose JMX on port 9010.
