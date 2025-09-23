@@ -45,7 +45,7 @@ Different garbage collectors are available:
 	- Introduced as experimental in JVM 6 Update 14, supported from JVM 7, defaulted in Java 9.
 	- Designed to be a compacting and more predicatable garbage collector than the previous CMS collector.
 	- Is a concurrent generational garbage collector.
-    - Typically used 
+	- Typically used
 - ZGC or [The Z Garbage Collector](https://openjdk.org/projects/zgc/)
 	- Introduced in experimental in JDK 11 and production ready in JDK 15.
 	- Reimplemented to support "generations" in JDK 21, which defaulted in JDK 23, and the non-generational mode was
@@ -54,11 +54,11 @@ Different garbage collectors are available:
 	- From some very brief and simple tests, I have observed the ZGC uses more memory than the G1 collector when
 	  operating, but may save on application response time performance by being concurrent and allowing Java threads to
 	  continue to execute whilst garbage collection is in progress.
-    - Apparently works well for heap sizes of a "few hundred megabytes to 16TB".
+	- Apparently works well for heap sizes of a "few hundred megabytes to 16TB".
 - Serial or "SerialGC"
 	- Useful for small applications (ones that use under 100 MB memory).
 - Parallel or "ParallelGC" or "the throughput collector"
-	- Uses multiple threads and is generational, but can lead to long pause/response times. 
+	- Uses multiple threads and is generational, but can lead to long pause/response times.
 - and a bunch of others, probably.
 
 Oracle's Hotspot JVM (24) docs provide decent guidance
@@ -228,3 +228,38 @@ java -XX:+PrintFlagsFinal --version
 - Sets the max size for the Compressed Class Space.
 - e.g. `-XX:CompressedClassSpaceSize=512m` sets it to 512 MiB.
 - In Hotspot (at least) this is defaulted to 1 Gi.
+
+## VisualVM and JMX
+
+[VisualVM](https://visualvm.github.io/) is a useful visualisation tool developed by Oracle for digging into the internal
+details of running JVM applications.
+
+I found that on macOS, it can fails to boot up with the following error if you're missing a JRE:
+
+> The operation couldn’t be completed. Unable to locate a Java Runtime.
+> Please visit http://www.java.com for information on installing Java.
+>
+> Cannot find java. Please use the --jdkhome switch.
+
+You can set a JDK home using the following command:
+
+```bash
+visualvm_jdkhome=/path_to_java_installation/Contents/Home /Applications/VisualVM.app/Contents/MacOS/visualvm
+```
+
+You can even connect via a [JMX](https://en.wikipedia.org/wiki/Java_Management_Extensions) connection, if you're running
+a remote JVM application (e.g. a service running on a server or in a container). You can enable JMX on your application
+by setting the following JVM flags:
+
+- `-Dcom.sun.management.jmxremote` - To enable JMX
+- `-Dcom.sun.management.jmxremote.port=9010` - To expose JMX on port 9010.
+- `-Dcom.sun.management.jmxremote.rmi.port=9010` - To ensure Remote Method Invocation (RMI) is exposed on port 9010.
+- `-Dcom.sun.management.jmxremote.local.only=false` - To allow JMX non-locally.
+- `-Dcom.sun.management.jmxremote.authenticate=false` - To allow unauthenticated access (assuming that's fine).
+- `-Dcom.sun.management.jmxremote.ssl=false` - To allow an unencrypted connection (assuming that's fine).
+- `-Djava.rmi.server.hostname=127.0.0.1` - To have Remote Method Invocation connections be treated as localhost.
+
+Once your application is running, just port-forward / connect to your application on port `9010`.
+
+You can read more about configuring JMX
+in [Oracle's documentation](https://docs.oracle.com/en/java/javase/24/management/monitoring-and-management-using-jmx-technology.html).
