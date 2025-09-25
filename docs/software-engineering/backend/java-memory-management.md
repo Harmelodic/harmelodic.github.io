@@ -5,16 +5,34 @@ don't have to.
 
 ## Memory allocation
 
-3 main memory "areas" from a Java perspective: Stack, Heap, Metaspace.
+3 main memory "areas" from a Java perspective: Stack, Heap, Nonheap.
 
 Stack is for storing classes that are needed for the application, methods that have been called, primitive types and
 references to objects in the heap, ...and probably some other things I'm not aware of.
 
 Heap is for storing object values, ...and probably some other things I'm not aware of.
 
-Metaspace is for storing metadata - which are JVM structures created whilst parsing Java `.class` files - like: Internal
-representation of Java classes, Methods with their bytecode, Field descriptors, Constant pools, Symbols, and
-Annotations.
+Nonheap is the collective term for an area of memory that contains the following spaces:
+
+- Metaspace
+	- For storing metadata - which are JVM structures created whilst parsing Java `.class` files - like: Internal
+	  representation of Java classes, Methods with their bytecode, Field descriptors, Constant pools, Symbols, and
+	  Annotations.
+	- Used to be called "PermGen" or "Permanent Generation".
+	- Not garbage-collected.
+- Compressed Class Space
+	- Technically, it is a space _inside_ the `Metaspace` and so will always be smaller than `Metaspace`.
+	- It stores specifically class-part metadata using 32-bit references.
+	- It's size (`CompressedClassSpaceSize`) is 1 Gi by default (at least, in Hotspot it is), and is not affected by
+	  flags configure max heap size, since it's not part of the Heap.
+- CodeCache / CodeHeap
+	- Used for compilation and storage of native code.
+	- CodeCache existed until Java 9.
+	- CodeHeap was introduced in Java 9 as [segmented code heaps](https://openjdk.org/jeps/197), in the following
+	  segments:
+		- `non-nmethods`
+		- `profiled-nmethods`
+		- `non-profiled-nmethods`
 
 ## Types in memory
 
@@ -111,26 +129,12 @@ Different "spaces" are mentioned in these metrics:
 	- This memory space is for objects that have survived multiple garbage collection cycles.
 - `Metaspace`
 	- Space is in Metaspace ("Non-Heap") memory.
-	- Used for storing metaspace data (see above).
-	- Used to be called "PermGen" or "Permanent Generation".
-	- Not garbage-collected.
 - `Compressed Class Space`
 	- Space is in Metaspace ("Non-Heap") memory.
-	- Technically, it is a space _inside_ the `Metaspace` and so will always be smaller than `Metaspace`.
-	- It stores specifically class-part metadata using 32-bit references.
-	- It's size (`CompressedClassSpaceSize`) is 1 Gi by default (at least, in Hotspot it is), and is not affected by
-	  flags configure max heap size, since it's not part of the Heap.
 - `CodeCache`
 	- Space is in "Non-Heap" memory.
-	- Used for compilation and storage of native code.
-	- Existed until Java 9, when it was replaced with [segmented Code Heaps](https://openjdk.org/jeps/197) (see below).
 - `CodeHeap`
 	- Space is in "Non-Heap" memory.
-	- Used for compilation and storage of native code.
-	- Introduced in Java 9 as [segmented code heaps](https://openjdk.org/jeps/197), in the following segments:
-		- `non-nmethods`
-		- `profiled-nmethods`
-		- `non-profiled-nmethods`
 
 For the most part, I would generally focus on the Heap spaces (G1 or ZGC Generation spaces) since these tend to be
 configurable and make up for the vast majority of memory used by JVM applications. I tend to ignore non-Heap / Metaspace
