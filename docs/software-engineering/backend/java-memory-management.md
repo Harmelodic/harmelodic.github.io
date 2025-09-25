@@ -174,7 +174,7 @@ java -XX:+PrintFlagsFinal --version
 - Set _max_ Heap memory size
 - e.g. `-Xms512m` sets it to 512 MB.
 - When Spring JVM metrics are observed, and when setting this when `G1GC` is in use, it only sets the max Heap size
-  for the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited).
+  for the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this means unlimited).
   I assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
   objects are usually garbage-collected or find themselves quickly in `Old Gen`.
 - When Spring JVM metrics are observed, and when setting this when `ZGC` is in use, it only sets the max Heap size
@@ -202,7 +202,7 @@ java -XX:+PrintFlagsFinal --version
   container) memory.
 - e.g. `-XX:MaxRAMPercentage=50.0` sets it to 50%.
 - When Spring JVM metrics are observed, and when setting this when `G1GC` is in use, it only sets the max Heap size
-  for the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this menas unlimited).
+  for the `Old Gen` Heap space. `Eden Space` and `Survivor Space` are left at `-1` (assuming this means unlimited).
   I assume this is because Eden and Survivor spaces are garbage collected and cleaned quite often and quickly and so
   objects are usually garbage-collected or find themselves quickly in `Old Gen`.
 - When Spring JVM metrics are observed, and when setting this when `ZGC` is in use, it only sets the max Heap size
