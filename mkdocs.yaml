@@ -6,6 +6,8 @@ site_url: https://harmelodic.com
 
 strict: true
 
+copyright: "&copy; 2016-2025 Matt Smith"
+
 # Ensure .well-known is included in served content
 exclude_docs: |
   !.well-known

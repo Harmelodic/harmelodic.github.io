@@ -66,6 +66,6 @@ User-agent: Googlebot-Mobile
 Allow: /
 
 # ======================
-# Block all other robots
+# Block all other robots (especially robots to do with AI)
 User-agent: *
 Disallow: /
