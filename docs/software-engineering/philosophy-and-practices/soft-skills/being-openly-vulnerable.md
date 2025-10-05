@@ -1,4 +1,4 @@
-# On Being Openly Vulnerable
+# Being Openly Vulnerable
 
 > "I'm having hard time."
 >

@@ -1,4 +1,4 @@
-# On Thinking and Writing
+# Thinking and Writing
 
 When reflecting on critical thinking and the writing process, I once read a statement along the lines of:
 

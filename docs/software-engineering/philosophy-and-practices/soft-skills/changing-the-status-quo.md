@@ -1,4 +1,4 @@
-# On Enacting Change
+# Changing the Status Quo
 
 Quite regularly, and not from everyone, I observe a resigned acceptance of the status quo, and disbelief that there's
 anything we can do about it.
