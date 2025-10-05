@@ -70,6 +70,17 @@ Here's some guidance on how to actively, showcase open vulnerability to help set
 - When you find yourself in disagreement, voice your disagreement politely.
 	- This showcases to others that disagreement is OK, and showcases how disagreement should be conducted.
 
+- When a conversation has finished and there was conflict in the conversation (or if you feel you acted poorly), take a
+  break for a short while (10+ minutes), and then speak to the person you conflicted with to see check in and see if the
+  conflict had been upsetting or otherwise negatively affected them. If it did, apologise and ask for feedback.
+	- This showcases that reflection is a good thing to have, and apologising for causing offence is normal.
+	- This also ensures any damage to relationships is repaired, and if no damage was caused can further strengthen
+	  relationships due to the safety felt in being openly vulnerable.
+
+- Ask for feedback on your behaviour from people you interact with regularly.
+	- This showcases and promotes a feedback culture, and gives an opportunity to receive feedback for
+	  self-improvement (to prevent yourself from becoming a dickhead).
+
 ## Preventing dickheads
 
 Watch out for the following behaviour:
