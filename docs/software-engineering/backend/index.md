@@ -1,13 +1,55 @@
 # Backend Overview
 
+If the User Interface (UI) is the "Frontend" then, the stuff that happens behind the scenes is the Backend.
+
+This effectively means:
+
+- Providing an API to a Frontend (or for API access).
+- Performing business logic.
+- Storing the data appropriately.
+- Communicating with other systems.
+
+In web services (the usual backend), this translates to:
+
+- APIs as HTTP-based APIs (HTTP, REST, SOAP).
+- Business logic in "services" which are in modern engineering often "microservices".
+- Storing and accessing data in a variety of ways including:
+	- SQL databases
+	- Document databases
+	- Key-Value stores
+	- Blob storage
+	- File storage
+	- Message/Event Buses (often temporarily (< 30 days))
+- Communicating to other systems via APIs and Message/Event buses.
+
+As systems tackle greater complexity, lots of other software engineering techniques come into play such as:
+
+- Understanding and meeting business needs.
+- Building libraries to share & reuse code between systems / engineers.
+- Scheduling to perform scheduled processes or "jobs".
+- Batching to increase throughput and efficiency.
+- Different models of Authentication & Authorization (both for Users and for Systems).
+- Integrating with 3rd party services for specialised non-core domain processing and tasks.
+- Producing data for data warehouses or lakes (see [Data Science](../data-science/index.md))
+- Installation, management and integration of open-source software for generic but specific tasks (e.g. Search,
+  Messaging or Authorization).
+- Alerting, Monitoring, Optimising and Troubleshooting using various Observability / Telemetry tools (also
+  see [Platform Engineering](../platform/index.md))
+- Operating and maintaining running services (scaling, resourcing, configuring, etc.)
+- Releasing and rolling back new versions of services, as appropriate.
+
+... and probably more.
+
+## TODO
+
 - Java
 	- Setup Java on a machine (sdkman, maven, maven wagons?)
 	- Maven setup (Single repo per artifact, BOMs, parents, libraries, GAV naming)
-    - Package structure
-    - Spring recommendations (Dependency Injection, Controllers, Services, JDBC/ORMs, HTTP Clients)
-    - Testing (JUnit5, Jupiter Assertions, WireMock / PACT, Testcontainers, @SpringBootTest)
-    - Observability (Logging, Metrics, Tracing)
-    - Code style specifics (Never `var`, Use streams, Imperative OOP not reactive)
+	- Package structure
+	- Spring recommendations (Dependency Injection, Controllers, Services, JDBC/ORMs, HTTP Clients)
+	- Testing (JUnit5, Jupiter Assertions, WireMock / PACT, Testcontainers, @SpringBootTest)
+	- Observability (Logging, Metrics, Tracing)
+	- Code style specifics (Never `var`, Use streams, Imperative OOP not reactive)
 - Go
 - Rust?
 - Databases / Storage (SQL/Relational, In-memory key-value, Document, Blob / File Storage)
