@@ -44,7 +44,8 @@ As systems tackle greater complexity, lots of other software engineering techniq
 
 - Java
 	- Setup Java on a machine (sdkman, maven, maven wagons?)
-	- Maven setup (Single repo per artifact, BOMs, parents, libraries, GAV naming)
+	- General project management (Single repo per artifact vs multi-module, BOMs, parents, libraries, GAV naming)
+    - Maven vs Gradle vs others
 	- Package structure
 	- Spring recommendations (Dependency Injection, Controllers, Services, JDBC/ORMs, HTTP Clients)
 	- Testing (JUnit5, Jupiter Assertions, WireMock / PACT, Testcontainers, @SpringBootTest)
