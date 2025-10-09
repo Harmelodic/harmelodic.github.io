@@ -35,6 +35,15 @@ As systems tackle greater complexity, lots of other software engineering techniq
   Messaging or Authorization).
 - Alerting, Monitoring, Optimising and Troubleshooting using various Observability / Telemetry tools (also
   see [Platform Engineering](../platform/index.md))
+  	- Backend focus on implementing these things for services, and what to alert/monitor/optimise/troubleshoot
+  	- Actionable alerts
+  	- Intuitive monitoring
+  	- Optimise where necessary, otherwise reduce complexity
+  	- How to use the 4 parts to Metrics &
+  	  Telemetry: https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/about-metrics/
+  	  (also covered in Platform from a Platform Engineering perspective.
+  	- Common SLIs and SLOs for Backend
+  	- [RED and USE](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method)
 - Operating and maintaining running services (scaling, resourcing, configuring, etc.)
 - Releasing and rolling back new versions of services, as appropriate.
 
