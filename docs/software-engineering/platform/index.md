@@ -6,8 +6,8 @@ a.k.a. Platform Engineering
 - Compute platform (compute options (serverless, kubernetes, VMs, hardware), service-mesh, ingress/egress, LBs,
   certificates)
 - CI/CD / Supply-chain platform (git, build system, contracts, artifact storage, security analysis, deployment
-  systems)
-- Internal Development Tools platform (sourcegraph, developer portal, templating, documentation)
+  systems, SBOM generation & upload (CycloneDX standard))
+- Internal Development Tools platform (sourcegraph, developer portal, templating, documentation, SBOM storage & exploration)
 - Big Data (storage, normalisation, access)
 
 ## Cloud Providers
