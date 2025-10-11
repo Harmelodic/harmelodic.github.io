@@ -10,8 +10,10 @@ anything we can do about it.
 > "I can't change it..."
 >
 > "I can't do anything about it..."
+>
+> "I'm only one person..."
 
-and I can't help but think: "No, it isn't. Yes, you can."
+and I can't help but think: "No, it isn't. Yes, you can. Sometimes it only takes one extra person."
 
 ## My perspective
 
@@ -21,12 +23,15 @@ conditions we live in, are all things that we can change.
 Just because things are the way they are now, does not mean they need to be that way - and if we just _decide_ to do it
 differently, then we just... can.
 
+Moreover, if we don't change it for the better, the status quo will inevitably be changed by people who seek to profit
+or gain power for themselves - which usually does not lead to a better situation.
+
 Don't get me wrong, the decision to do it differently can be a frightening one, and the work to make that decision and
 then implement the change can seem like quite a lot a work. However, every time I've been able to make changes to the
 status quo, it has _always_ been much less work than most people think and a formalised, empathetic, discussion-based
-process to making decisions to change can really make whole ordeal a lot less frightening.
+process to making decisions can really make the whole ordeal a lot less frightening.
 
-Even then, itt can still be hard work in order to enact some changes, but it's always worth it in the long run.
+Even then, it can still be hard work in order to enact some changes, but it's always worth it in the long run.
 
 The hardest part is convincing people that it's possible. People's anchored belief that the status quo cannot be changed
 leads them actively resist and prevent anyone from even trying.
