@@ -9,6 +9,15 @@ through. The more informed you, the better.
 
 Here is a bunch of advice, research and reviews that I've done to hopefully help.
 
+## Don't trust brand reputation
+
+Brands having a reputation used to be a sign of trust and increased likelihood that you would get a good product.
+
+In the modern world, a brand having a good reputation is just an opportunity for companies to start to cut costs and
+reduce the quality of goods and services but keep the price the same (or higher). If a brand has a good reputation then
+_verify_ it, by looking for the factors that show good
+quality. [Enshittification](https://en.wikipedia.org/wiki/Enshittification) is real, and is happening more.
+
 ## Be sustainable
 
 When thinking about purchasing something, remember to think and act sustainably.
@@ -52,6 +61,6 @@ These links may be moved elsewhere, if I end up writing more about them specific
 - [Ian's Shoelace Site](https://www.fieggen.com/shoelace/)
 - [The Man in Seat Sixty-One](https://www.seat61.com/)
 - For the Star Trek nerds:
-    - [Ex Astris Scientia](https://www.ex-astris-scientia.org/)
-    - [The Star Trek List - Harmelodic](https://docs.google.com/spreadsheets/d/1l6JBqOQh5G7ybMOHT8tgut0rbXUvN1hwYOGEEqpf44E/edit?usp=sharing)
-    - [The Star Trek List - OG](https://startreklist.blogspot.com/)
+	- [Ex Astris Scientia](https://www.ex-astris-scientia.org/)
+	- [The Star Trek List - Harmelodic](https://docs.google.com/spreadsheets/d/1l6JBqOQh5G7ybMOHT8tgut0rbXUvN1hwYOGEEqpf44E/edit?usp=sharing)
+	- [The Star Trek List - OG](https://startreklist.blogspot.com/)
