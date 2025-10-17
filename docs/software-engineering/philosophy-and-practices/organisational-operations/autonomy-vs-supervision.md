@@ -3,7 +3,10 @@
 Some basic notes:
 
 - A person is smart, people are dumb.
-- We think ourselves rational, but we are often irrational and biased
+- We're all adults, but we've all had colleagues that whine and act like babies
+- We're often capable of self-managing, self-driving and being smart, but we also get distracted by things, value
+  "things we want to do" over "things we need to do", and can ignore rules because we disagree with them.
+- We think ourselves rational, but we often act dumb, irrational and biased
 - Smart rational persons? empower them and get out their way
 - But we are dumb, irrational and biased? we need guidance and limits
 - So we're both. How do we move forward?
@@ -15,7 +18,8 @@ Some basic notes:
   fair
 - Leaders and Managers facilitate, refine and guide our practices and help us be aware of and adhere to regulation and
   social contracts
-- Beyond that, we can be independent.
+- Beyond that, we can be independent / autonomous in order to achieve what we're supposed to achieve and what we want to
+  achieve.
 
 Social contracts, link in with
 different [power structures](https://nielspflaeging.medium.com/org-physics-the-3-faces-of-every-company-df16025f65f8):
