@@ -46,3 +46,31 @@ and management must collaborate on. It's basically a venn diagram:
 Managers can drift into being in roles likes conductors or band leaders (think music). This is a sign management is
 interjecting too much into technical work, and a sign of weak or non-existent technical leadership (or over-eager
 technical managers). Technical Leadership are the band leaders / conductors, managers are the roadies & band managers.
+
+Whether its leadership or management, it's important for these people to be _present_ and available for teams. When
+managers and leaders are stretched, or spending there time away from their team(s), or just not able to make time for
+the people they're supposed to be leading or managing, then they're not able to engage in effective leadership or
+management. Absence results in teams losing focus, increase in conflicts, decrease in alignment with organisational
+goals & conduct, and/or reduces the social cohesion/relationship between workers and leaders & managers.
+
+Inevitably, there will be times when leaders and managers need to "step away" to tend to something else. When this
+happens it is important to be transparent and open with the team about why this is needed, what is going on and report
+back on the status of the work - whilst seemingly "boring" and team members may show disinterest in this, being
+transparent and reporting back continues to maintain a trusting and open relationship with workers. The alternative is
+not informing workers, which tends to build suspicion into what leaders/managers are up to, and discontent with
+leaders/managers that they aren't available for teams, and they're prioritising other unknown work.
+
+Further, on transparency, leaders/managers can often view themselves as "shielding" their teams/workers from unpleasant
+or controversial work (from "above" or from "the side"). The fear here is that the teams/workers would be given undue
+stress and frustration that the leader/manager can protect the teams/workers from. This is well-intended, but
+unintuitively the opposite of what good leaders and managers should be doing. By not speaking about the unpleasant work,
+the workers are not appreciative of the efforts of the leader/manager and, when inevitably the unpleasant work does
+affect them in an unpleasant way, view the leader/manager as complicit in the presence and manner of the unpleasant
+work - it also further establishes a culture of "top-down" operation, whereby the leader/manager is paternally "looking
+after" their team.  
+Instead, it is better to inform and be open with the teams/workers, by describing the nature of the unpleasant work that
+has appeared, the view that the leader/manager has, the problems and constraints that the organisation faces, and what
+the leader/manager is going to do about it (the workers may even be able to help by providing feedback, support or
+suggestions). This builds and maintains trust, solidarity and a transparent and collaborative culture - and if done
+openly and regularly enough, will discourage this unpleasant work from appearing as everyone would know that information
+and communication is handled openly that it would be a socially unacceptable to trigger or cause unpleasant work.
