@@ -117,15 +117,18 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - [SQLite](https://www.sqlite.org/)
 - [Pool Sizing advice - HikariCP](https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing)
 
-## Data Processing
+## Data Processing / Messaging
 
 - [Apache Camel](https://camel.apache.org/)
 - [Apache Kafka](https://kafka.apache.org/)
 - [Apache NiFi - User Guide](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html)
 - [Apache Tika - Metadata Extraction](https://tika.apache.org/)
+- [AWS Kinesis (Stream processing)](https://docs.aws.amazon.com/kinesis/)
+- [AWS SQS (Queue / Messaging)](https://docs.aws.amazon.com/sqs/)
 - [Cloudera - Managed Apache Software](https://www.cloudera.com/)
 - [GCP Dataflow](https://cloud.google.com/dataflow)
 - [GCP Pub/Sub](https://cloud.google.com/pubsub)
+- [NATS](https://nats.io/)
 - [Spring Integration](https://spring.io/projects/spring-integration)
 
 ## Handling Payments
