@@ -60,6 +60,12 @@ production. I contacted Icebreaker and whilst they do highlight
 their [sustainability / transparency](https://www.icebreaker.com/en-se/transparency.html) efforts, they were unable to
 confirm what treatments are actually in use - which is, ironically, not very transparent.
 
+I'm not normally a pusher of "brands", as brands shouldn't be trusted, but with the deluge of polyester and other
+synthetic shit that is being produced, it can be hard to find wool & knitwear brands. My recommendation would be go to a
+second-hand shop and look in the clothing section, you'll often find some good knitwear there. Then take note of the
+manufacturers. For example, I've spotted _WoolOvers_ and _Aran Crafts_. Alternatively, go to a hiking/outdoor store and
+look for wool clothing and take note, that's how I found _Icebreaker_. I heard of _Dilling_ via word of mouth.
+
 ## Other useful knowledge
 
 Linen is super light and breathable and thus great for clothing designed for hot climates.
