@@ -1,6 +1,8 @@
 # Architecture Overview
 
-## What is Architecture?
+Architecture can be a noun (_the_ architecture of a system) or a verb (engineers are "doing" architecture).
+
+## What is Architecture (noun)?
 
 > _It's the stuff that we wish we could get right at the start of a project._  
 > ...   
@@ -19,7 +21,7 @@ alteration to this definition that I think makes it better:
 What I like about Dave Farley's definition, is what Dave Farley intended about his alteration: The fact that the
 software architecture of a system is an evolving thing, and that the architecture at any one time is simply a snapshot.
 
-## Why does Architecture help?
+## Why does Architecture (noun) help?
 
 Architecture fundamentally gives us _structure_, and structure can a really useful thing. Good structure makes it easier
 to tackle problems by:
@@ -31,13 +33,28 @@ to tackle problems by:
 
 ## How do we do Architecture?
 
+In order to create architecture (noun), we need to do architecture (verb).
+
+Doing architecture is effectively "making decisions" and ensuring that everyone is [aligned](../alignment.md) with those
+decisions, in order for the executing software to match the designed architecture.
+
 Architecture can be viewed from different perspectives. Ultimately, the practice of doing architecture is to collaborate
 with others to construct a design for how a system will solve a problem.
 
-There are different levels of depth that this can go into, which provides different kinds of value. _High-level_
+There are different levels of depth that this can go into, which provides different kinds of value: _High-level_
 architecture gives us an idea of the "big picture" and shows how different systems work together to achieve a larger
 purpose. _System_ architecture is a lower-level architecture, which conveys how any one system is design to achieve its
 goal (where the size of a system is subject to the size of the problem the system is intended to face).
+
+> Some may argue that the _code_ itself can have architecture, which can be tested/enforced with tools like ArchUnit.
+> Whilst some may call this architecture, I view this as simply "code structure" which is important in its own right,
+> but I find limiting the term "architecture" to how systems are designed as a useful linguistic scoping to ensure the
+> term is not diluted to the point where "architecture" is simply a synonym for "development".
+>
+> Similarly, "enterprise architecture" is also not really architecture, in my opinion, in that it deals much less with
+> system design and more with organisational processes, broad technical strategy and, frankly, used as a fancy term for
+> people to justify their position in an organisational hierarchy. Many tasks done by antiquated "enterprise architects"
+> can instead be done by having technical leaders (senior engineers, principals, etc. ) collaborate with managers.
 
 When thinking about these levels of architecture, I tend to immediately think
 about [Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design) (DDD) and "Domains". A domain is
