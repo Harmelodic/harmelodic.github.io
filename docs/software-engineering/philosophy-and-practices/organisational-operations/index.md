@@ -14,12 +14,30 @@ TODO:
 	  think now yes/no, possibly think later easy/hard
 - Decision-making
 	- Design by committee vs Design by dictator - no, design with proof, decide by consensus
-    - Trade-offs, balance, who gets involved, etc.
-    - ADRs
-    - Advice and Guidance
-    - Facilitating Software Architecture
-    - Decision-making processes e.g. ADR processes, Double-diamond design-thinking (problem, solution)
+	- Trade-offs, balance, who gets involved, etc.
+	- ADRs
+	- Advice and Guidance
+	- Facilitating Software Architecture
+	- Decision-making processes e.g. ADR processes, Double-diamond design-thinking (problem, solution)
 - Management vs Technical Leadership
+- Hiring
+	- What interviews to do (flow chat) - HR screening, Culture/Manager interview, Technical interview, follow-ups, etc.
+	  and the logistics involved in each and how the hiring process reflects how you work as a company.
+	- What to look for in people culturally and technically.
+	- Respect your interviewee's and your employee's time, whilst doing your due diligence (e.g. avoid home assignments
+	  unless they are requested, or they are simple, and it's a junior engineer)
+	- Technical interview types and what they offer - and how to design new ones when you're unsure.
+	- Be relaxed, welcoming, be super clear in the process and how things are structured to set them at ease, make it
+	  clear that saying "I don't know" is OK, because not everyone knows everything and learning is part of the job
+	  (because it is and the organisation should know that - but if they say it too much it shows lack of knowledge /
+	  skill).
+	- Be upfront about (broadly) what you're looking for, so they can understand the expectations - and you feel more
+	  comfortable asking questions on specifics of those expectations without the interviewee needing to answer the
+	  question but also guess on what you're expecting - this removes the guess work on both sides, saves time and makes
+	  it easier for organisations and interviewees to evaluate each other.
+	- Make sure to cover who the organisation is, how it's structured, what the position is for, and how the
+	  organisation works at some point - since this is an evaluation for both parties.
+	- Interview signals (body language, wording, when to dive deeper, when to pull back)
 - Management lessons learned
 - Include a "Software Organisation Management Lifecycle" page that tells the story of how an organisation goes from
   1 (or few) to a large scale organisation. This would include:
