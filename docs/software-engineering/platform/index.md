@@ -2,12 +2,21 @@
 
 a.k.a. Platform Engineering
 
-- General (Infra as code, zero trust, IAM access, environments, observability, DNS, networking)
+- General
+	- Infra as code
+	- zero trust
+	- IAM access
+	- environments
+	- observability
+	- DNS & networking
+	- improving developer experience (aspects of making: new, improve, maintain, move, operate/observe/optimise, sunset,
+	  collab, discuss, decide)
 - Compute platform (compute options (serverless, kubernetes, VMs, hardware), service-mesh, ingress/egress, LBs,
   certificates)
 - CI/CD / Supply-chain platform (git, build system, contracts, artifact storage (+ mirroring public repos), security
   analysis, deployment systems, SBOM generation & upload (CycloneDX standard))
-- Internal Development Tools platform (sourcegraph, developer portal, templating, documentation, SBOM storage & exploration)
+- Internal Development Tools platform (sourcegraph, developer portal, templating, documentation, SBOM storage &
+  exploration)
 - Big Data (storage, normalisation, access)
 
 ## Cloud Providers
