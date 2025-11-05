@@ -1,4 +1,4 @@
-# Shokz OpenRun Pro 2 Mini
+# Shokz OpenRun Pro 2 Mini Review
 
 I used to use [Google Pixel Buds](./2nd-gen-google-pixel-buds.md), but then I went through 3 pairs of those, because
 they weren't very durable / I was clumsy in two ways:
