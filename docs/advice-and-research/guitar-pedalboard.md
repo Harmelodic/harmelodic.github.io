@@ -130,7 +130,7 @@ Can also take a clean signal and make it "dirty" (add distortion, overdrive, cru
 
 ### Modulation effects
 
-Pedals that modulate (change the frequency of the signal) to make the sound weird and/or cool.
+Pedals that modulate (change the frequency or amplitude of the signal) to make the sound weird and/or cool.
 
 - Tremolo
 - Vibrato
@@ -138,12 +138,14 @@ Pedals that modulate (change the frequency of the signal) to make the sound weir
 
 ### Time-based modulation effects
 
-Pedals that modulate (change the frequency of the signal) in ways that use time as a factor.
+Pedals that modulate (change the frequency or amplitude of the signal) in ways that use time as a factor.
 
 - Delays
 - Reverb
 - Chorus
 - Phaser
+
+Good video on modulation effects [here](https://www.youtube.com/watch?v=UcMeNREszFg).
 
 ## Buffers
 
@@ -215,3 +217,4 @@ As well as just my own experience / knowledge, I also used a bunch of sources to
 - [A better explanation of impedance for Audio signals](https://www.youtube.com/watch?v=TjC1Zbm4xpc)
 - [A guitarists guide to compression](https://www.premierguitar.com/pro-advice/state-of-the-stomp/a-guitarists-guide-to-compression)
 - [How Do Compressor Pedals Work?](https://www.youtube.com/watch?v=LUXR8UnYhzc)
+
