@@ -8,6 +8,9 @@ Most pedals are "effects pedals", which will change the sound of the guitar that
 pedals provide other functionality, like tuning or providing effects for other things that could be available to a
 guitarist (e.g. a microphone).
 
+For more about what other things (other than pedals) affect the sound of the guitar, I recommend watching
+[Jim Lill's "Tested" videos on YouTube](https://www.youtube.com/@JimLill/videos).
+
 ## The Signal Chain
 
 A pedalboard is effectively a *chain* of pedals. A guitar (which produces the signal when playing) is plugged into the
@@ -22,22 +25,22 @@ A good order would be:
 
 - Guitar
 - [Tuning](#tuning)
-    - Before everything to get the raw guitar tone to maximise tuning accuracy.
+	- Before everything to get the raw guitar tone to maximise tuning accuracy.
 - [Dynamics](#dynamics)
-    - Before all effects to level out the sound ready for further signal processing.
+	- Before all effects to level out the sound ready for further signal processing.
 - [Pitch](#pitch-effects) (change the pitch of the signal).
-    - After Dynamics, because we want to cleanly pitch shift a levelled signal, not the raw signal.
-    - Before all other effects, so pitch shifting can be cleanly achieved.
+	- After Dynamics, because we want to cleanly pitch shift a levelled signal, not the raw signal.
+	- Before all other effects, so pitch shifting can be cleanly achieved.
 - [Gain](#gain-effects) (to adjust gain and/or dirty the signal).
-    - After Dynamics + Pitch, because Dynamics + Pitch pedals need a clean signal to work best.
-    - Before Modulations, because Gain pedals aren't just about distortion but about increasing loudness in the
-      desired way _before_ modulation effects, since we'll also get loudness after modulations from the amp.
+	- After Dynamics + Pitch, because Dynamics + Pitch pedals need a clean signal to work best.
+	- Before Modulations, because Gain pedals aren't just about distortion but about increasing loudness in the
+	  desired way _before_ modulation effects, since we'll also get loudness after modulations from the amp.
 - [Modulations](#modulation-effects) (actual "effects" that make the signal sound cool / weird).
-    - After Gain, to receive the signal with the amount of gain desired before modulation effects.
-    - Before Time-based, so that time-based effects don't screw with the modulation effects or signal quality.
+	- After Gain, to receive the signal with the amount of gain desired before modulation effects.
+	- Before Time-based, so that time-based effects don't screw with the modulation effects or signal quality.
 - [Time-based Modulations](#time-based-modulation-effects) (effects that mess with signal timing).
-    - After other Modulations, since time-effects can do weird things to signals that make other modulations sound weird
-      if done before.
+	- After other Modulations, since time-effects can do weird things to signals that make other modulations sound weird
+	  if done before.
 - Amp input
 - Amp speaker sound
 
