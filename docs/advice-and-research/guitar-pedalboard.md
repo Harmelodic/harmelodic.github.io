@@ -82,6 +82,28 @@ introduce an unpleasant hum to the pedals and effect signal quality, because the
 dirty" (i.e. it carries with it a lot of noise, like distortions, surges, etc.). A good quality power supply can provide
 each pedal with dedicated power that is "clean" - thus preventing noise from entering the signal chain.
 
+Power supplies can supply different amounts of power for pedals that need power. In electricity,
+`Power = Current x Voltage`. Most power supplies provide power for different voltages and currents for different pedals
+that need different amounts of voltage or current. When connecting a pedal to a power supply, the voltages _must_ match,
+and the current of the power supply needs to be greater than or equal to the current needed by the pedal. Some power
+supplies can output configurable amounts of voltage and current - meaning you can buy basically any pedal and then just
+flick a switch or two on the power supply to ensure the right voltage and current is supplied to the pedal.
+
+Most pedals I've noticed require 9 V and different amounts of current, though usually often under 100 mA. Some pedals
+require much more current though, like my programmable EQ which requires 9 V and 200 mA of current. Other pedals
+require more voltage, like the [BOSS CP-1X Compressor](https://www.boss.info/us/products/cp-1x/) which requires 18 V and
+90 mA of current.
+
+Before buying a power supply, I recommend you spreadsheeting what pedals you are likely to have (or already have and
+want to power), and see:
+
+- How many power outputs you need.
+- What voltages you need.
+- What amount of current you need.
+
+and then buy a power supply that is appropriate for your setup. If you want more variability, then buy a configurable
+power supply, like the [Cioks DC7](https://cioks.com/power-supplies/future-power-generation/cioks-dc7/).
+
 ## Pedals
 
 ### Tuning
