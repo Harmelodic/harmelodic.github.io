@@ -1,4 +1,4 @@
-# Guitar Pedalboard
+# Pedals & Pedalboards
 
 This is a bit of a work in progress... just so you know.
 
@@ -44,7 +44,7 @@ A good order would be:
 - Amp input
 - Amp speaker sound
 
-## Amp effects loop option
+### Amp effects loop option
 
 An amp may provide boost option as well as modulation and delay effects.
 
@@ -52,7 +52,7 @@ Based on the order described above, it would be beneficial to insert these effec
 chain. For this reason, some amps offer the ability to send the signal through an "effects loop" before it returns to
 the amp for amplification. Amp that do this provide two jack sockets to "send" and "return" the signal.
 
-![Amp effects loop](assets/amp-effects-loop.jpg){ width="400" }
+![Amp effects loop](../assets/amp-effects-loop.jpg){ width="400" }
 /// caption
 A send/return effects loop on a "Marshall Valvestate 80V" amp
 ///
@@ -74,6 +74,8 @@ This results in an order:
 
 ## Pedals
 
+TODO: Expand more on different pedal types and how they work.
+
 ### Tuning
 
 Pedals that help you tune your instrument by reading the signal.
@@ -82,7 +84,7 @@ Pedals that help you tune your instrument by reading the signal.
 - Strobe
 - Accuracy (+/- cent)
 - Mute on switch / pass through
-- Useful to have a [buffer](#buffers) here on this
+- Useful to have a [buffer](#buffers) here on this, since it's often at the beginning of the signal chain.
 
 ### Dynamics
 
@@ -107,8 +109,7 @@ Compression pedals can have a couple of different controls:
 
 Pedals that affect the pitch of the sound by modulating the frequency of the signal.
 
-- Whammy
-- Pitch-shifting
+- Pitch-shifting (re-pitching the guitar sound (e.g. drop-tuning))
 
 ### Gain effects
 
@@ -116,27 +117,39 @@ Pedals that statically affect volume (amplitude) of the signal
 
 Can also take a clean signal and make it "dirty" (add distortion, overdrive, crunch).
 
-- Gain
-- Overdrive
-- Distortion
-- EQ / Equalizer
+- Gain / Boost (increases gain / volume of a signal)
+- Fuzz (changes the sound to be more of a distorted "fuzzy" tone).
+- Overdrive (increases the gain so that it "soft-clips" to create a distorted tone).
+- Distortion (increases the gain so that it "hard-clips" to create a heavily distorted tone).
+- EQ / Equalizer (adjusts the volume of different frequencies of the signal)
 
 ### Modulation effects
 
 Pedals that modulate (change the frequency or amplitude of the signal) to make the sound weird and/or cool.
 
-- Tremolo
-- Vibrato
-- Wah-wah
+- Tremolo (fluctuates volume)
+- Vibrato (fluctuates pitch)
+- Wah-wah (modifies the signal to make it sound like a voice going "wah" as you press it).
 
 ### Time-based modulation effects
 
 Pedals that modulate (change the frequency or amplitude of the signal) in ways that use time as a factor.
 
-- Delays
-- Reverb
-- Chorus
+- Delay / Echo (Plays the note and repeats it on a delay, and the note slowly fades away)
+- Reverb (Makes the signal sound like it's being played in a large echoey hall)
+- Chorus (Makes the guitar sound like multiple guitars by modifying pitch and delay (can sound a bit "seasick"))
 - Phaser
+	- Duplicates and modulates the signal with a "filter" and then mixes it back in with the original signal.
+	- This puts these two signals "out of phase" with one another.
+	- The output is a signal that is missing or altered in a way that sounds similar to Chorus, but different enough to
+	  warrant its own effect.
+- Flanger
+	- Duplicates the signal, delays the duplicated signal and then mixes it back in with the original signal.
+	- The output is a signal that is affected in a similar to a Chorus or Phaser, but is different enough to warrant its
+	  own effect.
+- Uni-Vibe
+  - A pedal intended to emulate the rotating "Doppler sound" of a Leslie speaker.
+  - Is kind of like a phaser, chorus and vibrato put together.
 
 Good video on modulation effects [here](https://www.youtube.com/watch?v=UcMeNREszFg).
 
@@ -191,7 +204,7 @@ have a much lower impedance than the input of the device that will receive the s
 A buffer is a feature of a pedal that ensures that the input has a high impedance but the signal is boosted to have a
 low impedance when it is output of the pedal.
 
-## Power
+## Power & Power Supplies
 
 Pedals require power in order to function, which typically comes from a power supply dedicated for powering the pedals
 (as opposed to powering them directly from mains power).
