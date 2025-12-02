@@ -35,15 +35,15 @@ As systems tackle greater complexity, lots of other software engineering techniq
   Messaging or Authorization).
 - Alerting, Monitoring, Optimising and Troubleshooting using various Observability / Telemetry tools (also
   see [Platform Engineering](../platform/index.md))
-  	- Backend focus on implementing these things for services, and what to alert/monitor/optimise/troubleshoot
-  	- Actionable alerts
-  	- Intuitive monitoring
-  	- Optimise where necessary, otherwise reduce complexity
-  	- How to use the 4 parts to Metrics &
-  	  Telemetry: https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/about-metrics/
-  	  (also covered in Platform from a Platform Engineering perspective.
-  	- Common SLIs and SLOs for Backend
-  	- [RED and USE](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method)
+	- Backend focus on implementing these things for services, and what to alert/monitor/optimise/troubleshoot
+	- Actionable alerts
+	- Intuitive monitoring
+	- Optimise where necessary, otherwise reduce complexity
+	- How to use the 4 parts to Metrics &
+	  Telemetry: https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/about-metrics/
+	  (also covered in Platform from a Platform Engineering perspective.
+	- Common SLIs and SLOs for Backend
+	- [RED and USE](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method)
 - Operating and maintaining running services (scaling, resourcing, configuring, etc.)
 - Releasing and rolling back new versions of services, as appropriate.
 
@@ -54,7 +54,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - Java
 	- Setup Java on a machine (sdkman, maven, maven wagons?)
 	- General project management (Single repo per artifact vs multi-module, BOMs, parents, libraries, GAV naming)
-    - Maven vs Gradle vs others
+	- Maven vs Gradle vs others
 	- Package structure
 	- Spring recommendations (Dependency Injection, Controllers, Services, JDBC/ORMs, HTTP Clients)
 	- Testing (JUnit5, Jupiter Assertions, WireMock / PACT, Testcontainers, @SpringBootTest)
@@ -64,6 +64,10 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - Rust?
 - Databases / Storage (SQL/Relational, In-memory key-value, Document, Blob / File Storage)
 - Messaging (Queues, PubSub)
+- AI agent systems (ew, hate this, but also can't ignore it, and if it gets less yucky, it'd be useful to have a point
+  of reference)
+	- Model Context Protocol (MCP)
+	- For more on building AI models, see [Data Science](../data-science/index.md)
 
 ## Java
 
