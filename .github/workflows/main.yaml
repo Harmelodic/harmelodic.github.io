@@ -9,10 +9,10 @@ on:
 
 jobs:
   verify-github-workflows:
-    uses: harmelodic/workflows/.github/workflows/verify-github-workflows.yaml@99d22090f97a855f32af8a5f56523a6a88bb2857
+    uses: harmelodic/workflows/.github/workflows/verify-github-workflows.yaml@ec7c612da71abf16c3e9ce28fe239b9e0089d616
 
   verify-mkdocs:
-    uses: harmelodic/workflows/.github/workflows/verify-mkdocs.yaml@99d22090f97a855f32af8a5f56523a6a88bb2857
+    uses: harmelodic/workflows/.github/workflows/verify-mkdocs.yaml@ec7c612da71abf16c3e9ce28fe239b9e0089d616
   release-mkdocs:
     needs: verify-mkdocs
-    uses: harmelodic/workflows/.github/workflows/release-mkdocs.yaml@99d22090f97a855f32af8a5f56523a6a88bb2857
+    uses: harmelodic/workflows/.github/workflows/release-mkdocs.yaml@ec7c612da71abf16c3e9ce28fe239b9e0089d616
