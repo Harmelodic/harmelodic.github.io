@@ -12,15 +12,15 @@ of course encourage you to adopt too.
 
 ## Sections
 
-### **Architecture**
+### Architecture
 
 - System design, modelling, patterns trade-offs, facilitating Software Architecture
 
-### **Contracts and APIs**
+### Contracts and APIs
 
 - interfaces, abstractions, APIs, libraries, semantic versioning, loop in tests
 
-### **Development**
+### Development
 
 - Version Control, Using package management (+SemVer), IDEs, error handling, onboarding checklist, documentation
   (handbook, system docs), code style, Standardisation, Version managing SDKs / installations
@@ -29,7 +29,7 @@ of course encourage you to adopt too.
   shift-left, the test data problem.
 - Shipping Software
 
-### **Operations**
+### Operations
 
 - Monitoring & Alerting
 - SLIs/SLOs/SLAs
@@ -38,9 +38,10 @@ of course encourage you to adopt too.
 - but also: business operations? (loop in DDD and ways of
   working)
 
-### **Organisational Operations**
+### Organisational Operations
 
-- Social side of Technical Leadership.
+The _formal_ Social side of Software Engineering and Technical Leadership.
+
 - People / Administrative management side of engineering.
 - Ways of working (Agile, Waterfall, DDD, Mob programming, XP)
 - Hiring, career development, conflict resolution, etc.
@@ -49,3 +50,13 @@ of course encourage you to adopt too.
 - Nudging, empowering, social efficiency & effectiveness
 - Management Differences from Technical Leadership
 - "Write a book together" as a form of alignment - an Engineering Handbook? (like this one!)
+
+### Soft Skills
+
+The _informal_ social side of Software Engineering.
+
+- Generally being a nice person.
+- Trying to improve yourself.
+- Get feedback.
+- How to change things through informal structures / relationships within the organisation.
+- General mindset stuff (e.g. Principled vs Practicality, believing change is possible, be open and friendly)
