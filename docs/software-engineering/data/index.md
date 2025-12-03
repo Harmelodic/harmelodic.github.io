@@ -1,6 +1,6 @@
 # Data Overview
 
-Data engineering is work to enable extracting and actually extract useful knowledge from data, usually "big" datasets.
+Data engineering is work to extract (and enable extracting) useful knowledge from data, usually "big" datasets.
 
 Typically, systems and people do work and in the process of doing that work, data is created and managed by those
 systems and people (e.g. banks and banking systems manage accounts, customer data, executing transfers, storing records
