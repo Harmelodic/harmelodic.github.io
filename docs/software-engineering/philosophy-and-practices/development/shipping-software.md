@@ -158,7 +158,7 @@ encourage GitOps-feature toggling, by updating service configuration to enable f
 
 Implementation specifics to the releasing
 of [Backend](../../backend/index.md), [Frontend Web](../../frontend-web/index.md)
-or [Data Science](../../data-science/index.md) services can be found in their individual sections.
+or [Data Science](../../data/index.md) services can be found in their individual sections.
 
 ### Releasing artifacts
 

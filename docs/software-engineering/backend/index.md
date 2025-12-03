@@ -30,7 +30,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - Batching to increase throughput and efficiency.
 - Different models of Authentication & Authorization (both for Users and for Systems).
 - Integrating with 3rd party services for specialised non-core domain processing and tasks.
-- Producing data for data warehouses or lakes (see [Data Science](../data-science/index.md))
+- Producing data for data warehouses or lakes (see [Data Science](../data/index.md))
 - Installation, management and integration of open-source software for generic but specific tasks (e.g. Search,
   Messaging or Authorization).
 - Alerting, Monitoring, Optimising and Troubleshooting using various Observability / Telemetry tools (also
@@ -67,7 +67,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - AI agent systems (ew, hate this, but also can't ignore it, and if it gets less yucky, it'd be useful to have a point
   of reference)
 	- Model Context Protocol (MCP)
-	- For more on building AI models, see [Data Science](../data-science/index.md)
+	- For more on building AI models, see [Data Science](../data/index.md)
 
 ## Java
 
