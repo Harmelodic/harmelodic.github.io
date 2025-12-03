@@ -114,14 +114,20 @@ TODO: Talk about Batch vs Real-time ingestion and processing.
 
 TODO: Mention data processing technologies such as and how they are used:
 
-- [Apache Camel](https://camel.apache.org/)
-- [Apache Kafka](https://kafka.apache.org/)
-- [Apache NiFi - User Guide](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html)
-- [Apache Tika - Metadata Extraction](https://tika.apache.org/)
-- [Cloudera - Managed Apache Software](https://www.cloudera.com/)
-- [GCP Dataflow](https://cloud.google.com/dataflow)
-- [GCP Pub/Sub](https://cloud.google.com/pubsub)
-- [Spring Integration](https://spring.io/projects/spring-integration)
+- [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html) - batch-oriented workflow
+  management
+- [Apache Beam](https://beam.apache.org/documentation/) - batch & stream data processing
+- [Apache Camel](https://camel.apache.org/) - For building integration & transformation systems
+- [Apache Kafka](https://kafka.apache.org/) - Messaging system
+- [Apache NiFi - User Guide](https://nifi.apache.org/docs/nifi-docs/html/user-guide.html) - diagrammatic flow-based data
+  processing.
+- [Apache Tika - Metadata Extraction](https://tika.apache.org/) - Extracting metadata from unstructured files (pictures,
+  emails, pdfs)
+- [Cloudera](https://www.cloudera.com/) - Managed Apache Software for Data Platform building
+- [GCP Dataflow](https://cloud.google.com/dataflow) - GCP-managed Apache Airflow
+- [GCP Pub/Sub](https://cloud.google.com/pubsub) - GCP-managed messaging system
+- [Spring Integration](https://spring.io/projects/spring-integration) - For building integration & transformation
+  systems
 
 ## Data Science and further engineering
 
@@ -129,6 +135,7 @@ Much of data science is done using the following programming languages:
 
 - [Python](https://www.python.org/), for general programming, using (for example):
 	- [Pandas](https://pandas.pydata.org/) for working doing data analysis and manipulation.
+    - [NumPy](https://numpy.org/) for optimised, mathematical functions (both "simple" and complex).
 	- [matplotlib](https://matplotlib.org/) or [plotly](https://plotly.com/python/) for general visualisations.
 	- [pyvis](https://pyvis.readthedocs.io/en/latest/index.html) for network visualisations.
 	- [networkx](https://networkx.org/documentation/stable/reference/index.html) for network manipulation and analysis.
