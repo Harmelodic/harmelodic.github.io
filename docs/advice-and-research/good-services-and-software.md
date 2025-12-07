@@ -15,25 +15,27 @@ enshittification, in my opinion, and so I've decided this good stuff below.
 Good in this case means "happily recommendable by me", and I'll be basing my recommendations mostly on the following
 factors:
 
-- **Fair priced.** Ideally, free to use and supported through donations or other sustainable and reasonable funding
+- 🪙 **Fair priced.** Ideally, free to use and supported through donations or other sustainable and reasonable funding
   mechanism, but could require a small one-off payment or a _fair_ subscription payment.
-- **Little-to-no data gathering.** Does not gather data on their users, but may gather anonymous / anonymised data for
-  the developer's use to help inform development decisions.
-- **Ad-free** - so there is no temptation to gather data, nor is there annoying/dangerous advertisements shown to users.
-- **Admirably-incentivised.** Is developed by a non-profit / not-for-profit / for-public-good organisation - to ensure
-  that profit is not the goal, but instead the goal is "maintain and improve the software or service".
-- **Good-enough user experience.** Some websites, services and apps are free and useful, but they're a pain to use, or
+- 🔐 **Little-to-no data collection.** Does not gather data on their users (or you can easily turn off all data
+  gathering), but may gather anonymous / anonymised data for the developer's use to help inform development decisions.
+- 🔕 **Ad-free** - so there is no temptation to gather data, nor is there annoying/dangerous advertisements shown to
+  users.
+- 🏛️ **Properly-incentivised owner.** Is developed by a non-profit / not-for-profit / for-public-good organisation - to
+  ensure that "increase profit" is not the goal, but instead the goal is "maintain and improve the software or service".
+- 💅 **Decent user experience.** Some websites, services and apps are free and useful, but they're a pain to use, or
   they just look and feel outdated. That makes it hard to recommend for people to use, because people are picky about
   these things in our modern, convenience-filled world (justifiably or not).
-- **Well-supported or maintained.** The most useful software in the world is great until it breaks, or a user has an
-  issue with it, or
-- **Open source.** - The code that makes the software and service work should be open source (at least the main
-  component). This is probably going to exclude a lot of otherwise "good" businesses.
-- **Sustainable.** - Environmentally, Socially and Economically. For example: It can't rely on the constant production
+- 🛠️ **Well-maintained.** The most useful software in the world is great until it breaks, or a user has an
+  issue with it, or a security vulnerability is found and it never gets patched (or it gets patched, but it's never
+  released).
+- 🔍 **Open source.** - The code that makes the software and service work should be open source (at least the main
+  component).
+- 🌱 **Sustainable.** - Environmentally, Socially and Economically. For example: It can't rely on the constant production
   of "stuff" or have Generative AI features that the environment, the software/service and organisation/developer can't
   be contributing to social issues (racism, transphobia etc.), and the continuing funding of the software/service should
   not require or contribute to endless, unsustainable economic growth.
-- **Respect the user.** - Is having an account really a requirement for using the software / service? Probably not. Is
+- 🙇 **Respect the user.** - Is having an account really a requirement for using the software / service? Probably not. Is
   being online a requirement? Probably not for many features. Does the user actually want the newsletter / advertising?
   Probably not. Is the documentation and help information easily accessible? It should be. Do those Generative AI
   features need to be there? No.
