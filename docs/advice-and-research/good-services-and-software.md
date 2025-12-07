@@ -90,6 +90,7 @@ things:
 
 - [The Linux Foundation](https://www.linuxfoundation.org)'s projects, software & services.
 - [The Apache Software Foundation](https://apache.org)'s projects, software and services.
+- [FreeDesktop.org](https://www.freedesktop.org/wiki/Software/) hosted software.
 - [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) - Not non-profit owned. Owned by Rocket.Chat.
 - [GitLab](https://gitlab.com/gitlab-org/gitlab) - Not non-profit owned. Owned by GitLab Inc.
 - [Nextcloud](https://nextcloud.com/) - Not non-profit owned. Owned by Nextcloud GmbH.
