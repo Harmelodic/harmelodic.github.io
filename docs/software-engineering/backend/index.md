@@ -159,3 +159,20 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - [Postfix](https://www.postfix.org/)
 - [roundcube](https://roundcube.net/)
 - [Sendgrid](https://sendgrid.com/)
+
+## Handling Multimedia
+
+- [Gstreamer](https://gstreamer.freedesktop.org) - multimedia framework for audio & video processing.
+- [FFmpeg](https://ffmpeg.org) - record, convert and stream audio and video.
+- [Project Janus](https://www.microsoft.com/en-us/research/project/programmable-ran-platform/) - Radio Access Networks
+  (RAN) programming & tooling.
+- [Real-time Transport Protocol (RTP)](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) - transporting audio
+  & video over IP - built on UDP.
+- [Audio-over-IP (AoIP)](https://en.wikipedia.org/wiki/Audio_over_IP) / Audio contribution over IP (ACIP).
+- [Audio Engineering Society (AES)](https://en.wikipedia.org/wiki/Audio_Engineering_Society) - organisation &
+  standardisation body for audio engineering.
+- [MADI / AES10](https://en.wikipedia.org/wiki/MADI) - _Multichannel Audio Digital Interface_ standard.
+- [AES67](https://en.wikipedia.org/wiki/AES67) - standard for AoIP.
+- [Dante](https://en.wikipedia.org/wiki/Dante_(networking)) - software, hardware & protocols for transporting
+  professional audio.
+- [Ravenna](https://en.wikipedia.org/wiki/Ravenna_%28networking%29) - software for real-time transport of audio over IP.
