@@ -78,6 +78,7 @@ Stuff that is pretty good, but not quite there, but still _mostly_ recommendable
 | [DuckDuckGo](https://duckduckgo.com)                                                     | Search engine service.                                                            | Not non-profit owned - Owned by DuckDuckGo Inc. Some parts are open source but the core is not. Also has generative AI features, but can be turned off. |
 | [Mailspring](https://www.getmailspring.com)                                              | Email client.                                                                     | Not non-profit owned - Owned by Foundry 376.                                                                                                            |
 | [GnuCash](https://www.gnucash.org)                                                       | Accounting software.                                                              | Not so modern / friendly UI.                                                                                                                            |
+| [Bitwarden](https://bitwarden.com)                                                       | Password Manager                                                                  | Not non-profit owned - Owned by Bitwarden Inc.                                                                                                          |
 
 ## Engineering good stuff
 
