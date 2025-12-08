@@ -97,4 +97,4 @@ things:
 - [GitLab](https://gitlab.com/gitlab-org/gitlab) - Not non-profit owned. Owned by GitLab Inc.
 - [Nextcloud](https://nextcloud.com/) - Not non-profit owned. Owned by Nextcloud GmbH.
 - [Odoo](https://www.odoo.com) - Not non-profit owned. Owned by Odoo S.A.
-- [Matrix]()
+- [Matrix](https://www.matrix.org) - decentralised communication systems.
