@@ -31,6 +31,13 @@ leads to further issues, and nothing gets better and no one feels better.
 
 Repeated or significate breaches of trust should have significant consequences (e.g. contract termination).
 
+Following this line of thought, it can be deemed that "trust goes both ways". However, that's not entirely true, due to
+cases where there is a power dynamic involved. Managers trust Workers to do work, and Workers trust Managers to manage
+them fairly and pay them. This is a power imbalance as Managers have more formal power in the work environment than
+Workers. Therefore, whilst trust should be established in order for an effective professional relationship to exist,
+Workers should be naturally mistrustful/skeptical of Managers to ensure that the power dynamic does not lead to Workers
+being taken advantage of / fucked over.
+
 ## Note
 
 This is all related to the social-related parts of engineering. For security purposes, zero-trust is needed, but that is
