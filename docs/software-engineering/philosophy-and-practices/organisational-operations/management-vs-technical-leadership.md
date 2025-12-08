@@ -1,5 +1,7 @@
 # Management vs Technical Leadership
 
+The two sides to engineering administration.
+
 ## Management
 
 - People / Administrative management focused side of engineering (not technical)
@@ -9,7 +11,7 @@
 - Aids planning efforts by bringing the organisational perspective to planning, creates projections based on
   statistics/insights gained to aid the organisation project/predict timelines
 - Auditing regulatory & internal-policy compliance. Communicating with the relevant parties to prioritise the work
-  so that engineering compliance is fulfilled (DORA, system inventories).
+  so that engineering compliance is fulfilled (DORA, system inventories) - collab with Technical Leadership on this.
 - Diplomacy throughout
 - Different from Technical Leadership as they are _expected_ to know how organisations & people work and how to
   organise and motivate workers into ensuring work is done, and is not _expected_ to actually know how to do that
@@ -74,3 +76,26 @@ the leader/manager is going to do about it (the workers may even be able to help
 suggestions). This builds and maintains trust, solidarity and a transparent and collaborative culture - and if done
 openly and regularly enough, will discourage this unpleasant work from appearing as everyone would know that information
 and communication is handled openly that it would be a socially unacceptable to trigger or cause unpleasant work.
+
+## Contrasting philosophies
+
+I often find engineers / workers, especially seniors or those in Technical Leadership as erring on the side of
+principles and the "ideal" solution. This can lead to ivory tower architects and out-of-touch principal engineers, but
+can also lead to inspiring leaders and high quality solutions.
+
+In the same vein, I often find Management and engineers favoured by managers as being more applied to practicality and
+"realism". This can lead to an unfortunate overfocus on immediate value and poorly-designed solutions, but can also lead
+to ensuring value is actually continually created and time & money is not wasted.
+
+See also [Principles vs Practicality](../soft-skills/principles-vs-practicality.md).
+
+Since both of these view points hold value, and both are needed to ensure a high quality vision is paired with a
+practical approach, I see this as further affirmation that the two "roles" of Technical Leadership and Management should
+be separate and balanced in power to ensure neither overcomes the other, and each side understands and acknowledges the
+necessity of the other.
+
+In this, Technical Leaders are idealistic, grounded by realism. Managers are realistic, guided to idealism.
+
+Workers thereby benefit from both support administration structures, by being inspired and supported in the execution of
+their work, with both philosophies represented and balanced. If workers decide to pursue a career in administration,
+then both areas are available to them. 
