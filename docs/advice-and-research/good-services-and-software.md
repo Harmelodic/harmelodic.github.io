@@ -66,6 +66,10 @@ factors:
 | [Celestia](https://celestiaproject.space)                                                                                                    | 3D visualisation / simulation of outer space.                                                                              |
 | [Jellyfin](https://jellyfin.org)                                                                                                             | Home Media System (Audio/Video, Server & Clients)                                                                          |
 
+TODO: Make this table contain more info on how it fulfils being "good"
+
+TODO: Add Browser Extensions / Add-ons.
+
 If there are things that you think should be on this list, let me know!
 
 ## Nearly good stuff
@@ -83,6 +87,8 @@ Stuff that is pretty good, but not quite there, but still _mostly_ recommendable
 | [Mailspring](https://www.getmailspring.com)                                              | Email client.                                                                     | Not non-profit owned - Owned by Foundry 376.                                                                                                            |
 | [GnuCash](https://www.gnucash.org)                                                       | Accounting software.                                                              | Not so modern / friendly UI.                                                                                                                            |
 | [Bitwarden](https://bitwarden.com)                                                       | Password Manager                                                                  | Not non-profit owned - Owned by Bitwarden Inc.                                                                                                          |
+
+TODO: Make this table contain more info on how it fulfils being "good"
 
 ## Engineering good stuff
 
