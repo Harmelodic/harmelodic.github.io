@@ -65,6 +65,7 @@ factors:
 | [Inkscape](https://inkscape.org)                                                                                                             | Vector graphics illustration.                                                                                              |
 | [Celestia](https://celestiaproject.space)                                                                                                    | 3D visualisation / simulation of outer space.                                                                              |
 | [Jellyfin](https://jellyfin.org)                                                                                                             | Home Media System (Audio/Video, Server & Clients)                                                                          |
+| [Godot](https://godotengine.org)                                                                                                             | Game engine.                                                                                                               |
 
 TODO: Make this table contain more info on how it fulfils being "good"
 
