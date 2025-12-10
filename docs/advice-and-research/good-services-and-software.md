@@ -91,7 +91,7 @@ Stuff that is pretty good, but not quite there, but still _mostly_ recommendable
 
 TODO: Make this table contain more info on how it fulfils being "good"
 
-## Engineering good stuff
+## Engineering and Organisational good-ish stuff
 
 Software is often needed by engineers & organisations too. I touch upon lots of things over in
 my [Software Engineering](../software-engineering/index.md) section of this website, but here's a short list of neat
@@ -100,8 +100,12 @@ things:
 - [The Linux Foundation](https://www.linuxfoundation.org)'s projects, software & services.
 - [The Apache Software Foundation](https://apache.org)'s projects, software and services.
 - [FreeDesktop.org](https://www.freedesktop.org/wiki/Software/) hosted software.
-- [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) - Not non-profit owned. Owned by Rocket.Chat.
-- [GitLab](https://gitlab.com/gitlab-org/gitlab) - Not non-profit owned. Owned by GitLab Inc.
-- [Nextcloud](https://nextcloud.com/) - Not non-profit owned. Owned by Nextcloud GmbH.
-- [Odoo](https://www.odoo.com) - Not non-profit owned. Owned by Odoo S.A.
-- [Matrix](https://www.matrix.org) - decentralised communication systems.
+- [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) - Open source communication system. Not non-profit owned.
+  Owned by Rocket.Chat.
+- [GitLab](https://gitlab.com/gitlab-org/gitlab) - Open source Software Development system. Not non-profit owned. Owned
+  by GitLab Inc.
+- [Nextcloud](https://nextcloud.com/) - Open source cloud platform. Not non-profit owned. Owned by Nextcloud GmbH.
+- [Odoo](https://www.odoo.com) - Open source ERP and CRM systems. Not non-profit owned. Owned by Odoo S.A.
+- [Matrix](https://www.matrix.org) - Open source decentralised communication systems.
+- [Discourse](https://www.discourse.org) - Open source forum software. Not non-profit owned. Owned by Civilized
+  Discourse Construction Kit, Inc.
