@@ -176,3 +176,9 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - [Dante](https://en.wikipedia.org/wiki/Dante_(networking)) - software, hardware & protocols for transporting
   professional audio.
 - [Ravenna](https://en.wikipedia.org/wiki/Ravenna_%28networking%29) - software for real-time transport of audio over IP.
+
+## API Specifications
+
+- [AsyncAPI](https://asyncapi.io/)
+- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Spectral API Style Guide & Linting](https://stoplight.io/open-source/spectral)
