@@ -71,6 +71,8 @@ TODO: Make this table contain more info on how it fulfils being "good"
 
 TODO: Add Browser Extensions / Add-ons.
 
+TODO: Add [Ladybird](https://ladybird.org/) browser, if it actually ends up being usable.
+
 If there are things that you think should be on this list, let me know!
 
 ## Nearly good stuff
