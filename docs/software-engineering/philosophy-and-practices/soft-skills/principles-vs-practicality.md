@@ -21,7 +21,7 @@ people.
 
 Too often I've seen projects suffer because people have a too practical mindset to engineering that results in quick
 wins, but a poorly-built solution that is costly to maintain and improve and/or solves a subset of the problems that it
-should be solving - and somtimes the engineers responsible for those solutions use practicality as an excuse for
+should be solving - and sometimes the engineers responsible for those solutions use practicality as an excuse for
 lazy/poor engineering.
 
 Be principled from the start. Choose practicality when it makes sense. Then get it done and own the thing you build.

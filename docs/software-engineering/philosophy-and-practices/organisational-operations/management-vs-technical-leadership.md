@@ -98,4 +98,21 @@ In this, Technical Leaders are idealistic, grounded by realism. Managers are rea
 
 Workers thereby benefit from both support administration structures, by being inspired and supported in the execution of
 their work, with both philosophies represented and balanced. If workers decide to pursue a career in administration,
-then both areas are available to them. 
+then both areas are available to them.
+
+## Remember the purpose
+
+Both Management and Technical Leadership are administrative roles within the operation of the organisation. Different
+leadership / management styles are talked about in the world, but I tend to finding that "servant leadership"-like
+styles ensure that the goal of administration function within the company is to ensure the success and happiness of the
+workers in achieving the goals of the organisation.
+
+In order to do that, they need to be grounded in the workers' perspective and attempt to satisfy the needs of the
+workers - you need to genuinely _care_ and follow through with that. Too often, Management and/or Technical Leadership
+shift their focus onto the profitability or maximal efficiency of the organisation, and that leads to culture issues
+that make Management and/or Technical Leadership's job harder and can result in loss of productivity, people or
+efficiency (opposite to what was intended).
+
+[This collaboratively-written opinion piece](https://www.ithoughtaboutthatalot.com/2025/the-things-i-want-to-say-to-my-boss)
+does a decent job of voicing the workers' concerns about this sort of need for Management and/or Leadership genuinely
+caring about the people they're managing / leading. 
