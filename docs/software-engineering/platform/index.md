@@ -89,6 +89,8 @@ a.k.a. Platform Engineering
 - [Vagrant](https://www.vagrantup.com/)
 - [Apache Openwhisk - Serverless Cloud Platform](https://openwhisk.apache.org/)
 - [Serverless Framework](https://serverless.com/framework/docs/)
+- [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+  - Use ShellCheck for linting - to avoid things like [ShellCheck SC1014](https://www.shellcheck.net/wiki/SC1014)
 
 ## Artifact Repositories
 

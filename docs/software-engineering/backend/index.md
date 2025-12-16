@@ -61,6 +61,8 @@ As systems tackle greater complexity, lots of other software engineering techniq
 	- Observability (Logging, Metrics, Tracing)
 	- Code style specifics (Never `var`, Use streams, Imperative OOP not reactive)
 - Go
+  - Same as above, but how?
+  - [Effective Go](https://go.dev/doc/effective_go)
 - Rust?
 - Databases / Storage (SQL/Relational, In-memory key-value, Document, Blob / File Storage)
 - Messaging (Queues, PubSub)
