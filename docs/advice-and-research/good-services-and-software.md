@@ -56,7 +56,7 @@ factors:
 | [VLC](https://www.videolan.org/vlc)                                                                                                          | Media player.                                                                                                              |
 | [Tor Browser](https://www.torproject.org)                                                                                                    | Web browser that routes your browsing through the Tor network.                                                             |
 | [Home Assistant](https://www.home-assistant.io)                                                                                              | Home automation software.                                                                                                  |
-| [Manjaro](https://manjaro.org) or [Linux Mint](https://www.linuxmint.com) or [Ubuntu](https://ubuntu.com)                                    | Linux operating systems.                                                                                                   |
+| [Manjaro](https://manjaro.org) or [Linux Mint](https://www.linuxmint.com)                                                                    | Linux operating systems.                                                                                                   |
 | [GNOME](https://www.gnome.org) or [KDE](https://kde.org) or [XFCE](https://xfce.org) or [Cinnamon](https://projects.linuxmint.com/cinnamon/) | Desktop Environments & software for Linux.                                                                                 |
 | [Transmission](https://github.com/transmission/transmission)                                                                                 | BitTorrent client.                                                                                                         |
 | [OBS Studio (Open Broadcaster Software)](https://obsproject.com)                                                                             | Video recording and live streaming.                                                                                        |
@@ -66,6 +66,7 @@ factors:
 | [Celestia](https://celestiaproject.space)                                                                                                    | 3D visualisation / simulation of outer space.                                                                              |
 | [Jellyfin](https://jellyfin.org)                                                                                                             | Home Media System (Audio/Video, Server & Clients)                                                                          |
 | [Godot](https://godotengine.org)                                                                                                             | Game engine.                                                                                                               |
+| [Trelby](https://trelby.org)                                                                                                                 | Screen writing software.                                                                                                   |
 
 TODO: Make this table contain more info on how it fulfils being "good"
 
@@ -90,6 +91,7 @@ Stuff that is pretty good, but not quite there, but still _mostly_ recommendable
 | [Mailspring](https://www.getmailspring.com)                                              | Email client.                                                                     | Not non-profit owned - Owned by Foundry 376.                                                                                                            |
 | [GnuCash](https://www.gnucash.org)                                                       | Accounting software.                                                              | Not so modern / friendly UI.                                                                                                                            |
 | [Bitwarden](https://bitwarden.com)                                                       | Password Manager                                                                  | Not non-profit owned - Owned by Bitwarden Inc.                                                                                                          |
+| [Ubuntu](https://ubuntu.com)                                                             | Linux operating system.                                                           | Not non-profit owned - Developed by Canonical Ltd., mostly.                                                                                             |
 
 TODO: Make this table contain more info on how it fulfils being "good"
 
