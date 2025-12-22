@@ -9,6 +9,10 @@ may be technology or software engineering-related, and might still be interestin
 > these links. They are simply links to things that I found interesting at one point in time, and you might find
 > interesting too.
 
+- [_JLR Payroll data stolen in cybercrime that shook UK
+  economy_](https://www.theregister.com/2025/12/15/jlr_payroll_data_stolen_in/) by Carly Page, The Register. As a lesson
+  to take software security seriously, even in non-core domains like supply-chain & company administration/ERP software.
+
 - [_The Door Problem_](https://lizengland.com/blog/the-door-problem/) by Liz England. On the topic of video game
   development.
 
