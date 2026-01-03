@@ -1,0 +1,26 @@
+# Alternatives to Amazon
+
+I don't think you should buy from Amazon. Why? Monopolisation. Jeff Bezos / billionaire owners / BlackRock. Treatment of
+workers. Replacing the high-street and ruining local economies. The list goes on.
+
+Since [Amazon owns a lot of things](https://brandsownedby.com/list-of-amazon-owned-companies/) and tries to be
+convenient and cheap for people, what are the realistic alteratives?
+
+| Amazon offering                                                      | Alternative                                                                                                                                                                     |
+|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Shopping for books                                                   | Use your local library. Buy local (charity shops or book stores). Buy from [Bookshop.org](https://bookshop.org/en-gb). Buy from [World of Books](https://www.worldofbooks.com). |
+| Shopping for tech                                                    | Borrow tech instead. Buy from a local store. Buy from a nationally-local technology company.                                                                                    |
+| Shopping for clothes                                                 | Buy second-hand (charity shop). Buy from a local clothes store.                                                                                                                 |
+| Shopping for food (inc. Whole Foods Market, Amazon Fresh, Amazon Go) | Buy from your local grocers or supermarket.                                                                                                                                     |
+| Amazon Basics                                                        | Don't buy shit. Buy good-quality from local stores.                                                                                                                             |
+| Audible                                                              | Borrow from your library through [Libby](https://libbyapp.com/). Buy the audiobook directly, e.g. from [Libro.fm](https://libro.fm/). Or use Storytel or Spotify.               |
+| Goodreads                                                            | [The StoryGraph](https://thestorygraph.com/)                                                                                                                                    |
+| Kindle                                                               | Just buy another e-paper eReader and load your own eBooks on (e.g. via USB cable or SD card)                                                                                    |
+| Amazon Prime Video / Fire TV.                                        | Own your own media server (Jellyfin or Plex) or DVDs / Blu-Rays. Stream from other sites (HBO Max, Netflix, Disney+, etc.). Use a in-built Smart TV or Chromecast.              |
+| Imdb                                                                 | Use Wikipedia.                                                                                                                                                                  |
+| Amazon Pay                                                           | Use Google Pay / Apple Pay / Samsung Pay / Wise / Paypal or just your debit/credit card.                                                                                        |
+| Twitch                                                               | Stream/Watch on YouTube, Instagram, Facebook or one of the other streaming sites (or just don't!)                                                                               |
+| Amazon Web Services (AWS)                                            | NextCloud. Google Cloud. Microsoft Azure. Just earch for other cloud providers.                                                                                                 |
+
+Note: The alternatives are not necessarily recommendations and some of these alternatives I don't particularly find
+great choices either, but they are the choices.
