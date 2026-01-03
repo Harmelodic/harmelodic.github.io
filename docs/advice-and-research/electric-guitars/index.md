@@ -26,3 +26,11 @@ note (pitch) of the note. Tone of the signal can be:
 Many things affect tone - see the other pages for the specific parts to see how they affect tone.
 
 TODO: Expand on definitions/explanations for guitar tone.
+
+Want more help understanding tone? Videos on YouTube can help a lot, for example:
+
+- [Jim Lill](https://www.youtube.com/@JimLill)
+- [JHS Pedals](https://www.youtube.com/@jhspedals) (a retailer)
+- [Reverb](https://www.youtube.com/@Reverb) (a retailer) -
+  e.g. [80s Rock Three Effects](https://www.youtube.com/watch?v=akuwjP0P-1A)
+- [Andertons Music Co](https://www.youtube.com/@andertons) (a retailer)
