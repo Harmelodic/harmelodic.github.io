@@ -32,7 +32,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 	- Authentication = Proving identity.
 	- Authorization = Proving allowed access.
     - Session-based vs token-based vs mixed/combination.
-    - Terminology and what to use (Login / Logout / Sign-in / Register, IAM,).
+    - Terminology and what to use (Login / Logout / Sign-in / Register, IAM, 2FA, MFA).
     - Common tools (Keycloak, OpenFGA, Auth0, OIDC, SSO, Oauth2.0 (apps & 3rd party login), SAML, JWT, JWKS, Cloud IAM).
 	- Auth methods/factors:
 		- Something you know (e.g. password),
@@ -60,7 +60,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 
 ## TODO
 
-- Java
+- Java / JVM
 	- Setup Java on a machine (sdkman, maven, maven wagons?)
 	- General project management (Single repo per artifact vs multi-module, BOMs, parents, libraries, GAV naming)
 	- Maven vs Gradle vs others
@@ -69,6 +69,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 	- Testing (JUnit5, Jupiter Assertions, WireMock / PACT, Testcontainers, @SpringBootTest)
 	- Observability (Logging, Metrics, Tracing)
 	- Code style specifics (Never `var`, Use streams, Imperative OOP not reactive)
+    - Java vs Kotlin (also Scala and Groovy)
 - Go
 	- Same as above, but how?
 	- [Effective Go](https://go.dev/doc/effective_go)
