@@ -173,3 +173,24 @@ The settings should be organised very intuitively - it should be one of _the mos
 
 If the client shows connections between services & other clients (e.g. Spotify showing Now Playing on another device)
 should not prevent the current client from being configured.
+
+## Localisation
+
+Handle localisation through some platform (e.g. [Weblate](https://hosted.weblate.org/)) for development, and then ship
+localisation with the application, to be handled completely offline:
+
+- Each localisation should then come as a reference file (or set of files), let's call that a "language-support
+  package".
+- At install time, if possible, give option to install different language-support packages (opt-out).
+- If not possible to allow the user to select at install time (e.g. mobile app), then install all language-support
+  packages, and then have the user select their language as the first thing to do.
+	- Default to the system language when prompting the user, giving a simple OK to continue to use that language, or
+	  allow them to change the language (either directly, or take them to the correct place in settings).
+	- If system language is not supported by your app, default to English (either American or British) or if the app has
+	  an intended regional userbase, then the language for that region (e.g. a transport app for transport in Italy
+	  could default to Italian).
+
+Use standard Locale codes (e.g. en-GB) made up of a ISO 639 language code (e.g. en) and a ISO 3166 country code (e.g.
+GB). This allows for language differences between countries (e.g. American English vs British English, Swedish vs
+Finland Swedish) and works nicely with the existing other standard things (e.g. Accept-Language HTTP header). Don't use
+Locale for location-based purposes.
