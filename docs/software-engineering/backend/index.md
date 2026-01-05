@@ -29,6 +29,15 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - Scheduling to perform scheduled processes or "jobs".
 - Batching to increase throughput and efficiency.
 - Different models of Authentication & Authorization (both for Users and for Systems).
+	- Authentication = Proving identity.
+	- Authorization = Proving allowed access.
+    - Session-based vs token-based vs mixed/combination.
+    - Terminology and what to use (Login / Logout / Sign-in / Register, IAM,).
+    - Common tools (Keycloak, OpenFGA, Auth0, OIDC, SSO, Oauth2.0 (apps & 3rd party login), SAML, JWT, JWKS, Cloud IAM).
+	- Auth methods/factors:
+		- Something you know (e.g. password),
+        - Something you have (e.g. id card, passport).
+        - Something you are (e.g. biometrics (fingerprint, face, eye)).
 - Integrating with 3rd party services for specialised non-core domain processing and tasks.
 - Producing data for data warehouses or lakes (see [Data Science](../data/index.md))
 - Installation, management and integration of open-source software for generic but specific tasks (e.g. Search,
@@ -61,8 +70,8 @@ As systems tackle greater complexity, lots of other software engineering techniq
 	- Observability (Logging, Metrics, Tracing)
 	- Code style specifics (Never `var`, Use streams, Imperative OOP not reactive)
 - Go
-  - Same as above, but how?
-  - [Effective Go](https://go.dev/doc/effective_go)
+	- Same as above, but how?
+	- [Effective Go](https://go.dev/doc/effective_go)
 - Rust?
 - Databases / Storage (SQL/Relational, In-memory key-value, Document, Blob / File Storage)
 - Messaging (Queues, PubSub)
