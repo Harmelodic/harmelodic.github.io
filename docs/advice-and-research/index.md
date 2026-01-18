@@ -5,7 +5,7 @@
 > Let the buyer beware.
 
 While consumer rights are strong in some countries, it's generally still important to have information and think things
-through. The more informed you, the better.
+through. The more informed you are, the better.
 
 Here is a bunch of advice, research and reviews that I've done to hopefully help.
 
