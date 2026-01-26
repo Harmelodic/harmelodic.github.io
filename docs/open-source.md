@@ -30,6 +30,7 @@ Projects I've contributed to:
 - [hashicorp/terraform-provider-google](https://github.com/hashicorp/terraform-provider-google)
 - [hassansin/node-dnsbl-lookup](https://github.com/hassansin/node-dnsbl-lookup)
 - [homerchen19/github-file-icons](https://github.com/homerchen19/github-file-icons)
+- [istio/istio](https://github.com/istio/istio)
 - [jaegertracing/jaeger-operator](https://github.com/jaegertracing/jaeger-operator)
 - [jigna-shah/quest-fullstack-dev-JS-apprentice](https://github.com/jigna-shah/quest-fullstack-dev-JS-apprentice)
 - [jigna-shah/quest-fullstack-dev-JS-Journeyman](https://github.com/jigna-shah/quest-fullstack-dev-JS-Journeyman)
@@ -124,3 +125,4 @@ Data Analysis, Development Tools, Corporate systems.
 
 There's other stuff that I work on or try to build (and sometimes fail at building). Take a look
 at [my GitHub](https://github.com/Harmelodic?tab=repositories) for more of that.
+
