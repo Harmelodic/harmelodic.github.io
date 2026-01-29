@@ -17,12 +17,12 @@ Allow: /
 User-agent: archive.org_bot
 Allow: /
 
-# =======================================
+# ====================
 # Allow Developer bots
 User-agent: Chrome-lighthouse
 Allow: /
 
-# ==================================
+# ========================================
 # Allow bots for OpenGraph / Link Previews
 User-agent: Discordbot
 Allow: /
@@ -65,7 +65,7 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
-# ======================
+# ========================================================
 # Block all other robots (especially robots to do with AI)
 User-agent: *
 Disallow: /
