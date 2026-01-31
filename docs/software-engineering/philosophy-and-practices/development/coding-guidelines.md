@@ -8,25 +8,31 @@ Spend more time thinking about what is needed, than writing code. When code is e
 
 ## Contents
 
+- [Terminology](#terminology)
 - [Principles](#principles)
 - [Naming things](#naming-things)
-    - [Variables](#variables)
-    - [Functions and methods](#functions-and-methods)
-    - [Classes and Structures](#classes-and-structures)
-    - [Applications](#applications)
+	- [Variables](#variables)
+	- [Functions and methods](#functions-and-methods)
+	- [Classes and Structures](#classes-and-structures)
+	- [Applications](#applications)
 - [Splitting code](#splitting-code)
-    - [File structure](#file-structure)
-    - [Project structure](#project-structure)
-    - [Breaking into separate projects](#breaking-into-separate-projects)
-    - [Creating libraries](#creating-libraries)
+	- [File structure](#file-structure)
+	- [Package structure](#package-structure)
+	- [Project configuration](#project-configuration)
+	- [Breaking into separate projects](#breaking-into-separate-projects)
+	- [Creating libraries](#creating-libraries)
 - [Patterns](#patterns)
-    - [Constructor versus Builder](#constructor-versus-builder)
-    - [Immutable versus Mutable](#immutable-versus-mutable)
-    - [Composition over inheritance](#composition-over-inheritance)
+	- [Constructor versus Builder](#constructor-versus-builder)
+	- [Immutable versus Mutable](#immutable-versus-mutable)
+	- [Composition over inheritance](#composition-over-inheritance)
 - [Testing](#testing)
 - [Indentation](#indentation)
 - [Comments and code-clarity](#comments-and-code-clarity)
 - [Versioning](#versioning)
+
+## Terminology
+
+TODO: Define (for the purpose of these guidelines) what a project, package, library, application, etc. is.
 
 ## Principles
 
@@ -228,7 +234,7 @@ Application names should be along the lines of:
 
 - `desktop-app`
 - `android-app`, `ios-app` / `mobile-app` - depending on mobile app implementation
-    - These could be called `client`s rather than `app`s, but `app` is the more widely-used term.
+	- These could be called `client`s rather than `app`s, but `app` is the more widely-used term.
 - `account-manager`
 - `stream-provider`
 - `invoice-generator`
@@ -253,21 +259,26 @@ Split code into components. One component per file.
 This does not have to be OOP-styled, assuming the codebase/language doesn't work with OOP principles, but breaking
 applications up into components and layers delegates responsibility across the codebase and increases maintainability.
 
-### Project structure
+### Package structure
 
 Package by feature, not by layer.
 
 aka: Slice your code vertically (features) before you slice it horizontally (layers).
 
-This increases the decoupling and modularity of the project, by isolating features and allowing developers to work
+This increases the decoupling and modularity of the codebase, by isolating features and allowing developers to work
 within a specific context when developing on code. This also makes it easy to break out modules into their own
 applications or isolated components when the need arises. This also ensures prioritisation of business function of
 technicalities, and doesn't needlessly hide/separate/decouple technical implementation.
 
-Conversely, packaging by layer simply identifies the different patterns and components of a project which, while
-helpful for developers to know, obscures the feature-offering of the project and dependencies between layers. Since code
-should already be split into files corresponding to layers, a package containing all the files of a specific layer
+Conversely, packaging by layer simply identifies the different patterns and components in the codebase which, while
+helpful for developers to know, obscures the feature-offering of the software and dependencies between layers. Since
+code should already be split into files corresponding to layers, a package containing all the files of a specific layer
 provides little extra information to a developer other than "this is where those layers are".
+
+### Project structure
+
+TODO: Code in directories. Project config in files at root (renovate, dependencies, gitignore, etc.). README, LICENCE,
+CONTRIBUTING files and the purpose of each of these file. Docs in `docs/`.
 
 ### Breaking into separate projects
 
@@ -307,9 +318,9 @@ observed being used _a lot_ and think are good:
 - Dependency Injection
 - Inversion of Control
 - Layers
-    - Front Controller
-    - Service Layer
-    - Repository (or DAO)
+	- Front Controller
+	- Service Layer
+	- Repository (or DAO)
 
 ### Constructor versus Builder
 
@@ -343,7 +354,7 @@ Write the following, where appropriate:
 
 - Unit Tests
 - Integration Tests
-    - inc. Contract tests
+	- inc. Contract tests
 - Performance Tests
 - Security Tests
 - UI Tests
