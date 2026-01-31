@@ -23,20 +23,15 @@ This site uses MkDocs for static site generation. For full documentation visit [
 
 Basic commands:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs serve --livereload` - Start the docs server locally, and reload content when files change.
 * `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `mkdocs --help` - Print help message.
 
-### Material for MkDocs
+This project also uses some MkDocs plugins:
 
-This project also uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for theming and additional
-rendering options.
-
-### Awesome Nav for MkDocs
-
-This project also uses [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) for navigation
-tweaks, mainly to do with how directory titles appear.
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for theming and additional rendering options.
+- [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) for navigation tweaks, mainly to do with
+  how directory titles appear.
 
 ### Shipping the site
 
@@ -51,8 +46,16 @@ as well.
 ### Project layout
 
 ```
-mkdocs.yaml   # The configuration file.
-docs/
-	index.md  # The documentation homepage.
-	...       # Other markdown pages, images and other files.
+.github/         # GitHub Actions code to build & release the project.
+docs/            # The site content.
+docs/CNAME       # Configuration file for configuring CNAME for GitHub Pages site.
+.gitignore       # Configuration file for Git to know which files and directories to ignore.
+.python-version  # Configuration file to define which Python version to use for this project (MkDocs requires Python).
+CODEOWNERS       # Configuration file for GitHub code ownership / access control.
+CONTRIBUTING.md  # Docs on how to contribute to this project.
+mise.toml        # Configuration file for mise-en-place.
+mkdocs.yaml      # Configuration file for MkDocs.
+README.md        # The README for project information.
+renovate.json    # Configuration file for Renovate.
+requirements.txt # Project dependency file for Python.
 ```
