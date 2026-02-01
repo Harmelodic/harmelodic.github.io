@@ -8,7 +8,7 @@ strict: true
 
 copyright: "&copy; 2016-2026 Matt Smith"
 
-# Ensure .well-known is included in served content
+# Ensure .well-known is included in served content, but excluded from MkDocs rendered directories.
 exclude_docs: |
   !.well-known
 
