@@ -188,6 +188,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - [Dante](https://en.wikipedia.org/wiki/Dante_(networking)) - software, hardware & protocols for transporting
   professional audio.
 - [Ravenna](https://en.wikipedia.org/wiki/Ravenna_%28networking%29) - software for real-time transport of audio over IP.
+- [Formula](https://soundspear.com/product/formula) - Programmable audio effect plugin (program using C)
 
 ## API Specifications
 
