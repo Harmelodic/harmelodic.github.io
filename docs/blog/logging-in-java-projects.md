@@ -164,7 +164,7 @@ format.
 To do this with Logback, you have a few choices (from my knowledge):
 
 - The `logback-json-classic` and `logback-jackson` libraries are old "Logback Contrib" libraries available for
-  Logback. "Logback Contrib" is the name for the old, official Logback open-source contributions community. The
+  Logback. "Logback Contrib" is the name for the old, official Logback open source contribution community. The
   libraries are versioned to `0.1.5`, only ever had 5 versions, and was last updated in 2016, at time of writing.
   Probably not a good idea to use these, but they work, and are referenced a lot in guides for how to do JSON logging
   with Logback... so, clearly people like them.

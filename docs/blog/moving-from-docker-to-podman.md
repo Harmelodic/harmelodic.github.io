@@ -22,9 +22,9 @@ So to switch over from Docker to something else, my requirements were:
 - Support macOS.
 - Has to have a decent CLI, ideally like the Docker one.
 - Has to support Testcontainers.
-- Be free & open-source.
-- Be well supported/maintained.
-- Be pretty easy to setup & configure.
+- Be free & open source.
+- Be well-supported/maintained.
+- Be pretty easy to set up & configure.
 - I don't care about a GUI.
 
 The options came down to Rancher Desktop, Podman or Colima.

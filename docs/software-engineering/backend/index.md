@@ -40,7 +40,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
         - Something you are (e.g. biometrics (fingerprint, face, eye)).
 - Integrating with 3rd party services for specialised non-core domain processing and tasks.
 - Producing data for data warehouses or lakes (see [Data Science](../data/index.md))
-- Installation, management and integration of open-source software for generic but specific tasks (e.g. Search,
+- Installation, management and integration of open source software for generic but specific tasks (e.g. Search,
   Messaging or Authorization).
 - Alerting, Monitoring, Optimising and Troubleshooting using various Observability / Telemetry tools (also
   see [Platform Engineering](../platform/index.md))

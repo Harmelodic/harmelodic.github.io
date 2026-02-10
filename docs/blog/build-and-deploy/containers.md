@@ -195,7 +195,7 @@ then [Kustomize](https://kubectl.docs.kubernetes.io/references/kustomize/) is a 
 corresponds to an environment you need to run in. This keeps the Kubernetes resources simple and easy to read & maintain
 as the need for heavy customisability will be low, because you control the context of your applications.
 
-If you're building a system for other people to use on their Kubernetes setups (e.g. an open-source project), then
+If you're building a system for other people to use on their Kubernetes setups (e.g. an open source project), then
 a [Helm Chart](https://helm.sh/docs/topics/charts/) is a better option, as it can be customized, versioned and shipped
 as its own entity. Publicly available Helm Charts are available on [Artifact Hub](https://artifacthub.io/).
 
