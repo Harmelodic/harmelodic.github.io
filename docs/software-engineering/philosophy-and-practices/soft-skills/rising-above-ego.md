@@ -37,7 +37,7 @@ Rough thoughts / general vibe:
 	  talking about these things honestly with friends and colleagues should help you decipher which situation you're
 	  in.
 
-Some examples:
+Some examples (keep in mind there are always exceptions to these and nuance involved):
 
 - "I had to do it, so you have go through it too"
 	- This is the ego of someone in a more privileged or powerful position forcing those in a less privileged or
@@ -53,23 +53,29 @@ Some examples:
 	  question this anyway, as there is often a less painful, more fair or more fun way to acquire the knowledge or
 	  experience without experiencing the same hardship - or even: the knowledge/experience is simply not as relevant as
 	  it once was and so should be valued less.
-- "I'm the senior engineer / architect, we should do my idea" or "you should listen to me"
+- "I'm the senior engineer / architect, we should do my idea" or "you should listen to me" or "I've been doing this for
+  X number of years, I know what I'm doing".
 	- A privilege / power dynamic being involved with a decision-making process.
 	- Assuming you're an expert, yes, we need to recognise that expertise, and trust that you're presenting the idea as
 	  an expert. But we should also be aware of [egocentric bias](https://en.wikipedia.org/wiki/Egocentric_bias). Often,
 	  we will have multiple experts in the room, or have near-experts (i.e. junior engineers) in the room who have ideas
 	  of their own that can challenge conventional wisdom.
+	- People also use this to try to shut conversations down, because they think they're right and their time is being
+ 	  wasted discussing ideas they already know the answer to, or because they don't respect or like the people they're
+	  working with and think themselves superior. This is again, putting ego before "making things better".
 	- So: ideas from experts should be trusted, but not taken as gospel and should be compared against other experts'
 	  ideas or near-experts' ideas.
 	- Note: We should be sceptical (but not dismissive) of non-experts.
-- "You're not respecting me because you're treating my idea unfairly or critically"
-	- Important clarification: This is not excusing rude behaviour - see note at the bottom.
-	- This is where someone is receiving professional criticism, but taking it as a personal attack on themselves.
-	- This is a form of putting ego first, as someone is treating criticism of something they've made or done as a
-	  criticism of themselves as people.
+- "You're treating my idea/behaviour critically, which is disrespectful".
+	- Important clarification: This is not excusing rude behaviour or unfair treatment - see note at the bottom.
+	- This is where someone is receiving professional criticism/feedback, but taking it as a personal attack on
+	  themselves (as a person). This is putting their ego first.
 	- It is important to set aside this ego. Rather than "them vs. me", try to reframe and guide things into being "us
 	  vs. the problem". Take a break, and give people the benefit of the doubt that they meant well.
 	- This conflict can often be avoided though by actively trying to be nice / cheery, or "extra-respectful" when
 	  giving criticism or feedback. Careful with this though, as this can feed into and grow unhealthy conflict-avoidant
 	  behaviour.
+	- This conflict can also be mitigated by ensuring criticism/feedback is given on the right thing. It is OK to give
+	  criticism on people's work and behaviour, but it's less OK to criticise their personality, traits or values.
 	- Note: Too often, rude behaviour or tone is excused as professional criticism. This is not OK.
+	- Note 2: Unfair treatment of people and ideas still actually happens. This is not OK.
