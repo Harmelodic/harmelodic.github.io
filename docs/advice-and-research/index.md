@@ -24,7 +24,7 @@ When thinking about purchasing something, remember to think and act sustainably.
 
 Always opt for [sustainable materials](./sustainable-materials.md).
 
-Be skeptical. Don't trust or prefer brands. Brands have repeatedly been shown to capitalise on trust and image, by
+Be sceptical. Don't trust or prefer brands. Brands have repeatedly been shown to capitalise on trust and image, by
 reducing product quality in order to increase
 profits. [Enshittification](https://en.wikipedia.org/wiki/Enshittification) is real, wide-spread and sucks.
 
@@ -60,6 +60,8 @@ These links may be moved elsewhere, if I end up writing more about them specific
 
 - [Ian's Shoelace Site](https://www.fieggen.com/shoelace/)
 - [The Man in Seat Sixty-One](https://www.seat61.com/)
+- [Bolån Radar](https://www.bolanradar.se) - built by an ex-colleague and friend. A website that provides a way to
+  compare mortgage rates in Sweden, and information on how to buy a flat/house and get a mortgage in Sweden.
 - For the Star Trek nerds:
 	- [Ex Astris Scientia](https://www.ex-astris-scientia.org/)
 	- [The Star Trek List - Harmelodic](https://docs.google.com/spreadsheets/d/1l6JBqOQh5G7ybMOHT8tgut0rbXUvN1hwYOGEEqpf44E/edit?usp=sharing)
