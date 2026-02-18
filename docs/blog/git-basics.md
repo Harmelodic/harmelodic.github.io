@@ -82,7 +82,7 @@ git init
 ### Remote Repositories
 
 If you want to share your code to collaborate with other people or connect your code with a 3rd party service (like
-Cloudflare or Google Cloud), or you just want to make your code publicly viewable (i.e. make it "open-source") then
+Cloudflare or Google Cloud), or you just want to make your code publicly viewable (i.e. make it "open source") then
 you'll need to create a remote Git repository.
 
 This can be done on websites like [GitHub](https://github.com) or [GitLab](https://gitlab.com). I recommend using

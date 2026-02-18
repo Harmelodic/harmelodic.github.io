@@ -60,6 +60,7 @@ These links may be moved elsewhere, if I end up writing more about them specific
 
 - [Ian's Shoelace Site](https://www.fieggen.com/shoelace/)
 - [The Man in Seat Sixty-One](https://www.seat61.com/)
+- [The Engineering Toolbox](https://www.engineeringtoolbox.com)
 - [Bolån Radar](https://www.bolanradar.se) - built by an ex-colleague and friend. A website that provides a way to
   compare mortgage rates in Sweden, and information on how to buy a flat/house and get a mortgage in Sweden.
 - For the Star Trek nerds:

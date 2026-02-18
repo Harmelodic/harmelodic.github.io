@@ -150,7 +150,7 @@ However, nearly everything _behind_ that abstraction should be simply **standard
 except for things that are complex, unsafe or very deliberately custom.
 
 Take advantage of existing abstractions offered the likes of Apache, the CNCF, Mozilla, Google, VMWare, Microsoft, and
-many other open-source and proprietary Software Organisations - you might even be one of these people.
+many other open source and proprietary Software Organisations - you might even be one of these people.
 
 ### For Product Organisations
 
@@ -162,7 +162,7 @@ your "unique selling point" (USP), and can be made part of a limited organisatio
 > should _use_ abstractions - and if they're lacking in the functionality we want, then we can contribute them."
 
 Take advantage of build upon the existing abstractions offered the likes of Apache, the CNCF, Google, Microsoft, VMWare,
-and many other open-source and proprietary Software Organisations.
+and many other open source and proprietary Software Organisations.
 
 Creating custom abstractions / libraries to make things easier, or more reusable/less repeated is a low priority, as
 covered by the above [trade-offs](#the-trade-offs) and [resulting methodology](#the-resulting-methodology). When
@@ -172,7 +172,7 @@ stuff or hide standardisations behind custom interfaces. Instead, we could contr
 (frameworks, libraries, virtualization technologies, etc.).
 
 If we have exhausted our options and have the people, time and money to produce our own custom abstractions, then making
-them makes sense - though we can still make these open-source to improve learning and inclusivity and so that these
+them makes sense - though we can still make these open source to improve learning and inclusivity and so that these
 abstractions can become industry-standard - at which point the Product Organisation is becoming a Software
 Organisation (at least partly).
 
@@ -194,7 +194,7 @@ software organisations:
 	- Code generation of code to simplify an abstraction into a simpler abstraction. Failed because the underlying
 	  abstraction complexities and configurability ended up being needed, and the maintenance burden of the simplified
 	  abstraction was not worth it because we couldn't hope to achieve the same level of support, documentation,
-	  features that the underlying abstraction offered (especially since it was open-source).
+	  features that the underlying abstraction offered (especially since it was open source).
 	- Custom client libraries that configured clients "the right way" and provided a simplified interface. Ultimately
 	  proved useless as existing clients were relatively easy to build, standardisation/linting rules ensured
 	  correctness, and frameworks / libraries improved their interfaces to make it even easier to implement clients -

@@ -201,8 +201,8 @@ or woes about the future of the _Solution_.
 
 _Innersource_ is one of the most game-changing things to implement in any Software Engineering organisation. If you look
 at internet as it is at the moment, on of the big reasons why so many organisations have been successful is because of
-the HUGE range of open-source tools that are available to them to use on their own solutions. A strong _Innersource_
-community culture effectively replicates the same impact that open-source has had on society, but within your
+the HUGE range of open source tools that are available to them to use on their own solutions. A strong _Innersource_
+community culture effectively replicates the same impact that open source has had on society, but within your
 organisation.  
 With more tools and products available to choose from and contribute to, a strong _Innersource_ community has been one
 of biggest catalysts for evolution in Software Engineering practices and development.

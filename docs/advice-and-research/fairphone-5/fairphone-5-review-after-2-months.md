@@ -107,7 +107,7 @@ I have no major complaints... except for a few minor issues, some of which I've 
 >
 > Many of the issues I detail below are likely issues with vanilla Android. However, it is my opinion that Fairphone
 > could fix these issues by doing any/all of the following:
-> - Contribute to Android and fix these issues directly, since Android is open-source, and then update their Fairphone
+> - Contribute to Android and fix these issues directly, since Android is open source, and then update their Fairphone
 	OS to use the newer, fixed Android.
 > - Update their Fairphone OS more regularly, since I believe some of these issues have already been fixed in newer
 	versions of Android.

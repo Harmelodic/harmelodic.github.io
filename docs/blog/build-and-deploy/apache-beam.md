@@ -1,6 +1,6 @@
 # Build & Deploy: Apache Beam projects
 
-[Apache Beam](https://beam.apache.org) is an open-source programming model for batch and stream processing (
+[Apache Beam](https://beam.apache.org) is an open source programming model for batch and stream processing (
 e.g. [ETL](https://en.wikipedia.org/wiki/Extract%2C_transform%2C_load) processes)
 
 These sorts of processes tend to be [embarrasingly parrallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
