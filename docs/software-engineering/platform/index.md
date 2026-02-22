@@ -63,7 +63,7 @@ a.k.a. Platform Engineering
 
 - [Alertmanager - Prometheus](https://prometheus.io/docs/alerting/latest/alertmanager/)
 - [Elasticsearch](https://www.elastic.co/products/elasticsearch)
-- [Google Analytics](https://analytics.google.com)
+- [Google Analytics](https://analytics.google.com) (tracking / analytics)
 - [Grafana](https://grafana.com/)
 - [Jaeger Tracing](https://www.jaegertracing.io/)
 - [Kibana](https://www.elastic.co/products/kibana)
@@ -76,6 +76,7 @@ a.k.a. Platform Engineering
 - [Splunk](https://www.splunk.com/)
 - [UptimeRobot](https://uptimerobot.com/)
 - [fluentd](https://www.fluentd.org/)
+- [Umami](https://umami.is/) (tracking / analytics)
 
 ## General Platform Engineering
 

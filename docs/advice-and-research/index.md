@@ -62,7 +62,10 @@ These links may be moved elsewhere, if I end up writing more about them specific
 - [The Man in Seat Sixty-One](https://www.seat61.com/)
 - [The Engineering Toolbox](https://www.engineeringtoolbox.com)
 - [Bolån Radar](https://www.bolanradar.se) - built by an ex-colleague and friend. A website that provides a way to
-  compare mortgage rates in Sweden, and information on how to buy a flat/house and get a mortgage in Sweden.
+  compare mortgage rates in Sweden, and information on how to buy a flat/house and get a mortgage in Sweden. No cost, no
+  ads.
+- [Traffic-Rules.com](https://traffic-rules.com) - rules, signs, videos and tests for learning the theory for driving.
+  Many countries are covered, in multiple languages. No cost, minimal/no ads.
 - For the Star Trek nerds:
 	- [Ex Astris Scientia](https://www.ex-astris-scientia.org/)
 	- [The Star Trek List - Harmelodic](https://docs.google.com/spreadsheets/d/1l6JBqOQh5G7ybMOHT8tgut0rbXUvN1hwYOGEEqpf44E/edit?usp=sharing)
