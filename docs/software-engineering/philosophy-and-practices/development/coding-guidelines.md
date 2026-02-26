@@ -18,7 +18,7 @@ Spend more time thinking about what is needed, than writing code. When code is e
 - [Splitting code](#splitting-code)
 	- [File structure](#file-structure)
 	- [Package structure](#package-structure)
-	- [Project configuration](#project-configuration)
+	- [Project structure](#project-structure)
 	- [Breaking into separate projects](#breaking-into-separate-projects)
 	- [Creating libraries](#creating-libraries)
 - [Patterns](#patterns)
