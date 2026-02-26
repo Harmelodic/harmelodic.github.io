@@ -40,32 +40,36 @@ don't exist in the same way as they do in English.
 
 Here's a table for the verb "jobba" which means to "work". (Might be wrong, needs proofreading by a Swede)
 
-|                            | Jag                                           | Vi                                            | Du / Ni                                        | Han / Hon / Hen / Man                          | De                                              |
-|----------------------------|-----------------------------------------------|-----------------------------------------------|------------------------------------------------|------------------------------------------------|-------------------------------------------------|
-| Past Simple                | Jag jobbade. (I worked)                       | Vi jobbade. (We worked)                       | Du jobbade. (You worked)                       | Han jobbade. (He worked)                       | De jobbade. (They worked)                       |
-| Past Continuous            | Jag jobbade. (I was working)                  | Vi jobbade. (We were working)                 | Du jobbade. (You were working)                 | Han jobbade. (He was working)                  | De jobbade. (They were working)                 |
-| Past Perfect Simple        | Jag hade jobbat. (I had worked)               | Vi hade jobbat. (We had worked)               | Du hade jobbat. (You had worked)               | Han hade jobbat. (He had worked)               | De hade jobbat. (They had worked)               |
-| Past Perfect Continuous    | Jag hade jobbat. (I had been working)         | Vi hade jobbat. (We had been working)         | Du hade jobbat. (You had been working)         | Han hade jobbat. (He had been working)         | De hade jobbat. (They had been working)         |
-| Present Perfect Simple     | Jag har jobbat. (I have worked)               | Vi har jobbat. (We have worked)               | Du har jobbat. (You have worked)               | Han har jobbat. (He has worked)                | De har jobbat. (They have worked)               |
-| Present Perfect Continuous | Jag har jobbat. (I have been working)         | Vi har jobbat. (We have been working)         | Du har jobbat. (You have been working)         | Han har jobbat. (He has been working)          | De har jobbat. (They have been working)         |
-| Present Simple             | Jag jobbar. (I work)                          | Vi jobbar. (We work)                          | Du jobbar. (You work)                          | Han jobbar. (He works)                         | De jobbar. (They work)                          |
-| Present Continuous         | Jag jobbar. (I am working)                    | Vi jobbar. (We are working)                   | Du jobbar. (You are working)                   | Han jobbar. (He is working)                    | De jobbar. (They are working)                   |
-| Future Simple              | Jag ska jobba. (I will work)                  | Vi ska jobba. (We will work)                  | Du ska jobba. (You will work)                  | Han ska jobba. (He will work)                  | De ska jobba. (They will work)                  |
-| Future Continuous          | Jag ska jobba. (I will be working)            | Vi ska jobba. (We will be working)            | Du ska jobba. (You will be working)            | Han ska jobba. (He will be working)            | De ska jobba. (They will be working)            |
-| Future Perfect Simple      | Jag ska ha jobbat. (I will have worked)       | Vi ska ha jobbat. (We will have worked)       | Du ska ha jobbat. (You will have worked)       | Han ska ha jobbat. (He will have worked)       | De ska ha jobbat. (They will have worked)       |
-| Future Perfect Continuous  | Jag ska ha jobbat. (I will have been working) | Vi ska ha jobbat. (We will have been working) | Du ska ha jobbat. (You will have been working) | Han ska ha jobbat. (He will have been working) | De ska ha jobbat. (They will have been working) |
+|                            | Jag                                                  | Vi                                                   | Du / Ni                                               | Han / Hon / Hen / Man                                 | De                                                     |
+|----------------------------|------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------|
+| Past Simple                | Jag jobbade. (I worked)                              | Vi jobbade. (We worked)                              | Du jobbade. (You worked)                              | Han jobbade. (He worked)                              | De jobbade. (They worked)                              |
+| Past Continuous            | Jag jobbade. (I was working)                         | Vi jobbade. (We were working)                        | Du jobbade. (You were working)                        | Han jobbade. (He was working)                         | De jobbade. (They were working)                        |
+| Past Perfect Simple        | Jag hade jobbat. (I had worked)                      | Vi hade jobbat. (We had worked)                      | Du hade jobbat. (You had worked)                      | Han hade jobbat. (He had worked)                      | De hade jobbat. (They had worked)                      |
+| Past Perfect Continuous    | Jag hade jobbat. (I had been working)                | Vi hade jobbat. (We had been working)                | Du hade jobbat. (You had been working)                | Han hade jobbat. (He had been working)                | De hade jobbat. (They had been working)                |
+| Present Perfect Simple     | Jag har jobbat. (I have worked)                      | Vi har jobbat. (We have worked)                      | Du har jobbat. (You have worked)                      | Han har jobbat. (He has worked)                       | De har jobbat. (They have worked)                      |
+| Present Perfect Continuous | Jag har jobbat. (I have been working)                | Vi har jobbat. (We have been working)                | Du har jobbat. (You have been working)                | Han har jobbat. (He has been working)                 | De har jobbat. (They have been working)                |
+| Present Simple             | Jag jobbar. (I work)                                 | Vi jobbar. (We work)                                 | Du jobbar. (You work)                                 | Han jobbar. (He works)                                | De jobbar. (They work)                                 |
+| Present Continuous         | Jag jobbar. (I am working)                           | Vi jobbar. (We are working)                          | Du jobbar. (You are working)                          | Han jobbar. (He is working)                           | De jobbar. (They are working)                          |
+| Future Simple              | Jag ska jobba. (I will work)                         | Vi ska jobba. (We will work)                         | Du ska jobba. (You will work)                         | Han ska jobba. (He will work)                         | De ska jobba. (They will work)                         |
+| Future Continuous          | Jag ska jobba. (I will be working)                   | Vi ska jobba. (We will be working)                   | Du ska jobba. (You will be working)                   | Han ska jobba. (He will be working)                   | De ska jobba. (They will be working)                   |
+| Future Perfect Simple      | Jag kommer att ha jobbat. (I will have worked)       | Vi kommer att ha jobbat. (We will have worked)       | Du kommer att ha jobbat. (You will have worked)       | Han kommer att ha jobbat. (He will have worked)       | De kommer att ha jobbat. (They will have worked)       |
+| Future Perfect Continuous  | Jag kommer att ha jobbat. (I will have been working) | Vi kommer att ha jobbat. (We will have been working) | Du kommer att ha jobbat. (You will have been working) | Han kommer att ha jobbat. (He will have been working) | De kommer att ha jobbat. (They will have been working) |
 
-Note:
+Notes:
 
 - Jag = I. Vi = We. Du = You (singular). Ni = You (plural). Han = He. Hon = She. Hen = They (singular). Man = One.
   De = They (plural).
 - Imperativ, Infinitiv, Presens, Preteritum, Supinum.
 - Pluskvamperfekt (hade + supinum), Presens Perfekt (har + supinum), Futurum (ska + infinitiv).
 - As you probably have noticed, Swedish doesn't have a way to distinguish between Simple and Continuous usages of verbs.
-- "Ska" could be "kommer att" or "tänker". They all mean "will" and creates a "future" tense statement, but "ska" is
-  more "planned and definite" whereas "kommer att" is more for future events that are uncontrollable / unplanned /
-  uncertain. "Tänker" is a drop-in replacement for "ska", but with a likely addition of "desire" for the future action /
-  event.
+- On _ska_, _kommer att_ and _tänker_ - They mean _will_ or _shall_ or _is going to_ and are for future tense sentences.
+	- _Ska_ is more planned and definite. Examples: "I _will_ be doing that at 14:00" or "I _will_ go get coffee now".
+	- _Kommer att_ is more for future events that are uncontrollable / unplanned / uncertain. _Kommer att_ is also feels
+	  more natural / idiomatic for _Future Perfect_ statements than _ska_, even if those statements are quite planned.
+	  In modern Swedish, many people are starting to skip saying the _att_ and just say _kommer_. Examples: "It _is
+	  going to_ rain today." or "We _are going to_ be late".
+	- _Tänker_ is a drop-in replacement for _ska_, but with a likely addition of _desire_ for the future action / event.
+	  Example: "I will play video games this afternoon".
 
 ## Useful resources
 
