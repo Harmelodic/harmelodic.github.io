@@ -11,12 +11,9 @@ posts aims to cover a comparison of the three from a perspective of a developer 
 | Ecosystem       | Web / Synchronous                 | Reactive / non-blocking          | Web / Synchronous |
 | My perspective? | Recommended for most applications | Useful for reactive applications | Legacy            |
 
-- RestClient
-  Javadoc: https://javadoc.io/doc/org.springframework/spring-web/latest/org/springframework/web/client/RestClient.html
-- WebClient
-  Javadoc: https://javadoc.io/doc/org.springframework/spring-webflux/latest/org/springframework/web/reactive/function/client/WebClient.html
-- RestTemplate
-  Javadoc: https://javadoc.io/doc/org.springframework/spring-web/latest/org/springframework/web/client/RestTemplate.html
+- [RestClient Javadoc](https://javadoc.io/doc/org.springframework/spring-web/latest/org/springframework/web/client/RestClient.html)
+- [WebClient Javadoc](https://javadoc.io/doc/org.springframework/spring-webflux/latest/org/springframework/web/reactive/function/client/WebClient.html)
+- [RestTemplate Javadoc](https://javadoc.io/doc/org.springframework/spring-web/latest/org/springframework/web/client/RestTemplate.html)
 
 Unless otherwise configured, when used in a Spring Boot context, these clients will automatically encode and decode Java
 classes into and from JSON structures (using Jackson).
@@ -32,13 +29,13 @@ import org.springframework.web.client.RestClient;
 
 @Component
 class ExampleClient {
-    private final RestClient restClient;
+	private final RestClient restClient;
 
-    ExampleClient(RestClient.Builder restClientBuilder, String baseUrl) {
-        this.restClient = restClientBuilder
-                .baseUrl(baseUrl) // e.g. https://api.example.com
-                .build();
-    }
+	ExampleClient(RestClient.Builder restClientBuilder, String baseUrl) {
+		this.restClient = restClientBuilder
+				.baseUrl(baseUrl) // e.g. https://api.example.com
+				.build();
+	}
 }
 ```
 
@@ -48,13 +45,13 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Component
 class ExampleClient {
-    private final WebClient webClient;
+	private final WebClient webClient;
 
-    ExampleClient(WebClient.Builder webClientBuilder, String baseUrl) {
-        this.webClient = webClientBuilder
-                .baseUrl(baseUrl) // e.g. https://api.example.com
-                .build();
-    }
+	ExampleClient(WebClient.Builder webClientBuilder, String baseUrl) {
+		this.webClient = webClientBuilder
+				.baseUrl(baseUrl) // e.g. https://api.example.com
+				.build();
+	}
 }
 ```
 
@@ -64,13 +61,13 @@ import org.springframework.web.client.RestTemplate;
 
 @Component
 class ExampleClient {
-    private final RestTemplate restTemplate;
-    private final String HOST; // e.g. https://api.example.com
+	private final RestTemplate restTemplate;
+	private final String HOST; // e.g. https://api.example.com
 
-    ExampleClient(RestTemplate restTemplate, String host) {
-        this.restTemplate = restTemplate;
-        this.HOST = host;
-    }
+	ExampleClient(RestTemplate restTemplate, String host) {
+		this.restTemplate = restTemplate;
+		this.HOST = host;
+	}
 }
 ```
 
@@ -88,45 +85,45 @@ import reactor.core.publisher.Mono;
 
 @Component
 class ExampleClient {
-    private final RestClient restClient;
-    private final WebClient webClient;
-    private final RestTemplate restTemplate;
-    private final String REST_TEMPLATE_HOST;
+	private final RestClient restClient;
+	private final WebClient webClient;
+	private final RestTemplate restTemplate;
+	private final String REST_TEMPLATE_HOST;
 
-    Thing fetchThingWithRestClient(String thingId) {
-        return restClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .path("/thing/{id}")
-                        .build(thingId))
-                .retrieve()
-                .body(Thing.class);
-    }
+	Thing fetchThingWithRestClient(String thingId) {
+		return restClient.get()
+				.uri(uriBuilder -> uriBuilder
+						.path("/thing/{id}")
+						.build(thingId))
+				.retrieve()
+				.body(Thing.class);
+	}
 
-    // Mono<> is a reactive publisher that could contain 0 or 1 thing,
-    // kind of like Optional<> but reactive. 
-    Mono<Thing> fetchThingWithWebClient(String thingId) {
-        return webClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .path("/thing/{id}")
-                        .build(thingId))
-                .retrieve()
-                .bodyToMono(Thing.class);
-    }
+	// Mono<> is a reactive publisher that could contain 0 or 1 thing,
+	// kind of like Optional<> but reactive. 
+	Mono<Thing> fetchThingWithWebClient(String thingId) {
+		return webClient.get()
+				.uri(uriBuilder -> uriBuilder
+						.path("/thing/{id}")
+						.build(thingId))
+				.retrieve()
+				.bodyToMono(Thing.class);
+	}
 
-    Thing fetchThingWithRestTemplate(String thingId) {
-        // getForObject() is a handy shorthand method for very simple HTTP calls
-        // exchange().is more widely used for it's better flexibility
-        return restTemplate.getForObject(
-                UriComponentsBuilder.fromUri(URI.create(restTemplateBase))
-                        .path("/thing/{id}")
-                        .build(thingId)
-                        .toString(),
-                Thing.class
-        );
-    }
+	Thing fetchThingWithRestTemplate(String thingId) {
+		// getForObject() is a handy shorthand method for very simple HTTP calls
+		// exchange().is more widely used for it's better flexibility
+		return restTemplate.getForObject(
+				UriComponentsBuilder.fromUri(URI.create(restTemplateBase))
+						.path("/thing/{id}")
+						.build(thingId)
+						.toString(),
+				Thing.class
+		);
+	}
 
-    record Thing(String id, String name) {
-    }
+	record Thing(String id, String name) {
+	}
 }
 ```
 
@@ -149,51 +146,51 @@ import reactor.core.publisher.Mono;
 
 @Component
 class ExampleClient {
-    private final RestClient restClient;
-    private final WebClient webClient;
-    private final RestTemplate restTemplate;
-    private final String REST_TEMPLATE_HOST;
+	private final RestClient restClient;
+	private final WebClient webClient;
+	private final RestTemplate restTemplate;
+	private final String REST_TEMPLATE_HOST;
 
-    List<Thing> fetchThingWithRestClient(String thingId) {
-        return restClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .path("/things")
-                        .queryParam("nameBeginsWith", "a")
-                        .build())
-                .retrieve()
-                .body(new ParameterizedTypeReference<>() {
-                });
-    }
+	List<Thing> fetchThingWithRestClient(String thingId) {
+		return restClient.get()
+				.uri(uriBuilder -> uriBuilder
+						.path("/things")
+						.queryParam("nameBeginsWith", "a")
+						.build())
+				.retrieve()
+				.body(new ParameterizedTypeReference<>() {
+				});
+	}
 
-    // Flux<> is a reactive publisher that could contain N items,
-    // kind of like List<> but reactive.
-    Flux<Thing> fetchThingWithWebClient(String beginWith) {
-        return webClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .path("/things")
-                        .queryParam("nameBeginsWith", "a")
-                        .build())
-                .retrieve()
-                .bodyToFlux(Thing.class);
-    }
+	// Flux<> is a reactive publisher that could contain N items,
+	// kind of like List<> but reactive.
+	Flux<Thing> fetchThingWithWebClient(String beginWith) {
+		return webClient.get()
+				.uri(uriBuilder -> uriBuilder
+						.path("/things")
+						.queryParam("nameBeginsWith", "a")
+						.build())
+				.retrieve()
+				.bodyToFlux(Thing.class);
+	}
 
-    Thing fetchThingWithRestTemplate(String thingId) {
-        // Note how changing we need to move to the more flexible exchange() method
-        return restTemplate.exchange(
-                RequestEntity.get(UriComponentsBuilder
-                                .fromUri(URI.create(restTemplateBase))
-                                .path("/things")
-                                .queryParam("nameBeginsWith", "a")
-                                .encode()
-                                .toUriString())
-                        .build(),
-                new ParameterizedTypeReference<List<Thing>>() {
-                }
-        ).getBody();
-    }
+	Thing fetchThingWithRestTemplate(String thingId) {
+		// Note how changing we need to move to the more flexible exchange() method
+		return restTemplate.exchange(
+				RequestEntity.get(UriComponentsBuilder
+								.fromUri(URI.create(restTemplateBase))
+								.path("/things")
+								.queryParam("nameBeginsWith", "a")
+								.encode()
+								.toUriString())
+						.build(),
+				new ParameterizedTypeReference<List<Thing>>() {
+				}
+		).getBody();
+	}
 
-    record Thing(String id, String name) {
-    }
+	record Thing(String id, String name) {
+	}
 }
 ```
 
@@ -212,51 +209,51 @@ import reactor.core.publisher.Mono;
 
 @Component
 class ExampleClient {
-    private final RestClient restClient;
-    private final WebClient webClient;
-    private final RestTemplate restTemplate;
-    private final String REST_TEMPLATE_HOST;
+	private final RestClient restClient;
+	private final WebClient webClient;
+	private final RestTemplate restTemplate;
+	private final String REST_TEMPLATE_HOST;
 
-    Thing sendThingWithRestClient(Thing thing) {
-        return restClient.post()
-                .uri("/thing")
-                .body(thing) // Sending in the request body
-                .retrieve()
-                .body(Thing.class); // Assuming a Thing is returned in the response body
-    }
+	Thing sendThingWithRestClient(Thing thing) {
+		return restClient.post()
+				.uri("/thing")
+				.body(thing) // Sending in the request body
+				.retrieve()
+				.body(Thing.class); // Assuming a Thing is returned in the response body
+	}
 
-    // Mono<> is a reactive publisher that could contain 0 or 1 thing,
-    // kind of like Optional<> but reactive.
-    Mono<Thing> sendThingWithWebClient(Thing thing, Mono<Thing> monoThing) {
-        // Either provide a value as the request body:
-        return webClient.post()
-                .uri("/thing")
-                .body(BodyInserters.fromValue(thing))
-                .retrieve()
-                .bodyToMono(Thing.class);
+	// Mono<> is a reactive publisher that could contain 0 or 1 thing,
+	// kind of like Optional<> but reactive.
+	Mono<Thing> sendThingWithWebClient(Thing thing, Mono<Thing> monoThing) {
+		// Either provide a value as the request body:
+		return webClient.post()
+				.uri("/thing")
+				.body(BodyInserters.fromValue(thing))
+				.retrieve()
+				.bodyToMono(Thing.class);
 
-        // or provide a Mono as the request body: 
-        return webClient.post()
-                .uri("/thing")
-                .body(monoThing, Thing.class)
-                .retrieve()
-                .bodyToMono(Thing.class);
-    }
+		// or provide a Mono as the request body: 
+		return webClient.post()
+				.uri("/thing")
+				.body(monoThing, Thing.class)
+				.retrieve()
+				.bodyToMono(Thing.class);
+	}
 
-    Thing sendThingWithRestTemplate(Thing thing) {
-        // Continuing usage with the more flexible exchange() method
-        return restTemplate.exchange(
-                RequestEntity.post(UriComponentsBuilder
-                                .fromUri(URI.create(restTemplateBase))
-                                .path("/thing")
-                                .toUriString())
-                        .body(thing),
-                Thing.class
-        ).getBody();
-    }
+	Thing sendThingWithRestTemplate(Thing thing) {
+		// Continuing usage with the more flexible exchange() method
+		return restTemplate.exchange(
+				RequestEntity.post(UriComponentsBuilder
+								.fromUri(URI.create(restTemplateBase))
+								.path("/thing")
+								.toUriString())
+						.body(thing),
+				Thing.class
+		).getBody();
+	}
 
-    record Thing(String id, String name) {
-    }
+	record Thing(String id, String name) {
+	}
 }
 ```
 
@@ -277,51 +274,51 @@ import reactor.core.publisher.Mono;
 
 @Component
 class ExampleClient {
-    private final RestClient restClient;
-    private final WebClient webClient;
-    private final RestTemplate restTemplate;
-    private final String REST_TEMPLATE_HOST;
+	private final RestClient restClient;
+	private final WebClient webClient;
+	private final RestTemplate restTemplate;
+	private final String REST_TEMPLATE_HOST;
 
-    Thing sendThingWithRestClient(Thing thing) {
-        return restClient.post()
-                .uri("/thing")
-                .body(thing) // Sending in the request body
-                .retrieve()
-                .body(Thing.class); // Assuming a Thing is returned in the response body
-    }
+	Thing sendThingWithRestClient(Thing thing) {
+		return restClient.post()
+				.uri("/thing")
+				.body(thing) // Sending in the request body
+				.retrieve()
+				.body(Thing.class); // Assuming a Thing is returned in the response body
+	}
 
-    // Mono<> is a reactive publisher that could contain 0 or 1 thing,
-    // kind of like Optional<> but reactive.
-    Mono<Thing> sendThingWithWebClient(Thing thing, Mono<Thing> monoThing) {
-        // Either provide a value as the request body:
-        return webClient.post()
-                .uri("/thing")
-                .body(BodyInserters.fromValue(thing))
-                .retrieve()
-                .bodyToMono(Thing.class);
+	// Mono<> is a reactive publisher that could contain 0 or 1 thing,
+	// kind of like Optional<> but reactive.
+	Mono<Thing> sendThingWithWebClient(Thing thing, Mono<Thing> monoThing) {
+		// Either provide a value as the request body:
+		return webClient.post()
+				.uri("/thing")
+				.body(BodyInserters.fromValue(thing))
+				.retrieve()
+				.bodyToMono(Thing.class);
 
-        // or provide a Mono as the request body: 
-        return webClient.post()
-                .uri("/thing")
-                .body(monoThing, Thing.class)
-                .retrieve()
-                .bodyToMono(Thing.class);
-    }
+		// or provide a Mono as the request body: 
+		return webClient.post()
+				.uri("/thing")
+				.body(monoThing, Thing.class)
+				.retrieve()
+				.bodyToMono(Thing.class);
+	}
 
-    Thing sendThingWithRestTemplate(Thing thing) {
-        // Continuing usage with the more flexible exchange() method
-        return restTemplate.exchange(
-                RequestEntity.post(UriComponentsBuilder
-                                .fromUri(URI.create(restTemplateBase))
-                                .path("/thing")
-                                .toUriString())
-                        .body(thing),
-                Thing.class
-        ).getBody();
-    }
+	Thing sendThingWithRestTemplate(Thing thing) {
+		// Continuing usage with the more flexible exchange() method
+		return restTemplate.exchange(
+				RequestEntity.post(UriComponentsBuilder
+								.fromUri(URI.create(restTemplateBase))
+								.path("/thing")
+								.toUriString())
+						.body(thing),
+				Thing.class
+		).getBody();
+	}
 
-    record Thing(String id, String name) {
-    }
+	record Thing(String id, String name) {
+	}
 }
 ```
 

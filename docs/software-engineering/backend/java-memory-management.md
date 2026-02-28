@@ -238,10 +238,10 @@ java -XX:+PrintFlagsFinal --version
 [VisualVM](https://visualvm.github.io/) is a useful visualisation tool developed by Oracle for digging into the internal
 details of running JVM applications.
 
-I found that on macOS, it can fails to boot up with the following error if you're missing a JRE:
+I found that on macOS, it can fail to boot up with the following error if you're missing a JRE:
 
-> The operation couldn’t be completed. Unable to locate a Java Runtime.
-> Please visit http://www.java.com for information on installing Java.
+> The operation couldn’t be completed. Unable to locate a Java Runtime.  
+> Please visit [http://www.java.com](http://www.java.com) for information on installing Java.
 >
 > Cannot find java. Please use the --jdkhome switch.
 

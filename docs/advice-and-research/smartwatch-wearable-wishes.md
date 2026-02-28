@@ -32,18 +32,18 @@ Smartwatch requirements:
 - Tells other time-related information (moon phases, tides, sunrise, sunset, etc.)
 - Can act as a stopwatch and timer.
 - Gather metrics for different data points:
-    - heart rate
-    - heart rate rhythm / variability
-    - step count
-    - GPS location
-    - altitude / depth
-    - speed / pace
-    - temperature (body)
-    - temperature (air/surroundings)
-    - compass direction
-    - barometer (air pressure)
-    - blood-oxygen levels
-    - etc.
+	- heart rate
+	- heart rate rhythm / variability
+	- step count
+	- GPS location
+	- altitude / depth
+	- speed / pace
+	- temperature (body)
+	- temperature (air/surroundings)
+	- compass direction
+	- barometer (air pressure)
+	- blood-oxygen levels
+	- etc.
 - Can track "activities" (runs, swims, workouts, etc.)
 - Gives basic tracking / graphed / mapped visualisations for each data point and activities.
 - Can stream locally stored music or FM radio to headphones via secure local connection (e.g. bluetooth), assuming it

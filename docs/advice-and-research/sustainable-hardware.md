@@ -31,5 +31,5 @@ to Repair".
 
 - [Framework](https://frame.work) laptop & desktop computers.
 - [Fairphone](https://www.fairphone.com) phones, headphones, and earbuds.
-- [Open Funk](https://www.openfunk.co)'s re:Mix blender. 
+- [Open Funk](https://www.openfunk.co)'s re:Mix blender.
 - Build your own computer.

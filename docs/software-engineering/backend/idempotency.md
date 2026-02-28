@@ -19,7 +19,7 @@ a response, it can retry the API call with the same idempotency key as much as i
 API operation will only be executed once.
 
 > Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied
-> multiple times without changing the result beyond the initial application.    
+> multiple times without changing the result beyond the initial application.  
 > ~ Wikipedia, 2025
 
 It is important that the API handles idempotency safely and correctly, so that the API caller
@@ -139,7 +139,7 @@ do not occur. The Inbox pattern and Dead Letter Queues are two ways to handle th
 > real operational processing yet done). Constraints in the Inbox should ensure message uniqueness, so if a unique
 > message is already in the Inbox, a duplicate will not be allowed and the message can then simply be ACKed. The
 > consumer is then free to process a clean Inbox with no duplicates in its own time.
-
+>
 > I tend to prefer Inboxes over DLQs, as the consumer tends to have a database anyway, and even if it didn't, I'd rather
 > set up and deal with database infrastructure and gain indefinite persistence and the decoupling advantages of an
 > Inbox, than risk losing data due to DLQ message retention but solely rely on message bus infrastructure for

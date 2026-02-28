@@ -29,4 +29,4 @@ Be principled from the start. Choose practicality when it makes sense. Then get 
 If you're one of those people where you're finding practicality difficult, or you're feeling blocked by your
 organisation on achieving change, then
 this ["know how your org works" article](https://copyconstruct.medium.com/know-how-your-org-works-or-how-to-become-a-more-effective-engineer-1a3287d1f58d)
-gives a pretty good breakdown of this - though I find the tone of the read a little too practical. 
+gives a pretty good breakdown of this - though I find the tone of the read a little too practical.

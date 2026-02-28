@@ -44,27 +44,27 @@ time.
 	   most of it.  
 	   \*Sadly there is no current way to uninstall these, that I know of. When/If I find a way to get rid of them, I'll
 	   make a blog post.
-		* 3D Builder (Don't need and if you want a 3D design program; use Blender)
-		* Get Office (Useless piece of marketing crap, if you want an office suite; use Office Online, OpenOffice,
+		- 3D Builder (Don't need and if you want a 3D design program; use Blender)
+		- Get Office (Useless piece of marketing crap, if you want an office suite; use Office Online, OpenOffice,
 		  LibreOffice or just BUY Microsoft Office)
-		* Get Skype (Useless piece of marketing crap, if your want Skype; Google it.)
-		* Get Started (Junk that's taking up your hard drive. No one reads the instructions. If you're new to Windows
+		- Get Skype (Useless piece of marketing crap, if your want Skype; Google it.)
+		- Get Started (Junk that's taking up your hard drive. No one reads the instructions. If you're new to Windows
 		  then use this application, read through it, then uninstall it)
-		* \*Mail and Calendar (If you want a mail client, use Mozilla Thunderbird)
-		* Microsoft Solitaire Collection (Full of adverts and microtransactions, just play online or buy a pack of cards
+		- \*Mail and Calendar (If you want a mail client, use Mozilla Thunderbird)
+		- Microsoft Solitaire Collection (Full of adverts and microtransactions, just play online or buy a pack of cards
 		  IRL)
-		* Money (Junk taking up space on your hard drive)
-		* News (Use BBC News, it's much better)
-		* \*OneNote (Requires you to sign-up/sign-in to take notes. Just use a piece of paper or make .txt files on your
+		- Money (Junk taking up space on your hard drive)
+		- News (Use BBC News, it's much better)
+		- \*OneNote (Requires you to sign-up/sign-in to take notes. Just use a piece of paper or make .txt files on your
 		  Desktop)
-		* \*People (You're computer isn't your Phone, most people you'll be contacting will be through Skype or social
+		- \*People (You're computer isn't your Phone, most people you'll be contacting will be through Skype or social
 		  media. Plus People is a minor security risk due to its integration with Wi-Fi Sense)
-		* Phone Companion (Use the File Explorer for memory management, you don't need this to charge your phone either
+		- Phone Companion (Use the File Explorer for memory management, you don't need this to charge your phone either
 		  so it's just useless)
-		* Sport (More useless crap, just use BBC News or Google stuff)
-		* \*Voice Recorder (If you want simple recording software; use Audacity)
-		* \*Weather (Use BBC News or Google)
-		* \*Xbox (Unless you actually HAVE an Xbox in which this MIGHT be useful, but probably not)
+		- Sport (More useless crap, just use BBC News or Google stuff)
+		- \*Voice Recorder (If you want simple recording software; use Audacity)
+		- \*Weather (Use BBC News or Google)
+		- \*Xbox (Unless you actually HAVE an Xbox in which this MIGHT be useful, but probably not)
 
 	4. Multitasking  
 	   Turn ON everything in the Snap section, it's a useful feature.  

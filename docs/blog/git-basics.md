@@ -62,7 +62,7 @@ A repository on your laptop or computer that you're working on is often referred
 A repository on a different computer - e.g. stored on GitHub, GitLab or a server - is often referred to as a "remote"
 repository.
 
-Semantically, a repository most often contains the code for a *single* coding project - like a single website,
+Semantically, a repository most often contains the code for a _single_ coding project - like a single website,
 application or logical bundle of configuration files.  
 Many developers & companies like bundling ALL or MANY of their coding projects into a single Git repository, referred to
 as a "monorepo" - the jury is still out on whether monorepos work effectively or not (personally, I don't think they
@@ -148,8 +148,8 @@ putting them on a branch and then creating a "Pull Request" or "Merge Request" (
 them) to merge the changes on your branch into the main branch. You can read more about basic branching with the
 following documentation:
 
-- Git-SCM's "Basic Branching and Merging": https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
-- Atlassian's "Using Branch" tutorial: https://www.atlassian.com/git/tutorials/using-branches
+- Git-SCM's [Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+- Atlassian's [Using Branches](https://www.atlassian.com/git/tutorials/using-branches)
 
 ## Commits
 

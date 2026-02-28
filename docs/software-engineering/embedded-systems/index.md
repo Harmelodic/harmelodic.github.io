@@ -40,7 +40,6 @@ Rust tooling:
 - [imgui - crate](https://crates.io/crates/imgui)
 - [qt_core - crate](https://crates.io/crates/qt_core)
 
-
 Python / [MicroPython](https://docs.micropython.org) tooling:
 
 - Development using a text editor, VS Code or PyCharm, with Python virtual environments.

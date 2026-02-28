@@ -8,10 +8,10 @@
   as [init-web-frontend](https://github.com/Harmelodic/init-web-frontend)
 - Other web frontend considerations
 - Plus browser extension development
-    - Manifests
-    - Themes
-    - Chrome Extensions / Firefox Addons
-    - [Firefox Extension Compatibility Tester](https://www.extensiontest.com/)
+	- Manifests
+	- Themes
+	- Chrome Extensions / Firefox Addons
+	- [Firefox Extension Compatibility Tester](https://www.extensiontest.com/)
 
 ## Development links
 

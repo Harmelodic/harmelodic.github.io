@@ -38,7 +38,7 @@ the actual needs of your consumer and grant you opportunities to potentially dis
 SLOs are _Service Level Objectives_. These are the expectations that we set for ourselves based using the SLIs we've
 already defined. When implemented, it is basically a specific value on the SLI gauge.
 
-SLOs can also contain *qualifiers* which can give further scope or context about when the SLO is applicable, such as
+SLOs can also contain _qualifiers_ which can give further scope or context about when the SLO is applicable, such as
 only being applicable during a specific time window (the duration of which must be greater than or equal to the
 evaluation interval used by the SLI).
 

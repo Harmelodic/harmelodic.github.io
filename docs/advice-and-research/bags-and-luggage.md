@@ -21,8 +21,8 @@ Bags are useful to put things in when travelling.
 ## Functional bags
 
 Don't just buy bags because they look cool. Buy bags because they provide a functional use. For me, there are specific
-cases when I need a bag, and what sort of bags work in those cases. These are listed below, in order of *smallest* to
-*largest* bags needed.
+cases when I need a bag, and what sort of bags work in those cases. These are listed below, in order of _smallest_ to
+_largest_ bags needed.
 
 ### Wallet / Safety pouch
 
@@ -42,7 +42,7 @@ This bag should:
 - Allow you to be hands-free - for better mobility.
 - Be quickly accessible.
 
-Use a ***satchel*** with a laptop pouch/section inside or a ***small, light backpack*** that is big enough to hold a
+Use a _**satchel**_ with a laptop pouch/section inside or a _**small, light backpack**_ that is big enough to hold a
 laptop/documents.
 
 - A satchel is more easily accessible than a backpack, but a backpack usually allows for more mobility.
@@ -61,8 +61,8 @@ This bag should be:
 - Be reasonably easy to access - so that it's not a hassle to grab your things from inside whilst out and about.
 - Be able to be compacted - so that it can be fit inside a larger bag when not in use whilst travelling.
 
-For this, use either a ***very light, small backpack*** that can be compacted down when not containing anything, or a
-***foldable bag*** that unfolds to being 20 to 25 litre backpack (this is big enough to hold everything, but small
+For this, use either a _**very light, small backpack**_ that can be compacted down when not containing anything, or a
+_**foldable bag**_ that unfolds to being 20 to 25 litre backpack (this is big enough to hold everything, but small
 enough to retain being small when folded).
 
 - Light backpacks are great for mobility and reasonably easy to access.

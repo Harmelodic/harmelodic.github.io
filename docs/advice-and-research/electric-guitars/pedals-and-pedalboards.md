@@ -13,7 +13,7 @@ For more about what other things (other than pedals) affect the sound of the gui
 
 ## The Signal Chain
 
-A pedalboard is effectively a *chain* of pedals. A guitar (which produces the signal when playing) is plugged into the
+A pedalboard is effectively a _chain_ of pedals. A guitar (which produces the signal when playing) is plugged into the
 first pedal, which performs some signal processing, before passing the signal to the next pedal, and so on. The last
 pedal outputs a signal that goes into a guitar amp, that will amplify the sound so it can be heard by audiences.
 
@@ -148,10 +148,10 @@ Pedals that modulate (change the frequency or amplitude of the signal) in ways t
 	- The output is a signal that is affected in a similar to a Chorus or Phaser, but is different enough to warrant its
 	  own effect.
 - Uni-Vibe
-  - A pedal intended to emulate the rotating "Doppler sound" of a Leslie speaker.
-  - Is kind of like a phaser, chorus and vibrato put together.
+	- A pedal intended to emulate the rotating "Doppler sound" of a Leslie speaker.
+	- Is kind of like a phaser, chorus and vibrato put together.
 
-Good video on modulation effects [here](https://www.youtube.com/watch?v=UcMeNREszFg).
+There's a good video on modulation effects [by JHS Pedals on YouTube](https://www.youtube.com/watch?v=UcMeNREszFg).
 
 ## Buffers
 
@@ -255,5 +255,3 @@ As well as just my own experience / knowledge, I also used a bunch of sources to
 - [A better explanation of impedance for Audio signals](https://www.youtube.com/watch?v=TjC1Zbm4xpc)
 - [A guitarists guide to compression](https://www.premierguitar.com/pro-advice/state-of-the-stomp/a-guitarists-guide-to-compression)
 - [How Do Compressor Pedals Work?](https://www.youtube.com/watch?v=LUXR8UnYhzc)
-
-

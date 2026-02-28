@@ -2,8 +2,8 @@
 
 > Originally published: 28 May 2016
 
-The first thing that you'll want to do before installing or upgrading to Windows 10 is to get your product key or "
-activation key".
+The first thing that you'll want to do before installing or upgrading to Windows 10 is to get your product key or
+"activation key".
 This key is how you verify to Microsoft that you have a valid copy of Windows. Even pirated copies of Windows need to be
 activated so chances are if you have a pirated copy of Windows, you'll have a product key too.
 
@@ -17,8 +17,7 @@ To find the product key the easiest (and assured by me, the safest) way, we need
 your computer that we can run which will then retrieve the product key from your system.
 To do this, do the following steps:
 
-Copy the following code from this script:
-https://github.com/Harmelodic/Script_Library/blob/master/Windows/GetProductKey.vbs
+Copy the code from [this script](https://github.com/Harmelodic/Script_Library/blob/master/Windows/GetProductKey.vbs).
 
 Open Notepad (or an equivalent program) and paste the code inside.
 

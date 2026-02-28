@@ -11,19 +11,19 @@ Simple, right?
 Wrong.  
 The wider implementation of handling special characters when building HTTP requests is quite fiddly and often
 implemented badly.  
-(You can find my suggested implemention at the bottom of the page)
+(You can find my suggested implementation at the bottom of the page)
 
 If you wanted to provide an interface/service/adapter/bit-of-code for the rest of your application to perform HTTP
-requests, for example:    
+requests, for example:  
 `http://example.com/api/services/testing.html?username=nedflanders&password=howdy+neighbour`  
 What do you do with your special characters?
 
 Well, the natural thing to do would be to %-encode them, but that puts you in a tricky situation with lovely (
-*horrible*), wonderful (*awful*) things called *reserved characters*.
+_horrible_), wonderful (_awful_) things called _reserved characters_.
 
 Reserved characters can be some of the most frustrating things for people to use and/or not use when handling HTTP
 requests.  
-The idea of them, is that a select few characters are reserved in the HTTP standard for delimiting parts of your URL.   
+The idea of them, is that a select few characters are reserved in the HTTP standard for delimiting parts of your URL.  
 They are as follows:
 
 `!` `#` `$` `&` `'` `(` `)` `*` `+` `,` `/` `:` `;` `=` `?` `@` `[` `]`
@@ -32,7 +32,7 @@ The most used ones like `/`, `?`, `=` and `&` actually make sense as being reser
 `/` is used for delimiting when defining where a resource is (the `/api/services/testing.html` bit).  
 `?` is used to define the start of the query string (the `?username=nedflanders&password=howdy+neighbour` bit)  
 `&` is used to delimit each query string parameter (and its associated value) on the query string.  
-`=` is used to delimit between a query string parameter and it's associated value (e.g `username=nedflanders`).
+`=` is used to delimit between a query string parameter, and it's associated value (e.g `username=nedflanders`).
 
 That's okay but what about something like a `+`?  `+` isn't used for any hugely important logic in a HTTP request like
 `/` or `?` is. `+` is used to represent a space character. That's pretty okay I guess, you can neatly replace each space
@@ -44,7 +44,7 @@ Well...no.
 What if you have a URL with a `+` in a query string value? That `+` could be pretty important. It could be a character
 in an email address or an API key. If your 3rd party server reads that `+` symbol as a space character when it's not
 supposed to be a space character, then it can screw up your data and that's something we **DO NOT** want.  
-So what's the work around?
+So what's the workaround?
 
 You %-encode it!
 
@@ -70,7 +70,7 @@ But how do you tell?
 
 The answer is: You can't, without context.
 
-The whole point of abstracting your code is to remove context, especially *this* sort of context. You are intentionally
+The whole point of abstracting your code is to remove context, especially _this_ sort of context. You are intentionally
 removing the necessity for whatever is calling your code to provide any underlying HTTP logic.
 
 Which means we need to implement this abstraction with a better standard. Here's the one that makes the most sense to
@@ -93,9 +93,9 @@ Keep your code clean.
 
 ---
 
-## Final note on implementation:
+## Final note on implementation
 
-***Don't*** (for heavens sake) simplify your HTTP code down to providing a single static function that takes an entire
+_**Don't**_ (for heaven’s sake) simplify your HTTP code down to providing a single static function that takes an entire
 URL (including query string parameters) and %-encode that.
 
 The problem with implementing it this way is:  
@@ -104,7 +104,7 @@ a reserved character like `&` or `=` or something, then you're going to get into
 context, you don't actually know what is valid data, and what are valid reserved characters.
 
 A good way to implement this standard would be to have a class (or object) that performs the HTTP code. This way,
-whatever calls your code has to instantiate this class as a variable and then use *Setter* methods/functions available
+whatever calls your code has to instantiate this class as a variable and then use _Setter_ methods/functions available
 to this variable to set up the URL, Port, URI and each query string parameter (and anything else you need to set up).  
 This means you can handle the %-encoding for each method and handle all of the actual HTTP logic within. Better yet, it
 means that whatever calls your code, doesn't provide HTTP delimiters `?`, `=` and `&` which they could mistakenly

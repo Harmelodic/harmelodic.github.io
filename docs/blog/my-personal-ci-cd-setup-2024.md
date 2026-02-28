@@ -10,15 +10,15 @@ Most software I make for myself is web stuff:
 
 But I've also got some little hobby projects here and there that aren't that.
 
-I __*build*__ this stuff (CI) in GitHub Actions using the respective build tool for each ecosystem I interact with:
+I _**build**_ this stuff (CI) in GitHub Actions using the respective build tool for each ecosystem I interact with:
 
 - For Java, I use Maven with JIB to make container images.
 - For JavaScript, I use npm with a Dockerfile to make container images.
 - For Terraform... you don't build it, just validate & deploy it using `terraform` commands.
 
-Some times this interacts with my [Pact Broker](https://pact.harmelodic.com), if I've written contract testing.
+Sometimes this interacts with my [Pact Broker](https://pact.harmelodic.com), if I've written contract testing.
 
-and I __*deploy*__ this stuff (CD) with:
+and I _**deploy**_ this stuff (CD) with:
 
 - GitHub Actions, to Terraform code against GCP.
 - Argo CD, for containers deploying to Kubernetes.

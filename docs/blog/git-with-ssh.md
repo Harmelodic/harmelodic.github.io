@@ -8,7 +8,7 @@ However, this has a couple of drawbacks:
 - Typing in your Username/Password every time can be really annoying and runs the risk of you accidentally leaking your
   password, even if you save it in a password manager or when using Git Credential Manager.
 - Alternatives to using Username/Password have their own flaws:
-	- Custom command line tools like Github's `gh` establishes an element of "vendor lock-in" by using that tool. Also,
+	- Custom command line tools like GitHub's `gh` establishes an element of "vendor lock-in" by using that tool. Also,
 	  it just sucks to learn an extra thing for something that should be simpler.
 	- PATs (Personal Access Tokens) aren't supported by all remote-repository hosts, and are basically just... another
 	  type of password that you'll have to manage.
@@ -16,10 +16,11 @@ However, this has a couple of drawbacks:
 SSH is a more elegant and more secure alternative.
 
 Rather than connecting to your remote repository host (like GitHub) over the HTTPS protocol, you would connect over the
-SSH protocol and thus we can take advantage of using SSH's way of handling authentication rather than Username/Password.
+SSH protocol, and thus we can take advantage of using SSH's way of handling authentication rather than
+Username/Password.
 
-SSH uses a "key pair" to do authentication. A key pair is, as it sounds, a pair of keys. Not physical keys, but "
-cryptographic" keys. The two keys in a key pair are:
+SSH uses a "key pair" to do authentication. A key pair is, as it sounds, a pair of keys. Not physical keys, but
+"cryptographic" keys. The two keys in a key pair are:
 
 - A Private key
 - A Public key
@@ -42,9 +43,11 @@ To configure Git to use SSH, follow the below steps - replacing the email in the
 ### 1. Generate your SSH key pair
 
 1. Run the following command to begin:
+
    ```bash
    ssh-keygen -t ed25519 -C "me@example.com"
    ```
+
 2. When asked what file to save it in, just press enter. This will create your key pair in the default file locations:
    `~/.ssh/id_ed25519` for the private key, and `~/.ssh/id_ed25519.pub` for the public key.
 3. When asked for a passphrase to file... you can choose to use a passphrase if you want. Personally, I don't bother and
@@ -57,10 +60,13 @@ we've now created an SSH key pair, we need to tell the `ssh-agent` system that i
 new key pair for SSH connections.
 
 1. Start the `ssh-agent` in the background, just in case it's not started:
+
    ```bash
    eval "$(ssh-agent -s)"
    ```
+
 2. Add your Private key to the `ssh-agent` system:
+
    ```bash
    ssh-add ~/.ssh/id_ed25519
    ```
@@ -70,14 +76,18 @@ new key pair for SSH connections.
 For GitHub, you do this (in 2024) by doing:
 
 1. Get the content of your SSH Public key:
+
    ```bash
    cat ~/.ssh/id_ed25519.pub
    ```
+
    It will look something like:
-   ```
+
+   ```text
    ssh-ed25519 Asdflkjhasdflkjhasdflkjhasdflkjhasdflkjhasdflkjh me@example.com
    ```
-2. Open https://github.com
+
+2. Open [GitHub](https://github.com).
 3. Go to your profile settings.
 4. Go to the "SSH and GPG keys" section.
 5. In the SSH keys section, click "New SSH key"

@@ -18,34 +18,34 @@ you don't want that comes pre-installed with the OS.
 
 Second, I'd like to list the different version of Windows 10 available and which one YOU should get.
 
-* Windows 10 Home - Standard version of 10.
-* Windows 10 Home N - Same as the Home version but without a media player (For European countries to obide
+- Windows 10 Home - Standard version of 10.
+- Windows 10 Home N - Same as the Home version but without a media player (For European countries to abide
   anti-competitive laws)
-* Windows 10 Home KN - Same as standard version but for South Korean users (also removes some media capabilities)
-* Windows 10 Home Single Language - Same as standard version but only supports 1 language (which you choose)
-* Windows 10 Pro - Same as standard version but includes some Business features (such as Remote Desktop, BitLocker and
+- Windows 10 Home KN - Same as standard version but for South Korean users (also removes some media capabilities)
+- Windows 10 Home Single Language - Same as standard version but only supports 1 language (which you choose)
+- Windows 10 Pro - Same as standard version but includes some Business features (such as Remote Desktop, BitLocker and
   Client Hyper-V)
-* Windows 10 Pro N - Same as Pro version but without a media player (For European countries to obide anti-competitive
+- Windows 10 Pro N - Same as Pro version but without a media player (For European countries to abide anti-competitive
   laws)
-* Windows 10 Enterprise - Version for business purposes
-* Windows 10 Education - Version for educational purposes
+- Windows 10 Enterprise - Version for business purposes
+- Windows 10 Education - Version for educational purposes
 
 Users using the following will upgrade to Windows 10 Home:
 
-* Windows 7 Starter
-* Windows 7 Home
-* Windows 7 Home Premium
-* Windows 8
-* Windows 8 with Bing
-* Windows 8.1
-* Windows 8.1 with Bing
+- Windows 7 Starter
+- Windows 7 Home
+- Windows 7 Home Premium
+- Windows 8
+- Windows 8 with Bing
+- Windows 8.1
+- Windows 8.1 with Bing
 
 Users using the following will upgrade to Windows 10 Pro:
 
-* Windows 7 Professional
-* Windows 7 Ultimate
-* Windows 8.1 Pro
-* Windows 8.1 for Students
+- Windows 7 Professional
+- Windows 7 Ultimate
+- Windows 8.1 Pro
+- Windows 8.1 for Students
 
 Note: If you use Windows RT you will get a Windows update that includes some Windows 10 features but that's it.
 

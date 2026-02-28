@@ -115,4 +115,4 @@ efficiency (opposite to what was intended).
 
 [This collaboratively-written opinion piece](https://www.ithoughtaboutthatalot.com/2025/the-things-i-want-to-say-to-my-boss)
 does a decent job of voicing the workers' concerns about this sort of need for Management and/or Leadership genuinely
-caring about the people they're managing / leading. 
+caring about the people they're managing / leading.

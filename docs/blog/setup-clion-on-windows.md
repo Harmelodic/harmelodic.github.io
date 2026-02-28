@@ -4,8 +4,8 @@
 
 ## Installation
 
-* [Install CLion](https://www.jetbrains.com/clion/download/#section=windows-version).
-* [Install Cygwin](https://cygwin.com/install.html).
+- [Install CLion](https://www.jetbrains.com/clion/download/#section=windows-version).
+- [Install Cygwin](https://cygwin.com/install.html).
 
 ---
 
@@ -17,28 +17,28 @@
 
 3. Once the Cygwin Setup window appears. Click <kbd>Next</kbd>.
 
-4. Select ***Install from Internet***. Click <kbd>Next</kbd>.
+4. Select _**Install from Internet**_. Click <kbd>Next</kbd>.
 
 5. Select your Root Directory, I recommend using the root directory of a particular drive (for example `D:\cygwin64`)
 
-6. Select Install for ***All Users***. Click <kbd>Next</kbd>.
+6. Select Install for _**All Users**_. Click <kbd>Next</kbd>.
 
 7. Select your local package directory, I recommend creating a folder in your home folder or in your Downloads folder
    for this. Click <kbd>Next</kbd>.
 
-8. Select ***Direct Connection***. Click <kbd>Next</kbd>.
+8. Select _**Direct Connection**_. Click <kbd>Next</kbd>.
 
 9. Select your chosen mirror. I use `http://www.mirrorservice.org`. Click <kbd>Next</kbd>.
 
 10. You will then be presented with a screen to select your packages to install. To select a packge for install, simply
 	click on where it says "Skip" for that respective package.  
-	You ***need***:  
-	`cmake`, `cmake-gui`, `make`, `gcc-core`, `gcc-g++`, `gdb` (all from the *Devel* category).  
-	I *recommend* also getting:  
+	You _**need**_:  
+	`cmake`, `cmake-gui`, `make`, `gcc-core`, `gcc-g++`, `gdb` (all from the _Devel_ category).  
+	I _recommend_ also getting:  
 	`vim`, `curl`, `wget`, `ssh`, `ncurses`.  
 	Once done, click <kbd>Next</kbd>.
 
-11. Deselect ***Create icon on Desktop***. Click <kbd>Finish</kbd>.
+11. Deselect _**Create icon on Desktop**_. Click <kbd>Finish</kbd>.
 
 ---
 
@@ -48,9 +48,9 @@ You should already have installed CLion, now find the `CLion` program.
 
 1. Select your theme. CLick <kbd>Next: Toolchains</kbd>.
 
-2. Under ***Environment***, ensure the ***Cygwin*** option is selected.
+2. Under _**Environment**_, ensure the _**Cygwin**_ option is selected.
 
-3. Under ***CMake executable***, select ***Custom***, and type in the location of your `cmake.exe` inside the `bin`
+3. Under _**CMake executable**_, select _**Custom**_, and type in the location of your `cmake.exe` inside the `bin`
    folder inside where you installed Cygwin. For example, if you installed Cygwin under `D:\cygwin64`, then you should
    use `D:\cygwin64\bin\cmake.exe`.
 

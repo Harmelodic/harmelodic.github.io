@@ -64,7 +64,7 @@ functions:
 	- Prioritisation of work
 	- Facilitation and co-ordination of business-focused work
 	- Business-work reporting
-    - Business projections
+	- Business projections
 
 I view these administrative functions from a "servant" management/leadership perspective where they have an emphasis on
 facilitating and ensuring work is done, rather than making decisions on work or being directive/autocratic or engaging

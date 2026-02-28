@@ -8,7 +8,7 @@ This guide is a guide to installing the Apache HTTP Server on a Debian based mac
 
 ## Open a terminal
 
-Open the applications menu/app drawer and find the one called *Terminal*.
+Open the applications menu/app drawer and find the one called _Terminal_.
 OR use the shortcut: <kbd>Ctrl</kbd>+<kbd>Shift</kbd> <kbd>T</kbd>.
 
 ## Installation of Apache HTTP Server

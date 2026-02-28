@@ -17,7 +17,7 @@ hide:
 ![Minimal Grey Chrome](./assets/minimal-grey.svg)
 
 **_Description_**: Chrome Theme  
-**_Link_**: 
+**_Link_**:
 [https://chromewebstore.google.com/detail/minimal-grey/eibdijcbgalojjjeheligknccencdpng](https://chromewebstore.google.com/detail/minimal-grey/eibdijcbgalojjjeheligknccencdpng)
 
 ## Minimal Grey Firefox

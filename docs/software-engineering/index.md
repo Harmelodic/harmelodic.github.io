@@ -1,6 +1,6 @@
 # Software Engineering Overview
 
-## 🚧 This is a work in progress!
+## 🚧 This is a work in progress
 
 This is a new section of my site that is still under-construction / not "finished".  
 You can explore my work in progress, or instead view my [current posts on Software Engineering](../blog/index.md), or
@@ -13,11 +13,11 @@ A (sort of) Software Engineering handbook.
 ## Contents
 
 - **Philosophy and Practices** - A section for general software engineering values, principles and practices, covering:
-    - Architecture
-    - Contracts & APIs
-    - Development
-    - Operations
-    - Organisational Operations (Management, Ways of working, etc.)
+	- Architecture
+	- Contracts & APIs
+	- Development
+	- Operations
+	- Organisational Operations (Management, Ways of working, etc.)
 
 Documentation & guidance for different engineering ecosystems:
 
@@ -33,12 +33,12 @@ Each ecosystem covers:
 
 - Specific principles & practices (inc. architecture)
 - Per language covered:
-    - Development specifics
-        - Overview of the language ecosystem
-        - Local machine setup
-        - Shipping (Build & Release)
-        - Doing specific things in that language
-    - Operational specifics
+	- Development specifics
+		- Overview of the language ecosystem
+		- Local machine setup
+		- Shipping (Build & Release)
+		- Doing specific things in that language
+	- Operational specifics
 
 Use to use:
 

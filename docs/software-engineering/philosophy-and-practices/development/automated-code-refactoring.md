@@ -38,4 +38,4 @@ to be consistent (e.g. `prettier`, `EditorConfig`, `go fmt`, `terraform fmt`, et
 GitHub) are two bot tools that automatically detect and update dependencies.
 
 [OpenRewrite](https://docs.openrewrite.org/) (by Moderne) is a more fully-fledged automated refactoring system, already
-used Spring to provide "recipes" (scripts) for performing refactors when upgrading Spring Framework versions. 
+used Spring to provide "recipes" (scripts) for performing refactors when upgrading Spring Framework versions.

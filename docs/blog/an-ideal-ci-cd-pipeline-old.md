@@ -1,15 +1,15 @@
 # An ideal CI/CD pipeline (Old)
 
 > Originally published: 27 November 2018
-> 
-> Now moved / rewritten [here](../software-engineering/philosophy-and-practices/development/shipping-software.md).
+>
+> Now moved / rewritten [elsewhere](../software-engineering/philosophy-and-practices/development/shipping-software.md).
 
-## Not applicable anymore
+## Not applicable any more
 
-Like with some of my other posts - this really isn't applicable anymore. I think on reflection I was documenting what I
+Like with some of my other posts - this really isn't applicable any more. I think on reflection I was documenting what I
 knew at the time, rather than critically thinking about what testing was needed and how to do it.
 
-Nowadays, I shift tests left a lot and have a strong recommendation *against* creating permanent or automated
+Nowadays, I shift tests left a lot and have a strong recommendation _against_ creating permanent or automated
 environments for testing.
 
 I'll leave this post here, and maybe I'll write a new one on testing.

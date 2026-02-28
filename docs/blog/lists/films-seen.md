@@ -7,8 +7,10 @@ hide:
 
 In order of most to least favourite:
 
+<!-- markdownlint-disable-next-line no-inline-html -->
 <table id="content"></table>
 
+<!-- markdownlint-disable-next-line no-inline-html -->
 <script>
 	fetch("https://storage.googleapis.com/harmelodic-web-static-prod/filmsSeen.json")
 		.then(response => response.json())

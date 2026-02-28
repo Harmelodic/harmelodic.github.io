@@ -12,7 +12,7 @@ need to move one file!
 
 In order to move them, we need to do the following steps:
 
-1. Get the Key *name*
+1. Get the Key _name_
 2. Export to a secret key file
 3. Move the file to your new computer
 4. Import the key pair from the file
@@ -26,7 +26,7 @@ gpg --list-secret-keys
 
 You'll get an output that looks like:
 
-```
+```text
 /home/matt/.gnupg/pubring.kbx
 -----------------------------
 sec   ed25519 2024-08-28 [SC]
@@ -76,13 +76,13 @@ gpg --edit-key "593E00FDAAE3C390075AB63948E2FABDE0B3B2DE"
 
 Using the gpg prompt, trust the key:
 
-```
+```text
 gpg> trust
 ```
 
 This will prompt you as follows:
 
-```
+```text
 Please decide how far you trust this user to correctly verify other users' keys
 (by looking at passports, checking fingerprints from different sources, etc.)
 

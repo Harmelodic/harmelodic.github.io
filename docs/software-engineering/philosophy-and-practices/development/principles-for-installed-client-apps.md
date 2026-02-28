@@ -7,7 +7,7 @@ client accessing some remote (web) service or services.
 
 ## User Experience / Design
 
-### Don't get in the way of what the user wants to do. When you must, do it at the last possible moment.
+### Don't get in the way of what the user wants to do. When you must, do it at the last possible moment
 
 When the app boots, don't have popups showing "what's new" or "welcome back" or even onboarding compliance steps or
 requests for permissions. These are getting in the way of the user - especially if they just want to change something
@@ -23,7 +23,7 @@ This often means providing access to navigate the app for users _without_ an acc
 authorization (for client apps for services that require this), as well as providing access to app features in an
 "offline" mode, where cached data and offline features are available.
 
-### Design for ergonomics & accessibility.
+### Design for ergonomics & accessibility
 
 To make using the app easy, put user controls closer to where the user will interact with the client, and information
 away from the controls - e.g. on a phone, the controls should be at the bottom (near fingers) and information is at the
@@ -34,7 +34,7 @@ impairments, or configuration options for easier visual / touch feedback for tho
 
 Ensure colour schemes are available for those with colour blindness, or only use colour schemes that work for all users.
 
-### Don't hide functionality if it's not available, but keep separate (and partially hide) paid-for features.
+### Don't hide functionality if it's not available, but keep separate (and partially hide) paid-for features
 
 When a user is using the app, features might not be available to them to use because the feature requires certain
 conditions (that don't involve payment) to be available, or it might be paid-for feature.
@@ -64,7 +64,7 @@ flow where payment can be offered. This is because:
   an [accordion](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/)) allows you to showcase the value and relevance of
   paid-for features to users, and highlight that the features _is_ available but requires payment.
 
-### Commit to a custom design, or go default - but stay accessible.
+### Commit to a custom design, or go default - but stay accessible
 
 If you have the money, time and resources to create a custom design (colour scheme and/or design system), then go for
 it! Spotify wouldn't be iconically spotify if it was not black and green.

@@ -5,18 +5,18 @@ part of processing something.
 
 When developing any sort of application, "things going wrong" can be classified in the following ways:
 
-1. An issue that occurs that *cannot* be recovered from in the application code.
-2. An issue that occurs that *can* be recovered from in the application code.
+1. An issue that occurs that _cannot_ be recovered from in the application code.
+2. An issue that occurs that _can_ be recovered from in the application code.
 
 In some programming languages, there is a neat (in my opinion) separation between "Errors" and "Exceptions": the
 unrecoverable issues are called Errors and the recoverable ones are called Exceptions.
 
 Errors are innately unrecoverable, and the application will either crash or be killed by the Operating System.
-Exceptions *may* cause the application to fail processing something, but it probably shouldn't crash the application or
+Exceptions _may_ cause the application to fail processing something, but it probably shouldn't crash the application or
 cause the Operating System to kill the application's process.
 
 Since errors are innately unrecoverable and most of the time don't need "handling", I'll be talking about application
-development, __the scope of this blog post is around *Exception* handling__.
+development, **the scope of this blog post is around _Exception_ handling**.
 
 ## Why Exception Handle
 
@@ -30,7 +30,7 @@ data being treated correctly (data being saved, rollbacks being performed, etc.)
 
 Maintenance: As we develop software, we tend to split software into components & layers, and abstract implementation
 details inside of classes, methods and functions. As we abstract the implementation details of how something is
-processsed, it is preferable to also abstract what can go wrong, rather than have higher-level components deal with all
+processed, it is preferable to also abstract what can go wrong, rather than have higher-level components deal with all
 possible exceptions that come from our implementation. Whilst often this results in further exceptions being thrown,
 more contextually appropriate exceptions hide the implementation details.
 
@@ -39,9 +39,9 @@ way to do it?".
 
 These question often arise from 2 areas:
 
-1. A frustration with feeling required to do exception handling when it isn't needed. Writing the the "happy paths" of
-   how to process things is relatively easy (and fun) to do, but writing all the code to handle when those things go
-   wrong is often a lot more work and often a lot less fun, since often a lot more *can* go wrong.
+1. A frustration with feeling required to do exception handling when it isn't needed. Writing the "happy paths" of how
+   to process things is relatively easy (and fun) to do, but writing all the code to handle when those things go wrong
+   is often a lot more work and often a lot less fun, since often a lot more _can_ go wrong.
 2. A desire for an easy & effective way to do exception handling, when we believe it is required. Exception handling can
    often be quite involved, depending on the language, and many developers feel it clutters the code.
 
@@ -52,7 +52,7 @@ Here's some bold statements:
 - For most software that is written (not including hacks), developers must handle exceptions that occur, if it is to be
   safe and useful.
 - APIs should make it clear what can go wrong and force consumers of the API to choose not to handle them, rather than
-  choosing *to* handle them.
+  choosing _to_ handle them.
 - There is no "one rule that fits all" when it comes to how to implement exception handling, it's more like "two ways of
   thinking and a few rules".
 
@@ -72,7 +72,7 @@ In Java, this results in the following class distinctions:
 - `RuntimeException` - Unchecked Exceptions.
 
 Personally, I think the name `RuntimeException` is a confusing one, as ALL Exceptions (and Errors) occur at runtime.
-Therefore, I find it helpful to think of `RuntimeException`s as exceptions that are *handled* at runtime, rather that
+Therefore, I find it helpful to think of `RuntimeException`s as exceptions that are _handled_ at runtime, rather that
 being handled explicitly by developers in the code, thus at compile time.
 
 So, why do we even have unchecked exceptions? If executing piece of code may result in an exception being thrown, why
@@ -82,7 +82,7 @@ Yes, but that's not always the most valuable thing for a piece of software or to
 Nuance?! Who knew?! Here are some common complaints I've heard/read from developers:
 
 > Checked exception handling adds more code to an application's codebase. More code means more opportunities for bugs to
-> occur inside of the code base.
+> occur inside the code base.
 
 I often find this is not the case when doing exception handling as exception handling is usually the code you write to
 handle the class of bugs associated with "what happens when processing goes wrong".
@@ -90,10 +90,10 @@ handle the class of bugs associated with "what happens when processing goes wron
 > Checked exception handling adds more code to an application's codebase. More code means more code to read and
 > understand before being able to contribute, edit and change code. This makes it harder to maintain, not easier.
 
-This can be absolutely true, for small, simple and/or non-critical applications. However as the application grows and/or
-the criticality of the application grows, the importance of handling exceptions carefully in the different components of
-the application usually becomes highly valuable for maintainance and developer confidence in the application's
-robustness.
+This can be absolutely true, for small, simple and/or non-critical applications. However, as the application grows
+and/or the criticality of the application grows, the importance of handling exceptions carefully in the different
+components of the application usually becomes highly valuable for maintenance and developer confidence in the
+application's robustness.
 
 The added coverage of handling exceptions being present in the code can also convey how careful and serious a developer
 must be when performing changes to the application code.
@@ -115,10 +115,10 @@ means I'm often wrapping and throwing exceptions.
 For application developers that prefer using an Inversion of Control (IoC) system (where unchecked exceptions are caught
 by the IoC system and are handled according to instructions given to it by developers or handled in a default manner),
 unchecked exceptions can also be a neat way of offloading the exception handling to a separate system. Personally, I've
-not found this a better paradigm, as I value handling the exceptions in a controlled, explicit way where the the
-exception occurs more valuable to me when developing & maintaining code than giving exception handling to a separate
-system - this allows me to contribute to parts of a codebase without needing to understand the system as a whole, which
-is very useful for larger or more complex systems.
+not found this a better paradigm, as I value handling the exceptions in a controlled, explicit way where the exception
+occurs more valuable to me when developing & maintaining code than giving exception handling to a separate system - this
+allows me to contribute to parts of a codebase without needing to understand the system as a whole, which is very useful
+for larger or more complex systems.
 
 > Sometimes the safest and quickest thing to do is to let a process/thread just crash by throwing an unchecked
 > exception, rather than try to handle the exception and recover.
@@ -132,7 +132,7 @@ However, I think an important to distinguish this into two parts:
 2. Handling an issue by throwing an unchecked exception
 
 Fail-fast systems report issues with inputs or the current state of a system as earlier as possible to remove the number
-of possible exceptions that can go wrong, rather than handle each of those exceptions. This is *preventing* exceptions
+of possible exceptions that can go wrong, rather than handle each of those exceptions. This is _preventing_ exceptions
 from happening, and should absolutely be done by implementing validation checks on inputs and verification checks on
 system state. However, it will not be possible to completely prevent all exceptions this way, thus normal "try/catch"
 exception handling will still apply.
@@ -232,9 +232,9 @@ just retry the process themselves, as they require.
 The final method for exception handling is to "not catch, and only throw". This is where we implement zero exception
 handling and instead just allow the exception to be passed to the consumer directly.  
 This benefits from basically zero code additions (other than stating in our function's contract that we throw the
-exception), but means that an implemention detail of our function is exposed to the consumer. Given this, I usually find
-this method only useful when the exception I would throw to the consumer is the same as the one caught - therefore I can
-save myself some lines of code and just throw the exception.
+exception), but means that an implementation detail of our function is exposed to the consumer. Given this, I usually
+find this method only useful when the exception I would throw to the consumer is the same as the one caught - therefore
+I can save myself some lines of code and just throw the exception.
 
 As we can see, there are different trade-offs for different methods, and it's up to the developers of the software to
 decide how to handle each exception that is thrown. It sounds like a slow and nasty business, but gets quite easy and
@@ -261,9 +261,9 @@ try/catch exception handling system. My advice would be to use the system the la
 force your preferences on a language system not designed for your preferences).
 
 In the case of Optionals, I think Optionals should be used for a different purpose than exception handling. Optionals in
-return values convey (to me) that a return value of `null` is an *acceptable* result where everything went right and the
+return values convey (to me) that a return value of `null` is an _acceptable_ result where everything went right and the
 result was `null`. This should not be confused with exception-handling since that deals with the business of how to
-handle situations when things have gone wrong. Basically: Optionals aren't *for* when things go wrong, so don't use them
+handle situations when things have gone wrong. Basically: Optionals aren't _for_ when things go wrong, so don't use them
 for that!
 
 ## Conclusion

@@ -21,9 +21,9 @@ This site uses MkDocs for static site generation. For full documentation visit [
 
 Basic commands:
 
-* `mkdocs serve --livereload` - Start the docs server locally, and reload content when files change.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs --help` - Print help message.
+- `mkdocs serve --livereload` - Start the docs server locally, and reload content when files change.
+- `mkdocs build` - Build the documentation site.
+- `mkdocs --help` - Print help message.
 
 This project also uses some MkDocs plugins:
 
@@ -43,7 +43,7 @@ as well.
 
 ### Project layout
 
-```
+```text
 .github/         # GitHub Actions code to build & release the project.
 docs/            # The site content.
 docs/CNAME       # Configuration file for configuring CNAME for GitHub Pages site.

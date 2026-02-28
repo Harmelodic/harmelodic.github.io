@@ -15,15 +15,16 @@ sized screens.
 
 ## Original Post
 
-Taken from [here](http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/)
+I originally found this bit of
+code [at zerosixthree.se](http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/).
 
 It's a bit of CSS that will allow you to instantly vertically align a `<div>` within another `<div>`:
 
 ```css
 .element {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 ```
 
@@ -32,6 +33,6 @@ This was discovered when using this CSS on a child of `body` to position an elem
 
 ```css
 body {
-    height: 100%;
+	height: 100%;
 }
 ```

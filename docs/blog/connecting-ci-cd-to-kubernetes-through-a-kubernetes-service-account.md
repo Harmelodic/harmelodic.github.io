@@ -27,7 +27,5 @@ kubectl get secret <SECRET_NAME> -o json | jq -r .data.token | base64 -D
 
 ---
 
-K8s Rolebinding Permissions for Service
-Accounts: https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions
-
-K8s User facing Cluster Roles: https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
+- [K8s Role-binding Permissions for Service Accounts](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions)
+- [K8s User facing Cluster Roles](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles)

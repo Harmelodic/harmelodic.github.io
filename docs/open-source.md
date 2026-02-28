@@ -125,4 +125,3 @@ Data Analysis, Development Tools, Corporate systems.
 
 There's other stuff that I work on or try to build (and sometimes fail at building). Take a look
 at [my GitHub](https://github.com/Harmelodic?tab=repositories) for more of that.
-

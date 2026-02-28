@@ -1,6 +1,6 @@
 # Build & Deploy: Maven projects
 
-[Apache Maven](https://maven.apache.org), or just __Maven__, is a build tool for Java projects.
+[Apache Maven](https://maven.apache.org), or just **Maven**, is a build tool for Java projects.
 
 In this Build & Deploy post, I'll obviously not be talking about Deploy at all, but instead be covering the finer
 details of generically building Java projects with Maven, including some recommendations for plugins and POM management.
@@ -9,7 +9,7 @@ details of generically building Java projects with Maven, including some recomme
 
 A normal Maven project is structured in the following way:
 
-```
+```text
 src/
   main/
   test/
@@ -67,7 +67,7 @@ build process for that packaging type.
 exclusively for inputs to your build process or setting properties that dependencies & plugins use. Setting dependency
 versions in properties is a weird common practice that I've found makes maintenance more difficult.
 
-`dependencyManagement` is for pulling in specific dependencies (other POMs) that will *manage* other dependencies for
+`dependencyManagement` is for pulling in specific dependencies (other POMs) that will _manage_ other dependencies for
 you (i.e. which versions to use).
 
 `dependencies` is the section where you define the dependencies (libraries, frameworks, etc.) you actually want to use

@@ -114,7 +114,7 @@ Finally, something that I think is... shitty behaviour from Fairphone 🚫
 As part of the [Android 14 update](https://www.fairphone.com/en/2024/07/15/android-14-is-here-heres-whats-changed),
 Fairphone note the following:
 
-> __No more Always Show Time and Info__: We removed the Always Show Time and Info feature on the Fairphone 5, as it was
+> **No more Always Show Time and Info**: We removed the Always Show Time and Info feature on the Fairphone 5, as it was
 > a major battery drainer, as per our data. With this removed, your Fairphone will now last longer than before on a single
 > charge.
 
@@ -123,7 +123,7 @@ battery drainer, but I don't really think that a company should be allowed to re
 security issues or if no one is using those features.
 
 For me, this isn't an issue because I don't use that feature, but since I've already seen complaining that the feature
-has been removed, it's *clearly* a feature that people desire, despite the battery effects.
+has been removed, it's _clearly_ a feature that people desire, despite the battery effects.
 
 I strongly urge Fairphone to re-enable the feature, and have it disabled by default, with a pop-up warning about the
 battery effects for those enabling it.

@@ -60,8 +60,8 @@ Why?
 4. As of writing, there
    are [518K references to the slf4j-api dependency](https://github.com/search?q=%3CartifactId%3Eslf4j-api%3C%2FartifactId%3E&type=code)
    on GitHub, and
-   only [171K references to the commons-logging dependency](https://github.com/search?q=%3CartifactId%3Ecommons-logging%3C%2FartifactId%3E&type=code) -
-   which, whilst it is a slightly flawed metric, at least implies that over 3x more projects are using SFL4J.
+   only [171K references to the commons-logging dependency](https://github.com/search?q=%3CartifactId%3Ecommons-logging%3C%2FartifactId%3E&type=code).
+   Whilst it is a slightly flawed metric, at least implies that over 3x more projects are using SFL4J.
 
 SLF4J code looks a bit like the following:
 
@@ -73,16 +73,16 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.MarkerFactory;
 
 public class Application {
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+	private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
-    public static void main(String[] args) {
-        logger.atInfo()
-                .addKeyValue("args", args)
-                .addMarker(MarkerFactory.getMarker("BOOT"))
-                .log("Application started.");
-        logger.info("A quick message");
-        // ...
-    }
+	public static void main(String[] args) {
+		logger.atInfo()
+				.addKeyValue("args", args)
+				.addMarker(MarkerFactory.getMarker("BOOT"))
+				.log("Application started.");
+		logger.info("A quick message");
+		// ...
+	}
 }
 ```
 
@@ -125,16 +125,16 @@ grabbing `logback-classic`, since that's the Logback dependency that hooks into 
 
 Basic Logback configuration uses the following components:
 
-- __Appenders__ - the things that say where the logs will be placed (Console, File, etc.)
+- **Appenders** - the things that say where the logs will be placed (Console, File, etc.)
 
-- __Encoders__ & __Layouts__ - the things that take the Log Events from Logback, and prepares them for writing.
+- **Encoders** & **Layouts** - the things that take the Log Events from Logback, and prepares them for writing.
 	- Encoders do that by transforming a Log Event into a byte array as well as writing out that byte array into an
 	  `OutputStream`.
 	- Layouts just transform the Log Event into a String.
 	- Note: Often you can find yourself putting a Layout inside a `LayoutWrappingEncoder` Encoder - This is fine and
 	  normal.
 
-- __Patterns / Formatters__ are the configuration inside of Encoders and Layouts that informs that specific Encoder or
+- **Patterns / Formatters** are the configuration inside of Encoders and Layouts that informs that specific Encoder or
   Layout on how to format the log when it is written.
 
 A typical simple Logback configuration file to output plain string logs to the console might look like:

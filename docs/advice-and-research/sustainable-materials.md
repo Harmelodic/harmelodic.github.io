@@ -3,7 +3,7 @@
 ## Overview
 
 Everything is ultimately disposable, so it's important for us to use sustainable materials. This means using mostly
-*organic* materials, or minerals that can be repaired or recycled easily. Some of these materials include:
+_organic_ materials, or minerals that can be repaired or recycled easily. Some of these materials include:
 
 - Cotton
 - Linen

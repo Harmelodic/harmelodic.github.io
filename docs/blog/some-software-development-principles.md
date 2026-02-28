@@ -11,11 +11,11 @@ Here are some that have helped me.
 
 Keep it simple, stupid  
 or  
-Keep it small & simple <sub>[[C.H.]](https://twitter.com/CliveHackney/status/1257013748725940224)</sub>
+Keep it small & simple ([Clive Hackney](https://twitter.com/CliveHackney/status/1257013748725940224))
 
 ## Test Pyramid
 
-<img src="https://harmelodic.gitlab.io/scribbles-content/posts/images/test-pyramid.png" alt="Test Pyramid" style="width: 90%; max-width: 560px;">
+![Test Pyramid](./assets/test-pyramid.png)
 
 - Unit Tests are fast and cheap, so make more of your tests Unit Tests.
 - Service Tests are slower and more expensive, so only make some of those.
@@ -23,7 +23,7 @@ Keep it small & simple <sub>[[C.H.]](https://twitter.com/CliveHackney/status/125
 
 ## 3 Types of Functional Testing - State, Collaboration, Contract
 
-<img src="https://harmelodic.gitlab.io/scribbles-content/posts/images/functional-tests.jpg" alt="Functional Tests" style="width: 90%; max-width: 560px;">
+![Functional Tests](./assets/functional-tests.jpg)
 
 Provided you design your solution well - i.e. into components that connect to interfaces that have other components that
 implement those interfaces.
@@ -35,9 +35,9 @@ implement those interfaces.
 - The only other _functional_ testing that is required is the few integrated tests that you need to test components
   outside of your domain.
 
-This is my own principle based on J.B. Rainsburger's talk about how [_Integrated Tests are a
-Scam_](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam). It's a very good talk with very
-compelling points.
+This is my own principle based on J.B. Rainsburger's talk about
+how [Integrated Tests are a Scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam). It's a very
+good talk with very compelling points.
 
 Non-functional testing, such as security, performance and reliability and acceptance testing cannot be fully covered by
 this methodology.

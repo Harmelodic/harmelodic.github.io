@@ -1,20 +1,20 @@
 # Mobile Overview
 
 - Android (native)
-    - Kotlin
-    - Gradle
-    - Jetpack / AndroidX
-    - APK vs AAB
-    - Android Studio
+	- Kotlin
+	- Gradle
+	- Jetpack / AndroidX
+	- APK vs AAB
+	- Android Studio
 - iOS / iPadOS (native)
-    - Swift (legacy: Objective-C)
-    - Swift Package Manager (legacy: CocoaPods)
-    - Universal Apps
-    - Xcode
+	- Swift (legacy: Objective-C)
+	- Swift Package Manager (legacy: CocoaPods)
+	- Universal Apps
+	- Xcode
 - OS-agnostic
-    - React Native / TypeScript / JavaScript / npm / similar stack to web-frontends.
-    - Dart / Flutter
-    - [Skip](https://skip.dev/)
+	- React Native / TypeScript / JavaScript / npm / similar stack to web-frontends.
+	- Dart / Flutter
+	- [Skip](https://skip.dev/)
 
 ## Mobile Development
 

@@ -6,8 +6,8 @@ Back on [31st August 2021, Docker announced](https://www.docker.com/blog/updatin
 Docker Desktop, where businesses with more than 250 employees or more than $10 million annual revenue, would have to
 start a paid subscription with Docker if they wanted to use Docker Desktop.
 
-Since businesses don't like to pay for things, I probably won't be able to use Docker Desktop for work anymore, which is
-where most of my development work happens. Also, I don't want different tooling for work and personal stuff, so I'll
+Since businesses don't like to pay for things, I probably won't be able to use Docker Desktop for work any more, which
+is where most of my development work happens. Also, I don't want different tooling for work and personal stuff, so I'll
 change there.
 
 I also write a lot of stuff in Java and like using the Testcontainers library when I need to write integration tests
@@ -40,31 +40,44 @@ I tried Podman, and it's been seamless... so, Podman it is!
 ## Migrating
 
 1. Uninstall Docker & Docker Desktop, completely.
-3. Install Podman by running:
+2. Install Podman by running:
+
    ```bash
    brew install podman
    ```
+
 3. Since Podman requires a VM for macOS, we need download and run the Podman VM by running:
+
    ```bash
    podman machine init
    ```
+
 4. To get the Docker socket aliasing required for Testcontainers, run:
+
    ```bash
    sudo podman-mac-helper install
    ```
+
 5. Now, start the Podman VM by running:
+
    ```bash
    podman machine start
    ```
+
 6. Verify Podman socket aliasing is configured:
+
    ```bash
    ls -la /var/run/docker.sock
    ```
-   The output points to a podman.sock file such as:
-   ```
+
+   The output points to a `podman.sock` file such as:
+
+   ```text
    /var/run/docker.sock -> /Users/username/.local/share/containers/podman/machine/podman.sock
    ```
+
 7. Verify Podman is running:
+
    ```bash
    podman images
    ```
@@ -84,9 +97,9 @@ e.g. `podman ps` will list your running containers.
 
 ## References
 
-- Podman Docs: https://docs.podman.io/en/latest/
-- Podman Mac Helper doc: https://podman-desktop.io/docs/migrating-from-docker/using-podman-mac-helper
-- Podman CLI commands: https://docs.podman.io/en/latest/Commands.html
+- [Podman Docs](https://docs.podman.io/en/latest/)
+- [Podman Mac Helper doc](https://podman-desktop.io/docs/migrating-from-docker/using-podman-mac-helper)
+- [Podman CLI commands](https://docs.podman.io/en/latest/Commands.html)
 
 ## Linux
 

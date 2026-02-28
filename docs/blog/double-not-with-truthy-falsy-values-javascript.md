@@ -43,10 +43,8 @@ if (new Date()) {
 // etc.
 ```
 
-You can read more about Truthy and Falsy on MDN:
-
-- https://developer.mozilla.org/en-US/docs/Glossary/Falsy
-- https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+You can read more at MDN about [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+and [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
 
 ## Not and Double-Not
 

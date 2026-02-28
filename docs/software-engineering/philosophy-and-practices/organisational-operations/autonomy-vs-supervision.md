@@ -38,7 +38,7 @@ Some more in-depth notes:
 > do." ~ Steve Jobs (apparently)
 
 Sure, but not everyone is smart and rational. [Brigitta Böckeler](https://www.youtube.com/watch?v=GKgE4qfAppI) covers
-different forms of bias and irrationality. She references Daniel Kahneman's *Thinking, Fast and Slow* book, as well as
+different forms of bias and irrationality. She references Daniel Kahneman's _Thinking, Fast and Slow_ book, as well as
 the [Cognitive Bias Codex](https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg). We clearly need some
 guidance and "checks" to ensure we're operating in a way that is fair and appropriate - hence the need for supervision,
 and the facilitation of that by Management and Leadership.
@@ -100,5 +100,5 @@ Practically this means:
 
 e.g. architectural advice from Andrew Harmel-Law:
 
-- https://www.infoq.com/podcasts/architecture-advice-process/
-- https://www.infoq.com/articles/decentralized-architecture-advice-process/
+- [Podcast: Architecture Advice Process](https://www.infoq.com/podcasts/architecture-advice-process/)
+- [Article: Decentralised Architecture Advice Process](https://www.infoq.com/articles/decentralized-architecture-advice-process/)

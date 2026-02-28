@@ -78,13 +78,13 @@ the platform and a place to store software artifacts for that platform that can 
 
 You can find an example of this in my personal setup with
 my [personal-initial-infrastructure](https://github.com/Harmelodic/personal-initial-infrastructure) for creating
-infrastructure for my *Personal* platform.
+infrastructure for my _Personal_ platform.
 
 ## Environments
 
-Before we create further infrastructure for each platform, we probably want to have multiple *environments* in each
-platform. A "production" (or "prod") environment where users & systems interact with the released software, and other "
-production-like" environments for development needs (playgrounds, manual testing, etc.).
+Before we create further infrastructure for each platform, we probably want to have multiple _environments_ in each
+platform. A "production" (or "prod") environment where users & systems interact with the released software, and other
+"production-like" environments for development needs (playgrounds, manual testing, etc.).
 
 These environments must be effectively identical to one another, for them to have any value as "production-like"
 environments. Only small differences like the name of the environment, size of servers and basic IAM/Firewall
@@ -120,7 +120,7 @@ maintainable.
 I don't have this in my personal setup, but have built these professionally. The following is an example structure of
 how you might split the layers/repositories:
 
-- `{platform}-management` for creating projects* & project*-level IAM permissions.
+- `{platform}-management` for creating projects & project*-level IAM permissions.
 - `{platform}-networking` for creating DNS and networking infrastructure inside projects.
 - `{platform}-kubernetes` for creating a central Kubernetes cluster for your platform (assuming you only need 1 cluster
   per environment).
@@ -146,7 +146,7 @@ As such we could bundle the infrastructure code needed by that software, with th
 a single Deployment Repository.
 
 You can see an example of a Deployment Repository if you look at
-my [personal-apps](https://github.com/Harmelodic/personal-apps) repository. However, note that *Argo CD* (a piece of CD
+my [personal-apps](https://github.com/Harmelodic/personal-apps) repository. However, note that _Argo CD_ (a piece of CD
 software) is configured in this repository. Deploying your CD software to the same platform as your business-runtime
 applications has trade-offs, and many folks may find having a separate CD platform as more preferable.
 
@@ -156,7 +156,7 @@ and subdomains, and organise these Deployment Repositories based on those result
 
 ## Diagram
 
-<img src="https://storage.googleapis.com/harmelodic-web-static-prod/blog-images/infrastructure-layers.png" alt="Infrastructure Layers Diagram" style="width: 90%;">
+![Infrastructure layers](./assets/infrastructure-layers.png)
 
 Hope this helped!
 

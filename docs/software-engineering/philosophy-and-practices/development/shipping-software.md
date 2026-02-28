@@ -18,34 +18,34 @@ Build processes take code and produce artifacts. What the code is intended for, 
 In a build process you tend to want to do:
 
 - **Code Compliance**
-    - Linting to ensure adherence to a code formatting / style guide / code structure rules.
-    - Ensure code is modern (e.g. no deprecations and uses good modern languages practices).
-    - Ensure zero known common bugs or code smells
-    - Simple Security scanning (e.g. detecting leaked secrets, vulnerability detection)
-    - Simple SBOM analysis (e.g. licensing rule-violation detection, dependency usage-violation detection, more
-      vulnerability
-      detection).
-    - (More complex analysis can be done passively and continuously by an external system
-      to [improve software quality](./improving-software-quality.md), these simple protections are in place to ensure
-      the critical and basis issues are mitigated)
+	- Linting to ensure adherence to a code formatting / style guide / code structure rules.
+	- Ensure code is modern (e.g. no deprecations and uses good modern languages practices).
+	- Ensure zero known common bugs or code smells
+	- Simple Security scanning (e.g. detecting leaked secrets, vulnerability detection)
+	- Simple SBOM analysis (e.g. licensing rule-violation detection, dependency usage-violation detection, more
+	  vulnerability
+	  detection).
+	- (More complex analysis can be done passively and continuously by an external system
+	  to [improve software quality](./improving-software-quality.md), these simple protections are in place to ensure
+	  the critical and basis issues are mitigated)
 - **Compiling** - Turning the code into binaries, or other kinds of executable/loadable code.
 - **Testing** - Running tests to give us confident the code is fit for purpose and bug-free. Can include:
-    - Unit tests
-    - Integration Tests
-    - Contract Tests
-    - Necessary or Simple Performance Tests and/or Benchmarks
-    - _Zero_ Integrated Tests - not worth [The Shared Test Data Problem](the-shared-test-data-problem.md), also
-      see [Integrated Tests are a Scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
+	- Unit tests
+	- Integration Tests
+	- Contract Tests
+	- Necessary or Simple Performance Tests and/or Benchmarks
+	- _Zero_ Integrated Tests - not worth [The Shared Test Data Problem](the-shared-test-data-problem.md), also
+	  see [Integrated Tests are a Scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
 
 - **Packaging**
-    - Bundling to create an artifact.
-    - Signing the artifact.
-    - Storage of the artifact.
+	- Bundling to create an artifact.
+	- Signing the artifact.
+	- Storage of the artifact.
 - **Reporting**
-    - Produces a report for each of the above build steps for tracking quality, ideally in a standard format (SARIF,
-      JUnit, etc.)
-    - Produces an alert / notification of build completion
-    - Produces a report about build time (fine-grained to each step or substep) for insights into the build process.
+	- Produces a report for each of the above build steps for tracking quality, ideally in a standard format (SARIF,
+	  JUnit, etc.)
+	- Produces an alert / notification of build completion
+	- Produces a report about build time (fine-grained to each step or substep) for insights into the build process.
 
 Note: Producing new versions of artifacts for users to access (if the artifact itself is what the users use), is NOT
 part of the build process. That is part of the [release](#release) process.
@@ -122,18 +122,18 @@ A release process for services therefore looks like:
 - Update the existing GitOps manifest (or script) to use the new version.
 - Allow our deployment system to deploy the new version (by syncing or running a deployment script).
 - In a simple release system, we can simply perform a blue-green release:
-    - Deploy the new version of the service, and have both old and new versions running, but only have the old version
-      doing processing.
-    - Switch over the production processing from the old version to the new version.
-    - Remove the old version of the service.
+	- Deploy the new version of the service, and have both old and new versions running, but only have the old version
+	  doing processing.
+	- Switch over the production processing from the old version to the new version.
+	- Remove the old version of the service.
 - In an advance release system, we could configure our deployment system to perform a canary release:
-    - Deploy the new version of the service, and have both old and new versions running, but only have the old version
-      doing processing.
-    - Initiate the new version to start processing a % of the work needed (e.g. serving users or consuming events).
-    - Evaluate whether the new version is successful at processing the % it is handling (rollback and alert an engineer,
-      if not).
-    - Continue increasing the % of processing and evaluating the success of the new version.
-    - Once the new version is processing 100% of the work, then remove the old version.
+	- Deploy the new version of the service, and have both old and new versions running, but only have the old version
+	  doing processing.
+	- Initiate the new version to start processing a % of the work needed (e.g. serving users or consuming events).
+	- Evaluate whether the new version is successful at processing the % it is handling (rollback and alert an engineer,
+	  if not).
+	- Continue increasing the % of processing and evaluating the success of the new version.
+	- Once the new version is processing 100% of the work, then remove the old version.
 - In other advanced release systems, we could do either a blue-green release or a canary release, but ALSO disable new
   functionality offered by the service behind a "feature flag", and release this new functionality (to a % of users or
   all users) at a specific chosen time.
@@ -230,34 +230,34 @@ non-production environments, using specifications or seed functions.
 However, there are still use cases for non-production environments:
 
 - Ad hoc system-wide performance testing
-    - Use production versions first to set a baseline (and identify bottlenecks). Then fix those bottlenecks and deploy
-      development versions to test performance boost. Once happy that performance has improved for a single component,
-      release it to production and set up a new baseline before moving on to the next bottleneck - this encourages
-      continuous integration / deployment, reduces the likelihood of multiple changes causing production issues, and
-      provides a structured and rigorous methodology to ensure that each change made a measurable improvement.
-    - One or more components to test (e.g. integrated test isn't fun, but it's sometimes easier to quickly spin up an
-      environment and pin down performance bottlenecks)
-    - If frequent (not ad hoc) performance testing is required it should be built into the shipping process as part of
-      regular testing, and done at a component level (not integrated).
+	- Use production versions first to set a baseline (and identify bottlenecks). Then fix those bottlenecks and deploy
+	  development versions to test performance boost. Once happy that performance has improved for a single component,
+	  release it to production and set up a new baseline before moving on to the next bottleneck - this encourages
+	  continuous integration / deployment, reduces the likelihood of multiple changes causing production issues, and
+	  provides a structured and rigorous methodology to ensure that each change made a measurable improvement.
+	- One or more components to test (e.g. integrated test isn't fun, but it's sometimes easier to quickly spin up an
+	  environment and pin down performance bottlenecks)
+	- If frequent (not ad hoc) performance testing is required it should be built into the shipping process as part of
+	  regular testing, and done at a component level (not integrated).
 - Demonstrations
-    - If you're producing a service, you often want to showcase that service. Demonstration environments are production
-      environments that contain only test data. These are subject to the test data problem if long-lived and used by
-      multiple demonstrators, but since demonstrations usually (and ideally) have no impact on the ability to release
-      software, it is an acceptable problem to deal with and easily mitigated by making fresh demonstration environments
-      easy to recreate.
-    - If demonstrations _do_ affect the ability to release due to some requirement of doing non-production User
-      Acceptance Testing (UAT), then efforts should be made to remove this requirement, so that we can deploy to
-      production as quickly as possible and get _real_ user feedback on new releases. If the requirement is unremovable,
-      then time a release spends in the UAT / Demonstration environment, before it is promoted to Production, should be
-      minimised as much as possible.
+	- If you're producing a service, you often want to showcase that service. Demonstration environments are production
+	  environments that contain only test data. These are subject to the test data problem if long-lived and used by
+	  multiple demonstrators, but since demonstrations usually (and ideally) have no impact on the ability to release
+	  software, it is an acceptable problem to deal with and easily mitigated by making fresh demonstration environments
+	  easy to recreate.
+	- If demonstrations _do_ affect the ability to release due to some requirement of doing non-production User
+	  Acceptance Testing (UAT), then efforts should be made to remove this requirement, so that we can deploy to
+	  production as quickly as possible and get _real_ user feedback on new releases. If the requirement is unremovable,
+	  then time a release spends in the UAT / Demonstration environment, before it is promoted to Production, should be
+	  minimised as much as possible.
 - 3rd party usage for their own testing/verification.
-    - 3rd parties might not be as advanced in their testing as you and believe they can solve or work around the test
-      data problem (they can't, but they believe they can), and so want a test environment to use to verify their
-      changes. Sometimes this is legally or contractually required, and whilst it may seem frustrating, it's sometimes
-      more diplomatic and easier to comply than to fight with 3rd parties. You can help mitigate the problems with the
-      test data problem that 3rd parties have by resetting the environments test data regularly.
-    - 3rd parties may also want to test YOU abide by your own specifications. Ideally, you'd coordinate with 3rd parties
-      and do proper contract testing, but if that is not possible, then providing a test environment to a 3rd party
-      where you provide a mechanism for them to configure an environment in different "states" for them to test that
-      your produced API / service specifications match your environments behaviour (if for some reason they don't trust
-      you). It's very important here to keep these environments and production as identical as possible.
+	- 3rd parties might not be as advanced in their testing as you and believe they can solve or work around the test
+	  data problem (they can't, but they believe they can), and so want a test environment to use to verify their
+	  changes. Sometimes this is legally or contractually required, and whilst it may seem frustrating, it's sometimes
+	  more diplomatic and easier to comply than to fight with 3rd parties. You can help mitigate the problems with the
+	  test data problem that 3rd parties have by resetting the environments test data regularly.
+	- 3rd parties may also want to test YOU abide by your own specifications. Ideally, you'd coordinate with 3rd parties
+	  and do proper contract testing, but if that is not possible, then providing a test environment to a 3rd party
+	  where you provide a mechanism for them to configure an environment in different "states" for them to test that
+	  your produced API / service specifications match your environments behaviour (if for some reason they don't trust
+	  you). It's very important here to keep these environments and production as identical as possible.

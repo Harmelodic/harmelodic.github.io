@@ -46,4 +46,4 @@ environment and culture.
 
 Values & Principles are also not set once and locked-in forever. We hope that they don't change often, as changing them
 can be disruptive, but we should expect them to change. Different people provide different perspectives, and that's a
-good thing. When stark misalignment is identified, we should openly reconsider our values & principles. 
+good thing. When stark misalignment is identified, we should openly reconsider our values & principles.

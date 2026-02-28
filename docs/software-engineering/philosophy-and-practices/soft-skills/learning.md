@@ -1,4 +1,4 @@
-## Getting started
+# Learning
 
 Getting started with software engineering / software development / programming can be quite daunting.
 

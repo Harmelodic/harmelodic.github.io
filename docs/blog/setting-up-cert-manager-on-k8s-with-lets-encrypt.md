@@ -54,7 +54,7 @@ differently.
 
    you should see:
 
-   ```
+   ```text
    NAME                                               READY     STATUS    RESTARTS   AGE
    cert-manager-xxxxxxxxxx-xxxxx                      1/1       Running   0          46s
    ...

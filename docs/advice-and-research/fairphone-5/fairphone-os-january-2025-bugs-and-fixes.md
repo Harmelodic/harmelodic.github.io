@@ -4,10 +4,12 @@
 >
 > Read more in [my post on the update](./fairphone-5-review-update-android-15.md).
 
-Fairphone released a new version of *Fairphone OS* on 27th January 2025:
+Fairphone released a new version of _Fairphone OS_ on 27th January 2025:
 
-- Fairphone 5 [release notes](https://support.fairphone.com/hc/en-us/articles/18682800465169-Fairphone-5-OS-Release-Notes)
-- Fairphone 4 [release notes](https://support.fairphone.com/hc/en-us/articles/4405858220945-Fairphone-4-OS-Release-Notes)
+- Fairphone
+  5 [release notes](https://support.fairphone.com/hc/en-us/articles/18682800465169-Fairphone-5-OS-Release-Notes)
+- Fairphone
+  4 [release notes](https://support.fairphone.com/hc/en-us/articles/4405858220945-Fairphone-4-OS-Release-Notes)
 
 The new version is: `B.098`
 
@@ -37,15 +39,15 @@ Things I tried that didn't work:
 - Disabling Face/Fingerprint `Unlock your phone`, rebooting and then re-enabling.
 - Removing the registered fingerprints and re-registering them.
 
-What ***did*** work was: Go to `Settings > Security and privacy > Device finders > Find My Device` and disabled
+What _**did**_ work was: Go to `Settings > Security and privacy > Device finders > Find My Device` and disabled
 `Use Find My Device`. Thankfully, I found that re-enabling `Use Find My Device` afterwards did not re-break fingerprint
 unlock.
 
 Source of this finding
-was [this reddit post](https://www.reddit.com/r/fairphone/comments/1ibhz4c/fingerprint_unlock_doesnt_work_with_latest_update/)
+was [this Reddit post](https://www.reddit.com/r/fairphone/comments/1ibhz4c/fingerprint_unlock_doesnt_work_with_latest_update/)
 which led me
-to [this Fairphone Forum thread/comment](https://forum.fairphone.com/t/software-update-fp5-ut2k-b-098-20250109/115532/17?u=furdiburd) -
-so, thanks to user `UPPERCASE` for finding the fix.
+to [this Fairphone Forum thread/comment](https://forum.fairphone.com/t/software-update-fp5-ut2k-b-098-20250109/115532/17?u=furdiburd).
+So, thanks to user `UPPERCASE` for finding the fix.
 
 ---
 

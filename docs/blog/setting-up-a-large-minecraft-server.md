@@ -22,9 +22,9 @@ If you aren't sure of what to do in these scenarios, I'd highly recommend readin
 - Ubuntu 14.04 Server (64-bit)
 - 8GB RAM
 
-## Preparation!
+## Preparation
 
-Add a user for minecraft stuff called *minecraft* and add the user to the *sudo* group so that it can perform `sudo`
+Add a user for minecraft stuff called `minecraft` and add the user to the `sudo` group so that it can perform `sudo`
 commands:
 
 ```bash
@@ -71,7 +71,7 @@ cd ..
 
 ## Installation of Multicraft
 
-First thing to setup is Multicraft.  
+First thing to set up is Multicraft.  
 Change directory to `/home/minecraft/`:
 
 ```bash
@@ -83,7 +83,7 @@ sudo ./setup.sh
 
 Follow the instructions and install multicraft.
 
-You'll have noticed in the install instructions that we need to run install.php file.  
+You'll have noticed in the installation instructions that we need to run install.php file.  
 This requires PHP and the PHP sqlite/mysql extension(s) (both of which don't come auto-installed on AWS Ubuntu Servers.
 This also assumes you're using a sqlite database).  
 Install PHP:
@@ -219,17 +219,17 @@ Once you see:
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to end BungeeCord running.  
 If you run `ls` now, you'll see we have a load of configuration files!
 
-Open `config.yml` in your favourite terminal editor and configure it how you want it to run! However I'd *highly*
+Open `config.yml` in your favourite terminal editor and configure it how you want it to run! However, I'd _highly_
 recommended setting the following things:
 
-Under `servers:`, define all your servers that you're using and name them how you want. By default you'll have one
+Under `servers:`, define all your servers that you're using and name them how you want. By default, you'll have one
 server there already called `lobby:`.  
 You'll want to define the `address:` for each server to `localhost:` with `25566`, then `25567`, then `25568` and so on.
 The default minecraft server port is `25565` but we're going to use that for BungeeCord itself. This will mean that when
 we do `/server <server_name>` in game, we can change/jump to that server! Wooo!  
 Speaking of which, under `listeners:`, define `query_port:` to `25565` and then define `host:` to `0.0.0.0:25565`.
 
-Once you've defined everything, open a *tmux* session called *bungee*, run BungeeCord then detach from the session:
+Once you've defined everything, open a `tmux` session called `bungee`, run BungeeCord then detach from the session:
 
 ```bash
 tmux new -s bungee
@@ -242,14 +242,14 @@ BungeeCord is now set up and running! We're done!
 
 ## Installing Plugins and Worlds
 
-If we want to install any new *plugins* to our server, we can either:
+If we want to install any new _plugins_ to our server, we can either:
 
 - Dump and configure them in `/home/minecraft/multicraft/servers/server<#>/plugins`.  
   or
 - FTP to our server and install them through there. (FTP Access can be found out from
   `Servers > <server_name> > Files > FTP File Access`).
 
-If we want to install any new *worlds* to our server, we can either:
+If we want to install any new _worlds_ to our server, we can either:
 
 - Dump and configure them in `/home/minecraft/multicraft/servers/server<#>/plugins`.  
   or
@@ -263,13 +263,13 @@ registered.
 
 ## Domain Name Registration
 
-I'm going to be using AWS's *Route 53* to configure DNS Registration but most DNS providers will work in a similar way.
+I'm going to be using AWS's _Route 53_ to configure DNS Registration but most DNS providers will work in a similar way.
 
-Within a domain's hosted zone, simply create a new *Record Set* that is of type *A*.
+Within a domain's hosted zone, simply create a new _Record Set_ that is of type `A`.
 
-So for me, I'm entering my `harmelodic.com` hosted zone and creating an *A* type *Record Set*.
+So for me, I'm entering my `harmelodic.com` hosted zone and creating an `A` type _Record Set_.
 
-Then name it your chosen sub-domain (I'm going to use `mc.harmelodic.com`) and define the value of the *Record Set* to
+Then name it your chosen subdomain (I'm going to use `mc.harmelodic.com`) and define the value of the _Record Set_ to
 `<your-server-ip>`.
 
 Create/Confirm it and you're done!
@@ -280,7 +280,7 @@ Assuming you've done all the above, you should now have a server that maps as fo
 
 1. Requests going to `mc.DOMAIN.TLD` are directed to your dedicated server.
 2. BungeeCord (running in a tmux session) listens at port `25565` for your normal Minecraft requests.
-3. BungeeCord redirects requests to a Multicraft managed Minecraft Server (defaulting to a *lobby* styled server).
-4. Each server has it's own plugins and worlds.
+3. BungeeCord redirects requests to a Multicraft managed Minecraft Server (defaulting to a _lobby_ styled server).
+4. Each server has its own plugins and worlds.
 
 Congratulations!

@@ -2,12 +2,13 @@
 
 > Originally published: 30 June 2019
 
-## Not applicable anymore
+## Not applicable any more
 
-The world has moved on, and I have learned more and I don't really recommend many of what I put in this anymore, at all.
+The world has moved on, and I have learned more and I don't really recommend many of what I put in this any more, at
+all.
 
 Some is still relevant, but maybe some time in the future I'll write a post about what I think now... or not. I don't
-know, if you want to hear about it: let me know.
+know if you want to hear about it: let me know.
 
 ---
 
@@ -17,9 +18,9 @@ A while ago, I wrote [a blog about my ideal CI/CD pipeline](an-ideal-ci-cd-pipel
 
 This post builds on that CI/CD pipeline post by going through the overarching Build and Deployment process of an ideal
 project.  
-Again, like with that post, this is an *ideal* process. I am not dictating: "*Implement this or die*", but I am
-saying: "*I heavily recommend implementing this, or at the very least, getting as close as possible to implementing
-this, within your context*".
+Again, like with that post, this is an _ideal_ process. I am not dictating: "_Implement this or die_", but I am
+saying: "_I heavily recommend implementing this, or at the very least, getting as close as possible to implementing
+this, within your context_".
 
 ## Precursors
 
@@ -59,22 +60,18 @@ pipelines.
 For Ops automation: Implement [GitOps](https://www.weave.works/blog/gitops-operations-by-pull-request), using tools like
 Terraform and Ansible, and execute in CI/CD pipelines.
 
-## Dev
+## Dev Build
 
-### Build
+![Dev Build](./assets/Dev-Build.jpg)
 
-<img src="https://harmelodic.gitlab.io/scribbles-content/posts/images/Dev-Build.jpg" alt="Dev Build" style="width: 90%; box-shadow: 0 0 10px 0px #999;">
+## Dev Deployment & Promotion
 
-### Deployment & Promotion
+![Dev Deploy](./assets/Dev-Deploy.jpg)
 
-<img src="https://harmelodic.gitlab.io/scribbles-content/posts/images/Dev-Deploy.jpg" alt="Dev Deploy" style="width: 80%; box-shadow: 0 0 10px 0px #999;">
+## Ops Build
 
-## Ops
+![Ops Build](./assets/Ops-Build.jpg)
 
-### Build
+## Ops Deployment & Promotion
 
-<img src="https://harmelodic.gitlab.io/scribbles-content/posts/images/Ops-Build.jpg" alt="Ops Build" style="width: 90%; box-shadow: 0 0 10px 0px #999;">
-
-### Deployment & Promotion
-
-<img src="https://harmelodic.gitlab.io/scribbles-content/posts/images/Ops-Deploy.jpg" alt="Ops Deploy" style="width: 80%; box-shadow: 0 0 10px 0px #999;">
+![Ops Deploy](./assets/Ops-Deploy.jpg)

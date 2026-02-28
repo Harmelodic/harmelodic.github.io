@@ -4,9 +4,9 @@
 
 To perform a clean installation of Windows 10 you need the following:
 
-* Your product key. (optional)
-* A copy of Windows 10 on a DVD or USB
-* An empty partition/hard drive to install Windows 10 on. (Unless you plan on wiping ALL your files/data and starting
+- Your product key. (optional)
+- A copy of Windows 10 on a DVD or USB
+- An empty partition/hard drive to install Windows 10 on. (Unless you plan on wiping ALL your files/data and starting
   fresh)
 
 To get the first 2, you can find instructions in my previous blog posts. The 3rd you have to sort yourself (I'd advise
@@ -106,6 +106,6 @@ You got the instructions off your computer now? Awesome, let's do this thing:
 	Windows 10 doesn't need this.
 
 FINAL NOTE: If you want to quickly install LOADS of programs at once, there is a great website
-called <a href="https://ninite.com/">www.ninite.com</a> for that.
+called [ninite](https://www.ninite.com) for that.
 
 ~Harm

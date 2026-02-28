@@ -1,18 +1,18 @@
 # 12 Factor App Methodology is good
 
 > Originally published: 17 October 2020
-> 
+>
 > Moved to [new section](../software-engineering/philosophy-and-practices/operations/12-factor-app-methodology.md).
 
-Back in 2011, [Heroku](https://en.wikipedia.org/wiki/Heroku) published a methodology called [*12 Factor
-App*](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology), which denotes a methodology for building systems
+Back in 2011, [Heroku](https://en.wikipedia.org/wiki/Heroku) published a methodology called [12 Factor
+App](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology), which denotes a methodology for building systems
 that are portable and resilient.
 
 I've found the 12 factor app to be an incredibly powerful design methodology for organising, structuring and separating
 applications, founded in other solid Engineering principles, like "Package-by-feature, build-by-layer", "Stateless
-Computation", "Unix Philosphy", "Composition over Inheritance", "KISS".
+Computation", "Unix Philosophy", "Composition over Inheritance", "KISS".
 
-Below are the 12 factors in the metholodgy - it may be a long read, but it's super important to read and understand
+Below are the 12 factors in the methodology - it may be a long read, but it's super important to read and understand
 each.
 
 ## The Methodology

@@ -2,7 +2,7 @@
 
 > Originally published: 27 November 2019
 
-Not interested in the Why but the What? - Read <a href="#the-structure">The Structure</a>.
+Not interested in the Why but the What? - Read [The Structure](#the-structure).
 
 ## The Challenge
 
@@ -40,7 +40,7 @@ Creating a structure for such a diverse group of people to work within to keep t
 happy is _really_ difficult.
 
 I've been helping organisations do this for a while now. So here's the structure I would establish, in
-2019.<sup><a href="#ref-1">[1]</a></sup>
+2019.<sup>[1](#1)</sup>
 
 ## Existing Structures
 
@@ -88,8 +88,8 @@ A lot of these roles can be combined, some can be automated, and some can be com
 ## The Structure
 
 Working with an example is best, I'll try to be as abstract as I can.  
-Let's assume you're trying to architect, develop, deploy and maintain **a very large software SOLUTION**, involving *
-*many SYSTEMS**.
+Let's assume you're trying to architect, develop, deploy and maintain **a very large software SOLUTION**, involving
+**many SYSTEMS**.
 
 ### System-level Development
 
@@ -253,6 +253,7 @@ Harm x
 
 ---
 
-<sup id="ref-1">[1]</sup>  
+## 1
+
 "The only constant in life is change" ~ Heraclitus.  
 Post-2019, there will be new organisational problems to solve and this structure will need to evolve and change.

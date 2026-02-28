@@ -86,7 +86,7 @@ concern (for increased "shift-left" due to compile-time type safety).
 I have no solid opinion on whether acronyms should be capitalised in variables names, other than a simple: "Do what
 reads better."
 
-```
+```text
 f.readAll(); // poor
 file.readAll(); // poor
 clearingFile.readAll(); // good
@@ -124,7 +124,7 @@ Avoid irrelevant, overly-technical jargon, even if they already exist in a progr
 `malloc()` or `diff()`. This confuses and creates a steeper learning-curve for developers to be able to contribute to
 the code.
 
-```
+```text
 int sumDigs(int number) {} // poor
 int sumOfDigits(int number) {} // good
 int summationOfIndividualDigits(int number) {} // too much

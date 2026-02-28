@@ -1,6 +1,6 @@
 # Advice & Research Overview
 
-> *Caveat emptor* (Latin)
+> _Caveat emptor_ (Latin)
 >
 > Let the buyer beware.
 

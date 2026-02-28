@@ -38,7 +38,7 @@ What did I want from a phone? Here was my thinking:
 
 - Be a decent, mid-range Android phone. I don't need fancy features, but I don't want something cheap and will not last.
 - Want a phone that will last a long time.
-	- Decent specs that will not be be dated / slow within 5-10 years (I used [GSMArena](https://www.gsmarena.com) to do
+	- Decent specs that will not be dated / slow within 5-10 years (I used [GSMArena](https://www.gsmarena.com) to do
 	  comparisons to other phones)
 	- Gets as many Android updates as I can (I use [Android Update Tracker](https://www.androidupdatetracker.com) to
 	  discover this)
@@ -64,12 +64,12 @@ The decision came down to:
 	- Fingerprint sensor is on the power button, rather than on the back.
 	- Repairability, in comparison to the Fairphone 5, sucks, otherwise it'd be like most other phones I've had where I
 	  need some heat, opening-pics and spudgers.
-	- Sustainability of Samsung devices is... mixed. They'll use recycled materials and recycleable packaging but...
+	- Sustainability of Samsung devices is... mixed. They'll use recycled materials and recyclable packaging but...
 	  they're a fucking huge for-profit corporation that is contributing to the climate crisis, and their sustainability
-	  statements on their website look mostly like green-washing, and I've seen reports of awful working conditions
+	  statements on their website look mostly like greenwashing, and I've seen reports of awful working conditions
 	  being discovered at Samsung factories.
 - Samsung A35
-	- Basically the same as the A15, except slightly more powerful, an underscreen fingerprint sensor (meh) and no
+	- Basically the same as the A15, except slightly more powerful, an under-screen fingerprint sensor (meh) and no
 	  headphone jack.
 
 I believe the Fairphone was the most expensive of the 3, and honestly... as much as it ticked most of my boxes, it's
@@ -89,12 +89,12 @@ warranty as standard, but they offer an extra 3 years on top of that, zif you re
 an Extended Warranty until 2029. Neat!... Although, applying for it through the Fairphone App didn't actually work, and
 I had to do through the site - so room for improvement.
 
-Anyway, __it's a decent Android phone__!
+Anyway, **it's a decent Android phone**!
 
 It does what I need it to do, in a snappy fashion, supports all the apps I need, and most of the functionality that I
 want, and no major quirks.  
 If you want a phone, and have similar expectations to me for what a phone should be, how it should function, and want to
-support a supposedly more sustainable phone-manufacturing company: __Get a Fairphone 5__.
+support a supposedly more sustainable phone-manufacturing company: **Get a Fairphone 5**.
 
 I have no major complaints... except for a few minor issues, some of which I've been able to mitigate:
 
@@ -106,7 +106,8 @@ I have no major complaints... except for a few minor issues, some of which I've 
 > is basically vanilla (or "stock") Android, with some extra apps pre-installed (Google apps and the My Fairphone app).
 >
 > Many of the issues I detail below are likely issues with vanilla Android. However, it is my opinion that Fairphone
-> could fix these issues by doing any/all of the following:
+> could fix these issues by doing any/all the following:
+>
 > - Contribute to Android and fix these issues directly, since Android is open source, and then update their Fairphone
 	OS to use the newer, fixed Android.
 > - Update their Fairphone OS more regularly, since I believe some of these issues have already been fixed in newer
@@ -119,23 +120,23 @@ I have no major complaints... except for a few minor issues, some of which I've 
 > Theoretically, I could resolve some/all of my vanilla Android issues by rooting my phone and installing a custom ROM.
 > I do not want to do this due to security, warranty, stability, and maintenance concerns.
 >
-> I've marked each issue below with a little comment as to where I think the root of the issue lies, in *italics*.
+> I've marked each issue below with a little comment as to where I think the root of the issue lies, in _italics_.
 
 #### 60Hz default
 
-*I'm pretty sure this is a Fairphone-specific issue.*
+_I'm pretty sure this is a Fairphone-specific issue._
 
 The phone comes with a screen capability of 90Hz, but it's set by default to be 60Hz. I believe the reason for this is
 to save the battery life, since a lot of people won't notice, but I wanted the snappiness and don't mind the extra bit
 of battery loss.
 
 Mitigated: Go into settings and set screen refresh rate to 90Hz. My battery life has been pretty fine, reaching ~10-20%
-after a day of heavy use (YouTube, TV-streaming, filming) and ~40-50% after a normal day (Messaging, bit of music, bit
-of YouTube).
+after a day of heavy use (YouTube, TV-streaming, filming) and ~40-50% after a normal day (Messaging, a bit of music, a
+bit of YouTube).
 
 #### NFC icon persists
 
-*I think this is likely a vanilla Android issue (see note above).*
+_I think this is likely a vanilla Android issue (see note above)._
 
 Amongst the System Icons in the top right of the phone is a big square NFC icon. On the Fairphone 5, there is no
 option/setting/anything that makes it go away.
@@ -149,7 +150,7 @@ I still want the option though.
 
 #### Data transfer icons appear & disappear
 
-*I think this is likely a vanilla Android issue (see note above).*
+_I think this is likely a vanilla Android issue (see note above)._
 
 Just next to the NFC icon is the Network icons, things like Wi-Fi icons or the mobile signal icons.
 
@@ -159,7 +160,7 @@ disappear.
 
 This is already an eye-catching, distracting irritation, but it is exacerbated by the fact that when these Data-transfer
 icons appear, the icons next to them (like the big NFC icon) shifts to the side to make room for the Data-transfer
-icons. Once the Data-transfer icons disappear... they shift back. This is VERY eye-catching and really, *really*
+icons. Once the Data-transfer icons disappear... they shift back. This is VERY eye-catching and really, _really_
 annoying.
 
 After 2 months... my brain/eyes hav begun to tune it out a bit, and whilst that sounds OK, I might remind you that the
@@ -168,12 +169,12 @@ THE POINT OF THE ICONS.
 
 #### Default launcher sucks
 
-*I think this is likely a vanilla Android issue (see note above).*
+_I think this is likely a vanilla Android issue (see note above)._
 
-The default launcher for the Fairphone kinda sucks. It lacks customizability options, for example: it forces you to use
+The default launcher for the Fairphone kinda sucks. It lacks customisability options, for example: it forces you to use
 the Google search bar, and not be able to move it or change it out for a different search engine.
 
-This is understandable since the default launcher is *Quickstep* - the default launcher for vanilla Android.
+This is understandable since the default launcher is _Quickstep_ - the default launcher for vanilla Android.
 
 Nova Launcher to the rescue! It's a free launcher, though a paid version is available that is reasonably priced and
 unlocks a bunch of useful customisability features.
@@ -184,7 +185,7 @@ So... mitigated, by not using the launcher given to me by Fairphone. Not a good 
 
 #### The speaker is not very good
 
-*This is a Fairphone-specific hardware issue.*
+_This is a Fairphone-specific hardware issue._
 
 At least compared to the Google Pixel 5a, the sound from the speaker sounds small and tinny.
 
@@ -195,7 +196,7 @@ That's not a good look.
 
 #### It's a bit chonky & heavy
 
-*This is a Fairphone-specific design issue.*
+_This is a Fairphone-specific design issue._
 
 The Fairphone 5 is not a sleek, thin phone like the modern iPhones, Samsungs and Googles. It's not a super thick phone,
 but it's noticeably thick and heavy, and then it ALSO has a camera bump as well as the normal thickness.
@@ -209,7 +210,7 @@ phone in my pocket for the last 14 years.
 
 #### No 3.5mm jack has already stung
 
-*This is a Fairphone-specific design issue.*
+_This is a Fairphone-specific design issue._
 
 I do have wireless headphones (Sony WH-1000XM4's) this isn't too bad when I'm around the house, but I leave those at
 home and use wired headphones in the office.
@@ -217,7 +218,7 @@ home and use wired headphones in the office.
 Meaning every day when I get up to go get lunch and I want to listen to music, I take my wired headphones and... realise
 once again that I don't have a headphone jack.
 
-I tried getting a USB-C to 3.5mm jack adapter but it was flimsy and broke, and I feel I'd lose it.
+I tried getting a USB-C to 3.5mm jack adapter, but it was flimsy and broke, and I feel I'd lose it.
 
 I could get wireless earbuds, but I've gone through 3 pairs of Google Pixel Buds (my favourite wireless ear buds to
 date) and they are NOT repairable and... well, I've gone through 3 pairs!
@@ -229,10 +230,10 @@ Hm.
 
 #### No Android 14 yet
 
-*This is a Fairphone-specific software issue.*
+_This is a Fairphone-specific software issue._
 
 The Fairphone 5 doesn't have Android 14 yet. I went from Google Pixel 5a with Android 14, to Fairphone 5 with Android
-13.
+\13.
 
 It's not a big change, but there's a couple quality of life & privacy features that I would like to get back.
 
@@ -240,7 +241,7 @@ I saw somewhere that it Android 14 would be coming "this summer" so... any day n
 
 #### Side fingerprint sensor
 
-*This is a Fairphone-specific design issue.*
+_This is a Fairphone-specific design issue._
 
 A fingerprint sensor on the side isn't as ergonomic, or maybe it's too ergonomic. Either way, I still would have
 preferred it on the back.
@@ -254,17 +255,17 @@ notifications or quick info. If I try doing that with the Fairphone 5, it usuall
 I didn't want to do and so have to either relock the phone and try to not unlock it, or swipe to open the notification
 tray.
 
-Bit annoying. Rear fingerprint sensor would have been better.
+A bit annoying. Rear fingerprint sensor would have been better.
 
 #### Camera Exposure issue
 
-*This is either a Fairphone-specific hardware issue, or a vanilla Android issue (see note above).*
+_This is either a Fairphone-specific hardware issue, or a vanilla Android issue (see note above)._
 
 When I use the camera app, especially as it's getting more into the summer, I've noticed the camera struggles with
 exposure - as in, if the scene I'm taking a picture of is brightly lit, then the camera just "blows out" the phone and
-doesn't compensate for the amount of light. If you tap on the thing that is blown out, then the phone does auto-focus
-and adjusts for the light and THEN you can take the picture, but I'd really like the camera app to be a bit smarter than
-how it is right now.
+doesn't compensate for the amount of light. If you tap on the thing that is blown out, then the phone does autofocus
+and adjusts for the light, and THEN you can take the picture, but I'd really like the camera app to be a bit smarter
+than how it is right now.
 
 This exposure weirdness is also noticeable in other apps, such as BeReal. When a take BeReal or send a reaction to
 someone, I've noticed (again) that the photos are often a little "blown out". This makes me think it's more of a
@@ -272,23 +273,23 @@ camera-sensor/hardware issue rather than a software one.
 
 #### Quick-open Camera glitch
 
-*This is likely a vanilla Android issue (see note above).*
+_This is likely a vanilla Android issue (see note above)._
 
 I've also noticed that when I double-press the power button to open the camera (as I have that turned on in Settings and
-I like that feature), the camera app often glitches a bit when it opens and I'm nearly always forced, in these cases, to
-either retry double-pressing the power button, or unlocking and opening the camera app.
+I like that feature), the camera app often glitches a bit when it opens, and I'm nearly always forced, in these cases,
+to either retry double-pressing the power button, or unlocking and opening the camera app.
 
 This sounds like a minor issue, but the point of this feature is to allow for getting your camera out when you need to
-*quickly* and when the feature glitches, it means it's not achieving it's purpose.
+_quickly_ and when the feature glitches, it means it's not achieving its purpose.
 
 #### Double Tap to Wake
 
-*This is likely a vanilla Android (ssee note above) or hardware-compatibility issue.*
+_This is likely a vanilla Android (see note above) or hardware-compatibility issue._
 
 I've also enabled the "Double tap phone screen to wake phone" option in Settings, as I like to do that when my phone is
 laid down and I want to quickly check the lock screen.
 
-Sometimes, it works first time. However it is sadly quite temperamental and it's not clear on whether I'm pressing too
+Sometimes, it works first time. However, it is sadly quite temperamental, and it's not clear on whether I'm pressing too
 quickly, or too slowly, or it just doesn't work properly. This hasn't been something I've seen before with more "
 vanilla" Android experiences, so could be a hardware-compatibility issue where the Fairphone hardware isn't working well
 with how Android expects it to work to wake the device? I don't really know though, I feel like I'm just guessing on
@@ -299,9 +300,9 @@ nature make the feature basically useless.
 
 #### Default notification sound is LOUD
 
-*This is a Fairphone-specific software design issue.*
+_This is a Fairphone-specific software design issue._
 
-Pixel Dust is way to loud and long for a default notification sound.
+Pixel Dust is way too loud and long for a default notification sound.
 
 I chose "Zirconium" instead, as a quiet, little, low bloop.
 
@@ -309,7 +310,7 @@ Please pick a better default, Fairphone.
 
 #### It cost a lot of money
 
-*This is a Fairphone-specific pricing issue.*
+_This is a Fairphone-specific pricing issue._
 
 I covered this earlier, but it is a thought that occasionally pops back into my head.
 
@@ -318,7 +319,7 @@ mid-tier phone from 2021, and adjusting for inflation, it is over SEK2000 more e
 
 #### Pinned contacts in sharing doesn't work
 
-*This is likely a vanilla Android issue (see note above).*
+_This is likely a vanilla Android issue (see note above)._
 
 Sometimes I like to share things with other people, as one does. For example, I complete the Wordle puzzle and like to
 share it with:
@@ -334,16 +335,16 @@ one of them does, but it's not consistent and so makes the "pinning" feature com
 more of a hassle.
 
 This might be an Android bug, as I think I've seen it before and I don't remember having it on Android 14... but it's
-annoying all the same and Fairphone *could* do something about it.
+annoying all the same and Fairphone _could_ do something about it.
 
 #### I miss Pixel's good "At A Glance"
 
-*This is less of an issue, and more of a desire for a specific feature.*
+_This is less of an issue, and more of a desire for a specific feature._
 
 Google make a widget called "At a Glance" where it shows info about the weather, your calendar, flight info, travel
 info, etc. and it's quite useful, and it has some Pixel-only bits that made it SUPER useful.
 
-Moving to the Fairphone, I started using the non-Pixel version of the widget and it looks a bit different and doesn't
+Moving to the Fairphone, I started using the non-Pixel version of the widget, and it looks a bit different and doesn't
 function as well.
 
 Looking on the internet, it might actually just be Google's new version of the widget, and they made it shitter (ah,
@@ -351,7 +352,7 @@ good ol' enshittification), but I miss my old useful At A Glance widget on my Pi
 
 #### I miss Pixel's "Now Playing"
 
-*This is less of an issue, and more of a desire for a specific feature.*
+_This is less of an issue, and more of a desire for a specific feature._
 
 Again, another Pixel-only feature! On the Pixel 5a, the phone has a feature where it basically is always listening for
 music and if it hears music, it will tell you the song and artist that is playing. Basically like Shazam... except
@@ -362,10 +363,10 @@ privacy nightmare that many think it might be.
 
 #### Friend complains of a screen glitch when charging
 
-*This is a Fairphone-specific hardware issue.*
+_This is a Fairphone-specific hardware issue._
 
-Not happened to me, but a friend of mine got a Fairphone 5 and they found that when they plugged in their phone to
-charge, the screen glitched a bit and a line appeared, going up through the center of the screen.
+Not happened to me, but a friend of mine got a Fairphone 5, and they found that when they plugged in their phone to
+charge, the screen glitched a bit and a line appeared, going up through the centre of the screen.
 
 I recommended they send it in to Fairphone for a fix/replacement.
 
@@ -375,10 +376,10 @@ The Fairphone 5 is a decent phone, if a little pricey, that has a few issues - m
 
 I hope Fairphone improve the quality of their software - I see it as their major flaw.
 
-__Would I recommend it?__
+**Would I recommend it?**
 
-If you're buying an Android phone and paying for a sustainable phone? __Yes, absolutely.__
+If you're buying an Android phone and paying for a sustainable phone? **Yes, absolutely.**
 
-If you're buying an Android phone and you can't spend the money? Maybe get a Samsung A35, like a few people I know did.
+If you're buying an Android phone, and you can't spend the money? Maybe get a Samsung A35, like a few people I know did.
 
 ~ Harmelodic

@@ -4,7 +4,7 @@ Currently just a bunch of various articles on Software Engineering-related topic
 
 Will reorganise this at some point.
 
-## Thinking about re-organising is something that I've been thinking about for a while.
+## Thinking about re-organising is something that I've been thinking about for a while
 
 Basically make a little engineering handbook for myself.
 

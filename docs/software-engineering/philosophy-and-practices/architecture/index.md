@@ -5,7 +5,7 @@ Architecture can be a noun (_the_ architecture of a system) or a verb (engineers
 ## What is Architecture (noun)?
 
 > _It's the stuff that we wish we could get right at the start of a project._  
-> ...   
+> ...  
 > _It’s the shared understanding that the expert developers have of the system._
 >
 > ~ Ralph Johnson, Author of Design Patterns: Elements of Reusable Object-Oriented Software (1994)
@@ -13,7 +13,7 @@ Architecture can be a noun (_the_ architecture of a system) or a verb (engineers
 This is pretty good definition of what architecture fundamentally is, although Dave Farley ended up making a slight
 alteration to this definition that I think makes it better:
 
-> _It's the snapshot of the shared understanding that the expert developers have of the system._   
+> _It's the snapshot of the shared understanding that the expert developers have of the system._  
 > _We hope it doesn’t change too often, but we should expect it to change._
 >
 > ~ Dave Farley, Author of Modern Software Engineering (2021)
@@ -127,7 +127,7 @@ event-driven.
 	- Inbox / Outbox
 	- Saga / Distributed Transactions
 	- Resilience Patterns (Bulkheads, Circuit Breakers, etc.)
-	- More stuff at: https://microservices.io/patterns/index.html
+	- More stuff at: [microservices.io/patterns](https://microservices.io/patterns/index.html)
 
 ### Satisfying non-functional requirements
 

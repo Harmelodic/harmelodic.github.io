@@ -36,9 +36,6 @@ spec:
 
 ---
 
-Using a private repository: https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry
-
-ImagePullSecrets: https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod
-
-Pulling an image from private
-repository: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
+- [Using a private repository](https://kubernetes.io/docs/concepts/containers/images/#using-a-private-registry)
+- [ImagePullSecrets](https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod)
+- [Pulling an image from private repository](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)

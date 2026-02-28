@@ -1,17 +1,17 @@
 # Build & Deploy: Apache Beam projects
 
-[Apache Beam](https://beam.apache.org) is an open source programming model for batch and stream processing (
-e.g. [ETL](https://en.wikipedia.org/wiki/Extract%2C_transform%2C_load) processes)
+[Apache Beam](https://beam.apache.org) is an open source programming model for batch and stream processing
+(e.g. [ETL](https://en.wikipedia.org/wiki/Extract%2C_transform%2C_load) processes)
 
-These sorts of processes tend to be [embarrasingly parrallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
+These sorts of processes tend to be [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
 workloads, and Apache Beam's programming model (and compatible runners) can take advantage of this to achieve
 exceptional performance of data processing.
 
-Unlike other server software where build and deployment is done via containerization of applications (
-see: [Build & Deploy: Containers](./containers.md)), Apache Beam projects are
+Unlike other server software where build and deployment is done via containerization of applications
+(see: [Build & Deploy: Containers](./containers.md)), Apache Beam projects are
 handled a little differently... although not as different as you might think, when deploying to Dataflow.
 
-This blog post covers a high-level view of how Apache Beam *__Java__* projects are built, and then deployed to run on an
+This blog post covers a high-level view of how Apache Beam _**Java**_ projects are built, and then deployed to run on an
 Apache Beam Pipeline Runner (specifically, GCP's [Dataflow](https://cloud.google.com/dataflow/docs/overview)).
 
 Apache Beam has alternative SDKs (Python, Go and Scio (Scala)) and Runners (Direct, Flink, Spark, etc.) - however my
@@ -55,8 +55,8 @@ that we should add to our build process.
 ### Building Dataflow Templates
 
 GCP recommends handling the packaging of pipelines
-as [Dataflow templates](https://cloud.google.com/dataflow/docs/concepts/dataflow-templates), specifically __Flex
-templates__ ("classic" templates are available, but the way to go is Flex templates).
+as [Dataflow templates](https://cloud.google.com/dataflow/docs/concepts/dataflow-templates), specifically **Flex
+templates** ("classic" templates are available, but the way to go is Flex templates).
 
 Flex templates are packaged into 2 Artifacts:
 

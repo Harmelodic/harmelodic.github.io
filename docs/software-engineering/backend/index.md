@@ -31,13 +31,13 @@ As systems tackle greater complexity, lots of other software engineering techniq
 - Different models of Authentication & Authorization (both for Users and for Systems).
 	- Authentication = Proving identity.
 	- Authorization = Proving allowed access.
-    - Session-based vs token-based vs mixed/combination.
-    - Terminology and what to use (Login / Logout / Sign-in / Register, IAM, 2FA, MFA).
-    - Common tools (Keycloak, OpenFGA, Auth0, OIDC, SSO, Oauth2.0 (apps & 3rd party login), SAML, JWT, JWKS, Cloud IAM).
+	- Session-based vs token-based vs mixed/combination.
+	- Terminology and what to use (Login / Logout / Sign-in / Register, IAM, 2FA, MFA).
+	- Common tools (Keycloak, OpenFGA, Auth0, OIDC, SSO, Oauth2.0 (apps & 3rd party login), SAML, JWT, JWKS, Cloud IAM).
 	- Auth methods/factors:
 		- Something you know (e.g. password),
-        - Something you have (e.g. id card, passport).
-        - Something you are (e.g. biometrics (fingerprint, face, eye)).
+		- Something you have (e.g. id card, passport).
+		- Something you are (e.g. biometrics (fingerprint, face, eye)).
 - Integrating with 3rd party services for specialised non-core domain processing and tasks.
 - Producing data for data warehouses or lakes (see [Data Science](../data/index.md))
 - Installation, management and integration of open source software for generic but specific tasks (e.g. Search,
@@ -48,9 +48,9 @@ As systems tackle greater complexity, lots of other software engineering techniq
 	- Actionable alerts
 	- Intuitive monitoring
 	- Optimise where necessary, otherwise reduce complexity
-	- How to use the 4 parts to Metrics &
-	  Telemetry: https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/about-metrics/
-	  (also covered in Platform from a Platform Engineering perspective.
+	- How to
+	  use [the 4 parts to Metrics & Telemetry](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/about-metrics/)
+	  (also covered in Platform from a Platform Engineering perspective).
 	- Common SLIs and SLOs for Backend
 	- [RED and USE](https://pagertree.com/learn/devops/what-is-observability/use-and-red-method)
 - Operating and maintaining running services (scaling, resourcing, configuring, etc.)
@@ -69,7 +69,7 @@ As systems tackle greater complexity, lots of other software engineering techniq
 	- Testing (JUnit5, Jupiter Assertions, WireMock / PACT, Testcontainers, @SpringBootTest)
 	- Observability (Logging, Metrics, Tracing)
 	- Code style specifics (Never `var`, Use streams, Imperative OOP not reactive)
-    - Java vs Kotlin (also Scala and Groovy)
+	- Java vs Kotlin (also Scala and Groovy)
 - Go
 	- Same as above, but how?
 	- [Effective Go](https://go.dev/doc/effective_go)

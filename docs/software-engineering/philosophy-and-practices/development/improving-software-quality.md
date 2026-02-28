@@ -50,11 +50,11 @@ through [standardisation](./standards-vs-abstractions.md).
 Basically the stuff in the [build process](./shipping-software.md#build). Things like:
 
 - Code Compliance
-    - Format checks
-    - Linting checks
-    - Spotting bugs
-    - Modernisation checks
-    - Code rules
+	- Format checks
+	- Linting checks
+	- Spotting bugs
+	- Modernisation checks
+	- Code rules
 - Tests
 - Actually compiles
 

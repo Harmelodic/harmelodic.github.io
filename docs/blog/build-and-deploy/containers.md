@@ -5,8 +5,8 @@ through [Containerization](https://en.wikipedia.org/wiki/Containerization_(compu
 
 Important disambiguation:
 
-- A *container image* is the deployable artifact that contains the software that you wish to execute.
-- A *container* is an actively-executing instance of that container image.
+- A _container image_ is the deployable artifact that contains the software that you wish to execute.
+- A _container_ is an actively-executing instance of that container image.
 
 The term "containers" is sometimes used as an umbrella term for both container images and containers (as I have done in
 the title of this blog post). I will endeavour to not do that in the rest of the blog post.
@@ -15,11 +15,14 @@ This post mainly focuses on the deployment of container images, with a brief sec
 container image.
 
 > ❗️ Note: When containers became a huge deal in the 2010s, most people started packaging their software
-> into [Docker](https://www.docker.com) container images, as the Docker company were industry-leaders at the time and thus
+> into [Docker](https://www.docker.com) container images, as the Docker company were industry-leaders at the time and
+> thus
 > defined the standards for building container images and running containers.  
 > Due to a variety of reasons, the industry has begun shifting to using
-> the [Open Container Initiative (OCI)](https://en.wikipedia.org/wiki/Open_Container_Initiative) standard for building and
-> interacting with container images & containers. Even Docker (the company) now provides the tooling/options to build OCI
+> the [Open Container Initiative (OCI)](https://en.wikipedia.org/wiki/Open_Container_Initiative) standard for building
+> and
+> interacting with container images & containers. Even Docker (the company) now provides the tooling/options to build
+> OCI
 > container images.
 
 ## Building Container Images
@@ -96,7 +99,7 @@ There are multiple ways to deploy container images and run containers.
 Most use-cases for running containers involves running them on servers. That is what I'll be focusing on in this post,
 in which case there are basically two options available to you:
 
-1. Use [Kubernetes](https://kubernetes.io) to "orchestrate" your containers on a cluster of servers, with continous
+1. Use [Kubernetes](https://kubernetes.io) to "orchestrate" your containers on a cluster of servers, with continuous
    deployment being handled by a GitOps continuous delivery (CD) system such
    as [Argo CD](https://argoproj.github.io/cd/) or [Flux CD](https://fluxcd.io/).
 2. Run your container in a "serverless" solution such as GCP's [Cloud Run](https://cloud.google.com/run),
@@ -106,15 +109,15 @@ in which case there are basically two options available to you:
 
 There are absolutely other alternatives to running containers (docker compose on a VM, just running containers manually
 in VMs, cloud-provider-specific container-orchestration systems) but ultimately the industry standard solution for
-managing containers *is* Kubernetes, and the serverless solutions exist for when you don't want to or need to actively
+managing containers _is_ Kubernetes, and the serverless solutions exist for when you don't want to or need to actively
 manage a cluster of servers yourself.
 
 From here I will describe two solutions, and the solutions I actually recommend:
 
-__Kubernetes with Argo CD__ for deploying a lot of containers to a cluster of servers, and fine-control over those
-deployed containers is readily availble.
+**Kubernetes with Argo CD** for deploying a lot of containers to a cluster of servers, and fine-control over those
+deployed containers is readily available.
 
-__GCP's Cloud Run, with Terraform__ for quickly deploying a container with basic needs.
+**GCP's Cloud Run, with Terraform** for quickly deploying a container with basic needs.
 
 ### Kubernetes with Argo CD
 
@@ -137,7 +140,7 @@ GCP's [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engin
 
 Once you have a GKE cluster provisioned, you need to be able to deploy containers to that cluster.
 
-Initially, this is possible by simplying applying "Kubernetes resources" to your Kubernetes server. These Kubernetes
+Initially, this is possible by simplifying applying "Kubernetes resources" to your Kubernetes server. These Kubernetes
 resources are simply configuration that the Kubernetes system will use in order to run and manage your containers.  
 The main resource you will likely need to do use is
 a [Deployment](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/), though other
@@ -147,7 +150,7 @@ communication can be used, such as
 the [Service](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/service-v1/)
 and [Ingress](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) resources.  
 Further configuration and advanced configuration can be found in
-the [Kubernetes reference documentatation](https://kubernetes.io/docs/reference/).
+the [Kubernetes reference documentation](https://kubernetes.io/docs/reference/).
 
 Manually deploying these resources can be a pain. Automation to the rescue! You could store your Kubernetes resources in
 a Git repo and then setup automation stuff (e.g. in GitHub Actions) to apply those resources to your Kubernetes cluster,
@@ -166,7 +169,7 @@ Argo CD uses its [Application](https://argo-cd.readthedocs.io/en/stable/user-gui
 in order to evaluate where collections of Kubernetes resources are found in order to deploy systems. Since the
 Application resource is a type of Kubernetes resource, you can build a tree of Applications, being sourced from other
 Applications. This is referred to as
-the [app of apps pattern](https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-bootstrapping/).
+the [app-of-apps pattern](https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-bootstrapping/).
 
 Argo CD itself runs on Kubernetes, and can be installed via a Helm Chart. When building new Kubernetes systems, I tend
 to provision Kubernetes with Terraform code, and then install the Argo CD Helm Chart via Terraform, the deploy a root
@@ -180,7 +183,7 @@ Often a system your building will be made up of multiple Kubernetes resources, p
 deployments. You might even need to deploy all these resources to different environments, and so don't want to
 copy-paste the resources all over the place.
 
-Therefore bundling these resources together into a single deployable entity becomes a nice way of maintaining your
+Therefore, bundling these resources together into a single deployable entity becomes a nice way of maintaining your
 Kubernetes resources. There are two ways to bundle your Kubernetes resources together:
 
 A [Helm Chart](https://helm.sh/docs/topics/charts/), which packages together "templates" of a collection of Kubernetes
@@ -199,13 +202,13 @@ If you're building a system for other people to use on their Kubernetes setups (
 a [Helm Chart](https://helm.sh/docs/topics/charts/) is a better option, as it can be customized, versioned and shipped
 as its own entity. Publicly available Helm Charts are available on [Artifact Hub](https://artifacthub.io/).
 
-> ❗️ Note: Helm Charts have recently started supporting being packaged according to the OCI standard - meaning you can
+> Note: Helm Charts have recently started supporting being packaged according to the OCI standard - meaning you can
 > start treating Helm Charts like any other OCI image and storing them in an OCI image registry (like container images).
-
-> ❗️ Note: Helm (the CLI tool that can install & manage Helm Charts) has its own way to managing the lifecycle &
+>
+> Note: Helm (the CLI tool that can install & manage Helm Charts) has its own way to managing the lifecycle &
 > upgrading of a Helm Chart. Some CD systems like Flux CD support and work with this lifecycle process, others like Argo
-> CD do not and simply evaluate what a Helm Chart would create and then creates those resources. I prefer the Argo CD way,
-> but if you want to use Helm's lifecycle, then Flux CD would be a better option for you.
+> CD do not and simply evaluate what a Helm Chart would create and then creates those resources. I prefer the Argo CD
+> way, but if you want to use Helm's lifecycle, then Flux CD would be a better option for you.
 
 ### Cloud Run with Terraform
 
