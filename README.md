@@ -31,6 +31,17 @@ This project also uses some MkDocs plugins:
 - [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) for navigation tweaks, mainly to do with
   how directory titles appear.
 
+### Markdown linting
+
+I'd love to sort out getting a formatter instead of a linter, but here we are. Lint the Markdown using `markdownlint`,
+specifically I recommend using `markdownlint-cli2`:
+
+```bash
+markdownlint-cli2 **/*.md
+```
+
+TODO: Remove this and replace with just a CI check. Editor extensions exist to aid DX.
+
 ### Shipping (Build & Release)
 
 The project uses GitHub Actions for automating the shipping process.
