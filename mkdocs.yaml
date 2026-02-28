@@ -16,6 +16,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.highlight
+  - pymdownx.superfences
 
 plugins:
   - search
