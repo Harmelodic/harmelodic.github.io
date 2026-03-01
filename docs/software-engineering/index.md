@@ -6,6 +6,11 @@ This is a new section of my site that is still under-construction / not "finishe
 You can explore my work in progress, or instead view my [current posts on Software Engineering](../blog/index.md), or
 come back later.
 
+Many sections are basically rough drafts or TODO lists for what I want to talk about.
+
+If I haven't written about something, it's probably not because I don't feel it's important or should be ignored, but
+simply that I haven't realised I should write about it yet (or that I have realised, but I haven't noted it down).
+
 ---
 
 A (sort of) Software Engineering handbook.
