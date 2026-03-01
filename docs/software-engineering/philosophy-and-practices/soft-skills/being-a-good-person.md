@@ -20,4 +20,4 @@ TODO: Write more / expand on the points
 
 Generally, be someone who's mostly nice / tolerable to be around, and someone who people want to work with.
 
-I'm trying to not say "moral" here, because then I drift into moral philosophy and I get off-topic. 
+I'm trying to not say "moral" here, because then I drift into moral philosophy and I get off-topic.
