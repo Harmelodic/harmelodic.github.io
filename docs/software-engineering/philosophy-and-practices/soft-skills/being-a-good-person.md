@@ -1,4 +1,4 @@
-# Being a good person
+# Being a Good Person
 
 TODO: Write more / expand on the points
 
