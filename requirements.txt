@@ -1,4 +1,4 @@
 # Only list the direct dependencies that are needed by the project.
 mkdocs==1.6.1
-mkdocs-material==9.7.4
+mkdocs-material==9.7.5
 mkdocs-awesome-nav==3.3.0
