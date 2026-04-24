@@ -18,6 +18,12 @@ Sweden: [🔗](https://msbgis.maps.arcgis.com/apps/instant/nearby/index.html?app
 
 The National Library of Scotland has a lovely website where you can browse current and historical maps of Scotland. The
 side-by-side view, where your cursor is duplicated on the other map is especially pleasing to use and
-explore. [🔗](https://maps.nls.uk/os/)
+explore: [🔗](https://maps.nls.uk/os/)
+
+## Layers of London
+
+A website made by the Institute of Historical Research where you can explore maps of London, and add historical maps
+using their overlays to view how London looked at different times, from different
+perspectives: [🔗](https://www.layersoflondon.org/)
 
 TODO: Add more.
