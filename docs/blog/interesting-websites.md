@@ -14,4 +14,10 @@ to be called MSB or "Myndigheten för samhällsskydd och beredskap" (Swedish Civ
 of all the shelters in
 Sweden: [🔗](https://msbgis.maps.arcgis.com/apps/instant/nearby/index.html?appid=8bfc89e7c6064bc181c6a1a6bbac2fa3)
 
+## Ordnance Survey Maps - National Library of Scotland
+
+The National Library of Scotland has a lovely website where you can browse current and historical maps of Scotland. The
+side-by-side view, where your cursor is duplicated on the other map is especially pleasing to use and
+explore. [🔗](https://maps.nls.uk/os/)
+
 TODO: Add more.
