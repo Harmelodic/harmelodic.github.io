@@ -26,4 +26,14 @@ A website made by the Institute of Historical Research where you can explore map
 using their overlays to view how London looked at different times, from different
 perspectives: [🔗](https://www.layersoflondon.org/)
 
+## EPIC DSCOVR
+
+The National Oceanic and Atmospheric Administration (NOAA) have a spacecraft orbiting Earth called the "Deep Space
+Climate Observatory" (DSCOVR). It is over 1,500,000 km away and takes multiple pictures, every day, using a camera
+called the Eath Polychromatic Imaging Camera (EPIC).
+
+NASA have a website where they show you the pictures it takes. They are stunning: [🔗](https://epic.gsfc.nasa.gov)
+
+---
+
 TODO: Add more.
