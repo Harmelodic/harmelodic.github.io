@@ -203,4 +203,7 @@ detailed more in the rest of this [philosophy and practices](./index.md) documen
 ---
 
 ["Choose Boring Technology" by Dan McKinley](https://mcfunley.com/choose-boring-technology) is an interesting read
-that I mostly agree with. Though I'd say most business don't even need 3 "innovation tokens"
+that I mostly agree with. Though I'd say most businesses don't even need 3 "innovation tokens" and would benefit from
+greater stability, simplicity and maturity. Innovation tokens are good for startups, and innovation-focused
+domains/areas of an organisation, and I'd say 3 is probably a good guess as to how many to use at any one time in these
+contexts.
