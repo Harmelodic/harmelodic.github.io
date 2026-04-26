@@ -27,7 +27,7 @@ Uniformity could have different scopes (e.g. industry, organisation, domain, dep
 the purposes of this document, I'm referring to uniformity in software engineering-related topics that are applied
 organisation-wide.
 
-## Where uniformity may apply 
+## Where uniformity may apply
 
 Uniformity appears in the following functions:
 
