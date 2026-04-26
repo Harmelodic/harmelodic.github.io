@@ -1,7 +1,8 @@
 # Uniformity
 
 Maybe there's a more official / industry-standard term for this, but uniformity is the term I'm using for the overall
-"sameness" that many organisations, managers, engineers (etc.) try to achieve when doing software engineering.
+"sameness" that many organisations, managers, engineers (etc.) try to achieve when doing software engineering. Another
+term could be "consistency"?
 
 Uniformity could have different scopes (e.g. industry, organisation, domain, department, team, systems). However, for
 the purposes of this document, I'm referring to organisation-wide uniformity.
@@ -17,18 +18,39 @@ Uniformity appears in the following functions:
 
 The general advantages and disadvantages / arguments for and against ...
 
-- Uniformity affects both social & technical sides of engineering.
-- Uniformity affects both the means and the outcome
-	- Maintainability
-	- Ease of development
-	- Fun of development
-- Uniformity creates efficiency.
-- Lack of uniformity creates space for flexibility to solve a problem with a bespoke, creative, innovate and/or fun
-  solution.
-- Get too uniform & ignoring domain-needs or individual needs & interests and your getting a bit fascistic and going to
-  breed contempt, suppress creativity & fun, and people will just do Shadow IT.
-- Get too loose with uniformity, and you end up with an inefficient, unsustainable and expensive mess that eventually
-  will also not become fun to be productive in.
+- Advantages:
+	- Uniformity can broadly create "efficiency" which allows software to be made and maintained easier and faster.
+	- Uniformity can make maintenance easier.
+	- Uniformity of systems & code can make systems more intuitive from an _engineering_ perspective, which can make
+	  onboarding and collective ownership easier.
+	- Uniformity can make it easy to create a new thing that "fits in".
+	- Uniformity can make it easier to build integrations between different things that are also uniform.
+	- Uniformity can make it easier to change from one uniform solution to another.
+	- Uniformity can help make software engineering more predictable & therefore easier to plan & forecast.
+	- Uniformity in different solutions can make the user experience more intuitive.
+	- Uniformity in less-valued areas can mean we spend less time supporting multiple things and more time doing
+	  valuable things.
+- Disadvantages:
+	- Lack of uniformity can create space for flexibility to solve a problem with a solution that is fit for purpose,
+	  creative, innovate and/or fun.
+	- Uniformity can contribute to making the job boring / robotic (assembly-line).
+	- Social uniformity opposes social diversity (morally not good)
+	- Uniformity can be a resilience / security concern as it allows exploiting real vulnerabilities to be simpler and
+	  more automated and therefore more dangerous (careful: the answer to this is not "security through obscurity").
+	- Too much uniformity in systems & code make systems less intuitive from a business domain perspective (system
+	  should scream their intent / purpose (ref: Robert C. Martin)).
+	- Uniformity can feel restrictive, paternalistic and controlling.
+	- Uniformity can breed a "feature-factory" mentality, especially when maintenance & operations work lack attention.
+	- Uniformity in areas where uniformity has little value gives the illusion of efficiency, but doesn't _actually_
+	  produce much (or any) efficiency.
+- Warnings / Be aware of:
+	- Uniformity choices affects both social & technical sides of engineering.
+	- Uniformity choices affects both the means and the outcome of software engineering.
+	- Get too uniform & ignoring domain-needs or individual needs & interests and your getting a bit fascistic (harsh
+	  description maybe, but still) and leads to a toxic and unhelpful practices (contempt, suppressing creativity &
+	  fun, Shadow IT).
+	- Get too loose with uniformity, and you end up with an inefficient, unsustainable and expensive mess that
+	  eventually will also not become fun to be productive in.
 
 Typically, I see some people (management, platform engineers, some architects) want lots of uniformity because those
 roles can & often lean into "controlling the chaos". I also see lots of engineers/developers and some architects yearn
@@ -63,7 +85,7 @@ My take on handling uniformity as a concept / approach:
 - Maintain/Modify implemented uniformity through: [alignment](./alignment.md) conversations & processes, defined fitness
   functions.
 
-My take on handling uniformity in the different functions (details of individual things that I think are "good" is
+My take on handling uniformity in the different functions (details of the specific things that I think are "good" is
 detailed more in the rest of this [philosophy and practices](./index.md) documentation):
 
 - I recommend taking a balanced approach, err-ing on the side of uniformity for many things, with notable exceptions.

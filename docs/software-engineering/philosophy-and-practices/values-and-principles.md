@@ -4,6 +4,10 @@
 
 Values are the things we care about.
 
+> Note: I use the terms "value" and "valuable" quite across lots of documents. I always mean this definition of value,
+> unless otherwise specified. "Value" is not the same as "Profitable Capital Value", and to treat them as the same is
+> really **not** a good thing.
+
 Values (in general) are usually treated as either very personal things that we hold close as individuals, or corporate
 bullshit that organisations state to make their company & culture sound good, but they don't actually live by those
 values, or the values themselves can be problematic.
