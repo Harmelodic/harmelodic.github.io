@@ -4,8 +4,30 @@ Maybe there's a more official / industry-standard term for this, but uniformity 
 "sameness" that many organisations, managers, engineers (etc.) try to achieve when doing software engineering. Another
 term could be "consistency"?
 
+Uniformity is a spectrum (very uniform to very diverse) and can be:
+
+- Prescribed
+	- i.e. We decide and make a rule to make things uniform or not.
+	- e.g. We make a standard saying "All backend applications will be written in Java."
+	- e.g. Or we make a rule to say "We should not limit language for backend applications - use the language that best
+	  fits the problem".
+- Organic
+	- i.e. We make small decisions, but write no rules (nor often communicate those decisions), and things just happen
+	  to turn out to be uniform or not.
+	- e.g. We tend to do break applications up into layers to separate logic.
+	- e.g. We name variables entirely by whether it feels right.
+- Enabled
+	- i.e. We actively decide, but not via rules, to encourage or showcase how uniformity is appropriate or
+	  inappropriate or simply possible.
+	- e.g. We document a list of patterns that we know will help us design our software to easily satisfy certain
+	  non-functional requirements.
+	- e.g. We create UI component library, that is not mandatory to use, that helps frontend development be easier.
+
 Uniformity could have different scopes (e.g. industry, organisation, domain, department, team, systems). However, for
-the purposes of this document, I'm referring to organisation-wide uniformity.
+the purposes of this document, I'm referring to uniformity in software engineering-related topics that are applied
+organisation-wide.
+
+## Where uniformity may apply 
 
 Uniformity appears in the following functions:
 
@@ -15,6 +37,8 @@ Uniformity appears in the following functions:
 - Code
 - Ways of Working
 - Developer Machine Setup
+
+## Advantages and disadvantages
 
 The general advantages and disadvantages / arguments for and against ...
 
@@ -57,6 +81,8 @@ roles can & often lean into "controlling the chaos". I also see lots of engineer
 to be free from uniformity, so they can do the work as they see fit. This showcases one of the ways that uniformity
 affects the social side of software engineering, but also highlights a power-dynamic to how uniformity is manifested.
 
+## Handling uniformity as an approach
+
 My take on handling uniformity as a concept / approach:
 
 - Having uniformity in _some_ areas is incredibly powerful and enabling and so should be used (to a degree), but done
@@ -84,6 +110,8 @@ My take on handling uniformity as a concept / approach:
   Linters / Formatters.
 - Maintain/Modify implemented uniformity through: [alignment](./alignment.md) conversations & processes, defined fitness
   functions.
+
+## Handling uniformity where it applies
 
 My take on handling uniformity in the different functions (details of the specific things that I think are "good" is
 detailed more in the rest of this [philosophy and practices](./index.md) documentation):
@@ -200,7 +228,7 @@ detailed more in the rest of this [philosophy and practices](./index.md) documen
 	- Not counting Project Management tooling (JIRA, Miro, etc.) or things like that in here, that's part of Ways of
 	  Working.
 
----
+## Related resources
 
 ["Choose Boring Technology" by Dan McKinley](https://mcfunley.com/choose-boring-technology) is an interesting read
 that I mostly agree with. Though I'd say most businesses don't even need 3 "innovation tokens" and would benefit from
