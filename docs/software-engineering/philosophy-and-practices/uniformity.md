@@ -4,6 +4,9 @@ Maybe there's a more official / industry-standard term for this, but uniformity 
 "sameness" that many organisations, managers, engineers (etc.) try to achieve when doing software engineering. Another
 term could be "consistency"?
 
+Terms like _standards_, _golden paths_, _policy_, _conventions_, or "not reinventing the wheel" are all about creating
+more uniformity.
+
 Uniformity is a spectrum (very uniform to very diverse) and can be:
 
 - Prescribed
@@ -100,14 +103,14 @@ My take on handling uniformity as a concept / approach:
 	- Enable and reap the benefits of uniformity, by creating or using things that aide
 - Different strictness levels for prescribing uniformity:
 	- Standards
-	- Guidelines
+	- Guidelines (aka the "Golden Path")
 	- Conventions
 	- Exceptions made to standards & guidelines should be documented and facilitated through a transparency and
 	  accessible decision-making process.
 	- Conventions are optional by definition, but it should be easy to adopt and alter a convention to be bespoke to a
 	  domain / team / system.
 - Different concepts for enabling uniformity without prescription: Libraries, Tools, Docs, Patterns, Recommendations,
-  Linters / Formatters.
+  Linters / Formatters (these are typically also referred to as part of being a general "Golden Path")
 - Maintain/Modify implemented uniformity through: [alignment](./alignment.md) conversations & processes, defined fitness
   functions.
 
