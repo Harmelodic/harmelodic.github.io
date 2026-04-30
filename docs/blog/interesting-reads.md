@@ -9,56 +9,56 @@ may be technology or software engineering-related, and might still be interestin
 > these links. They are simply links to things that I found interesting at one point in time, and you might find
 > interesting too.
 
-- [_JLR Payroll data stolen in cybercrime that shook UK
-  economy_](https://www.theregister.com/2025/12/15/jlr_payroll_data_stolen_in/) by Carly Page, The Register. As a lesson
+- [JLR Payroll data stolen in cybercrime that shook UK
+  economy](https://www.theregister.com/2025/12/15/jlr_payroll_data_stolen_in/) by Carly Page, The Register. As a lesson
   to take software security seriously, even in non-core domains like supply-chain & company administration/ERP software.
 
-- [_The Door Problem_](https://lizengland.com/blog/the-door-problem/) by Liz England. On the topic of video game
+- [The Door Problem](https://lizengland.com/blog/the-door-problem/) by Liz England. On the topic of video game
   development.
 
-- [_A Prominent Accessibility Advocate Worked With Studios and Inspired Change. But She Never Actually
-  Existed_](https://www.ign.com/articles/a-prominent-accessibility-advocate-worked-with-studios-and-inspired-change-but-she-never-actually-existed)
+- [A Prominent Accessibility Advocate Worked With Studios and Inspired Change. But She Never Actually
+  Existed](https://www.ign.com/articles/a-prominent-accessibility-advocate-worked-with-studios-and-inspired-change-but-she-never-actually-existed)
   by Grant Stoner, IGN.
 
-- [_How Google is killing independent sites like ours_](https://housefresh.com/david-vs-digital-goliaths/) by Gisele
+- [How Google is killing independent sites like ours](https://housefresh.com/david-vs-digital-goliaths/) by Gisele
   Navarro, HouseFresh.
 
-- [_'Eight-legged cats' and how they see_](https://gwern.net/doc/biology/portia/2000-harland.pdf) by Duane P. Harland &
+- ['Eight-legged cats' and how they see](https://gwern.net/doc/biology/portia/2000-harland.pdf) by Duane P. Harland &
   Robert R. Jackson, University of Canterbury. On the topic of jumping spiders and the study of cognitive attributes
   more often associated with large predatory mammals such as lions and rarely considered in studies on spiders.
 
-- [_Roger Federer as Religious Experience_](https://archive.ph/avSwm) by David Foster Wallace, The New York Times.
+- [Roger Federer as Religious Experience](https://archive.ph/avSwm) by David Foster Wallace, The New York Times.
 
-- [_Host_](https://www.theatlantic.com/magazine/archive/2005/04/host/303812/) by David Foster Wallace, The Atlantic.
+- [Host](https://www.theatlantic.com/magazine/archive/2005/04/host/303812/) by David Foster Wallace, The Atlantic.
 
-- [_How Trump Consultants Exploited the Facebook Data of
-  Millions_](https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html) by Matthew
+- [How Trump Consultants Exploited the Facebook Data of
+  Millions](https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html) by Matthew
   Rosenberg, Nicholas Confessore and Carole Cadwalladr reported from London, Gabriel J.X. Dance contributed reporting
   from London, and Danny Hakim from New York, The New York Times.
 
-- [_Socialism As A Set Of Principles_](https://www.currentaffairs.org/news/2018/03/socialism-as-a-set-of-principles) by
+- [Socialism As A Set Of Principles](https://www.currentaffairs.org/news/2018/03/socialism-as-a-set-of-principles) by
   Nathan J. Robinson, Current Affairs.
 
-- [_The Untold Story of NotPetya, the Most Devastating Cyberattack in
-  History_](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/) by Andy Greenberg,
+- [The Untold Story of NotPetya, the Most Devastating Cyberattack in
+  History](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/) by Andy Greenberg,
   Wired.
 
-- [_The Fighting Gig Economy_](https://tribunemag.co.uk/2019/05/the-fighting-gig-economy) by Rikin Parekh, Tribune
+- [The Fighting Gig Economy](https://tribunemag.co.uk/2019/05/the-fighting-gig-economy) by Rikin Parekh, Tribune
   magazine.
 
-- [_The Real Dad's Army_](https://tribunemag.co.uk/2019/04/the-real-dads-army) by Marcus Barnett, Tribune Magazine.
+- [The Real Dad's Army](https://tribunemag.co.uk/2019/04/the-real-dads-army) by Marcus Barnett, Tribune Magazine.
 
-- [_The Supreme Court's Judgement in
-  Cherry/Miller_](https://publiclawforeveryone.com/2019/09/25/1000-words-the-supreme-courts-judgment-in-cherry-miller-no-2/)
+- [The Supreme Court's Judgement in
+  Cherry/Miller](https://publiclawforeveryone.com/2019/09/25/1000-words-the-supreme-courts-judgment-in-cherry-miller-no-2/)
   by Professor Mark Elliott, Public Law for Everyone.
 
-- [_I Dream of Canteens_](https://dinnerdocument.com/2019/04/30/i-dream-of-canteens/) by Rebecca May Johnson, Dinner
+- [I Dream of Canteens](https://dinnerdocument.com/2019/04/30/i-dream-of-canteens/) by Rebecca May Johnson, Dinner
   Document (originally published on TinyLetter).
 
-- [_Greenwashing and sustainable investment: why capitalism can't solve the climate
-  crisis_](https://marxist.com/greenwashing-sustainable-investment.htm) by Helena Nicholson, Marxist.com.
+- [Greenwashing and sustainable investment: why capitalism can't solve the climate
+  crisis](https://marxist.com/greenwashing-sustainable-investment.htm) by Helena Nicholson, Marxist.com.
 
-- [_La Charte_](https://grangesdelagageole.be/la-charte/) (translated: "The Charter"), Granges de la Gageole.
+- [La Charte](https://grangesdelagageole.be/la-charte/) (translated: "The Charter"), Granges de la Gageole.
 
 - [Radiation Dose Chart](https://xkcd.com/radiation/), xkcd.com.
 

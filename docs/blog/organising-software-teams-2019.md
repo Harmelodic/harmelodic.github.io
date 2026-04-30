@@ -1,6 +1,12 @@
 # Organising Software Engineering Teams (2019)
 
 > Originally published: 27 November 2019
+>
+> There is much that has changed in the software world, and my understanding and knowledge has grown too. Much of the
+> values & principles of this way of thinking is still relevant, but some things I think could be better.
+>
+> Read more about my current thoughts on organising people to make software over in my
+> new [Software Engineering writing](../software-engineering/index.md).
 
 Not interested in the Why but the What? - Read [The Structure](#the-structure).
 

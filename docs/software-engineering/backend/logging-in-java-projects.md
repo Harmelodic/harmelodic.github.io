@@ -1,7 +1,5 @@
 # Logging in Java projects
 
-> This has been moved to [elsewhere](../software-engineering/backend/logging-in-java-projects.md).
-
 "Logging in Java" is quite the rabbit hole, that I've been down many times, and whilst the documentation & knowledge is
 available, it can be a little hard to find.
 
@@ -184,9 +182,3 @@ To do this with Logback, you have a few choices (from my knowledge):
   regular `ConsoleAppender` to get structured JSON logs to your console.  
   Incidentally, Google's Logback library has the added benefit of being able to use and write your own
   `LoggingEventEnhancer`s, which allow you to add custom key-values into the JSON log output.
-
----
-
-Thanks for reading!
-
-~ Harmelodic ❤️

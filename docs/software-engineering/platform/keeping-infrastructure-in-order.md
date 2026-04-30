@@ -1,8 +1,6 @@
 # Keeping infrastructure in order
 
 > Originally published: 09 June 2024
-> 
-> This has moved [elsewhere](../software-engineering/platform/keeping-infrastructure-in-order.md)
 
 In this post, I talk about organising infrastructure code (e.g. Terraform code) to keep it highly maintainable and
 reusable, with references to my personal setup. There is a diagram at the end for visual reference.
@@ -160,6 +158,4 @@ and subdomains, and organise these Deployment Repositories based on those result
 
 ![Infrastructure layers](./assets/infrastructure-layers.png)
 
-Hope this helped!
-
-~ Harmelodic
+I and some ex-colleagues of mine sometimes referred to this diagram as "the bear claw".
