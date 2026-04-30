@@ -17,3 +17,5 @@ It goes all the way back to the original Macintosh 128K, and I'll try to keep it
 are released.
 
 <iframe width="100%" height="1000" src="https://docs.google.com/spreadsheets/d/1bxFH4SrcWOAW3JsnA72UmyLNECDfPdrQHJCVlb5b7HA/edit?usp=sharing"></iframe>
+
+Find the [full spreadsheet here](https://docs.google.com/spreadsheets/d/1bxFH4SrcWOAW3JsnA72UmyLNECDfPdrQHJCVlb5b7HA/edit?usp=sharing).
