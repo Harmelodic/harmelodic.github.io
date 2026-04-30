@@ -1,7 +1,7 @@
 # Keeping infrastructure in order
 
 > Originally published: 09 June 2024
-> 
+>
 > This has moved [elsewhere](../software-engineering/platform/keeping-infrastructure-in-order.md)
 
 In this post, I talk about organising infrastructure code (e.g. Terraform code) to keep it highly maintainable and
