@@ -81,3 +81,6 @@ may be technology or software engineering-related, and might still be interestin
 
 - [Story Structure 101: Super Basic Shit](https://channel101.fandom.com/wiki/Story_Structure_101:_Super_Basic_Shit) by
   Dan Harmon.
+
+- [Alan Moore: The Comics Industry is Poisonous](https://observer.co.uk/culture/interviews/article/alan-moore-the-comics-industry-is-poisonous)
+  by Stephen Armstrong.
