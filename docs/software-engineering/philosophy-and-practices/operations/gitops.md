@@ -20,13 +20,29 @@ TODO more on:
 - Advantages
 	- Easy to recreate everything from scratch (great for disaster recovery, but also development environment creation,
 	  and proving environments can be easily and quickly recreated).
-	- Declarative config & infra is nice to maintain and work with.
+	- Declarative config & infra is nice to maintain, refactor, and work with.
 	- Ideally transparent, open to all eyes (internally) and so collaboration on infra & config is easier.
+	- Encourages an attitude towards config / infrastructure can be ephemeral/recreatable which makes choosing where you
+	  store your state as an easier and more deliberate choice.
+		- This combined with my semi-critical take on DLQs means I tend to treat Message Bus/Queues as stateful whilst
+		  they have messages but otherwise more like stateless systems, meaning I prefer handling state with databases
+		  and having backups, rather than having DLQs and letting messages sit in Buses/Queues for a long time.
+	- Easier to handle single source of truth as Configuration that then reconciles (and doing ID/string matching based
+	  on standard naming when referencing) rather than treating it as data and building complex event-driven
+	  architectures (some event-driven stuff may still be needed for GitOps though, depending on what you're doing).
 - Disadvantages
-	- More code to deal with
+	- More code to deal with - though this is made substantially easier by fleet management practices (like MR/PR
+	  Campaigns, automatic dependency upgrades (Renovate), and
+	  other [automated code refactoring](../development/automated-code-refactoring.md))
+	- Reconciling Stateful infrastructure can be... weird (if there's data involved, and you deleted a thing, you should
+	  probably restore rather than recreate? But caches you can just recreate? Or you might need to recreate before you
+	  restore? It all depends on the provider and the kind of stateful infrastructure).
+	- Reconciling or recreating some infrastructure with some providers has... quirks (e.g. deleting a database might
+	  not actually delete it, and so recreating it doesn't actually work, so you need to think a lot about naming and
+	  reproducibility of systems more than you would if you were not doing GitOps and just did backups)
 - General opinion: You should be doing it...
 - ...and more than you think. Treating some things as GitOps vs Data, and why you can (and should) be doing it as
-  GitOps (e.g. IAM / Auth configuration)
+  GitOps (e.g. particularly around IAM configuration - Service Accounts, Access Controls, even Employee User Accounts).
 - Some things to think about when implementing:
 	- Labelling deployed config/infrastructure/stuff what Git repo and what commit is currently deployed, to be able to
 	  trace back to the code easily.
