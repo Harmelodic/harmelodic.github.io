@@ -33,3 +33,12 @@ TODO: Talk about how to build and do the following:
 	  operational needs)
 	- Building generative AI models (using data for training, then deploying for operational needs) - but also: Ew,
 	  don't do this - generative AI is yucky.
+	- Think about:
+		- [TensorFlow](https://en.wikipedia.org/wiki/TensorFlow) - Python library for ML (OG declarative, which was good
+		  but hard. PyTorch got more popular).
+		- [PyTorch](https://en.wikipedia.org/wiki/PyTorch) - Python library but normal imperative programming and
+		  simpler APIs than TensorFlow.
+		- [JAX](https://en.wikipedia.org/wiki/JAX_(software)) - Python library for automatic derivative calculations &
+		  high-performance numerical computing.
+		- [ONNX](https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange) graph file - artefact for ML models.
+		- Could run them on _TensorFlow inference runtime_ or on _TensorFlow Lite runtime_.
