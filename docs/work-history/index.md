@@ -14,7 +14,7 @@ If you believe you are being underpaid for your work, then please raise this wit
   70,000 kr / month
 
 - **Software Engineer @ Nordnet**  
-  May 2021 - Feb 2026  
+  May 2021 - February 2026  
   79,500 kr / month
 
 - **Director @ Coding for Immigrants (CFI)**  
