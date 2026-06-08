@@ -45,6 +45,7 @@ Projects I've contributed to:
 - [opentracing-contrib/java-spring-jaeger](https://github.com/opentracing-contrib/java-spring-jaeger)
 - [pact-foundation/pact-jvm](https://github.com/pact-foundation/pact-jvm)
 - [projectlombok/lombok](https://github.com/projectlombok/lombok)
+- [rabbitmq/rabbitmq-website](https://github.com/rabbitmq/rabbitmq-website)
 - [rust-lang/book](https://github.com/rust-lang/book)
 - [spring-projects/spring-framework](https://github.com/spring-projects/spring-framework)
 - [testcontainers/testcontainers-java](https://github.com/testcontainers/testcontainers-java)
