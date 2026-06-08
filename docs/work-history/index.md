@@ -9,8 +9,12 @@ I believe in Pay Transparency, which is why below I have listed the highest sala
 
 If you believe you are being underpaid for your work, then please raise this with your employer or union.
 
+- **Solution Architect @ Stegra**  
+  March 2026 - Current  
+  70,000 kr / month
+
 - **Software Engineer @ Nordnet**  
-  May 2021 - Current  
+  May 2021 - Feb 2026  
   79,500 kr / month
 
 - **Director @ Coding for Immigrants (CFI)**  
