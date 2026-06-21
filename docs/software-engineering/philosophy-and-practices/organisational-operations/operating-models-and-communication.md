@@ -20,9 +20,20 @@ difference between dysfunction and a well-operating organisation.
 
 Things to cover / think about:
 
-- Different Operating Model and how they affect communication and how work is achieved.
+- Different Operating Models and how they affect communication and how work is achieved.
 - The value of transparency, clear communication, and discoverable historic communication, and how to do them well.
 - Communication rules to ensure reduced time wasted on poor communication and increased time spent on good communication
   and productivity (don't want to have people spending/wasting their days away just messaging people on
   Slack/Teams/etc. or reading and responding to email - but also want to use these tools effectively to collaborate).
 - When to have meetings and when to not
+- Smallest unit should be a team, not an individual.
+	- Emphasises team ownership of work & implemented systems.
+	- Reduces / De-emphasises power dynamics.
+	- De-emphasises / helps prevent middle-people who are the "bridges" and "shields" between teams, and instead
+	  encourages actual team collaboration.
+- Generally, I like servant-leadership and aligned, mostly-autonomous, domain-focused, cross-functional teams.
+	- Teams are groups of people who work to serve a particular business domain (or subsection of a domain (e.g. a
+	  subdomain, or actual product)).
+	- Teams have leaders/managers who provide People management, Product management and Technical leadership needs.
+	- Compromises to this way of working are sometimes necessary given budget constraints (e.g. where one software
+	  development team needs to serve multiple business operations needs at once).
