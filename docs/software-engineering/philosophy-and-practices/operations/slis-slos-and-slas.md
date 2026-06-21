@@ -1,9 +1,5 @@
 # SLIs, SLOs and SLAs
 
-> Originally published: 18 June 2025
->
-> Moved to [new section](../software-engineering/philosophy-and-practices/operations/slis-slos-and-slas.md).
-
 This document is intended to cover the fundamentals for those starting out with SLIs, SLOs and SLAs.
 
 The Google SRE documentation does a much more in-depth job of
@@ -194,8 +190,23 @@ coving [Service Level Objectives](https://sre.google/sre-book/service-level-obje
 
 Link in with the following concepts:
 
+- Incident Response Management (i.e. Alerting + Process surrounding alerts + process surrounding issues that weren't
+  picked up by alerts).
 - Business Continuity
-- Disaster Recovery (inc. SLI/SLOs: Recovery Point Objective (RPO), Recovery Time Objective (RTO), Maximum Tolerable
-  Downtime (MTD))
-- Incident Response Management
+- Disaster Recovery
+	- inc. SLI/SLOs: Recovery Point Objective (RPO), Recovery Time Objective (RTO), Maximum Tolerable Downtime (MTD)
+	- Disaster Recovery Plans
+		- Basically just large runbooks, but more formalised for disasters, and not regular smaller issues / incidents
+		  where normal alerting and process cope just fine.
+		- Some of these disasters will be (or should be) the same for many / all systems.
+		- Contains things like:
+			- Owning Team (Name, Contact Details, Link to on-call schedule)
+			- Affected component (Could be a running system, or a platform component, or a 3rd party system)
+			- Potential Disasters and Recovery instructions
+				- Data loss? e.g. Restore DB Backup.
+				- System unavailable? e.g. Rollback latest change.
+				- Performance degradation? e.g. Rollback if sudden change, or investigate as a mob.
+				- Data leakage or system compromised? e.g. initiate lock-down measures, notify relevant parties,
+				  investigate, provide updates.
+			- Links to contact details of relevant 3rd parties whose systems this component depends on.
 - Status Pages
