@@ -84,3 +84,5 @@ may be technology or software engineering-related, and might still be interestin
 
 - [Alan Moore: The Comics Industry is Poisonous](https://observer.co.uk/culture/interviews/article/alan-moore-the-comics-industry-is-poisonous)
   by Stephen Armstrong.
+
+- [Code is wedge and programmers are tools](https://lia-sae.net/articles/2026/02/code-is-a-wedge.html) by Lia
