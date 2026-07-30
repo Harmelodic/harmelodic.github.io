@@ -30,9 +30,15 @@ perspectives: [🔗](https://www.layersoflondon.org/)
 
 The National Oceanic and Atmospheric Administration (NOAA) have a spacecraft orbiting Earth called the "Deep Space
 Climate Observatory" (DSCOVR). It is over 1,500,000 km away and takes multiple pictures, every day, using a camera
-called the Eath Polychromatic Imaging Camera (EPIC).
+called the Earth Polychromatic Imaging Camera (EPIC).
 
 NASA have a website where they show you the pictures it takes. They are stunning: [🔗](https://epic.gsfc.nasa.gov)
+
+## Old Maps Online
+
+A website, seemingly previously known as "TimeMap.org" built by Klokan Technologies where you can view old maps on top
+of a digital map. Find where you live or grew up and see how the world has changed and what things used to be
+called: [🔗](https://www.oldmapsonline.org)
 
 ---
 
