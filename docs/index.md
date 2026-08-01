@@ -20,3 +20,5 @@ use [LinkedIn](https://www.linkedin.com/in/harmelodic/).
 
 If you're looking for some of my software engineering work, you can view my [GitHub](https://github.com/Harmelodic) or
 read my [writing on Software Engineering](software-engineering/index.md).
+
+None of my work is AI-generated.
