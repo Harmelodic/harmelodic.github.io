@@ -5,19 +5,28 @@ The two sides to engineering administration.
 ## Management
 
 - People / Administrative management focused side of engineering (not technical)
-- Hiring, career development, code of conduct, people-conflict resolution, organisational structure in order to
-  ensure workforce effectiveness and efficiency, drives and supports team in their "way of working" stuff
-  (project/team management), access & approvals, aids procurement of tools that would aid engineers in their work.
+- Hiring, career development, code of conduct, people-conflict resolution, organisational structure in order to ensure
+  workforce effectiveness and efficiency, drives and supports team in their "way of working" stuff (project/team
+  management), access & approvals, aids procurement of tools that would aid engineers in their work.
 - Aids planning efforts by bringing the organisational perspective to planning, creates projections based on
-  statistics/insights gained to aid the organisation project/predict timelines
-- Auditing regulatory & internal-policy compliance. Communicating with the relevant parties to prioritise the work
-  so that engineering compliance is fulfilled (DORA, system inventories) - collab with Technical Leadership on this.
+  statistics/insights gained to aid the organisation project/predict timelines.
+- Auditing regulatory & internal-policy compliance. Communicating with the relevant parties to prioritise the work so
+  that engineering compliance is fulfilled (DORA, system inventories) - collab with Technical Leadership on this.
+- Salary & benefits negotiations, simultaneously:
+	- Managing expectations of what is possible to offer
+	- Strives meet and improve needs of employees (servant leadership) (though under capitalism, and in for-profit
+	  organisations, it is naive to think that managers actually do this - hence: unions)
+- Finds ways to motivate employees:
+	- Core: Salary & benefits
+	- Material extra: Social spaces & events, funding/resources for learning & development, extra office benefits.
+	- Emotional extras: Purpose, Autonomy & Mastery (see: Daniel Pink's writings)
 - Diplomacy throughout
-- Different from Technical Leadership as they are _expected_ to know how organisations & people work and how to
-  organise and motivate workers into ensuring work is done, and is not _expected_ to actually know how to do that
-  work or to even do any of it - in fact, doing so can often create internal political animosity, as engineers
-  (workers) usually want high-levels of autonomy and not have management "interfering", and knowing this is part
-  knowing how to motivate workers.
+- Provides advice & guidance to employees to assist them in how they work across the organisation.
+- Different from Technical Leadership as they are _expected_ to know how organisations & people work and how to organise
+  and motivate workers into ensuring work is done, and is not _expected_ to actually know how to do that work or to even
+  do any of it - in fact, doing so can often create internal political animosity, as engineers (workers) usually want
+  high-levels of autonomy and not have management "interfering", and knowing this is part knowing how to motivate
+  workers.
 
 ## Technical Leadership
 
@@ -26,10 +35,10 @@ The two sides to engineering administration.
 - Often (but not solely responsible for): drives initiatives & conversations, identifies new/upcoming non-functional
   requirements, identifies problematic technical areas that need prioritisation
 - Some organisational structures gives technical leadership more mandate, others require more democracy/process.
-- Existence provides a technical career path and helps prevent flat-hierarchical issues of "why do THEY get to do
-  that and not me?" whilst not necessarily being hierarchical (depending on organisational mandate).
-- Different from Eng Management as they are _expected_ to be technical experts, and are not expected to engage in
-  the people management side of engineering.
+- Existence provides a technical career path and helps prevent flat-hierarchical issues of "why do THEY get to do that
+  and not me?" whilst not necessarily being hierarchical (depending on organisational mandate).
+- Different from Eng Management as they are _expected_ to be technical experts, and are not expected to engage in the
+  people management side of engineering.
 - Essentially, the more senior/experienced facilitators who guide other engineers on how to do good engineering, and be
   an example of a good engineer.
 
@@ -50,7 +59,7 @@ interjecting too much into technical work, and a sign of weak or non-existent te
 technical managers). Technical Leadership are the band leaders / conductors, managers are the roadies & band managers.
 
 Whether its leadership or management, it's important for these people to be _present_ and available for teams. When
-managers and leaders are stretched, or spending there time away from their team(s), or just not able to make time for
+managers and leaders are stretched, or spending there time away from their team (s), or just not able to make time for
 the people they're supposed to be leading or managing, then they're not able to engage in effective leadership or
 management. Absence results in teams losing focus, increase in conflicts, decrease in alignment with organisational
 goals & conduct, and/or reduces the social cohesion/relationship between workers and leaders & managers.
