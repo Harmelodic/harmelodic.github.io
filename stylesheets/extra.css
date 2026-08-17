@@ -1,0 +1,32 @@
+/* CSS for Desktop view (not mobile view) - only when screen is 1220px or wider */
+@media only screen and (min-width: 1220px) {
+
+	/* Increase sidebar width for readability */
+	.md-sidebar--primary {
+		width: 15rem; /* default: 12.1rem */
+	}
+
+	.md-sidebar__inner {
+		padding-right: 0 !important;
+	}
+
+	/* Increase vertical space between sidebar nav items, but add padding to be forgiving for inaccurate clicks */
+	.md-nav__link {
+		margin-top: 0.2rem;
+		padding-top: 0.15rem;
+		padding-bottom: 0.15rem;
+	}
+
+}
+
+/* Brighter colour for active nav links for visibility */
+:root > * {
+	--md-typeset-a-color: #4aa611 !important;
+}
+
+/* CSS for all screens */
+.md-content {
+	/* Add some blank space at the bottom of the page, to make scrolling/reading a little easier.
+	   Using view-height rather than a fixed amount to make it work appropriately on all screen sizes */
+	padding-bottom: 20vh;
+}
