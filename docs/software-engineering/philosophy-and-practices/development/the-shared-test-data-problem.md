@@ -13,7 +13,8 @@
 
 - Wanting to test a component of a system that integrates with other components of the system.
 - Lack of confidence in specifications vs actual system behaviour
-- Create an environment for testing these integrations.
+- Create an environment for testing these integrations (aka doing
+  [integrated tests](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam))
 - Run tests, and it works. So, let's have everyone do this!
 - When everyone does this:
 	- Other people are running tests, which mess up my tests because they mess with my test data.
