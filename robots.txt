@@ -1,0 +1,71 @@
+# robots.txt
+
+# =========================================
+# Allow Internet Archive bots for archiving
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: heritrix
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+User-agent: ia_archiver-web.archive.org
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+# ====================
+# Allow Developer bots
+User-agent: Chrome-lighthouse
+Allow: /
+
+# ========================================
+# Allow bots for OpenGraph / Link Previews
+User-agent: Discordbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Mastodon
+Allow: /
+
+User-agent: redditbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ========================================================
+# Allow Search Engine crawlers to appear in search results
+User-agent: bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: DuckDuckGo-Favicons-Bot
+Allow: /
+
+User-agent: Google Favicon
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# ========================================================
+# Block all other robots (especially robots to do with AI)
+User-agent: *
+Disallow: /
