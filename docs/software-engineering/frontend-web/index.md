@@ -46,6 +46,7 @@
 - [Webpack](https://webpack.js.org/)
 - [axe - Accessibility Testing](https://www.deque.com/axe/)
 - [npm](https://npmjs.com/)
+- [Tanstack - Query](https://tanstack.com/query/latest)
 - [web.dev](https://web.dev/)
 
 ## Styling links
