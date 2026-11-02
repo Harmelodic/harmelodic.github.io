@@ -16,6 +16,7 @@
 ## Development links
 
 - [Angular](https://angular.io/)
+- [axe - Accessibility Testing](https://www.deque.com/axe/)
 - [Babel](https://babeljs.io/)
 - [BrowserStack - Browser Testing](https://www.browserstack.com/)
 - [Can I Use... - Browser Compatibility](https://caniuse.com/)
@@ -31,23 +32,22 @@
 - [Mocha](https://mochajs.org/)
 - [Modern JS Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet)
 - [Next.js - Framework](https://nextjs.org/)
+- [npm](https://npmjs.com/)
 - [Pa11y](https://pa11y.org/)
 - [Polyfill.io](https://polyfill.io/)
 - [React](https://react.dev)
 - [Redux](https://redux.js.org/)
 - [Selenium - Browser Automation](https://www.selenium.dev/)
 - [SinonJS - Test Mocks & Spies](https://sinonjs.org/)
+- [Tanstack - Query](https://tanstack.com/query/latest)
 - [Turf.js - Map Graphing](https://turfjs.org/)
 - [Web APIs - MDN](https://developer.mozilla.org/en-US/docs/Web/API)
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+- [web.dev](https://web.dev/)
 - [WebAssembly](https://webassembly.org/)
 - [WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
-- [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 - [Webpack](https://webpack.js.org/)
-- [axe - Accessibility Testing](https://www.deque.com/axe/)
-- [npm](https://npmjs.com/)
-- [Tanstack - Query](https://tanstack.com/query/latest)
-- [web.dev](https://web.dev/)
+- [WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 
 ## Styling links
 
