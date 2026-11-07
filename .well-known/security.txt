@@ -1,0 +1,6 @@
+Canonical: https://harmelodic.com/.well-known/security.txt
+Contact: mailto:matt+securitytxt@harmelodic.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+
+# security.txt standard: https://www.rfc-editor.org/rfc/rfc9116
